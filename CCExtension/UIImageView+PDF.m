@@ -7,7 +7,7 @@
 //
 
 #import "UIImageView+PDF.h"
-#import "DSPDFImage.h"
+#import "CCPDFImage.h"
 
 @implementation  UIImageView( PDF )
 
