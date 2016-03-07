@@ -2,8 +2,8 @@
 //  NSData+Tools.swift
 //  GiftBox
 //
-//  Created by Ding Soung on 15/6/6.
-//  Copyright (c) 2015年 xinyihezi. All rights reserved.
+//  Created by Alex D. on 15/6/6.
+//  Copyright (c) 2015年 ifnil All rights reserved.
 //
 
 import Foundation

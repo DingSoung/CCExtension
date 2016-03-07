@@ -3,7 +3,7 @@
 //  summer
 //
 //  Created by Alex D. on 15/8/12.
-//  Copyright (c) 2015年 Alex D. All rights reserved.
+//  Copyright (c) 2015年 ifnil All rights reserved.
 //
 
 import Foundation

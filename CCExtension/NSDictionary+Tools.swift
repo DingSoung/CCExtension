@@ -2,8 +2,8 @@
 //  Dictionary+Tools.swift
 //  Autumn
 //
-//  Created by D.Alex on 15/9/29.
-//  Copyright © 2015年 Alex D. All rights reserved.
+//  Created by Alex D. on 15/9/29.
+//  Copyright © 2015年 ifnil All rights reserved.
 //
 
 import Foundation
