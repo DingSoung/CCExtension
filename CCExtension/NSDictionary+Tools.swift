@@ -2,7 +2,7 @@
 //  Dictionary+Tools.swift
 //  Autumn
 //
-//  Created by Alex D. on 15/9/29.
+//  Created by Cuicui2 on 15/9/29.
 //  Copyright © 2015年 ifnil All rights reserved.
 //
 

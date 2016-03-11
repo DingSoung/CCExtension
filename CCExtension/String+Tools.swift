@@ -2,7 +2,7 @@
 //  String+Tools.swift
 //
 //
-//  Created by Alex D. on 15/5/26.
+//  Created by Cuicui2 on 15/5/26.
 //
 //
 
