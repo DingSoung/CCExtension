@@ -4,7 +4,6 @@
 
 ### Usage
 download and add the floder to your project
-swift extension need bridge-file
 include Extension-Header.h to you public header
 
 
