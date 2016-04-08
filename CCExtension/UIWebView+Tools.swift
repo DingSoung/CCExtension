@@ -2,7 +2,7 @@
 //  UIWebView+Tools.swift
 //  summer
 //
-//  Created by Alex D. on 15/8/27.
+//  Created by Songwen Ding on 15/8/27.
 //  Copyright (c) 2015年 ifnil All rights reserved.
 //
 
@@ -19,25 +19,14 @@ extension UIWebView {
             self.context = newValue
         }
     }
-    /**
-     add native target for js function
-     
-     - parameter function: js func name
-     - parameter block:    native block target
-     */
+    ///add native target for js function
     public func addJsTarget(function:String, block: @convention(block)(AnyObject)->Void) {
         guard let context = self.context else {
             return
         }
         context.setObject(unsafeBitCast(block, AnyObject.self), forKeyedSubscript: function)
     }
-    
-    /**
-     call js function
-     
-     - parameter function:  js func name
-     - parameter parameter: parameter array for function, optional
-     */
+    ///call js function
     public func runJsFunction(function:String, parameter:[AnyObject]) {
         guard let context = self.context else {
             return
@@ -54,6 +43,7 @@ extension UIWebView {
             self.syncRunJSQueue = newValue
         }
     }
+    ///call js function
     public func syncRunJsFunction(function:String, parameter:[AnyObject], complete:((value:JSValue)->Void)?) {
         dispatch_sync(self.syncRunJSQueue) { () -> Void in
             guard let context = self.context else {

@@ -9,25 +9,8 @@
 import UIKit
 
 extension UIView {
-    //MARK: View所属Controller
-    public var superViewController: UIViewController? {
-        #if true
-            for var next = self.superview; ; next = next?.superview {
-                let nR = next?.nextResponder()
-                if nR?.isKindOfClass(UIViewController) == true {
-                    return nR as? UIViewController
-                }
-            }
-            #else
-            var object = self.nextResponder()
-            while(object?.isKindOfClass(UIViewController) != true) {
-            object = object?.nextResponder()
-            }
-            return object as? UIViewController
-        #endif
-    }
     
-    //MARK: 设置阴影
+    ///MARK: 设置阴影
     public func setShadow(color:CGColor? = UIColor.blackColor().CGColor, offset:CGSize? = CGSizeMake(0.25, 0.5), opacity:Float? = 0.15, radius:CGFloat? = 1.5) {
         if let v = color { self.layer.shadowColor = v }
         if let v = offset { self.layer.shadowOffset = v }
@@ -44,7 +27,7 @@ extension UIView {
         UIView.animateWithDuration(1, animations: { () -> Void in
             self.backgroundColor = UIColor(white: 0, alpha: 0.3)
         })
-        let tapGesture = UITapGestureRecognizer(target: self, action: "fullViewTapGesture:")
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(UIView.fullViewTapGesture(_:)))
         tapGesture.numberOfTapsRequired = 1
         self.addGestureRecognizer(tapGesture)
     }

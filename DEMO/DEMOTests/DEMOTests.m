@@ -2,7 +2,7 @@
 //  DEMOTests.m
 //  DEMOTests
 //
-//  Created by Alex D. on 3/7/16.
+//  Created by Songwen Ding on 3/7/16.
 //  Copyright © 2016 ifnil All rights reserved.
 //
 

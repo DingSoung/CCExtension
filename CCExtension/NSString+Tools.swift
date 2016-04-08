@@ -2,16 +2,14 @@
 //  NSString+Tools.swift
 //  DEMO
 //
-//  Created by Alex D. on 12/15/15.
+//  Created by Songwen Ding on 12/15/15.
 //  Copyright © 2015 ifnil All rights reserved.
 //
 
 import Foundation
 extension NSString {
     
-    /**
-     string to dictionary
-     */
+    ///string to dictionary
     public var jsonDict: NSDictionary {
         guard let JsonData = self.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) else {
             return [String: String]()

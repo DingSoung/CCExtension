@@ -2,14 +2,14 @@
 //  NSObjec+Tools.swift
 //  summer
 //
-//  Created by Alex D. on 15/8/12.
+//  Created by Songwen Ding on 15/8/12.
 //  Copyright (c) 2015年 ifnil All rights reserved.
 //
 
 import Foundation
 extension NSObject {
     
-    /// codeBlock闭包实现 C中的代码块功能
+    ///codeBlock闭包实现 C中的代码块功能
     public func closure(
         mark:String? = "",
         run:Bool? = true,
@@ -38,9 +38,7 @@ extension NSObject {
         self.setValuesForKeysWithDictionary(dict)
     }
     
-    /**
-     Json String to model
-     */
+     ///Json String to model
     convenience init(jsonStr: String) {
         self.init()
         let JSONData = jsonStr.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)

@@ -1,7 +1,7 @@
 //
 //  bridge.h
 //
-//  Created by Alex D. on 15/9/18.
+//  Created by Songwen Ding on 15/9/18.
 //  Copyright © 2015年 ifnil All rights reserved.
 //
 
