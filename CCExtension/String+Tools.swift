@@ -26,6 +26,7 @@ extension String {
 	}
 	
 	//MARK: MD5 加密  import <CommonCrypto/CommonCrypto.h>
+    /*
 	public var md5: String! {
 		let str = self.cStringUsingEncoding(NSUTF8StringEncoding)
 		let strLen = CC_LONG(self.lengthOfBytesUsingEncoding(NSUTF8StringEncoding))
@@ -38,9 +39,10 @@ extension String {
 		}
 		result.dealloc(digestLen)
 		return hash as String
-	}
+	}*/
     
 	//MARK: 由NSString扩展而来
+    /*
 	public var hexString: String {
 		return (self as NSString).dataUsingEncoding(NSUTF8StringEncoding)!.hexString
 	}
@@ -49,7 +51,7 @@ extension String {
 	}
 	public var SHA1: String {
 		return (self as NSString).dataUsingEncoding(NSUTF8StringEncoding)!.SHA1.hexString
-	}
+	}*/
 	
 	//MARK: 是否为手机号
 	public var isMobileNumber: Bool {

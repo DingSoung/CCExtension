@@ -19,7 +19,7 @@ extension NSData {
              return nil
         }
     }
-        
+    /*
     public var MD5: NSData {
         let result = NSMutableData(length: Int(CC_MD5_DIGEST_LENGTH))!
         CC_MD5(bytes, CC_LONG(length), UnsafeMutablePointer<UInt8>(result.mutableBytes))
@@ -30,7 +30,7 @@ extension NSData {
         let result = NSMutableData(length: Int(CC_SHA1_DIGEST_LENGTH))!
         CC_SHA1(bytes, CC_LONG(length), UnsafeMutablePointer<UInt8>(result.mutableBytes))
         return NSData(data: result)
-    }
+    }*/
     
     public var hexString: String {
         return self.toHexString()
