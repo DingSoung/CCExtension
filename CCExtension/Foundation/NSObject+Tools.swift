@@ -10,16 +10,16 @@ import Foundation
 
 extension NSObject {
     
-    /// Dict to Model
-    convenience public init(dict : [String : AnyObject]) {
+    /// init model with JSON String
+    public convenience init(JSONDict : [String : AnyObject]) {
         self.init()
-        self.setValuesForKeysWithDictionary(dict)
+        self.setValuesForKeysWithDictionary(JSONDict)
     }
     
-    /// JSON String to Model
-    convenience public init(jsonStr: String) {
+    /// init model with JSON Dictionary
+    public convenience init(JSONStr: String) {
         self.init()
-        let JSONData = jsonStr.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
+        let JSONData = JSONStr.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
         do {
             let JSONDictionary = try NSJSONSerialization.JSONObjectWithData(JSONData!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
             
@@ -34,8 +34,6 @@ extension NSObject {
             print(error)
         }
     }
-    
-    
     
     //MARK: 字典转model array
     /*
@@ -55,7 +53,4 @@ extension NSObject {
      #endif
      //override this func to deal with the key and value
      }*/
-    
-    
-    
 }
