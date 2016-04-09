@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CCKit"
-  s.version      = "V0.0.1"
+  s.version      = "0.0.1"
   s.summary      = "A Kit of Extension and Network for iOS"
 
   # This description is used to generate tags and improve search results.
