@@ -7,10 +7,10 @@
 //
 
 import Foundation
-//MARK: need add bridge header #import <CommonCrypto/CommonCrypto.h> 
+
 extension NSData {
     
-    ///json data to jsonObject (Array or Dictionary)
+    /// format JSON data to JSON Object (Array or Dictionary)
     public var jsonObject: AnyObject? {
         do {
             return try NSJSONSerialization.JSONObjectWithData(self, options: NSJSONReadingOptions.AllowFragments)
@@ -19,7 +19,3 @@ extension NSData {
         }
     }
 }
-
-
-
-

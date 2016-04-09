@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA4220FB1CB910E70065047E /* NSAttributedString+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220F01CB910E70065047E /* NSAttributedString+Tools.swift */; };
+		FA4220FC1CB910E70065047E /* NSData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220F11CB910E70065047E /* NSData+Tools.swift */; };
+		FA4220FD1CB910E70065047E /* NSDictionary+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220F21CB910E70065047E /* NSDictionary+Tools.swift */; };
+		FA4220FE1CB910E70065047E /* NSObject+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220F31CB910E70065047E /* NSObject+Tools.swift */; };
+		FA4220FF1CB910E70065047E /* NSString+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220F41CB910E70065047E /* NSString+Tools.swift */; };
+		FA4221001CB910E70065047E /* Swift+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220F51CB910E70065047E /* Swift+Tools.swift */; };
+		FA4221011CB910E70065047E /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220F71CB910E70065047E /* UIColor+Tools.swift */; };
+		FA4221021CB910E70065047E /* UIImage+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220F81CB910E70065047E /* UIImage+Tools.swift */; };
+		FA4221031CB910E70065047E /* UIVIew+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220F91CB910E70065047E /* UIVIew+Tools.swift */; };
+		FA4221041CB910E70065047E /* UIWebView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220FA1CB910E70065047E /* UIWebView+Tools.swift */; };
 		FA51D6701C8D34240035384D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51D66F1C8D34240035384D /* main.m */; };
 		FA51D6731C8D34240035384D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51D6721C8D34240035384D /* AppDelegate.m */; };
 		FA51D6761C8D34240035384D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51D6751C8D34240035384D /* ViewController.m */; };
@@ -16,17 +26,6 @@
 		FA51D6811C8D34240035384D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA51D67F1C8D34240035384D /* LaunchScreen.storyboard */; };
 		FA51D68C1C8D34240035384D /* DEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51D68B1C8D34240035384D /* DEMOTests.m */; };
 		FA51D6971C8D34240035384D /* DEMOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51D6961C8D34240035384D /* DEMOUITests.m */; };
-		FA51D6F51C8D34550035384D /* Int+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51D6E81C8D34550035384D /* Int+Tools.swift */; };
-		FA51D6F61C8D34550035384D /* NSData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51D6E91C8D34550035384D /* NSData+Tools.swift */; };
-		FA51D6F71C8D34550035384D /* NSDictionary+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51D6EA1C8D34550035384D /* NSDictionary+Tools.swift */; };
-		FA51D6F81C8D34550035384D /* NSMutableData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51D6EB1C8D34550035384D /* NSMutableData+Tools.swift */; };
-		FA51D6F91C8D34550035384D /* NSObject+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51D6EC1C8D34550035384D /* NSObject+Tools.swift */; };
-		FA51D6FA1C8D34550035384D /* NSString+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51D6ED1C8D34550035384D /* NSString+Tools.swift */; };
-		FA51D6FB1C8D34550035384D /* String+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51D6EE1C8D34550035384D /* String+Tools.swift */; };
-		FA51D6FC1C8D34550035384D /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51D6EF1C8D34550035384D /* UIColor+Tools.swift */; };
-		FA51D6FE1C8D34550035384D /* UIImageView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51D6F21C8D34550035384D /* UIImageView+Tools.swift */; };
-		FA51D6FF1C8D34550035384D /* UIVIew+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51D6F31C8D34550035384D /* UIVIew+Tools.swift */; };
-		FA51D7001C8D34550035384D /* UIWebView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51D6F41C8D34550035384D /* UIWebView+Tools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +46,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA4220F01CB910E70065047E /* NSAttributedString+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Tools.swift"; sourceTree = "<group>"; };
+		FA4220F11CB910E70065047E /* NSData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Tools.swift"; sourceTree = "<group>"; };
+		FA4220F21CB910E70065047E /* NSDictionary+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+Tools.swift"; sourceTree = "<group>"; };
+		FA4220F31CB910E70065047E /* NSObject+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Tools.swift"; sourceTree = "<group>"; };
+		FA4220F41CB910E70065047E /* NSString+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Tools.swift"; sourceTree = "<group>"; };
+		FA4220F51CB910E70065047E /* Swift+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Tools.swift"; sourceTree = "<group>"; };
+		FA4220F71CB910E70065047E /* UIColor+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
+		FA4220F81CB910E70065047E /* UIImage+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Tools.swift"; sourceTree = "<group>"; };
+		FA4220F91CB910E70065047E /* UIVIew+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+Tools.swift"; sourceTree = "<group>"; };
+		FA4220FA1CB910E70065047E /* UIWebView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+Tools.swift"; sourceTree = "<group>"; };
 		FA51D66B1C8D34240035384D /* DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA51D66F1C8D34240035384D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA51D6711C8D34240035384D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,19 +73,6 @@
 		FA51D6921C8D34240035384D /* DEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA51D6961C8D34240035384D /* DEMOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEMOUITests.m; sourceTree = "<group>"; };
 		FA51D6981C8D34240035384D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA51D6E71C8D34550035384D /* Extension-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Extension-Header.h"; sourceTree = "<group>"; };
-		FA51D6E81C8D34550035384D /* Int+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Tools.swift"; sourceTree = "<group>"; };
-		FA51D6E91C8D34550035384D /* NSData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Tools.swift"; sourceTree = "<group>"; };
-		FA51D6EA1C8D34550035384D /* NSDictionary+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+Tools.swift"; sourceTree = "<group>"; };
-		FA51D6EB1C8D34550035384D /* NSMutableData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableData+Tools.swift"; sourceTree = "<group>"; };
-		FA51D6EC1C8D34550035384D /* NSObject+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Tools.swift"; sourceTree = "<group>"; };
-		FA51D6ED1C8D34550035384D /* NSString+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Tools.swift"; sourceTree = "<group>"; };
-		FA51D6EE1C8D34550035384D /* String+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Tools.swift"; sourceTree = "<group>"; };
-		FA51D6EF1C8D34550035384D /* UIColor+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
-		FA51D6F21C8D34550035384D /* UIImageView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Tools.swift"; sourceTree = "<group>"; };
-		FA51D6F31C8D34550035384D /* UIVIew+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+Tools.swift"; sourceTree = "<group>"; };
-		FA51D6F41C8D34550035384D /* UIWebView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+Tools.swift"; sourceTree = "<group>"; };
-		FA51D7031C8D35AB0035384D /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +100,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA4220ED1CB910E70065047E /* CCExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FA4220F51CB910E70065047E /* Swift+Tools.swift */,
+				FA4220EF1CB910E70065047E /* Foundation */,
+				FA4220F61CB910E70065047E /* UIKit */,
+			);
+			name = CCExtension;
+			path = ../../CCExtension;
+			sourceTree = "<group>";
+		};
+		FA4220EF1CB910E70065047E /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				FA4220F01CB910E70065047E /* NSAttributedString+Tools.swift */,
+				FA4220F11CB910E70065047E /* NSData+Tools.swift */,
+				FA4220F21CB910E70065047E /* NSDictionary+Tools.swift */,
+				FA4220F31CB910E70065047E /* NSObject+Tools.swift */,
+				FA4220F41CB910E70065047E /* NSString+Tools.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		FA4220F61CB910E70065047E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				FA4220F71CB910E70065047E /* UIColor+Tools.swift */,
+				FA4220F81CB910E70065047E /* UIImage+Tools.swift */,
+				FA4220F91CB910E70065047E /* UIVIew+Tools.swift */,
+				FA4220FA1CB910E70065047E /* UIWebView+Tools.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		FA51D6621C8D34240035384D = {
 			isa = PBXGroup;
 			children = (
-				FA51D7031C8D35AB0035384D /* Bridging-Header.h */,
 				FA51D66D1C8D34240035384D /* DEMO */,
 				FA51D68A1C8D34240035384D /* DEMOTests */,
 				FA51D6951C8D34240035384D /* DEMOUITests */,
@@ -128,7 +157,7 @@
 		FA51D66D1C8D34240035384D /* DEMO */ = {
 			isa = PBXGroup;
 			children = (
-				FA51D6E61C8D34550035384D /* CCExtension */,
+				FA4220ED1CB910E70065047E /* CCExtension */,
 				FA51D6711C8D34240035384D /* AppDelegate.h */,
 				FA51D6721C8D34240035384D /* AppDelegate.m */,
 				FA51D6741C8D34240035384D /* ViewController.h */,
@@ -167,26 +196,6 @@
 				FA51D6981C8D34240035384D /* Info.plist */,
 			);
 			path = DEMOUITests;
-			sourceTree = "<group>";
-		};
-		FA51D6E61C8D34550035384D /* CCExtension */ = {
-			isa = PBXGroup;
-			children = (
-				FA51D6E71C8D34550035384D /* Extension-Header.h */,
-				FA51D6E81C8D34550035384D /* Int+Tools.swift */,
-				FA51D6E91C8D34550035384D /* NSData+Tools.swift */,
-				FA51D6EA1C8D34550035384D /* NSDictionary+Tools.swift */,
-				FA51D6EB1C8D34550035384D /* NSMutableData+Tools.swift */,
-				FA51D6EC1C8D34550035384D /* NSObject+Tools.swift */,
-				FA51D6ED1C8D34550035384D /* NSString+Tools.swift */,
-				FA51D6EE1C8D34550035384D /* String+Tools.swift */,
-				FA51D6EF1C8D34550035384D /* UIColor+Tools.swift */,
-				FA51D6F21C8D34550035384D /* UIImageView+Tools.swift */,
-				FA51D6F31C8D34550035384D /* UIVIew+Tools.swift */,
-				FA51D6F41C8D34550035384D /* UIWebView+Tools.swift */,
-			);
-			name = CCExtension;
-			path = ../../CCExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,21 +328,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA51D6FB1C8D34550035384D /* String+Tools.swift in Sources */,
-				FA51D6F61C8D34550035384D /* NSData+Tools.swift in Sources */,
-				FA51D6FE1C8D34550035384D /* UIImageView+Tools.swift in Sources */,
-				FA51D7001C8D34550035384D /* UIWebView+Tools.swift in Sources */,
+				FA4220FC1CB910E70065047E /* NSData+Tools.swift in Sources */,
+				FA4221011CB910E70065047E /* UIColor+Tools.swift in Sources */,
 				FA51D6761C8D34240035384D /* ViewController.m in Sources */,
-				FA51D6FC1C8D34550035384D /* UIColor+Tools.swift in Sources */,
-				FA51D6FF1C8D34550035384D /* UIVIew+Tools.swift in Sources */,
 				FA51D6731C8D34240035384D /* AppDelegate.m in Sources */,
-				FA51D6F91C8D34550035384D /* NSObject+Tools.swift in Sources */,
+				FA4221001CB910E70065047E /* Swift+Tools.swift in Sources */,
+				FA4220FE1CB910E70065047E /* NSObject+Tools.swift in Sources */,
 				FA51D67C1C8D34240035384D /* DEMO.xcdatamodeld in Sources */,
-				FA51D6FA1C8D34550035384D /* NSString+Tools.swift in Sources */,
+				FA4221031CB910E70065047E /* UIVIew+Tools.swift in Sources */,
 				FA51D6701C8D34240035384D /* main.m in Sources */,
-				FA51D6F81C8D34550035384D /* NSMutableData+Tools.swift in Sources */,
-				FA51D6F51C8D34550035384D /* Int+Tools.swift in Sources */,
-				FA51D6F71C8D34550035384D /* NSDictionary+Tools.swift in Sources */,
+				FA4221041CB910E70065047E /* UIWebView+Tools.swift in Sources */,
+				FA4220FB1CB910E70065047E /* NSAttributedString+Tools.swift in Sources */,
+				FA4220FD1CB910E70065047E /* NSDictionary+Tools.swift in Sources */,
+				FA4220FF1CB910E70065047E /* NSString+Tools.swift in Sources */,
+				FA4221021CB910E70065047E /* UIImage+Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,7 +486,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingsoung.DEMO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -490,7 +498,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingsoung.DEMO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -561,6 +569,7 @@
 				FA51D69D1C8D34240035384D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA51D69E1C8D34240035384D /* Build configuration list for PBXNativeTarget "DEMOTests" */ = {
 			isa = XCConfigurationList;
@@ -569,6 +578,7 @@
 				FA51D6A01C8D34240035384D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA51D6A11C8D34240035384D /* Build configuration list for PBXNativeTarget "DEMOUITests" */ = {
 			isa = XCConfigurationList;
@@ -577,6 +587,7 @@
 				FA51D6A31C8D34240035384D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

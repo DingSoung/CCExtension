@@ -10,7 +10,7 @@ import Foundation
 
 extension NSDictionary {
     
-    ///dictionary to string
+    /// Dictionary to String
     public var jsonStr: NSString {
         var json:NSString = "{}"
         do {
