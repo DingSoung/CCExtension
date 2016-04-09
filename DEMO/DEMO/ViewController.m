@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <CCKit/CCKit.h>
+#import <CCKit/CCKit-Swift.h>
 
 @interface ViewController ()
 @property (nonatomic, copy) CCModel *model;
@@ -17,6 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIColor *color = [[UIColor alloc] init];
     
     [CCNetwork GET:@"https://baidu.com" parameter:@{} success:^(NSData *data) {
         NSLog(@"%@", data.jsonObject);

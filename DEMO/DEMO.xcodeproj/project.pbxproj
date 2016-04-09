@@ -16,7 +16,8 @@
 		FA1478DC1CB7A61000DE3125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1478DA1CB7A61000DE3125 /* LaunchScreen.storyboard */; };
 		FA1478E71CB7A61100DE3125 /* DEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1478E61CB7A61100DE3125 /* DEMOTests.m */; };
 		FA1478F21CB7A61100DE3125 /* DEMOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1478F11CB7A61100DE3125 /* DEMOUITests.m */; };
-		FAB3FCE71CB7B82300360221 /* CCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB3FCE61CB7B82300360221 /* CCKit.framework */; };
+		FA4220EA1CB90FC60065047E /* CCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4220E81CB90F970065047E /* CCKit.framework */; };
+		FA4220EB1CB90FC60065047E /* CCKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA4220E81CB90F970065047E /* CCKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,15 +35,30 @@
 			remoteGlobalIDString = FA1478C51CB7A61000DE3125;
 			remoteInfo = DEMO;
 		};
+		FA42209E1CB7CE210065047E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA4220991CB7CE210065047E /* CCKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA14782D1CB7A11800DE3125;
+			remoteInfo = CCKit;
+		};
+		FA4220A01CB7CE210065047E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA4220991CB7CE210065047E /* CCKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA1478371CB7A11800DE3125;
+			remoteInfo = CCKitTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FAB3FCE51CB7B69B00360221 /* Embed Frameworks */ = {
+		FA4220EC1CB90FC60065047E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FA4220EB1CB90FC60065047E /* CCKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,7 +83,8 @@
 		FA1478ED1CB7A61100DE3125 /* DEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1478F11CB7A61100DE3125 /* DEMOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEMOUITests.m; sourceTree = "<group>"; };
 		FA1478F31CB7A61100DE3125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAB3FCE61CB7B82300360221 /* CCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CCKit.framework; sourceTree = "<group>"; };
+		FA4220991CB7CE210065047E /* CCKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CCKit.xcodeproj; path = ../CCKit/CCKit.xcodeproj; sourceTree = "<group>"; };
+		FA4220E81CB90F970065047E /* CCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CCKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/CCKit-cyfiyewxlgnvoodxajqchrlvvsii/Build/Products/Debug-iphonesimulator/CCKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB3FCE71CB7B82300360221 /* CCKit.framework in Frameworks */,
+				FA4220EA1CB90FC60065047E /* CCKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +116,7 @@
 		FA1478BD1CB7A61000DE3125 = {
 			isa = PBXGroup;
 			children = (
-				FAB3FCE61CB7B82300360221 /* CCKit.framework */,
+				FA4220991CB7CE210065047E /* CCKit.xcodeproj */,
 				FA1478C81CB7A61000DE3125 /* DEMO */,
 				FA1478E51CB7A61100DE3125 /* DEMOTests */,
 				FA1478F01CB7A61100DE3125 /* DEMOUITests */,
@@ -120,6 +137,7 @@
 		FA1478C81CB7A61000DE3125 /* DEMO */ = {
 			isa = PBXGroup;
 			children = (
+				FA4220E81CB90F970065047E /* CCKit.framework */,
 				FA1478CC1CB7A61000DE3125 /* AppDelegate.h */,
 				FA1478CD1CB7A61000DE3125 /* AppDelegate.m */,
 				FA1478CF1CB7A61000DE3125 /* ViewController.h */,
@@ -160,6 +178,15 @@
 			path = DEMOUITests;
 			sourceTree = "<group>";
 		};
+		FA42209A1CB7CE210065047E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA42209F1CB7CE210065047E /* CCKit.framework */,
+				FA4220A11CB7CE210065047E /* CCKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,7 +197,7 @@
 				FA1478C21CB7A61000DE3125 /* Sources */,
 				FA1478C31CB7A61000DE3125 /* Frameworks */,
 				FA1478C41CB7A61000DE3125 /* Resources */,
-				FAB3FCE51CB7B69B00360221 /* Embed Frameworks */,
+				FA4220EC1CB90FC60065047E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,12 @@
 			mainGroup = FA1478BD1CB7A61000DE3125;
 			productRefGroup = FA1478C71CB7A61000DE3125 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FA42209A1CB7CE210065047E /* Products */;
+					ProjectRef = FA4220991CB7CE210065047E /* CCKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FA1478C51CB7A61000DE3125 /* DEMO */,
@@ -258,6 +291,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FA42209F1CB7CE210065047E /* CCKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CCKit.framework;
+			remoteRef = FA42209E1CB7CE210065047E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FA4220A11CB7CE210065047E /* CCKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CCKitTests.xctest;
+			remoteRef = FA4220A01CB7CE210065047E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FA1478C41CB7A61000DE3125 /* Resources */ = {

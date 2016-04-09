@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../CCKit/CCKit.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:DEMO.xcodeproj">
    </FileRef>
 </Workspace>
