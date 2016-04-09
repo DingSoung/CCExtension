@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/DingSoung/CCKit.git", :tag => s.version }
+  s.source       = {:git => "https://github.com/DingSoung/CCKit.git", :commit => '3b48377'}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

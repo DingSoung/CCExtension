@@ -35,8 +35,9 @@ extension NSString {
         for param in params {
             let strs = param.componentsSeparatedByString("=")
             if strs.count >= 2 {
-                if let value = strs[1].stringByReplacingPercentEscapesUsingEncoding(NSUTF8StringEncoding) {
+                if let value = strs[1].stringByRemovingPercentEncoding {
                     dict.setValue(value, forKey: strs[0])
+                    //stringByReplacingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
                 } else {
                     print("un-resolve key:\(strs[0]) value:\(strs[1])")
                 }
