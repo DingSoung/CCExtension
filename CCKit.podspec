@@ -24,8 +24,8 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+  #s.description  = <<-DESC
+  #                   DESC
 
   s.homepage     = "https://github.com/DingSoung/CCKit"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "CCKit/**/*.{h,m,swift}", "CCKit/**/**/*.{swift}"
+  s.source_files  = "CCKit/**/*.{swift}", "CCKit/**/**/*.{swift}"
   # s.exclude_files = "CCKit/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
