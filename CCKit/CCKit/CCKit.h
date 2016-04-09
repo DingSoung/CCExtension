@@ -2,7 +2,7 @@
 //  CCKit.h
 //  CCKit
 //
-//  Created by Alex D. on 4/8/16.
+//  Created by Alex D. on 4/9/16.
 //  Copyright © 2016 ifnil. All rights reserved.
 //
 
@@ -16,5 +16,4 @@ FOUNDATION_EXPORT const unsigned char CCKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <CCKit/PublicHeader.h>
 
-//#import "CCKit-Swift.h"
-#import <CCKit/CCModel.h>
+

@@ -8,10 +8,9 @@
 
 #import "ViewController.h"
 #import <CCKit/CCKit.h>
-#import <CCKit/CCKit-Swift.h>
+#import <CCKit/CCKit-swift.h>
 
 @interface ViewController ()
-@property (nonatomic, copy) CCModel *model;
 @end
 
 @implementation ViewController
@@ -19,9 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIColor *color = [[UIColor alloc] init];
+    self.view.backgroundColor = [[UIColor alloc] initWithHex:0xFFAA77];
     
-    [CCNetwork GET:@"https://baidu.com" parameter:@{} success:^(NSData *data) {
+    [CCNetwork GET:@"http://www.v2ex.com/api/nodes/all.json" parameter:@{} success:^(NSData *data) {
         NSLog(@"%@", data.jsonObject);
     } fail:^(NSError *error) {
         NSLog(@"%@", error.domain);

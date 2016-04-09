@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FA14782C1CB7A11800DE3125"
+               BlueprintIdentifier = "FA05ABF11CB920A100B59AFE"
                BuildableName = "CCKit.framework"
                BlueprintName = "CCKit"
                ReferencedContainer = "container:CCKit.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FA1478361CB7A11800DE3125"
+               BlueprintIdentifier = "FA05ABFB1CB920A100B59AFE"
                BuildableName = "CCKitTests.xctest"
                BlueprintName = "CCKitTests"
                ReferencedContainer = "container:CCKit.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FA14782C1CB7A11800DE3125"
+            BlueprintIdentifier = "FA05ABF11CB920A100B59AFE"
             BuildableName = "CCKit.framework"
             BlueprintName = "CCKit"
             ReferencedContainer = "container:CCKit.xcodeproj">
@@ -64,7 +64,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FA14782C1CB7A11800DE3125"
+            BlueprintIdentifier = "FA05ABF11CB920A100B59AFE"
             BuildableName = "CCKit.framework"
             BlueprintName = "CCKit"
             ReferencedContainer = "container:CCKit.xcodeproj">
@@ -82,7 +82,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FA14782C1CB7A11800DE3125"
+            BlueprintIdentifier = "FA05ABF11CB920A100B59AFE"
             BuildableName = "CCKit.framework"
             BlueprintName = "CCKit"
             ReferencedContainer = "container:CCKit.xcodeproj">

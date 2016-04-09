@@ -7,200 +7,180 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA1478311CB7A11800DE3125 /* CCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1478301CB7A11800DE3125 /* CCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA1478381CB7A11800DE3125 /* CCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA14782D1CB7A11800DE3125 /* CCKit.framework */; };
-		FA14783D1CB7A11800DE3125 /* CCKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA14783C1CB7A11800DE3125 /* CCKitTests.m */; };
-		FA1479251CB7B26000DE3125 /* CCModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1479231CB7B26000DE3125 /* CCModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA1479261CB7B26000DE3125 /* CCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1479241CB7B26000DE3125 /* CCModel.m */; };
-		FA14792B1CB7B26800DE3125 /* CCNetwork+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1479281CB7B26800DE3125 /* CCNetwork+Tools.swift */; };
-		FA14792C1CB7B26800DE3125 /* CCNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1479291CB7B26800DE3125 /* CCNetwork.swift */; };
-		FA14792D1CB7B26800DE3125 /* CCNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14792A1CB7B26800DE3125 /* CCNetworkRequest.swift */; };
-		FA4220C61CB8E6CF0065047E /* Extension-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4220B91CB8E6CF0065047E /* Extension-Header.h */; };
-		FA4220C71CB8E6CF0065047E /* NSAttributedString+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220BB1CB8E6CF0065047E /* NSAttributedString+Tools.swift */; };
-		FA4220C81CB8E6CF0065047E /* NSData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220BC1CB8E6CF0065047E /* NSData+Tools.swift */; };
-		FA4220C91CB8E6CF0065047E /* NSDictionary+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220BD1CB8E6CF0065047E /* NSDictionary+Tools.swift */; };
-		FA4220CA1CB8E6CF0065047E /* NSObject+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220BE1CB8E6CF0065047E /* NSObject+Tools.swift */; };
-		FA4220CB1CB8E6CF0065047E /* NSString+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220BF1CB8E6CF0065047E /* NSString+Tools.swift */; };
-		FA4220CF1CB8E6CF0065047E /* UIVIew+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220C41CB8E6CF0065047E /* UIVIew+Tools.swift */; };
-		FA4220D01CB8E6CF0065047E /* UIWebView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220C51CB8E6CF0065047E /* UIWebView+Tools.swift */; };
-		FA4220D31CB8E70D0065047E /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220D11CB8E70D0065047E /* UIColor+Tools.swift */; };
-		FA4220D41CB8E70D0065047E /* UIImage+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220D21CB8E70D0065047E /* UIImage+Tools.swift */; };
-		FA4220DB1CB8EFE00065047E /* Swift+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220D91CB8EFE00065047E /* Swift+Tools.swift */; };
+		FA05ABF61CB920A100B59AFE /* CCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FA05ABF51CB920A100B59AFE /* CCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA05ABFD1CB920A100B59AFE /* CCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA05ABF21CB920A100B59AFE /* CCKit.framework */; };
+		FA05AC021CB920A100B59AFE /* CCKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05AC011CB920A100B59AFE /* CCKitTests.swift */; };
+		FA05AC221CB920DF00B59AFE /* NSAttributedString+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05AC171CB920DF00B59AFE /* NSAttributedString+Tools.swift */; };
+		FA05AC231CB920DF00B59AFE /* NSData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05AC181CB920DF00B59AFE /* NSData+Tools.swift */; };
+		FA05AC241CB920DF00B59AFE /* NSDictionary+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05AC191CB920DF00B59AFE /* NSDictionary+Tools.swift */; };
+		FA05AC251CB920DF00B59AFE /* NSObject+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05AC1A1CB920DF00B59AFE /* NSObject+Tools.swift */; };
+		FA05AC261CB920DF00B59AFE /* NSString+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05AC1B1CB920DF00B59AFE /* NSString+Tools.swift */; };
+		FA05AC271CB920DF00B59AFE /* Swift+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05AC1C1CB920DF00B59AFE /* Swift+Tools.swift */; };
+		FA05AC281CB920DF00B59AFE /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05AC1E1CB920DF00B59AFE /* UIColor+Tools.swift */; };
+		FA05AC291CB920DF00B59AFE /* UIImage+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05AC1F1CB920DF00B59AFE /* UIImage+Tools.swift */; };
+		FA05AC2A1CB920DF00B59AFE /* UIVIew+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05AC201CB920DF00B59AFE /* UIVIew+Tools.swift */; };
+		FA05AC2B1CB920DF00B59AFE /* UIWebView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05AC211CB920DF00B59AFE /* UIWebView+Tools.swift */; };
+		FA05AC301CB920E900B59AFE /* CCNetwork+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05AC2D1CB920E900B59AFE /* CCNetwork+Tools.swift */; };
+		FA05AC311CB920E900B59AFE /* CCNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05AC2E1CB920E900B59AFE /* CCNetwork.swift */; };
+		FA05AC321CB920E900B59AFE /* CCNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05AC2F1CB920E900B59AFE /* CCNetworkRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FA1478391CB7A11800DE3125 /* PBXContainerItemProxy */ = {
+		FA05ABFE1CB920A100B59AFE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FA1478241CB7A11800DE3125 /* Project object */;
+			containerPortal = FA05ABE91CB920A100B59AFE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FA14782C1CB7A11800DE3125;
+			remoteGlobalIDString = FA05ABF11CB920A100B59AFE;
 			remoteInfo = CCKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FA14782D1CB7A11800DE3125 /* CCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CCKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA1478301CB7A11800DE3125 /* CCKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCKit.h; sourceTree = "<group>"; };
-		FA1478321CB7A11800DE3125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA1478371CB7A11800DE3125 /* CCKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA14783C1CB7A11800DE3125 /* CCKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCKitTests.m; sourceTree = "<group>"; };
-		FA14783E1CB7A11800DE3125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA1479231CB7B26000DE3125 /* CCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCModel.h; sourceTree = "<group>"; };
-		FA1479241CB7B26000DE3125 /* CCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCModel.m; sourceTree = "<group>"; };
-		FA1479281CB7B26800DE3125 /* CCNetwork+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CCNetwork+Tools.swift"; sourceTree = "<group>"; };
-		FA1479291CB7B26800DE3125 /* CCNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCNetwork.swift; sourceTree = "<group>"; };
-		FA14792A1CB7B26800DE3125 /* CCNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCNetworkRequest.swift; sourceTree = "<group>"; };
-		FA4220B91CB8E6CF0065047E /* Extension-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Extension-Header.h"; sourceTree = "<group>"; };
-		FA4220BB1CB8E6CF0065047E /* NSAttributedString+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Tools.swift"; sourceTree = "<group>"; };
-		FA4220BC1CB8E6CF0065047E /* NSData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Tools.swift"; sourceTree = "<group>"; };
-		FA4220BD1CB8E6CF0065047E /* NSDictionary+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+Tools.swift"; sourceTree = "<group>"; };
-		FA4220BE1CB8E6CF0065047E /* NSObject+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Tools.swift"; sourceTree = "<group>"; };
-		FA4220BF1CB8E6CF0065047E /* NSString+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Tools.swift"; sourceTree = "<group>"; };
-		FA4220C41CB8E6CF0065047E /* UIVIew+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+Tools.swift"; sourceTree = "<group>"; };
-		FA4220C51CB8E6CF0065047E /* UIWebView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+Tools.swift"; sourceTree = "<group>"; };
-		FA4220D11CB8E70D0065047E /* UIColor+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
-		FA4220D21CB8E70D0065047E /* UIImage+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Tools.swift"; sourceTree = "<group>"; };
-		FA4220D91CB8EFE00065047E /* Swift+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Tools.swift"; sourceTree = "<group>"; };
+		FA05ABF21CB920A100B59AFE /* CCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CCKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA05ABF51CB920A100B59AFE /* CCKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCKit.h; sourceTree = "<group>"; };
+		FA05ABF71CB920A100B59AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA05ABFC1CB920A100B59AFE /* CCKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA05AC011CB920A100B59AFE /* CCKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCKitTests.swift; sourceTree = "<group>"; };
+		FA05AC031CB920A100B59AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA05AC171CB920DF00B59AFE /* NSAttributedString+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Tools.swift"; sourceTree = "<group>"; };
+		FA05AC181CB920DF00B59AFE /* NSData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Tools.swift"; sourceTree = "<group>"; };
+		FA05AC191CB920DF00B59AFE /* NSDictionary+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+Tools.swift"; sourceTree = "<group>"; };
+		FA05AC1A1CB920DF00B59AFE /* NSObject+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Tools.swift"; sourceTree = "<group>"; };
+		FA05AC1B1CB920DF00B59AFE /* NSString+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Tools.swift"; sourceTree = "<group>"; };
+		FA05AC1C1CB920DF00B59AFE /* Swift+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Tools.swift"; sourceTree = "<group>"; };
+		FA05AC1E1CB920DF00B59AFE /* UIColor+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
+		FA05AC1F1CB920DF00B59AFE /* UIImage+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Tools.swift"; sourceTree = "<group>"; };
+		FA05AC201CB920DF00B59AFE /* UIVIew+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+Tools.swift"; sourceTree = "<group>"; };
+		FA05AC211CB920DF00B59AFE /* UIWebView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+Tools.swift"; sourceTree = "<group>"; };
+		FA05AC2D1CB920E900B59AFE /* CCNetwork+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CCNetwork+Tools.swift"; sourceTree = "<group>"; };
+		FA05AC2E1CB920E900B59AFE /* CCNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCNetwork.swift; sourceTree = "<group>"; };
+		FA05AC2F1CB920E900B59AFE /* CCNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCNetworkRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FA1478291CB7A11800DE3125 /* Frameworks */ = {
+		FA05ABEE1CB920A100B59AFE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA1478341CB7A11800DE3125 /* Frameworks */ = {
+		FA05ABF91CB920A100B59AFE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA1478381CB7A11800DE3125 /* CCKit.framework in Frameworks */,
+				FA05ABFD1CB920A100B59AFE /* CCKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA1478231CB7A11800DE3125 = {
+		FA05ABE81CB920A100B59AFE = {
 			isa = PBXGroup;
 			children = (
-				FA14782F1CB7A11800DE3125 /* CCKit */,
-				FA14783B1CB7A11800DE3125 /* CCKitTests */,
-				FA14782E1CB7A11800DE3125 /* Products */,
+				FA05ABF41CB920A100B59AFE /* CCKit */,
+				FA05AC001CB920A100B59AFE /* CCKitTests */,
+				FA05ABF31CB920A100B59AFE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FA14782E1CB7A11800DE3125 /* Products */ = {
+		FA05ABF31CB920A100B59AFE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA14782D1CB7A11800DE3125 /* CCKit.framework */,
-				FA1478371CB7A11800DE3125 /* CCKitTests.xctest */,
+				FA05ABF21CB920A100B59AFE /* CCKit.framework */,
+				FA05ABFC1CB920A100B59AFE /* CCKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA14782F1CB7A11800DE3125 /* CCKit */ = {
+		FA05ABF41CB920A100B59AFE /* CCKit */ = {
 			isa = PBXGroup;
 			children = (
-				FA1478301CB7A11800DE3125 /* CCKit.h */,
-				FA1478321CB7A11800DE3125 /* Info.plist */,
-				FA4220B81CB8E6CF0065047E /* CCExtension */,
-				FA1479271CB7B26800DE3125 /* CCNetwork */,
-				FA1479221CB7B26000DE3125 /* CCModel */,
+				FA05AC2C1CB920E900B59AFE /* CCNetwork */,
+				FA05AC151CB920DF00B59AFE /* CCExtension */,
+				FA05ABF51CB920A100B59AFE /* CCKit.h */,
+				FA05ABF71CB920A100B59AFE /* Info.plist */,
 			);
 			path = CCKit;
 			sourceTree = "<group>";
 		};
-		FA14783B1CB7A11800DE3125 /* CCKitTests */ = {
+		FA05AC001CB920A100B59AFE /* CCKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA14783C1CB7A11800DE3125 /* CCKitTests.m */,
-				FA14783E1CB7A11800DE3125 /* Info.plist */,
+				FA05AC011CB920A100B59AFE /* CCKitTests.swift */,
+				FA05AC031CB920A100B59AFE /* Info.plist */,
 			);
 			path = CCKitTests;
 			sourceTree = "<group>";
 		};
-		FA1479221CB7B26000DE3125 /* CCModel */ = {
+		FA05AC151CB920DF00B59AFE /* CCExtension */ = {
 			isa = PBXGroup;
 			children = (
-				FA1479231CB7B26000DE3125 /* CCModel.h */,
-				FA1479241CB7B26000DE3125 /* CCModel.m */,
-			);
-			name = CCModel;
-			path = ../../../CCModel/CCModel;
-			sourceTree = "<group>";
-		};
-		FA1479271CB7B26800DE3125 /* CCNetwork */ = {
-			isa = PBXGroup;
-			children = (
-				FA1479281CB7B26800DE3125 /* CCNetwork+Tools.swift */,
-				FA1479291CB7B26800DE3125 /* CCNetwork.swift */,
-				FA14792A1CB7B26800DE3125 /* CCNetworkRequest.swift */,
-			);
-			name = CCNetwork;
-			path = ../../../CCNetwork/CCNetwork;
-			sourceTree = "<group>";
-		};
-		FA4220B81CB8E6CF0065047E /* CCExtension */ = {
-			isa = PBXGroup;
-			children = (
-				FA4220B91CB8E6CF0065047E /* Extension-Header.h */,
-				FA4220D91CB8EFE00065047E /* Swift+Tools.swift */,
-				FA4220BA1CB8E6CF0065047E /* Foundation */,
-				FA4220C31CB8E6CF0065047E /* UIKit */,
+				FA05AC161CB920DF00B59AFE /* Foundation */,
+				FA05AC1C1CB920DF00B59AFE /* Swift+Tools.swift */,
+				FA05AC1D1CB920DF00B59AFE /* UIKit */,
 			);
 			name = CCExtension;
 			path = ../../../CCExtension/CCExtension;
 			sourceTree = "<group>";
 		};
-		FA4220BA1CB8E6CF0065047E /* Foundation */ = {
+		FA05AC161CB920DF00B59AFE /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				FA4220BB1CB8E6CF0065047E /* NSAttributedString+Tools.swift */,
-				FA4220BC1CB8E6CF0065047E /* NSData+Tools.swift */,
-				FA4220BD1CB8E6CF0065047E /* NSDictionary+Tools.swift */,
-				FA4220BE1CB8E6CF0065047E /* NSObject+Tools.swift */,
-				FA4220BF1CB8E6CF0065047E /* NSString+Tools.swift */,
+				FA05AC171CB920DF00B59AFE /* NSAttributedString+Tools.swift */,
+				FA05AC181CB920DF00B59AFE /* NSData+Tools.swift */,
+				FA05AC191CB920DF00B59AFE /* NSDictionary+Tools.swift */,
+				FA05AC1A1CB920DF00B59AFE /* NSObject+Tools.swift */,
+				FA05AC1B1CB920DF00B59AFE /* NSString+Tools.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
 		};
-		FA4220C31CB8E6CF0065047E /* UIKit */ = {
+		FA05AC1D1CB920DF00B59AFE /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				FA4220D11CB8E70D0065047E /* UIColor+Tools.swift */,
-				FA4220D21CB8E70D0065047E /* UIImage+Tools.swift */,
-				FA4220C41CB8E6CF0065047E /* UIVIew+Tools.swift */,
-				FA4220C51CB8E6CF0065047E /* UIWebView+Tools.swift */,
+				FA05AC1E1CB920DF00B59AFE /* UIColor+Tools.swift */,
+				FA05AC1F1CB920DF00B59AFE /* UIImage+Tools.swift */,
+				FA05AC201CB920DF00B59AFE /* UIVIew+Tools.swift */,
+				FA05AC211CB920DF00B59AFE /* UIWebView+Tools.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		FA05AC2C1CB920E900B59AFE /* CCNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				FA05AC2D1CB920E900B59AFE /* CCNetwork+Tools.swift */,
+				FA05AC2E1CB920E900B59AFE /* CCNetwork.swift */,
+				FA05AC2F1CB920E900B59AFE /* CCNetworkRequest.swift */,
+			);
+			name = CCNetwork;
+			path = ../../../CCNetwork/CCNetwork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		FA14782A1CB7A11800DE3125 /* Headers */ = {
+		FA05ABEF1CB920A100B59AFE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA4220C61CB8E6CF0065047E /* Extension-Header.h in Headers */,
-				FA1478311CB7A11800DE3125 /* CCKit.h in Headers */,
-				FA1479251CB7B26000DE3125 /* CCModel.h in Headers */,
+				FA05ABF61CB920A100B59AFE /* CCKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		FA14782C1CB7A11800DE3125 /* CCKit */ = {
+		FA05ABF11CB920A100B59AFE /* CCKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA1478411CB7A11800DE3125 /* Build configuration list for PBXNativeTarget "CCKit" */;
+			buildConfigurationList = FA05AC061CB920A100B59AFE /* Build configuration list for PBXNativeTarget "CCKit" */;
 			buildPhases = (
-				FA1478281CB7A11800DE3125 /* Sources */,
-				FA1478291CB7A11800DE3125 /* Frameworks */,
-				FA14782A1CB7A11800DE3125 /* Headers */,
-				FA14782B1CB7A11800DE3125 /* Resources */,
+				FA05ABED1CB920A100B59AFE /* Sources */,
+				FA05ABEE1CB920A100B59AFE /* Frameworks */,
+				FA05ABEF1CB920A100B59AFE /* Headers */,
+				FA05ABF01CB920A100B59AFE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -208,72 +188,72 @@
 			);
 			name = CCKit;
 			productName = CCKit;
-			productReference = FA14782D1CB7A11800DE3125 /* CCKit.framework */;
+			productReference = FA05ABF21CB920A100B59AFE /* CCKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FA1478361CB7A11800DE3125 /* CCKitTests */ = {
+		FA05ABFB1CB920A100B59AFE /* CCKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA1478441CB7A11800DE3125 /* Build configuration list for PBXNativeTarget "CCKitTests" */;
+			buildConfigurationList = FA05AC091CB920A100B59AFE /* Build configuration list for PBXNativeTarget "CCKitTests" */;
 			buildPhases = (
-				FA1478331CB7A11800DE3125 /* Sources */,
-				FA1478341CB7A11800DE3125 /* Frameworks */,
-				FA1478351CB7A11800DE3125 /* Resources */,
+				FA05ABF81CB920A100B59AFE /* Sources */,
+				FA05ABF91CB920A100B59AFE /* Frameworks */,
+				FA05ABFA1CB920A100B59AFE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FA14783A1CB7A11800DE3125 /* PBXTargetDependency */,
+				FA05ABFF1CB920A100B59AFE /* PBXTargetDependency */,
 			);
 			name = CCKitTests;
 			productName = CCKitTests;
-			productReference = FA1478371CB7A11800DE3125 /* CCKitTests.xctest */;
+			productReference = FA05ABFC1CB920A100B59AFE /* CCKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FA1478241CB7A11800DE3125 /* Project object */ = {
+		FA05ABE91CB920A100B59AFE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = ifnil;
 				TargetAttributes = {
-					FA14782C1CB7A11800DE3125 = {
+					FA05ABF11CB920A100B59AFE = {
 						CreatedOnToolsVersion = 7.3;
 					};
-					FA1478361CB7A11800DE3125 = {
+					FA05ABFB1CB920A100B59AFE = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
 			};
-			buildConfigurationList = FA1478271CB7A11800DE3125 /* Build configuration list for PBXProject "CCKit" */;
+			buildConfigurationList = FA05ABEC1CB920A100B59AFE /* Build configuration list for PBXProject "CCKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = FA1478231CB7A11800DE3125;
-			productRefGroup = FA14782E1CB7A11800DE3125 /* Products */;
+			mainGroup = FA05ABE81CB920A100B59AFE;
+			productRefGroup = FA05ABF31CB920A100B59AFE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA14782C1CB7A11800DE3125 /* CCKit */,
-				FA1478361CB7A11800DE3125 /* CCKitTests */,
+				FA05ABF11CB920A100B59AFE /* CCKit */,
+				FA05ABFB1CB920A100B59AFE /* CCKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FA14782B1CB7A11800DE3125 /* Resources */ = {
+		FA05ABF01CB920A100B59AFE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA1478351CB7A11800DE3125 /* Resources */ = {
+		FA05ABFA1CB920A100B59AFE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,47 +263,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FA1478281CB7A11800DE3125 /* Sources */ = {
+		FA05ABED1CB920A100B59AFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA4220C81CB8E6CF0065047E /* NSData+Tools.swift in Sources */,
-				FA14792B1CB7B26800DE3125 /* CCNetwork+Tools.swift in Sources */,
-				FA14792D1CB7B26800DE3125 /* CCNetworkRequest.swift in Sources */,
-				FA4220CA1CB8E6CF0065047E /* NSObject+Tools.swift in Sources */,
-				FA1479261CB7B26000DE3125 /* CCModel.m in Sources */,
-				FA14792C1CB7B26800DE3125 /* CCNetwork.swift in Sources */,
-				FA4220CF1CB8E6CF0065047E /* UIVIew+Tools.swift in Sources */,
-				FA4220D01CB8E6CF0065047E /* UIWebView+Tools.swift in Sources */,
-				FA4220C71CB8E6CF0065047E /* NSAttributedString+Tools.swift in Sources */,
-				FA4220C91CB8E6CF0065047E /* NSDictionary+Tools.swift in Sources */,
-				FA4220DB1CB8EFE00065047E /* Swift+Tools.swift in Sources */,
-				FA4220CB1CB8E6CF0065047E /* NSString+Tools.swift in Sources */,
-				FA4220D31CB8E70D0065047E /* UIColor+Tools.swift in Sources */,
-				FA4220D41CB8E70D0065047E /* UIImage+Tools.swift in Sources */,
+				FA05AC261CB920DF00B59AFE /* NSString+Tools.swift in Sources */,
+				FA05AC281CB920DF00B59AFE /* UIColor+Tools.swift in Sources */,
+				FA05AC311CB920E900B59AFE /* CCNetwork.swift in Sources */,
+				FA05AC231CB920DF00B59AFE /* NSData+Tools.swift in Sources */,
+				FA05AC291CB920DF00B59AFE /* UIImage+Tools.swift in Sources */,
+				FA05AC241CB920DF00B59AFE /* NSDictionary+Tools.swift in Sources */,
+				FA05AC271CB920DF00B59AFE /* Swift+Tools.swift in Sources */,
+				FA05AC2A1CB920DF00B59AFE /* UIVIew+Tools.swift in Sources */,
+				FA05AC2B1CB920DF00B59AFE /* UIWebView+Tools.swift in Sources */,
+				FA05AC221CB920DF00B59AFE /* NSAttributedString+Tools.swift in Sources */,
+				FA05AC251CB920DF00B59AFE /* NSObject+Tools.swift in Sources */,
+				FA05AC321CB920E900B59AFE /* CCNetworkRequest.swift in Sources */,
+				FA05AC301CB920E900B59AFE /* CCNetwork+Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA1478331CB7A11800DE3125 /* Sources */ = {
+		FA05ABF81CB920A100B59AFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA14783D1CB7A11800DE3125 /* CCKitTests.m in Sources */,
+				FA05AC021CB920A100B59AFE /* CCKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FA14783A1CB7A11800DE3125 /* PBXTargetDependency */ = {
+		FA05ABFF1CB920A100B59AFE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FA14782C1CB7A11800DE3125 /* CCKit */;
-			targetProxy = FA1478391CB7A11800DE3125 /* PBXContainerItemProxy */;
+			target = FA05ABF11CB920A100B59AFE /* CCKit */;
+			targetProxy = FA05ABFE1CB920A100B59AFE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		FA14783F1CB7A11800DE3125 /* Debug */ = {
+		FA05AC041CB920A100B59AFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -365,13 +344,14 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		FA1478401CB7A11800DE3125 /* Release */ = {
+		FA05AC051CB920A100B59AFE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -413,7 +393,7 @@
 			};
 			name = Release;
 		};
-		FA1478421CB7A11800DE3125 /* Debug */ = {
+		FA05AC071CB920A100B59AFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEFINES_MODULE = YES;
@@ -422,15 +402,15 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CCKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingsoung.CCKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
-		FA1478431CB7A11800DE3125 /* Release */ = {
+		FA05AC081CB920A100B59AFE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEFINES_MODULE = YES;
@@ -439,15 +419,15 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CCKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingsoung.CCKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
-		FA1478451CB7A11800DE3125 /* Debug */ = {
+		FA05AC0A1CB920A100B59AFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = CCKitTests/Info.plist;
@@ -457,7 +437,7 @@
 			};
 			name = Debug;
 		};
-		FA1478461CB7A11800DE3125 /* Release */ = {
+		FA05AC0B1CB920A100B59AFE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = CCKitTests/Info.plist;
@@ -470,34 +450,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA1478271CB7A11800DE3125 /* Build configuration list for PBXProject "CCKit" */ = {
+		FA05ABEC1CB920A100B59AFE /* Build configuration list for PBXProject "CCKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA14783F1CB7A11800DE3125 /* Debug */,
-				FA1478401CB7A11800DE3125 /* Release */,
+				FA05AC041CB920A100B59AFE /* Debug */,
+				FA05AC051CB920A100B59AFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA1478411CB7A11800DE3125 /* Build configuration list for PBXNativeTarget "CCKit" */ = {
+		FA05AC061CB920A100B59AFE /* Build configuration list for PBXNativeTarget "CCKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA1478421CB7A11800DE3125 /* Debug */,
-				FA1478431CB7A11800DE3125 /* Release */,
+				FA05AC071CB920A100B59AFE /* Debug */,
+				FA05AC081CB920A100B59AFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA1478441CB7A11800DE3125 /* Build configuration list for PBXNativeTarget "CCKitTests" */ = {
+		FA05AC091CB920A100B59AFE /* Build configuration list for PBXNativeTarget "CCKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA1478451CB7A11800DE3125 /* Debug */,
-				FA1478461CB7A11800DE3125 /* Release */,
+				FA05AC0A1CB920A100B59AFE /* Debug */,
+				FA05AC0B1CB920A100B59AFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FA1478241CB7A11800DE3125 /* Project object */;
+	rootObject = FA05ABE91CB920A100B59AFE /* Project object */;
 }
