@@ -2,9 +2,33 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CCKit/CCKit.xcodeproj">
+      location = "group:CCKit.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:DEMO/DEMO.xcodeproj">
-   </FileRef>
+   <Group
+      location = "group:DEMO"
+      name = "DEMO">
+      <FileRef
+         location = "group:DEMO.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:DEMOTests"
+         name = "DEMOTests">
+         <FileRef
+            location = "group:DEMOTests.m">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:DEMOUITests"
+         name = "DEMOUITests">
+         <FileRef
+            location = "group:DEMOUITests.m">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+   </Group>
 </Workspace>

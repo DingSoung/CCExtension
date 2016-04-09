@@ -101,6 +101,7 @@
 		FA1478BD1CB7A61000DE3125 = {
 			isa = PBXGroup;
 			children = (
+				FAC0C5501CB9332F0088C5A8 /* DEMO */,
 				FA05AC391CB9230000B59AFE /* CCKit.framework */,
 				FA1478C81CB7A61000DE3125 /* DEMO */,
 				FA1478E51CB7A61100DE3125 /* DEMOTests */,
@@ -160,6 +161,13 @@
 				FA1478F31CB7A61100DE3125 /* Info.plist */,
 			);
 			path = DEMOUITests;
+			sourceTree = "<group>";
+		};
+		FAC0C5501CB9332F0088C5A8 /* DEMO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DEMO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
