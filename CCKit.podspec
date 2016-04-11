@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
                      :tag => s.version }
 
   #s.source_files  = "CCKit/**/*.{swift}", "CCKit/**/**/*.{swift}"
+  s.source_files  = "CCKit/CCKit.h"
   s.author             = { "SongWen Ding" => "DingSoung@gmail.com" }
   s.license      = "MIT"
   s.homepage     = "https://github.com/DingSoung/CCKit"
