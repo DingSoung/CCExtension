@@ -4,10 +4,22 @@
 
 
 ### Usage
-way 1: download and add CCKit to your project
+way 1: download and add CCKit flore to your project, add <projectName>-Swift.h
 
-way 2: cocoaPod
+way 2: use cocoaPod
 
 ```
-pod 'CCKit'
+# Podfile
+platform :ios, '8.0'
+use_frameworks!
+
+target 'V2EX' do
+    pod 'CCKit'
+end
+
 ```
+
+```
+#import <CCKit/CCKit-Swift.h>
+```
+
