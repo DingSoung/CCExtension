@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import <CCKit/CCKit.h>
 #import <CCKit/CCKit-swift.h>
 
 @interface ViewController ()

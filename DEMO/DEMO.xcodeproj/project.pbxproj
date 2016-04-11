@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA05AC3A1CB9230000B59AFE /* CCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA05AC391CB9230000B59AFE /* CCKit.framework */; };
-		FA05AC3B1CB9230000B59AFE /* CCKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA05AC391CB9230000B59AFE /* CCKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA1478CB1CB7A61000DE3125 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1478CA1CB7A61000DE3125 /* main.m */; };
 		FA1478CE1CB7A61000DE3125 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1478CD1CB7A61000DE3125 /* AppDelegate.m */; };
 		FA1478D11CB7A61000DE3125 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1478D01CB7A61000DE3125 /* ViewController.m */; };
@@ -18,6 +16,7 @@
 		FA1478DC1CB7A61000DE3125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1478DA1CB7A61000DE3125 /* LaunchScreen.storyboard */; };
 		FA1478E71CB7A61100DE3125 /* DEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1478E61CB7A61100DE3125 /* DEMOTests.m */; };
 		FA1478F21CB7A61100DE3125 /* DEMOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1478F11CB7A61100DE3125 /* DEMOUITests.m */; };
+		FAC0C5841CBB9D8D0088C5A8 /* CCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC0C5831CBB9D8D0088C5A8 /* CCKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +43,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FA05AC3B1CB9230000B59AFE /* CCKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,7 +50,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FA05AC391CB9230000B59AFE /* CCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CCKit.framework; path = "/Users/Alex/Library/Developer/Xcode/DerivedData/CCKit-aciaquycqvhzjzdikcuirezeytsj/Build/Products/Debug-iphonesimulator/CCKit.framework"; sourceTree = "<absolute>"; };
 		FA1478C61CB7A61000DE3125 /* DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1478CA1CB7A61000DE3125 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA1478CC1CB7A61000DE3125 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +67,7 @@
 		FA1478ED1CB7A61100DE3125 /* DEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1478F11CB7A61100DE3125 /* DEMOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEMOUITests.m; sourceTree = "<group>"; };
 		FA1478F31CB7A61100DE3125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC0C5831CBB9D8D0088C5A8 /* CCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CCKit.framework; path = "../build/Debug-iphoneos/CCKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA05AC3A1CB9230000B59AFE /* CCKit.framework in Frameworks */,
+				FAC0C5841CBB9D8D0088C5A8 /* CCKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,8 +99,7 @@
 		FA1478BD1CB7A61000DE3125 = {
 			isa = PBXGroup;
 			children = (
-				FAC0C5501CB9332F0088C5A8 /* DEMO */,
-				FA05AC391CB9230000B59AFE /* CCKit.framework */,
+				FAC0C5831CBB9D8D0088C5A8 /* CCKit.framework */,
 				FA1478C81CB7A61000DE3125 /* DEMO */,
 				FA1478E51CB7A61100DE3125 /* DEMOTests */,
 				FA1478F01CB7A61100DE3125 /* DEMOUITests */,
@@ -161,13 +158,6 @@
 				FA1478F31CB7A61100DE3125 /* Info.plist */,
 			);
 			path = DEMOUITests;
-			sourceTree = "<group>";
-		};
-		FAC0C5501CB9332F0088C5A8 /* DEMO */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = DEMO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
