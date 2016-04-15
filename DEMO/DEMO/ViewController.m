@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "DEMO-Swift.h"
 
 @interface ViewController ()
-
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end
 
 @implementation ViewController
@@ -17,8 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    
+    self.imageView.image = [UIImage imageNamed:@"image"].roundImage;
 }
 
 - (void)didReceiveMemoryWarning {
