@@ -24,6 +24,15 @@
     } fail:^(NSError *error) {
         NSLog(@"%@", error.domain);
     }];
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 100)];
+    [self.view addSubview:imageView];
+    __weak typeof(imageView) weakImageView = imageView;
+    [imageView setImageVithPDF:@"Group" size:imageView.bounds.size pageIndex:1 success:^(UIImage *image) {
+        weakImageView.image = image.roundImage;
+    } fail:^(NSError * error) {
+        NSLog(@"%@",error);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
