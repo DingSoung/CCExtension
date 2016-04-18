@@ -3,58 +3,44 @@
  A collection Extension for quick developing
 
 ### Usage
-download and add the floder to your project
-include Extension-Header.h to you public header
-
+download and add CCExtension to your project
+```
+#imclude "ProjectName-Swift.h"
+```
 
 ### Extension list (not complete)
-
-* Int+Tools
-  * hexString
+* NSAttributedString
+  * height with font at limit width
+  * width with font at limit height
 
 * NSData+Tools   
-  * json data to dictionary
-  * MD5
-  * SHA1
-  * hexString
-  * checksum
-  * arrayOfBytes
-  * toHexString
-  * withBytes
+  * jsonObject convert to jsonObject
 
 * NSDictionary+Tools
-  * dictionary to string
-
-* NSMutableData+Tools
-  * Convenient way to append bytes
+  * convert to json String
 
 * NSObject+Tools
  * Json String to model
  * Json Dict to model
- * run code cblock, mutithread, seprate var
- * swep
-
+  
 * String+Tools
-  * floatValue
-  * md5
-  * hexString
-  * MD5
-  * SHA1
-  * isMobileNumber check is monile number
-  * isIDCard check is ID
+  * isPRCMobileNumber check is monile number
+  * isPRCIDNumber check is ID
+  * lenght of string includ Chinese UTF8
+  * height with font at limit width
 
 * UIColor+Tools
-  * hexInt
+  * init with hex8
+  * components get R G B A
 
-* UIImageView+Tools
-  * imageScale  scale Image
-  * setImageScaled scale Image to target size
+* UIImage+Tools
+  * get scale (to target rato or size)
+  * get image with Corner Radius (core graph, much higher performance than layer corner radius)
 
 * UIWebView+Tools
-  * JS Extension
+  * async or sync run javaScript code in webView context
+  * add target for the javaScript in webView
 
 * UIVIew+Tools
   * setShadow
   * addFullScreemView
-
- 
