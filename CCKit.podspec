@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CCKit"
-  s.version      = "0.1.2"
+  s.version      = "0.2.0"
   s.summary      = "A light weight framework"
   s.description  = <<-DESC
                    A Kit of Extension and Network for iOS.
