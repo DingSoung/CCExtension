@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE51CF591CC4815C006D7343 /* CCPDFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51CF571CC4815C006D7343 /* CCPDFImage.swift */; };
+		CE51CF5A1CC4815C006D7343 /* UIImageView+PDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51CF581CC4815C006D7343 /* UIImageView+PDF.swift */; };
 		FA05ABF61CB920A100B59AFE /* CCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FA05ABF51CB920A100B59AFE /* CCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA05ABFD1CB920A100B59AFE /* CCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA05ABF21CB920A100B59AFE /* CCKit.framework */; };
 		FA05AC021CB920A100B59AFE /* CCKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05AC011CB920A100B59AFE /* CCKitTests.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE51CF571CC4815C006D7343 /* CCPDFImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCPDFImage.swift; sourceTree = "<group>"; };
+		CE51CF581CC4815C006D7343 /* UIImageView+PDF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+PDF.swift"; sourceTree = "<group>"; };
 		FA05ABF21CB920A100B59AFE /* CCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CCKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA05ABF51CB920A100B59AFE /* CCKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCKit.h; sourceTree = "<group>"; };
 		FA05ABF71CB920A100B59AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE51CF561CC4815C006D7343 /* CCPDFImage */ = {
+			isa = PBXGroup;
+			children = (
+				CE51CF571CC4815C006D7343 /* CCPDFImage.swift */,
+				CE51CF581CC4815C006D7343 /* UIImageView+PDF.swift */,
+			);
+			path = CCPDFImage;
+			sourceTree = "<group>";
+		};
 		FA05ABE81CB920A100B59AFE = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +113,7 @@
 		FA05ABF41CB920A100B59AFE /* CCKit */ = {
 			isa = PBXGroup;
 			children = (
+				CE51CF561CC4815C006D7343 /* CCPDFImage */,
 				FAC0C5381CB9295F0088C5A8 /* CCExtension */,
 				FAC0C5311CB929550088C5A8 /* CCNetwork */,
 				FA05ABF51CB920A100B59AFE /* CCKit.h */,
@@ -277,6 +291,8 @@
 				FAC0C5491CB9295F0088C5A8 /* NSString+Tools.swift in Sources */,
 				FAC0C54D1CB9295F0088C5A8 /* UIVIew+Tools.swift in Sources */,
 				FAC0C54C1CB9295F0088C5A8 /* UIImage+Tools.swift in Sources */,
+				CE51CF591CC4815C006D7343 /* CCPDFImage.swift in Sources */,
+				CE51CF5A1CC4815C006D7343 /* UIImageView+PDF.swift in Sources */,
 				FAC0C5361CB929550088C5A8 /* CCNetwork.swift in Sources */,
 				FAC0C5481CB9295F0088C5A8 /* NSObject+Tools.swift in Sources */,
 				FAC0C5471CB9295F0088C5A8 /* NSDictionary+Tools.swift in Sources */,
