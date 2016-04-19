@@ -6,43 +6,74 @@
 //  Copyright © 2016 Alex. All rights reserved.
 //
 
+
+
 /*
- refrense 
- http://nshipster.com/associated-objects/
- http://stackoverflow.com/questions/25426780/swift-extension-stored-properties-alternative
+ extension store property via objc runtime Associated Objects http://nshipster.com/swift-objc-runtime/
+ closure to anyobject http://stackoverflow.com/questions/28211973/swift-closure-as-anyobject
  */
 
 import UIKit
 
 import ObjectiveC
-private var cc_refreshBlockAssociationKey: UInt8 = 0
 
 extension UIScrollView {
     
-    public var cc_refreshBlock:NSObject? {
+    private struct cc_refreshAssociatedKeys {
+        static var cc_refreshControl = "cc_refreshControl"
+        static var cc_refreshClosure = "cc_refreshClosure"
+    }
+    
+    public func cc_refreashInit() {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(UIScrollView.cc_refreshControlAction), forControlEvents: UIControlEvents.ValueChanged)
+        objc_setAssociatedObject(self,
+                                 &cc_refreshAssociatedKeys.cc_refreshControl,
+                                 refreshControl,
+                                 objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+    }
+    public var cc_refreshControl: UIRefreshControl? {
         get {
-            return objc_getAssociatedObject(self, &cc_refreshBlockAssociationKey) as? NSObject
+            guard let refreashControl  = objc_getAssociatedObject(self, &cc_refreshAssociatedKeys.cc_refreshControl) as? UIRefreshControl else {
+                return nil
+            }
+            return refreashControl
         }
-        set(newValue) {
-            objc_setAssociatedObject(self, &cc_refreshBlockAssociationKey, cc_refreshBlock, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+        set {
+            if let value = newValue {
+                objc_setAssociatedObject(self,
+                                         &cc_refreshAssociatedKeys.cc_refreshControl,
+                                         value,
+                                         objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            } else {
+                objc_removeAssociatedObjects(self) // clear all
+            }
         }
     }
     
-    public var cc_refreshControl:UIRefreshControl? {
-        if (self.cc_refreshControl != nil) {
-            return self.cc_refreshControl
-        } else {
-            let refreshControl = UIRefreshControl()
-            refreshControl.addTarget(self, action: #selector(UIScrollView.cc_refreshControlAction), forControlEvents: UIControlEvents.ValueChanged)
-            return refreshControl
+    private typealias cc_ConventionBlock = @convention(block) ()->()
+    public var cc_refreshClosure: (()->())? {
+        get {
+            let closureObject = objc_getAssociatedObject(self, &cc_refreshAssociatedKeys.cc_refreshClosure)
+            let closure =  unsafeBitCast(closureObject, cc_ConventionBlock.self)
+            return closure as ()->()
+        }
+        set {
+            if let closure = newValue {
+                let closureObject = unsafeBitCast(closure as cc_ConventionBlock, AnyObject.self)
+                objc_setAssociatedObject(self,
+                                         &cc_refreshAssociatedKeys.cc_refreshClosure,
+                                         closureObject,
+                                         objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC
+                )
+            }
         }
     }
     
     @objc private func cc_refreshControlAction() {
-        //self.cc_refreshBlock?()
+        self.cc_refreshClosure?()
     }
     
     //self.cc_refreshControl?.beginRefreshing()
     //self.refreshControl?.endRefreshing()
-    
 }
