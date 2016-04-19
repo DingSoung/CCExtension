@@ -26,7 +26,7 @@
     
     [self.tableView cc_refreashInit];
     self.tableView.cc_refreshClosure = ^ {
-        NSLog(@"table view freash");
+        NSLog(@"-------table view freash");
     };
     
     self.tableView.delegate = self;
@@ -38,7 +38,12 @@
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
-    self.tableView.frame = CGRectMake(0, 50, self.view.bounds.size.width, 300);
+    self.tableView.frame = CGRectMake(0, 300, self.view.bounds.size.width, 100);
+    
+    NSLog(@"  %@", self.tableView.cc_refreshControl);
+    NSLog(@"  %@", self.tableView.cc_refreshClosure);
+    
+    self.tableView.cc_refreshClosure();
     [self.tableView.cc_refreshControl beginRefreshing];
 }
 

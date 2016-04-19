@@ -26,7 +26,7 @@ extension UIScrollView {
     
     public func cc_refreashInit() {
         let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: #selector(UIScrollView.cc_refreshControlAction), forControlEvents: UIControlEvents.ValueChanged)
+        refreshControl.addTarget(self, action: #selector(self.cc_refreshControlAction), forControlEvents: UIControlEvents.ValueChanged)
         objc_setAssociatedObject(self,
                                  &cc_refreshAssociatedKeys.cc_refreshControl,
                                  refreshControl,
@@ -70,7 +70,7 @@ extension UIScrollView {
         }
     }
     
-    @objc private func cc_refreshControlAction() {
+    func cc_refreshControlAction() {
         self.cc_refreshClosure?()
     }
     
