@@ -64,6 +64,13 @@ extension NSString {
         return boundingBox.height
     }
     
+    /// width for limit height with font
+    public func widthWithConstrainedHeight(height: CGFloat, font: UIFont) -> CGFloat {
+        let constraintRect = CGSize(width: CGFloat.max, height: height)
+        let boundingBox = self.boundingRectWithSize(constraintRect, options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
+        return boundingBox.width
+    }
+    
     /// check is mobile phone number
     public var isPRCMobileNumber: Bool {
         //前缀0 86 17951 或者没有  中间13* 15* 17* 145 147 后加8个0～9的数
