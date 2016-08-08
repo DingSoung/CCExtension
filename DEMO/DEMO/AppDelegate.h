@@ -2,23 +2,15 @@
 //  AppDelegate.h
 //  DEMO
 //
-//  Created by Alex D. on 4/8/16.
-//  Copyright © 2016 ifnil. All rights reserved.
+//  Created by Songwen Ding on 8/8/16.
+//  Copyright © 2016 DingSong. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreData/CoreData.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-
-- (void)saveContext;
-- (NSURL *)applicationDocumentsDirectory;
 
 
 @end

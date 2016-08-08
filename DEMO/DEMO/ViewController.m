@@ -2,14 +2,15 @@
 //  ViewController.m
 //  DEMO
 //
-//  Created by Alex D. on 4/8/16.
-//  Copyright © 2016 ifnil. All rights reserved.
+//  Created by Songwen Ding on 8/8/16.
+//  Copyright © 2016 DingSong. All rights reserved.
 //
 
 #import "ViewController.h"
-#import <CCKit/CCKit-swift.h>
+#import <CCKit/CCKit-Swift.h>
 
 @interface ViewController ()
+
 @end
 
 @implementation ViewController
@@ -27,11 +28,10 @@
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 100)];
     [self.view addSubview:imageView];
+    
     __weak typeof(imageView) weakImageView = imageView;
-    [imageView setImageVithPDF:@"Group" size:imageView.bounds.size pageIndex:1 success:^(UIImage *image) {
-        weakImageView.image = image.roundImage;
-    } fail:^(NSError * error) {
-        NSLog(@"%@",error);
+    [[CCPDFImage instance] asyncGetImage:@"Group" bundle:[NSBundle mainBundle] page:1 size:imageView.bounds.size mainQueueBlock:^(UIImage * _Nullable image) {
+        weakImageView.image = image;
     }];
 }
 
