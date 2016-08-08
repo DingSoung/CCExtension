@@ -3,7 +3,7 @@
 //  DEMO
 //
 //  Created by Songwen Ding on 3/7/16.
-//  Copyright © 2016 ifnil All rights reserved.
+//  Copyright © 2016 DingSoung. All rights reserved.
 //
 
 #import "AppDelegate.h"

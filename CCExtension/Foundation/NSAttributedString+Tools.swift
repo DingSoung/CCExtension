@@ -2,8 +2,8 @@
 //  NSAttributedString+Tools.swift
 //  CCKit
 //
-//  Created by Alex D. on 4/9/16.
-//  Copyright © 2016 ifnil. All rights reserved.
+//  Created by Songwen Ding on 4/9/16.
+//  Copyright © 2016 DingSoung. All rights reserved.
 //
 
 import Foundation

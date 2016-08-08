@@ -3,7 +3,7 @@
 //  GiftBox
 //
 //  Created by Songwen Ding on 15/6/6.
-//  Copyright (c) 2015年 ifnil All rights reserved.
+//  Copyright (c) 2015年 DingSoung. All rights reserved.
 //
 
 import Foundation
