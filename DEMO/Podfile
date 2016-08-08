@@ -3,5 +3,5 @@ platform :ios, '8.0'
 use_frameworks!
 
 target ‘DEMO’ do
-pod 'CCKit' 0.3.1
+pod 'CCKit' 0.3.2
 end
