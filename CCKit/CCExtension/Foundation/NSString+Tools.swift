@@ -3,7 +3,7 @@
 //  DEMO
 //
 //  Created by Songwen Ding on 12/15/15.
-//  Copyright © 2015 ifnil All rights reserved.
+//  Copyright © 2015 DingSoung. All rights reserved.
 //
 
 import Foundation
@@ -62,6 +62,13 @@ extension NSString {
         let constraintRect = CGSize(width: width, height: CGFloat.max)
         let boundingBox = self.boundingRectWithSize(constraintRect, options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
         return boundingBox.height
+    }
+    
+    /// width for limit height with font
+    public func widthWithConstrainedHeight(height: CGFloat, font: UIFont) -> CGFloat {
+        let constraintRect = CGSize(width: CGFloat.max, height: height)
+        let boundingBox = self.boundingRectWithSize(constraintRect, options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
+        return boundingBox.width
     }
     
     /// check is mobile phone number

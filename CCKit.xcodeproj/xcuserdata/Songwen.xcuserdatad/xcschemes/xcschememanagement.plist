@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Aggregate.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>CCKit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>CEA190AF1D58C38100FAC073</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>FA05ABF11CB920A100B59AFE</key>
 		<dict>
 			<key>primary</key>

@@ -6,25 +6,41 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		CEA190AF1D58C38100FAC073 /* Aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CEA190B01D58C38100FAC073 /* Build configuration list for PBXAggregateTarget "Aggregate" */;
+			buildPhases = (
+				CEA190B31D58C3AE00FAC073 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Aggregate;
+			productName = Aggregate;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		CE51CF591CC4815C006D7343 /* CCPDFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51CF571CC4815C006D7343 /* CCPDFImage.swift */; };
-		CE51CF5A1CC4815C006D7343 /* UIImageView+PDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51CF581CC4815C006D7343 /* UIImageView+PDF.swift */; };
+		CEA1909E1D58C23C00FAC073 /* NSAttributedString+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA190881D58C23C00FAC073 /* NSAttributedString+Tools.swift */; };
+		CEA1909F1D58C23C00FAC073 /* NSData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA190891D58C23C00FAC073 /* NSData+Tools.swift */; };
+		CEA190A01D58C23C00FAC073 /* NSDictionary+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1908A1D58C23C00FAC073 /* NSDictionary+Tools.swift */; };
+		CEA190A11D58C23C00FAC073 /* NSObject+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1908B1D58C23C00FAC073 /* NSObject+Tools.swift */; };
+		CEA190A21D58C23C00FAC073 /* NSString+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1908C1D58C23C00FAC073 /* NSString+Tools.swift */; };
+		CEA190A31D58C23C00FAC073 /* Swift+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1908D1D58C23C00FAC073 /* Swift+Tools.swift */; };
+		CEA190A41D58C23C00FAC073 /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1908F1D58C23C00FAC073 /* UIColor+Tools.swift */; };
+		CEA190A51D58C23C00FAC073 /* UIImage+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA190901D58C23C00FAC073 /* UIImage+Tools.swift */; };
+		CEA190A61D58C23C00FAC073 /* UINavigationController+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA190911D58C23C00FAC073 /* UINavigationController+Tools.swift */; };
+		CEA190A71D58C23C00FAC073 /* UIScrollView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA190921D58C23C00FAC073 /* UIScrollView+Tools.swift */; };
+		CEA190A81D58C23C00FAC073 /* UIVIew+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA190931D58C23C00FAC073 /* UIVIew+Tools.swift */; };
+		CEA190A91D58C23C00FAC073 /* UIWebView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA190941D58C23C00FAC073 /* UIWebView+Tools.swift */; };
+		CEA190AA1D58C23C00FAC073 /* CCNetwork+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA190961D58C23C00FAC073 /* CCNetwork+Tools.swift */; };
+		CEA190AB1D58C23C00FAC073 /* CCNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA190971D58C23C00FAC073 /* CCNetwork.swift */; };
+		CEA190AC1D58C23C00FAC073 /* CCPDFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA190991D58C23C00FAC073 /* CCPDFImage.swift */; };
+		CEA190AD1D58C23C00FAC073 /* WJHexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1909B1D58C23C00FAC073 /* WJHexColor.swift */; };
+		CEA190AE1D58C23C00FAC073 /* WJLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1909D1D58C23C00FAC073 /* WJLocalization.swift */; };
 		FA05ABF61CB920A100B59AFE /* CCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FA05ABF51CB920A100B59AFE /* CCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA05ABFD1CB920A100B59AFE /* CCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA05ABF21CB920A100B59AFE /* CCKit.framework */; };
 		FA05AC021CB920A100B59AFE /* CCKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05AC011CB920A100B59AFE /* CCKitTests.swift */; };
-		FAC0C5351CB929550088C5A8 /* CCNetwork+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0C5321CB929550088C5A8 /* CCNetwork+Tools.swift */; };
-		FAC0C5361CB929550088C5A8 /* CCNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0C5331CB929550088C5A8 /* CCNetwork.swift */; };
-		FAC0C5371CB929550088C5A8 /* CCNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0C5341CB929550088C5A8 /* CCNetworkRequest.swift */; };
-		FAC0C5451CB9295F0088C5A8 /* NSAttributedString+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0C53A1CB9295F0088C5A8 /* NSAttributedString+Tools.swift */; };
-		FAC0C5461CB9295F0088C5A8 /* NSData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0C53B1CB9295F0088C5A8 /* NSData+Tools.swift */; };
-		FAC0C5471CB9295F0088C5A8 /* NSDictionary+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0C53C1CB9295F0088C5A8 /* NSDictionary+Tools.swift */; };
-		FAC0C5481CB9295F0088C5A8 /* NSObject+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0C53D1CB9295F0088C5A8 /* NSObject+Tools.swift */; };
-		FAC0C5491CB9295F0088C5A8 /* NSString+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0C53E1CB9295F0088C5A8 /* NSString+Tools.swift */; };
-		FAC0C54A1CB9295F0088C5A8 /* Swift+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0C53F1CB9295F0088C5A8 /* Swift+Tools.swift */; };
-		FAC0C54B1CB9295F0088C5A8 /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0C5411CB9295F0088C5A8 /* UIColor+Tools.swift */; };
-		FAC0C54C1CB9295F0088C5A8 /* UIImage+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0C5421CB9295F0088C5A8 /* UIImage+Tools.swift */; };
-		FAC0C54D1CB9295F0088C5A8 /* UIVIew+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0C5431CB9295F0088C5A8 /* UIVIew+Tools.swift */; };
-		FAC0C54E1CB9295F0088C5A8 /* UIWebView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0C5441CB9295F0088C5A8 /* UIWebView+Tools.swift */; };
 		FAC6337D1CBD0D82006110DF /* CCKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FAC6337C1CBD0D82006110DF /* CCKit.podspec */; };
 /* End PBXBuildFile section */
 
@@ -39,27 +55,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CE51CF571CC4815C006D7343 /* CCPDFImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCPDFImage.swift; sourceTree = "<group>"; };
-		CE51CF581CC4815C006D7343 /* UIImageView+PDF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+PDF.swift"; sourceTree = "<group>"; };
+		CEA190881D58C23C00FAC073 /* NSAttributedString+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Tools.swift"; sourceTree = "<group>"; };
+		CEA190891D58C23C00FAC073 /* NSData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Tools.swift"; sourceTree = "<group>"; };
+		CEA1908A1D58C23C00FAC073 /* NSDictionary+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+Tools.swift"; sourceTree = "<group>"; };
+		CEA1908B1D58C23C00FAC073 /* NSObject+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Tools.swift"; sourceTree = "<group>"; };
+		CEA1908C1D58C23C00FAC073 /* NSString+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Tools.swift"; sourceTree = "<group>"; };
+		CEA1908D1D58C23C00FAC073 /* Swift+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Tools.swift"; sourceTree = "<group>"; };
+		CEA1908F1D58C23C00FAC073 /* UIColor+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
+		CEA190901D58C23C00FAC073 /* UIImage+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Tools.swift"; sourceTree = "<group>"; };
+		CEA190911D58C23C00FAC073 /* UINavigationController+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Tools.swift"; sourceTree = "<group>"; };
+		CEA190921D58C23C00FAC073 /* UIScrollView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Tools.swift"; sourceTree = "<group>"; };
+		CEA190931D58C23C00FAC073 /* UIVIew+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+Tools.swift"; sourceTree = "<group>"; };
+		CEA190941D58C23C00FAC073 /* UIWebView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+Tools.swift"; sourceTree = "<group>"; };
+		CEA190961D58C23C00FAC073 /* CCNetwork+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CCNetwork+Tools.swift"; sourceTree = "<group>"; };
+		CEA190971D58C23C00FAC073 /* CCNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCNetwork.swift; sourceTree = "<group>"; };
+		CEA190991D58C23C00FAC073 /* CCPDFImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCPDFImage.swift; sourceTree = "<group>"; };
+		CEA1909B1D58C23C00FAC073 /* WJHexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJHexColor.swift; sourceTree = "<group>"; };
+		CEA1909D1D58C23C00FAC073 /* WJLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJLocalization.swift; sourceTree = "<group>"; };
 		FA05ABF21CB920A100B59AFE /* CCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CCKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA05ABF51CB920A100B59AFE /* CCKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCKit.h; sourceTree = "<group>"; };
 		FA05ABF71CB920A100B59AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA05ABFC1CB920A100B59AFE /* CCKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA05AC011CB920A100B59AFE /* CCKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCKitTests.swift; sourceTree = "<group>"; };
 		FA05AC031CB920A100B59AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAC0C5321CB929550088C5A8 /* CCNetwork+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CCNetwork+Tools.swift"; sourceTree = "<group>"; };
-		FAC0C5331CB929550088C5A8 /* CCNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCNetwork.swift; sourceTree = "<group>"; };
-		FAC0C5341CB929550088C5A8 /* CCNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCNetworkRequest.swift; sourceTree = "<group>"; };
-		FAC0C53A1CB9295F0088C5A8 /* NSAttributedString+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Tools.swift"; sourceTree = "<group>"; };
-		FAC0C53B1CB9295F0088C5A8 /* NSData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Tools.swift"; sourceTree = "<group>"; };
-		FAC0C53C1CB9295F0088C5A8 /* NSDictionary+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+Tools.swift"; sourceTree = "<group>"; };
-		FAC0C53D1CB9295F0088C5A8 /* NSObject+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Tools.swift"; sourceTree = "<group>"; };
-		FAC0C53E1CB9295F0088C5A8 /* NSString+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Tools.swift"; sourceTree = "<group>"; };
-		FAC0C53F1CB9295F0088C5A8 /* Swift+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Tools.swift"; sourceTree = "<group>"; };
-		FAC0C5411CB9295F0088C5A8 /* UIColor+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
-		FAC0C5421CB9295F0088C5A8 /* UIImage+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Tools.swift"; sourceTree = "<group>"; };
-		FAC0C5431CB9295F0088C5A8 /* UIVIew+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+Tools.swift"; sourceTree = "<group>"; };
-		FAC0C5441CB9295F0088C5A8 /* UIWebView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+Tools.swift"; sourceTree = "<group>"; };
 		FAC6337C1CBD0D82006110DF /* CCKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CCKit.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,13 +100,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE51CF561CC4815C006D7343 /* CCPDFImage */ = {
+		CEA190861D58C23C00FAC073 /* CCExtension */ = {
 			isa = PBXGroup;
 			children = (
-				CE51CF571CC4815C006D7343 /* CCPDFImage.swift */,
-				CE51CF581CC4815C006D7343 /* UIImageView+PDF.swift */,
+				CEA190871D58C23C00FAC073 /* Foundation */,
+				CEA1908D1D58C23C00FAC073 /* Swift+Tools.swift */,
+				CEA1908E1D58C23C00FAC073 /* UIKit */,
+			);
+			path = CCExtension;
+			sourceTree = "<group>";
+		};
+		CEA190871D58C23C00FAC073 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				CEA190881D58C23C00FAC073 /* NSAttributedString+Tools.swift */,
+				CEA190891D58C23C00FAC073 /* NSData+Tools.swift */,
+				CEA1908A1D58C23C00FAC073 /* NSDictionary+Tools.swift */,
+				CEA1908B1D58C23C00FAC073 /* NSObject+Tools.swift */,
+				CEA1908C1D58C23C00FAC073 /* NSString+Tools.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		CEA1908E1D58C23C00FAC073 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				CEA1908F1D58C23C00FAC073 /* UIColor+Tools.swift */,
+				CEA190901D58C23C00FAC073 /* UIImage+Tools.swift */,
+				CEA190911D58C23C00FAC073 /* UINavigationController+Tools.swift */,
+				CEA190921D58C23C00FAC073 /* UIScrollView+Tools.swift */,
+				CEA190931D58C23C00FAC073 /* UIVIew+Tools.swift */,
+				CEA190941D58C23C00FAC073 /* UIWebView+Tools.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		CEA190951D58C23C00FAC073 /* CCNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				CEA190961D58C23C00FAC073 /* CCNetwork+Tools.swift */,
+				CEA190971D58C23C00FAC073 /* CCNetwork.swift */,
+			);
+			path = CCNetwork;
+			sourceTree = "<group>";
+		};
+		CEA190981D58C23C00FAC073 /* CCPDFImage */ = {
+			isa = PBXGroup;
+			children = (
+				CEA190991D58C23C00FAC073 /* CCPDFImage.swift */,
 			);
 			path = CCPDFImage;
+			sourceTree = "<group>";
+		};
+		CEA1909A1D58C23C00FAC073 /* WJHexColor */ = {
+			isa = PBXGroup;
+			children = (
+				CEA1909B1D58C23C00FAC073 /* WJHexColor.swift */,
+			);
+			path = WJHexColor;
+			sourceTree = "<group>";
+		};
+		CEA1909C1D58C23C00FAC073 /* WJLocalization */ = {
+			isa = PBXGroup;
+			children = (
+				CEA1909D1D58C23C00FAC073 /* WJLocalization.swift */,
+			);
+			path = WJLocalization;
 			sourceTree = "<group>";
 		};
 		FA05ABE81CB920A100B59AFE = {
@@ -113,9 +190,11 @@
 		FA05ABF41CB920A100B59AFE /* CCKit */ = {
 			isa = PBXGroup;
 			children = (
-				CE51CF561CC4815C006D7343 /* CCPDFImage */,
-				FAC0C5381CB9295F0088C5A8 /* CCExtension */,
-				FAC0C5311CB929550088C5A8 /* CCNetwork */,
+				CEA190861D58C23C00FAC073 /* CCExtension */,
+				CEA190951D58C23C00FAC073 /* CCNetwork */,
+				CEA190981D58C23C00FAC073 /* CCPDFImage */,
+				CEA1909A1D58C23C00FAC073 /* WJHexColor */,
+				CEA1909C1D58C23C00FAC073 /* WJLocalization */,
 				FA05ABF51CB920A100B59AFE /* CCKit.h */,
 				FA05ABF71CB920A100B59AFE /* Info.plist */,
 			);
@@ -129,49 +208,6 @@
 				FA05AC031CB920A100B59AFE /* Info.plist */,
 			);
 			path = CCKitTests;
-			sourceTree = "<group>";
-		};
-		FAC0C5311CB929550088C5A8 /* CCNetwork */ = {
-			isa = PBXGroup;
-			children = (
-				FAC0C5321CB929550088C5A8 /* CCNetwork+Tools.swift */,
-				FAC0C5331CB929550088C5A8 /* CCNetwork.swift */,
-				FAC0C5341CB929550088C5A8 /* CCNetworkRequest.swift */,
-			);
-			path = CCNetwork;
-			sourceTree = "<group>";
-		};
-		FAC0C5381CB9295F0088C5A8 /* CCExtension */ = {
-			isa = PBXGroup;
-			children = (
-				FAC0C5391CB9295F0088C5A8 /* Foundation */,
-				FAC0C53F1CB9295F0088C5A8 /* Swift+Tools.swift */,
-				FAC0C5401CB9295F0088C5A8 /* UIKit */,
-			);
-			path = CCExtension;
-			sourceTree = "<group>";
-		};
-		FAC0C5391CB9295F0088C5A8 /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				FAC0C53A1CB9295F0088C5A8 /* NSAttributedString+Tools.swift */,
-				FAC0C53B1CB9295F0088C5A8 /* NSData+Tools.swift */,
-				FAC0C53C1CB9295F0088C5A8 /* NSDictionary+Tools.swift */,
-				FAC0C53D1CB9295F0088C5A8 /* NSObject+Tools.swift */,
-				FAC0C53E1CB9295F0088C5A8 /* NSString+Tools.swift */,
-			);
-			path = Foundation;
-			sourceTree = "<group>";
-		};
-		FAC0C5401CB9295F0088C5A8 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				FAC0C5411CB9295F0088C5A8 /* UIColor+Tools.swift */,
-				FAC0C5421CB9295F0088C5A8 /* UIImage+Tools.swift */,
-				FAC0C5431CB9295F0088C5A8 /* UIVIew+Tools.swift */,
-				FAC0C5441CB9295F0088C5A8 /* UIWebView+Tools.swift */,
-			);
-			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +270,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = ifnil;
 				TargetAttributes = {
+					CEA190AF1D58C38100FAC073 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					FA05ABF11CB920A100B59AFE = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -256,6 +295,7 @@
 			targets = (
 				FA05ABF11CB920A100B59AFE /* CCKit */,
 				FA05ABFB1CB920A100B59AFE /* CCKitTests */,
+				CEA190AF1D58C38100FAC073 /* Aggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -278,26 +318,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CEA190B31D58C3AE00FAC073 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FMK_NAME=${PROJECT_NAME}\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n# -configuration ${CONFIGURATION}\n# Clean and Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\nmkdir -p \"${INSTALL_DIR}\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\nrm -r \"${WRK_DIR}\"\nopen \"${INSTALL_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA05ABED1CB920A100B59AFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC0C5371CB929550088C5A8 /* CCNetworkRequest.swift in Sources */,
-				FAC0C54B1CB9295F0088C5A8 /* UIColor+Tools.swift in Sources */,
-				FAC0C5461CB9295F0088C5A8 /* NSData+Tools.swift in Sources */,
-				FAC0C5451CB9295F0088C5A8 /* NSAttributedString+Tools.swift in Sources */,
-				FAC0C54A1CB9295F0088C5A8 /* Swift+Tools.swift in Sources */,
-				FAC0C5491CB9295F0088C5A8 /* NSString+Tools.swift in Sources */,
-				FAC0C54D1CB9295F0088C5A8 /* UIVIew+Tools.swift in Sources */,
-				FAC0C54C1CB9295F0088C5A8 /* UIImage+Tools.swift in Sources */,
-				CE51CF591CC4815C006D7343 /* CCPDFImage.swift in Sources */,
-				CE51CF5A1CC4815C006D7343 /* UIImageView+PDF.swift in Sources */,
-				FAC0C5361CB929550088C5A8 /* CCNetwork.swift in Sources */,
-				FAC0C5481CB9295F0088C5A8 /* NSObject+Tools.swift in Sources */,
-				FAC0C5471CB9295F0088C5A8 /* NSDictionary+Tools.swift in Sources */,
-				FAC0C54E1CB9295F0088C5A8 /* UIWebView+Tools.swift in Sources */,
-				FAC0C5351CB929550088C5A8 /* CCNetwork+Tools.swift in Sources */,
+				CEA190AD1D58C23C00FAC073 /* WJHexColor.swift in Sources */,
+				CEA190AA1D58C23C00FAC073 /* CCNetwork+Tools.swift in Sources */,
+				CEA190A21D58C23C00FAC073 /* NSString+Tools.swift in Sources */,
+				CEA190A41D58C23C00FAC073 /* UIColor+Tools.swift in Sources */,
+				CEA1909F1D58C23C00FAC073 /* NSData+Tools.swift in Sources */,
+				CEA190A71D58C23C00FAC073 /* UIScrollView+Tools.swift in Sources */,
+				CEA190A51D58C23C00FAC073 /* UIImage+Tools.swift in Sources */,
+				CEA190A01D58C23C00FAC073 /* NSDictionary+Tools.swift in Sources */,
+				CEA190A31D58C23C00FAC073 /* Swift+Tools.swift in Sources */,
+				CEA190AB1D58C23C00FAC073 /* CCNetwork.swift in Sources */,
+				CEA190A81D58C23C00FAC073 /* UIVIew+Tools.swift in Sources */,
+				CEA1909E1D58C23C00FAC073 /* NSAttributedString+Tools.swift in Sources */,
+				CEA190A11D58C23C00FAC073 /* NSObject+Tools.swift in Sources */,
+				CEA190A61D58C23C00FAC073 /* UINavigationController+Tools.swift in Sources */,
+				CEA190AC1D58C23C00FAC073 /* CCPDFImage.swift in Sources */,
+				CEA190AE1D58C23C00FAC073 /* WJLocalization.swift in Sources */,
+				CEA190A91D58C23C00FAC073 /* UIWebView+Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +378,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		CEA190B11D58C38100FAC073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEA190B21D58C38100FAC073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		FA05AC041CB920A100B59AFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -423,6 +495,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_dylib;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-objC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingsoung.CCKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -441,6 +518,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_dylib;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-objC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingsoung.CCKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -470,6 +552,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CEA190B01D58C38100FAC073 /* Build configuration list for PBXAggregateTarget "Aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA190B11D58C38100FAC073 /* Debug */,
+				CEA190B21D58C38100FAC073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		FA05ABEC1CB920A100B59AFE /* Build configuration list for PBXProject "CCKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
