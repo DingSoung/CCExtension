@@ -38,6 +38,24 @@
 		CEA190AC1D58C23C00FAC073 /* CCPDFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA190991D58C23C00FAC073 /* CCPDFImage.swift */; };
 		CEA190AD1D58C23C00FAC073 /* WJHexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1909B1D58C23C00FAC073 /* WJHexColor.swift */; };
 		CEA190AE1D58C23C00FAC073 /* WJLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1909D1D58C23C00FAC073 /* WJLocalization.swift */; };
+		CEEF81211D58D90C00B7ACC5 /* NSAttributedString+Tools.swift in Headers */ = {isa = PBXBuildFile; fileRef = CEA190881D58C23C00FAC073 /* NSAttributedString+Tools.swift */; };
+		CEEF81221D58D90C00B7ACC5 /* NSData+Tools.swift in Headers */ = {isa = PBXBuildFile; fileRef = CEA190891D58C23C00FAC073 /* NSData+Tools.swift */; };
+		CEEF81231D58D90C00B7ACC5 /* NSDictionary+Tools.swift in Headers */ = {isa = PBXBuildFile; fileRef = CEA1908A1D58C23C00FAC073 /* NSDictionary+Tools.swift */; };
+		CEEF81241D58D90C00B7ACC5 /* NSObject+Tools.swift in Headers */ = {isa = PBXBuildFile; fileRef = CEA1908B1D58C23C00FAC073 /* NSObject+Tools.swift */; };
+		CEEF81251D58D90C00B7ACC5 /* NSString+Tools.swift in Headers */ = {isa = PBXBuildFile; fileRef = CEA1908C1D58C23C00FAC073 /* NSString+Tools.swift */; };
+		CEEF81261D58D91600B7ACC5 /* CCNetwork+Tools.swift in Headers */ = {isa = PBXBuildFile; fileRef = CEA190961D58C23C00FAC073 /* CCNetwork+Tools.swift */; };
+		CEEF81271D58D91600B7ACC5 /* CCNetwork.swift in Headers */ = {isa = PBXBuildFile; fileRef = CEA190971D58C23C00FAC073 /* CCNetwork.swift */; };
+		CEEF81281D58D92100B7ACC5 /* Swift+Tools.swift in Headers */ = {isa = PBXBuildFile; fileRef = CEA1908D1D58C23C00FAC073 /* Swift+Tools.swift */; };
+		CEEF81291D58D92600B7ACC5 /* UIColor+Tools.swift in Headers */ = {isa = PBXBuildFile; fileRef = CEA1908F1D58C23C00FAC073 /* UIColor+Tools.swift */; };
+		CEEF812A1D58D92600B7ACC5 /* UIImage+Tools.swift in Headers */ = {isa = PBXBuildFile; fileRef = CEA190901D58C23C00FAC073 /* UIImage+Tools.swift */; };
+		CEEF812B1D58D92600B7ACC5 /* UINavigationController+Tools.swift in Headers */ = {isa = PBXBuildFile; fileRef = CEA190911D58C23C00FAC073 /* UINavigationController+Tools.swift */; };
+		CEEF812C1D58D92600B7ACC5 /* UIScrollView+Tools.swift in Headers */ = {isa = PBXBuildFile; fileRef = CEA190921D58C23C00FAC073 /* UIScrollView+Tools.swift */; };
+		CEEF812D1D58D92600B7ACC5 /* UIVIew+Tools.swift in Headers */ = {isa = PBXBuildFile; fileRef = CEA190931D58C23C00FAC073 /* UIVIew+Tools.swift */; };
+		CEEF812E1D58D92600B7ACC5 /* UIWebView+Tools.swift in Headers */ = {isa = PBXBuildFile; fileRef = CEA190941D58C23C00FAC073 /* UIWebView+Tools.swift */; };
+		CEEF812F1D58D92E00B7ACC5 /* CCPDFImage.swift in Headers */ = {isa = PBXBuildFile; fileRef = CEA190991D58C23C00FAC073 /* CCPDFImage.swift */; };
+		CEEF81301D58D92E00B7ACC5 /* WJHexColor.swift in Headers */ = {isa = PBXBuildFile; fileRef = CEA1909B1D58C23C00FAC073 /* WJHexColor.swift */; };
+		CEEF81311D58D92E00B7ACC5 /* WJLocalization.swift in Headers */ = {isa = PBXBuildFile; fileRef = CEA1909D1D58C23C00FAC073 /* WJLocalization.swift */; };
+		CEEF81321D58D92E00B7ACC5 /* CCKitTests.swift in Headers */ = {isa = PBXBuildFile; fileRef = FA05AC011CB920A100B59AFE /* CCKitTests.swift */; };
 		FA05ABF61CB920A100B59AFE /* CCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FA05ABF51CB920A100B59AFE /* CCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA05ABFD1CB920A100B59AFE /* CCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA05ABF21CB920A100B59AFE /* CCKit.framework */; };
 		FA05AC021CB920A100B59AFE /* CCKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05AC011CB920A100B59AFE /* CCKitTests.swift */; };
@@ -218,6 +236,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA05ABF61CB920A100B59AFE /* CCKit.h in Headers */,
+				CEEF812F1D58D92E00B7ACC5 /* CCPDFImage.swift in Headers */,
+				CEEF81301D58D92E00B7ACC5 /* WJHexColor.swift in Headers */,
+				CEEF81311D58D92E00B7ACC5 /* WJLocalization.swift in Headers */,
+				CEEF81321D58D92E00B7ACC5 /* CCKitTests.swift in Headers */,
+				CEEF81291D58D92600B7ACC5 /* UIColor+Tools.swift in Headers */,
+				CEEF812A1D58D92600B7ACC5 /* UIImage+Tools.swift in Headers */,
+				CEEF812B1D58D92600B7ACC5 /* UINavigationController+Tools.swift in Headers */,
+				CEEF812C1D58D92600B7ACC5 /* UIScrollView+Tools.swift in Headers */,
+				CEEF812D1D58D92600B7ACC5 /* UIVIew+Tools.swift in Headers */,
+				CEEF812E1D58D92600B7ACC5 /* UIWebView+Tools.swift in Headers */,
+				CEEF81281D58D92100B7ACC5 /* Swift+Tools.swift in Headers */,
+				CEEF81261D58D91600B7ACC5 /* CCNetwork+Tools.swift in Headers */,
+				CEEF81271D58D91600B7ACC5 /* CCNetwork.swift in Headers */,
+				CEEF81211D58D90C00B7ACC5 /* NSAttributedString+Tools.swift in Headers */,
+				CEEF81221D58D90C00B7ACC5 /* NSData+Tools.swift in Headers */,
+				CEEF81231D58D90C00B7ACC5 /* NSDictionary+Tools.swift in Headers */,
+				CEEF81241D58D90C00B7ACC5 /* NSObject+Tools.swift in Headers */,
+				CEEF81251D58D90C00B7ACC5 /* NSString+Tools.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
