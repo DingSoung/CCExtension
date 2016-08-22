@@ -19,6 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [DEMO testSwiftTools];
+    
     // Do any additional setup after loading the view, typically from a nib.
     self.imageView.image = [UIImage imageNamed:@"image"].roundImage;
     self.tableView = [[UITableView alloc] init];

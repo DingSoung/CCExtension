@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE0863E51CC4FDAD00570101 /* UIScrollView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0863E41CC4FDAD00570101 /* UIScrollView+Tools.swift */; };
+		CE83BDE31D6AB0E500AF9B8D /* DEMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83BDE21D6AB0E500AF9B8D /* DEMO.swift */; };
 		CEA190821D58BCBD00FAC073 /* UINavigationController+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA190811D58BCBD00FAC073 /* UINavigationController+Tools.swift */; };
 		FA4220FB1CB910E70065047E /* NSAttributedString+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220F01CB910E70065047E /* NSAttributedString+Tools.swift */; };
 		FA4220FC1CB910E70065047E /* NSData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220F11CB910E70065047E /* NSData+Tools.swift */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		CE0863E41CC4FDAD00570101 /* UIScrollView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Tools.swift"; sourceTree = "<group>"; };
+		CE83BDE21D6AB0E500AF9B8D /* DEMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DEMO.swift; sourceTree = "<group>"; };
 		CEA190811D58BCBD00FAC073 /* UINavigationController+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Tools.swift"; sourceTree = "<group>"; };
 		FA4220F01CB910E70065047E /* NSAttributedString+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Tools.swift"; sourceTree = "<group>"; };
 		FA4220F11CB910E70065047E /* NSData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Tools.swift"; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				FA51D6721C8D34240035384D /* AppDelegate.m */,
 				FA51D6741C8D34240035384D /* ViewController.h */,
 				FA51D6751C8D34240035384D /* ViewController.m */,
+				CE83BDE21D6AB0E500AF9B8D /* DEMO.swift */,
 				FA51D6771C8D34240035384D /* Main.storyboard */,
 				FA51D67D1C8D34240035384D /* Assets.xcassets */,
 				FA51D67F1C8D34240035384D /* LaunchScreen.storyboard */,
@@ -340,6 +343,7 @@
 				FA51D6761C8D34240035384D /* ViewController.m in Sources */,
 				CE0863E51CC4FDAD00570101 /* UIScrollView+Tools.swift in Sources */,
 				FA51D6731C8D34240035384D /* AppDelegate.m in Sources */,
+				CE83BDE31D6AB0E500AF9B8D /* DEMO.swift in Sources */,
 				FA4221001CB910E70065047E /* Swift+Tools.swift in Sources */,
 				FA4220FE1CB910E70065047E /* NSObject+Tools.swift in Sources */,
 				CEA190821D58BCBD00FAC073 /* UINavigationController+Tools.swift in Sources */,

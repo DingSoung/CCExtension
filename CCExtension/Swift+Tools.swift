@@ -6,25 +6,33 @@
 //
 //
 
-/// switch two same type value
-public func swep<T>(inout a:T, inout b:T) {
-    let temp = a
-    a = b
-    b = temp
-}
+import Foundation
 
-/// code Block, used like C block { }
+/// code Block, used like C code block { }
 public func closure(mark:String? = "", run:Bool? = true, block:()->Void, complete:(()->Void)? = {()->Void in}) {
     if run != true {
         return
     } else {
+        if let mk = mark {
+            print("excode block \(mk)")
+        }
         block()
         complete?()
-        print("执行完毕:\(mark)")
+        if let mk = mark {
+            print("excode block \(mk) finished")
+        }
     }
 }
 
 /// code Block, used like C block { }
 public func closure(block:()->Void) {
     closure(block: block, complete: nil)
+}
+
+/// keep lock syncronized when run closure 
+//http://swifter.tips/lock/
+public func synchronized(lock: AnyObject, closure: () -> ()) {
+    objc_sync_enter(lock)
+    closure()
+    objc_sync_exit(lock)
 }
