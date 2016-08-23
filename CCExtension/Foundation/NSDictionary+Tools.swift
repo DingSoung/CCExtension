@@ -10,17 +10,13 @@ import Foundation
 
 extension NSDictionary {
     
-    /// Dictionary to String
-    public var jsonStr: NSString {
-        var json:NSString = "{}"
+    // Dictionary -> JSON Data
+    public var jsonData: NSData? {
         do {
-            let data = try NSJSONSerialization.dataWithJSONObject(self, options: NSJSONWritingOptions.PrettyPrinted)
-            if let str = NSString(data: data, encoding: NSUTF8StringEncoding) {
-                json = str
-            }
-        } catch {
-            print("NSdictionary transfer to JSON NSString fail")
+            return try NSJSONSerialization.dataWithJSONObject(self, options: NSJSONWritingOptions.PrettyPrinted)
+            } catch let error as NSError {
+            print("format \(String(self)) to Data fail:\(error.domain)")
+            return nil
         }
-        return json
     }
 }

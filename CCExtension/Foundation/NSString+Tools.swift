@@ -12,24 +12,25 @@ import UIKit
 
 extension NSString {
     
-    /// String to Dictionary
-    public var jsonDict: NSDictionary {
+    /// JSON String -> JSON Dictionary
+    public var jsonDictionary: NSDictionary? {
         guard let JsonData = self.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) else {
-            return [String: String]()
+            return nil
         }
         do {
             if let JSONDictionary = try NSJSONSerialization.JSONObjectWithData(JsonData, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary {
                 return JSONDictionary
             } else {
-                return [String: String]()
+                return nil
             }
-        } catch {
-            return [String: String]()
+        } catch let error as NSError {
+            print("format \(String(self)) to Dictionary fail:\(error.domain)")
+            return nil
         }
     }
     
-    /// url format to Dictionary
-    public var urlToDict: NSDictionary {
+    /// url format -> Dictionary  ext:http://domain.com?ID=1&code=2
+    public var urlDictionary: NSDictionary {
         let dict = NSMutableDictionary()
         let params = self.componentsSeparatedByString("&")
         for param in params {
