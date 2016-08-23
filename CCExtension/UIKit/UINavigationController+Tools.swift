@@ -10,7 +10,7 @@ import UIKit
 
 public extension UINavigationController {
     
-    //兼容iOS旋转问题 http://stackoverflow.com/questions/19817646/autorotation-not-working-in-ios-7-works-fine-in-ios-6
+    // 兼容iOS旋转问题 http://stackoverflow.com/questions/19817646/autorotation-not-working-in-ios-7-works-fine-in-ios-6
     public override func shouldAutorotate() -> Bool {
         if let autoTotate = self.viewControllers.last?.shouldAutorotate() {
             return autoTotate

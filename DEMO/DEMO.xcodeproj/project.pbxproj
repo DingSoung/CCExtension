@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE0863E51CC4FDAD00570101 /* UIScrollView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0863E41CC4FDAD00570101 /* UIScrollView+Tools.swift */; };
 		CE83BDE31D6AB0E500AF9B8D /* DEMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83BDE21D6AB0E500AF9B8D /* DEMO.swift */; };
+		CE83BDE51D6C410F00AF9B8D /* NSString+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83BDE41D6C410F00AF9B8D /* NSString+Regex.swift */; };
 		CEA190821D58BCBD00FAC073 /* UINavigationController+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA190811D58BCBD00FAC073 /* UINavigationController+Tools.swift */; };
 		FA4220FB1CB910E70065047E /* NSAttributedString+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220F01CB910E70065047E /* NSAttributedString+Tools.swift */; };
 		FA4220FC1CB910E70065047E /* NSData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220F11CB910E70065047E /* NSData+Tools.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		CE0863E41CC4FDAD00570101 /* UIScrollView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Tools.swift"; sourceTree = "<group>"; };
 		CE83BDE21D6AB0E500AF9B8D /* DEMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DEMO.swift; sourceTree = "<group>"; };
+		CE83BDE41D6C410F00AF9B8D /* NSString+Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Regex.swift"; sourceTree = "<group>"; };
 		CEA190811D58BCBD00FAC073 /* UINavigationController+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Tools.swift"; sourceTree = "<group>"; };
 		FA4220F01CB910E70065047E /* NSAttributedString+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Tools.swift"; sourceTree = "<group>"; };
 		FA4220F11CB910E70065047E /* NSData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Tools.swift"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				FA4220F11CB910E70065047E /* NSData+Tools.swift */,
 				FA4220F21CB910E70065047E /* NSDictionary+Tools.swift */,
 				FA4220F31CB910E70065047E /* NSObject+Tools.swift */,
+				CE83BDE41D6C410F00AF9B8D /* NSString+Regex.swift */,
 				FA4220F41CB910E70065047E /* NSString+Tools.swift */,
 			);
 			path = Foundation;
@@ -347,6 +350,7 @@
 				FA4221001CB910E70065047E /* Swift+Tools.swift in Sources */,
 				FA4220FE1CB910E70065047E /* NSObject+Tools.swift in Sources */,
 				CEA190821D58BCBD00FAC073 /* UINavigationController+Tools.swift in Sources */,
+				CE83BDE51D6C410F00AF9B8D /* NSString+Regex.swift in Sources */,
 				FA51D67C1C8D34240035384D /* DEMO.xcdatamodeld in Sources */,
 				FA4221031CB910E70065047E /* UIVIew+Tools.swift in Sources */,
 				FA51D6701C8D34240035384D /* main.m in Sources */,

@@ -29,8 +29,7 @@ public func closure(block:()->Void) {
     closure(block: block, complete: nil)
 }
 
-/// keep lock syncronized when run closure 
-//http://swifter.tips/lock/
+/// keep lock syncronized when run closure http://swifter.tips/lock/
 public func synchronized(lock: AnyObject, closure: () -> ()) {
     objc_sync_enter(lock)
     closure()
