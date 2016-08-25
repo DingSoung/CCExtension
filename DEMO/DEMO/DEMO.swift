@@ -3,7 +3,7 @@
 //  DEMO
 //
 //  Created by Songwen Ding on 8/22/16.
-//  Copyright © 2016 Alex. All rights reserved.
+//  Copyright © 2016 DingSoung. All rights reserved.
 //
 
 import Foundation

@@ -1,10 +1,5 @@
-//
-//  NSObjec+Tools.swift
-//  summer
-//
 //  Created by Songwen Ding on 15/8/12.
 //  Copyright (c) 2015年 DingSoung. All rights reserved.
-//
 
 import Foundation
 

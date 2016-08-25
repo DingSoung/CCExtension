@@ -1,10 +1,5 @@
-//
-//  NSAttributedString+Tools.swift
-//  CCKit
-//
 //  Created by Songwen Ding on 4/9/16.
 //  Copyright © 2016 DingSoung. All rights reserved.
-//
 
 import UIKit
 
