@@ -1,10 +1,5 @@
-//
-//  UIVIew+Tools.swift
-//  summer
-//
 //  Created by Songwen Ding on 15/5/27.
 //  Copyright (c) 2015年 DingSoung. All rights reserved.
-//
 
 import UIKit
 

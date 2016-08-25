@@ -1,10 +1,5 @@
-//
-//  UIImage+Tools.swift
-//  
-//
 //  Created by Songwen Ding on 15/5/26.
-//
-//
+//  Copyright © 2016 DingSoung. All rights reserved.
 
 import UIKit
 
@@ -31,7 +26,7 @@ extension UIImage {
     public func imageScaleToSize(size:CGSize) -> UIImage {
         // In next line, pass 0.0 to use the current device's pixel scaling factor (and thus account for Retina resolution).
         // Pass 1.0 to force exact pixel size.
-        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.mainScreen().scale)
         self.drawInRect(CGRectMake(0, 0, size.width, size.height))
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

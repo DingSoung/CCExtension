@@ -1,10 +1,5 @@
-//
-//  UINavigationController+Tools.swift
-//  AppStore
-//
 //  Created by Songwen Ding on 8/6/16.
 //  Copyright © 2016 DingSoung. All rights reserved.
-//
 
 import UIKit
 

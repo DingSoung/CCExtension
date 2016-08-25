@@ -1,10 +1,5 @@
-//
-//  String+Tools.swift
-//
-//
 //  Created by Songwen Ding on 15/5/26.
-//
-//
+//  Copyright (c) 2015 DingSoung. All rights reserved.
 
 import Foundation
 

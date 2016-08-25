@@ -1,12 +1,5 @@
-//
-//  UIScrollView+Tools.swift
-//  DEMO
-//
 //  Created by Songwen Ding on 4/18/16.
 //  Copyright © 2016 DingSoung. All rights reserved.
-//
-
-
 
 /*
  extension store property via objc runtime Associated Objects http://nshipster.com/swift-objc-runtime/

@@ -6,8 +6,6 @@
 //  Copyright © 2016 DingSoung. All rights reserved.
 //
 
-import Foundation
-import CoreGraphics
 import UIKit
 
 extension NSAttributedString {
