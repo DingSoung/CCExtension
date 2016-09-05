@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE0863E51CC4FDAD00570101 /* UIScrollView+UIRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0863E41CC4FDAD00570101 /* UIScrollView+UIRefreshControl.swift */; };
+		CE7DA9781D7D5CA500D8D0E1 /* NSCache+Sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7DA9771D7D5CA500D8D0E1 /* NSCache+Sandbox.swift */; };
 		CE83BDE31D6AB0E500AF9B8D /* DEMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83BDE21D6AB0E500AF9B8D /* DEMO.swift */; };
 		CE83BDE51D6C410F00AF9B8D /* NSString+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83BDE41D6C410F00AF9B8D /* NSString+Regex.swift */; };
 		CEA190821D58BCBD00FAC073 /* UINavigationController+Autorotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA190811D58BCBD00FAC073 /* UINavigationController+Autorotate.swift */; };
@@ -54,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		CE0863E41CC4FDAD00570101 /* UIScrollView+UIRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+UIRefreshControl.swift"; sourceTree = "<group>"; };
+		CE7DA9771D7D5CA500D8D0E1 /* NSCache+Sandbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCache+Sandbox.swift"; sourceTree = "<group>"; };
 		CE83BDE21D6AB0E500AF9B8D /* DEMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DEMO.swift; sourceTree = "<group>"; };
 		CE83BDE41D6C410F00AF9B8D /* NSString+Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Regex.swift"; sourceTree = "<group>"; };
 		CEA190811D58BCBD00FAC073 /* UINavigationController+Autorotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Autorotate.swift"; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				FA4220F01CB910E70065047E /* NSAttributedString+Content.swift */,
+				CE7DA9771D7D5CA500D8D0E1 /* NSCache+Sandbox.swift */,
 				FA4220F11CB910E70065047E /* NSData+Transfer.swift */,
 				FA4220F21CB910E70065047E /* NSDictionary+Transfer.swift */,
 				FA4220F31CB910E70065047E /* NSObject+Transfer.swift */,
@@ -365,6 +368,7 @@
 				CE0863E51CC4FDAD00570101 /* UIScrollView+UIRefreshControl.swift in Sources */,
 				FA51D6731C8D34240035384D /* AppDelegate.m in Sources */,
 				CE83BDE31D6AB0E500AF9B8D /* DEMO.swift in Sources */,
+				CE7DA9781D7D5CA500D8D0E1 /* NSCache+Sandbox.swift in Sources */,
 				FA4221001CB910E70065047E /* Swift+ObjcFeature.swift in Sources */,
 				CEADCA091D6EF773004C1D59 /* UIImage+CoreGraphics.swift in Sources */,
 				FA4220FE1CB910E70065047E /* NSObject+Transfer.swift in Sources */,
