@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, copy) NSArray *models;
+@property (nonatomic, assign) NSInteger index;
 @end
 
 @implementation ViewController
@@ -22,15 +23,27 @@
     
     [DEMO testSwiftTools];
     
+    // Cache
+    for (int i = 0; i < 100; i++) {
+        self.index = i;
+        NSLog(@"%ld",(long)self.index);
+        [NSObject setCacheWithObject:self forKey:@"self" atPath:@"__SELF__"];
+        ViewController *vc = [NSObject cacheWithKey:@"self" atPath:@"__SELF__"];
+        NSLog(@"%ld",(long)vc.index);
+        if (self.index != vc.index) {
+            NSLog(@"--------------->error:");
+        }
+    }
+
     // Do any additional setup after loading the view, typically from a nib.
     self.imageView.image = [UIImage imageNamed:@"image"].roundImage;
     self.tableView = [[UITableView alloc] init];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"reuseIdentifier"];
     
-    [self.tableView cc_refreashInit];
-    self.tableView.cc_refreshClosure = ^ {
-        NSLog(@"-------table view freash");
-    };
+//    [self.tableView cc_refreashInit];
+//    self.tableView.cc_refreshClosure = ^ {
+//        NSLog(@"-------table view freash");
+//    };
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -43,11 +56,11 @@
     
     self.tableView.frame = CGRectMake(0, 300, self.view.bounds.size.width, 100);
     
-    NSLog(@"  %@", self.tableView.cc_refreshControl);
-    NSLog(@"  %@", self.tableView.cc_refreshClosure);
-    
-    self.tableView.cc_refreshClosure();
-    [self.tableView.cc_refreshControl beginRefreshing];
+//    NSLog(@"  %@", self.tableView.cc_refreshControl);
+//    NSLog(@"  %@", self.tableView.cc_refreshClosure);
+//    
+//    self.tableView.cc_refreshClosure();
+//    [self.tableView.cc_refreshControl beginRefreshing];
 }
 
 - (void)didReceiveMemoryWarning {

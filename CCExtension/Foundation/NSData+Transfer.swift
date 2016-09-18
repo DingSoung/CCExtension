@@ -6,9 +6,9 @@ import Foundation
 extension NSData {
     
     /// JSON data -> JSON Object (Array or Dictionary)
-    public var jsonObject: AnyObject? {
+    public var jsonObj: Any? {
         do {
-            return try NSJSONSerialization.JSONObjectWithData(self, options: NSJSONReadingOptions.MutableContainers)
+            return try  JSONSerialization.jsonObject(with: self as Data, options: JSONSerialization.ReadingOptions.mutableLeaves)
         } catch let error as NSError {
             print("data formar fail:\(error.domain)")
             return nil
@@ -17,18 +17,18 @@ extension NSData {
     
     /// JSON data -> JSON Array
     public var jsonArray: NSArray? {
-        return self.jsonObject as? NSArray
+        return self.jsonObj as? NSArray
     }
     
     /// JSON data -> JSON Dictionary
     public var jsonDictionary: NSDictionary? {
-        return self.jsonObject as? NSDictionary
+        return self.jsonObj as? NSDictionary
     }
     
     /// JSON Data -> JSON String
     public var jsonStr: NSString? {
-        guard let str = NSString(data: self, encoding: NSUTF8StringEncoding) else {
-            print("format \(String(self)) to String fail)")
+        guard let str = NSString(data: self as Data, encoding: String.Encoding.utf8.rawValue) else {
+            print("format \(String(describing: self)) to String fail)")
             return nil
         }
         return str

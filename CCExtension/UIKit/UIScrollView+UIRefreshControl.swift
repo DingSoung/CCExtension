@@ -10,6 +10,7 @@ import UIKit
 
 import ObjectiveC
 
+/*
 extension UIScrollView {
     
     private struct cc_refreshAssociatedKeys {
@@ -19,7 +20,7 @@ extension UIScrollView {
     
     public func cc_refreashInit() {
         let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: #selector(self.cc_refreshControlAction), forControlEvents: UIControlEvents.ValueChanged)
+        refreshControl.addTarget(self, action: #selector(self.cc_refreshControlAction), for: UIControlEvents.valueChanged)
         objc_setAssociatedObject(self,
                                  &cc_refreshAssociatedKeys.cc_refreshControl,
                                  refreshControl,
@@ -48,12 +49,12 @@ extension UIScrollView {
     public var cc_refreshClosure: (()->())? {
         get {
             let closureObject = objc_getAssociatedObject(self, &cc_refreshAssociatedKeys.cc_refreshClosure)
-            let closure =  unsafeBitCast(closureObject, cc_ConventionBlock.self)
+            let closure =  unsafeBitCast(closureObject, to: cc_ConventionBlock.self)
             return closure as ()->()
         }
         set {
             if let closure = newValue {
-                let closureObject = unsafeBitCast(closure as cc_ConventionBlock, AnyObject.self)
+                let closureObject = unsafeBitCast(closure as cc_ConventionBlock, to: AnyObject.self)
                 objc_setAssociatedObject(self,
                                          &cc_refreshAssociatedKeys.cc_refreshClosure,
                                          closureObject,
@@ -70,3 +71,4 @@ extension UIScrollView {
     //self.cc_refreshControl?.beginRefreshing()
     //self.refreshControl?.endRefreshing()
 }
+ */

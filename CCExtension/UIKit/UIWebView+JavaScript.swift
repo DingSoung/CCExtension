@@ -8,7 +8,7 @@ extension UIWebView {
     
     internal var context:JSContext? {
         get {
-            return self.valueForKeyPath("documentView.webView.mainFrame.javaScriptContext") as? JSContext
+            return self.value(forKeyPath: "documentView.webView.mainFrame.javaScriptContext") as? JSContext
         }
         set {
             self.context = newValue
@@ -19,34 +19,33 @@ extension UIWebView {
         guard let context = self.context else {
             return
         }
-        context.setObject(unsafeBitCast(block, AnyObject.self), forKeyedSubscript: function)
+        context.setObject(unsafeBitCast(block, to: AnyObject.self), forKeyedSubscript: function as (NSCopying & NSObjectProtocol)!)
     }
     ///call js function
     public func runJsFunction(function:String, parameter:[AnyObject]) {
         guard let context = self.context else {
             return
         }
-        let jsValue = context.objectForKeyedSubscript(function)
-        jsValue.callWithArguments(parameter)
+        context.objectForKeyedSubscript(function).call(withArguments: parameter)
     }
     
-    internal var syncRunJSQueue:dispatch_queue_t {
+    internal var syncRunJSQueue:DispatchQueue {
         get {
-            return dispatch_queue_create("JavaScriptCore.queue", nil)
+            return DispatchQueue(label: "JavaScriptCore.queue")
         }
         set {
             self.syncRunJSQueue = newValue
         }
     }
     ///call js function
-    public func syncRunJsFunction(function:String, parameter:[AnyObject], complete:((value:JSValue)->Void)?) {
-        dispatch_sync(self.syncRunJSQueue) { () -> Void in
+    public func syncRunJsFunction(function:String, parameter:[AnyObject], complete:((_: JSValue?)->Void)?) {
+        self.syncRunJSQueue.sync {
             guard let context = self.context else {
                 return
             }
             let jsValue = context.objectForKeyedSubscript(function)
-            let value = jsValue.callWithArguments(parameter)
-            complete?(value: value)
+            let value = jsValue?.call(withArguments: parameter)
+            complete?(value)
         }
     }
 }

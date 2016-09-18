@@ -8,10 +8,10 @@ struct RegexHelper {
     let regex: NSRegularExpression
     init(_ pattern: String) throws {
         try regex = NSRegularExpression(pattern: pattern,
-                                        options: .CaseInsensitive)
+                                        options: .caseInsensitive)
     }
     func match(input: String) -> Bool {
-        let matches = regex.matchesInString(input,
+        let matches = regex.matches(in: input,
                                             options: [],
                                             range: NSMakeRange(0, input.utf16.count))
         return matches.count > 0
@@ -25,7 +25,7 @@ precedence 130
 
 func =~(lhs: String, rhs: String) -> Bool {
     do {
-        return try RegexHelper(rhs).match(lhs)
+        return try RegexHelper(rhs).match(input: lhs)
     } catch _ {
         return false
     }

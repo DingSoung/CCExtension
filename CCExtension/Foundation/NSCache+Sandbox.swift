@@ -3,58 +3,81 @@
 
 import Foundation
 
-public extension NSCache {
+public extension NSObject {
     
     @nonobjc private static var cacheDirectory:String {
         get {
-            guard let path = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.CachesDirectory, NSSearchPathDomainMask.UserDomainMask, true).first else {
+            guard let path = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.cachesDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first else {
                 return ""
             }
             return path
         }
     }
-    @nonobjc private static let cache:NSCache? = NSCache()
     
-    public class final func setCache(obj:AnyObject, forKey key:String, atPath path:String) ->Bool {
+    private struct AssociatedKeys{
+        static var cache = "cache"
+    }
+    
+    public class var memoryCache: NSCache<NSString, AnyObject>? {
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.cache, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+        get {
+            if let cache = objc_getAssociatedObject(self, &AssociatedKeys.cache) as? NSCache<NSString, AnyObject> {
+                return cache
+            } else {
+                self.memoryCache = NSCache()
+                return self.memoryCache
+            }
+        }
+    }
+    
+    public class final func setCache(object:AnyObject, forKey key:String, atPath path:String) ->Bool {
         do {
-            try NSFileManager.defaultManager().createDirectoryAtPath(self.cacheDirectory + path, withIntermediateDirectories: true, attributes: nil)
+            try FileManager.default.createDirectory(atPath: self.cacheDirectory + path, withIntermediateDirectories: true, attributes: nil)
         } catch _ as NSError {
             return false
         }
-        self.cache?.setObject(obj, forKey: path + key)
-        return NSKeyedArchiver.archivedDataWithRootObject(obj).writeToFile(self.cacheDirectory + path + key, atomically: true)
+        self.memoryCache?.setObject(object, forKey: (path + key) as NSString)
+        let data = NSKeyedArchiver.archivedData(withRootObject: object)
+        do {
+            try data.write(to: URL(fileURLWithPath: self.cacheDirectory + path + key), options: Data.WritingOptions.atomic)
+            return true
+        } catch {
+            return false
+        }
     }
     
-    public class final func cacheForKey(key:String, atPath path:String) -> AnyObject? {
-        if let image = self.cache?.objectForKey(path + key) {
-            return image
+    public class final func cache(key:String, atPath path:String) -> AnyObject? {
+        if let object = self.memoryCache?.object(forKey: (path + key) as NSString) {
+            return object
         }
         do {
-            let data = try NSData(contentsOfURL: NSURL(fileURLWithPath: self.cacheDirectory + path + key), options: NSDataReadingOptions.DataReadingMapped)
-            guard let obj = NSKeyedUnarchiver.unarchiveObjectWithData(data) else {
+            let data = try NSData(contentsOf: NSURL(fileURLWithPath: self.cacheDirectory + path + key) as URL, options: NSData.ReadingOptions.dataReadingMapped)
+            guard let object = NSKeyedUnarchiver.unarchiveObject(with: data as Data) as AnyObject? else {
                 return nil
             }
-            self.cache?.setObject(obj, forKey: path + key)
-            return obj
+            self.memoryCache?.setObject(object, forKey: (path + key) as NSString)
+            return object as AnyObject?
         } catch _ as NSError {
             return nil
         }
     }
     
-    public class final func removeCacheForKey(key:String, atPath path:String) -> Bool {
-        self.cache?.removeObjectForKey(path + key)
+    public class final func removeCache(key:String, atPath path:String) -> Bool {
+        self.memoryCache?.removeObject(forKey: (path + key) as NSString)
         do {
-            try NSFileManager.defaultManager().removeItemAtPath(self.cacheDirectory + path + key)
+            try FileManager.default.removeItem(atPath: self.cacheDirectory + path + key)
         } catch {
             return false
         }
         return true
     }
     
-    public class final func removeCacheAtPath(path:String) -> Bool {
-        self.cache?.removeAllObjects()
+    public class final func removeCache(path:String) -> Bool {
+        self.memoryCache?.removeAllObjects()
         do {
-            try NSFileManager.defaultManager().removeItemAtPath(self.cacheDirectory + path)
+            try FileManager.default.removeItem(atPath: self.cacheDirectory + path)
         } catch _ as NSError {
             return false
         }

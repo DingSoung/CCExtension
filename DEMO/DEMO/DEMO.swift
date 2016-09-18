@@ -12,14 +12,14 @@ public class DEMO: NSObject {
     
     class public func testSwiftTools() -> Void {
         
-        closure("test", run: true, block: {
+        closure(mark: "test", run: true, block: {
             print("test block")
         }) {
             print("test block finished")
         }
         
         let anObj:NSObject = NSObject()
-        synchronized(anObj) {
+        synchronized(lock: anObj) {
             // 在括号内 anObj 不会被其他线程改变
             print(anObj.hash)
         }

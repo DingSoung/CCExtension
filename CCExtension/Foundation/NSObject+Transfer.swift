@@ -8,23 +8,22 @@ extension NSObject {
     /// init model with JSON String
     public convenience init(JSONDict : [String : AnyObject]) {
         self.init()
-        self.setValuesForKeysWithDictionary(JSONDict)
+        self.setValuesForKeys(JSONDict)
     }
     
     /// init model with JSON Dictionary
     public convenience init(JSONStr: String) {
         self.init()
-        let JSONData = JSONStr.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
+        let JSONData = JSONStr.data(using: String.Encoding.utf8, allowLossyConversion: false)
         do {
-            let JSONDictionary = try NSJSONSerialization.JSONObjectWithData(JSONData!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
-            
+            guard let jsonDictionary = try JSONSerialization.jsonObject(with: JSONData!, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String : Any] else {return}
+            self.setValuesForKeys(jsonDictionary)
+            /*
             for (key, value) in JSONDictionary {
                 let keyName = key as! String
                 let keyValue: String = value as! String
-                if (self.respondsToSelector(NSSelectorFromString(keyName))) {
-                    self.setValue(keyValue, forKey: keyName)
-                }
-            }
+                self.setValue(keyValue, forKey: keyName)
+            }*/
         } catch {
             print(error)
         }

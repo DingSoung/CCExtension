@@ -8,9 +8,9 @@ extension NSDictionary {
     // Dictionary -> JSON Data
     public var jsonData: NSData? {
         do {
-            return try NSJSONSerialization.dataWithJSONObject(self, options: NSJSONWritingOptions.PrettyPrinted)
-            } catch let error as NSError {
-            print("format \(String(self)) to Data fail:\(error.domain)")
+            return try JSONSerialization.data(withJSONObject: self, options: JSONSerialization.WritingOptions.prettyPrinted) as NSData
+        } catch let error as NSError {
+            print("format \(String(describing: self)) to Data fail:\(error.domain)")
             return nil
         }
     }
