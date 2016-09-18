@@ -13,23 +13,23 @@ public extension NSObject {
     public class var languageCode:String? {
         set {
             if let value = newValue {
-                NSUserDefaults.standardUserDefaults().setObject([value], forKey: "AppleLanguages")
+                UserDefaults.standard.set([value], forKey: "AppleLanguages")
             } else {
-                NSUserDefaults.standardUserDefaults().removeObjectForKey("AppleLanguages")
+                UserDefaults.standard.removeObject(forKey: "AppleLanguages")
             }
-            NSUserDefaults.standardUserDefaults().synchronize()
+            UserDefaults.standard.synchronize()
         }
         get {
-            if let forceLanguageCode = (NSUserDefaults.standardUserDefaults().objectForKey("AppleLanguages") as? [String])?.first {
+            if let forceLanguageCode = (UserDefaults.standard.object(forKey: "AppleLanguages") as? [String])?.first {
                 return forceLanguageCode
             } else {
-                return NSLocale.currentLocale().localeIdentifier
+                return NSLocale.current.identifier
             }
         }
     }
 }
 
-public extension NSBundle {
+public extension Bundle {
     
     private struct AssociatedKeys{
         static var languageCode = "languageCode"
@@ -38,15 +38,15 @@ public extension NSBundle {
     // bundle run time code en, zh_Hans ect, to update localization source without restart
     public var localizationCode:String? {
         set {
-            if let path = self.pathForResource(newValue, ofType: "lproj") {
-                if self.isMemberOfClass(NSBundle.self) {
+            if let path = self.path(forResource: newValue, ofType: "lproj") {
+                if self.isMember(of: Bundle.self) {
                     object_setClass(self, BundleEx.self);
                 }
-                let runTimeBundle = NSBundle(path: path)
+                let runTimeBundle = Bundle(path: path)
                 objc_setAssociatedObject(self, &AssociatedKeys.languageCode, runTimeBundle, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             } else {
-                if self.isMemberOfClass(BundleEx.self) {
-                    object_setClass(self, NSBundle.self);
+                if self.isMember(of: BundleEx.self) {
+                    object_setClass(self, Bundle.self);
                 }
                 objc_removeAssociatedObjects(self)
             }
@@ -56,19 +56,19 @@ public extension NSBundle {
         }
     }
     
-    private var runTimeBundle: NSBundle? {
+    fileprivate var runTimeBundle: Bundle? {
         get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.languageCode) as? NSBundle
+            return objc_getAssociatedObject(self, &AssociatedKeys.languageCode) as? Bundle
         }
     }
 }
 
-private class BundleEx: NSBundle {
-    private override func localizedStringForKey(key: String, value: String?, table tableName: String?) -> String {
+private class BundleEx: Bundle {
+    private override func localizedString(forKey key: String, value: String?, table tableName: String?) -> String {
         if let bundle = self.runTimeBundle {
-            return bundle.localizedStringForKey(key, value: value, table: tableName)
+            return bundle.localizedString(forKey: key, value: value, table: tableName)
         } else {
-            return super.localizedStringForKey(key, value: value, table: tableName)
+            return super.localizedString(forKey: key, value: value, table: tableName)
         }
     }
 }
