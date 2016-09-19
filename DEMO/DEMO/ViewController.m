@@ -9,14 +9,35 @@
 #import "ViewController.h"
 #import "DEMO-Swift.h"
 
-@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface ViewController () <NSCoding, UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, copy) NSArray *models;
+
 @property (nonatomic, assign) NSInteger index;
+@property (nonatomic, strong) NSString *validTitle;
 @end
 
 @implementation ViewController
+#pragma mark NSCoding
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [super encodeWithCoder:aCoder];
+    
+    [aCoder encodeInteger:self.index     forKey:@"index"];
+    [aCoder encodeObject:self.validTitle     forKey:@"validTitle"];
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        self.index = [aDecoder decodeIntegerForKey:@"index"];
+        self.validTitle = [aDecoder decodeObjectForKey:@"validTitle"];
+    }
+    return self;
+}
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,12 +47,27 @@
     // Cache
     for (int i = 0; i < 100; i++) {
         self.index = i;
-        NSLog(@"%ld",(long)self.index);
-        [NSObject setCacheWithObject:self forKey:@"self" atPath:@"__SELF__"];
-        ViewController *vc = [NSObject cacheWithKey:@"self" atPath:@"__SELF__"];
-        NSLog(@"%ld",(long)vc.index);
-        if (self.index != vc.index) {
-            NSLog(@"--------------->error:");
+        self.validTitle = [NSString stringWithFormat:@"%d",i];
+        
+        ViewController *vc = nil;
+        if ([NSObject removeCacheWithKey:@"self" atPath:@"__SELF__"]) {
+        } else {
+            NSLog(@"--------------->erase fail");
+        }
+        [[NSObject memoryCache] removeAllObjects];
+        vc = [NSObject cacheWithKey:@"self" atPath:@"__SELF__"];
+        if (vc) {
+            NSLog(@"--------------->blank check fail");
+        }
+        
+        if ([NSObject setCacheWithObject:self forKey:@"self" atPath:@"__SELF__"]) {
+        } else {
+            NSLog(@"--------------->program fail");
+        }
+        [[NSObject memoryCache] removeAllObjects];
+        vc = [NSObject cacheWithKey:@"self" atPath:@"__SELF__"];
+        if (self.index != vc.index || ![self.validTitle isEqualToString:vc.validTitle]) {
+            NSLog(@"--------------->verify fail:");
         }
     }
 
