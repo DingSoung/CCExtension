@@ -37,8 +37,6 @@
     return self;
 }
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -123,6 +121,10 @@
 }
 
 
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches with:(UIEvent *)event {
+    [super touchesBegan:touches with:event];
+}
 
 
 @end

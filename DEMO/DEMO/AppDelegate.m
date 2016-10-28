@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#include <objc/runtime.h>
+#import "DEMO-Swift.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    [application setEventWithEnable:YES];
+    
     return YES;
 }
 
@@ -90,6 +96,7 @@
         abort();
     }
     
+    
     return _persistentStoreCoordinator;
 }
 
@@ -123,5 +130,6 @@
         }
     }
 }
+
 
 @end

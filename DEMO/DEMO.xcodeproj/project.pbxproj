@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CE0863E51CC4FDAD00570101 /* UIScrollView+UIRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0863E41CC4FDAD00570101 /* UIScrollView+UIRefreshControl.swift */; };
+		CE6B4E0F1DC3339E0063B99E /* UIResponder+Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B4E0E1DC3339E0063B99E /* UIResponder+Track.swift */; };
+		CE6B4E111DC34B1B0063B99E /* Appdelegate+EventTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B4E101DC34B1B0063B99E /* Appdelegate+EventTrack.swift */; };
 		CE7DA9781D7D5CA500D8D0E1 /* NSCache+Sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7DA9771D7D5CA500D8D0E1 /* NSCache+Sandbox.swift */; };
 		CE83BDE31D6AB0E500AF9B8D /* DEMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83BDE21D6AB0E500AF9B8D /* DEMO.swift */; };
 		CE83BDE51D6C410F00AF9B8D /* NSString+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83BDE41D6C410F00AF9B8D /* NSString+Regex.swift */; };
@@ -15,7 +17,6 @@
 		CEADCA051D6EF449004C1D59 /* NSString+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCA031D6EF449004C1D59 /* NSString+Content.swift */; };
 		CEADCA061D6EF449004C1D59 /* NSString+TypeCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCA041D6EF449004C1D59 /* NSString+TypeCheck.swift */; };
 		CEADCA091D6EF773004C1D59 /* UIImage+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCA081D6EF773004C1D59 /* UIImage+CoreGraphics.swift */; };
-		CEEEF79A1D8E7205004409DC /* WJLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEF7991D8E7205004409DC /* WJLocalization.swift */; };
 		FA4220FB1CB910E70065047E /* NSAttributedString+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220F01CB910E70065047E /* NSAttributedString+Content.swift */; };
 		FA4220FC1CB910E70065047E /* NSData+Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220F11CB910E70065047E /* NSData+Transfer.swift */; };
 		FA4220FD1CB910E70065047E /* NSDictionary+Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220F21CB910E70065047E /* NSDictionary+Transfer.swift */; };
@@ -37,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		CE0863E41CC4FDAD00570101 /* UIScrollView+UIRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+UIRefreshControl.swift"; sourceTree = "<group>"; };
+		CE6B4E0E1DC3339E0063B99E /* UIResponder+Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Track.swift"; sourceTree = "<group>"; };
+		CE6B4E101DC34B1B0063B99E /* Appdelegate+EventTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Appdelegate+EventTrack.swift"; sourceTree = "<group>"; };
 		CE7DA9771D7D5CA500D8D0E1 /* NSCache+Sandbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCache+Sandbox.swift"; sourceTree = "<group>"; };
 		CE83BDE21D6AB0E500AF9B8D /* DEMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DEMO.swift; sourceTree = "<group>"; };
 		CE83BDE41D6C410F00AF9B8D /* NSString+Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Regex.swift"; sourceTree = "<group>"; };
@@ -44,7 +47,6 @@
 		CEADCA031D6EF449004C1D59 /* NSString+Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Content.swift"; sourceTree = "<group>"; };
 		CEADCA041D6EF449004C1D59 /* NSString+TypeCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+TypeCheck.swift"; sourceTree = "<group>"; };
 		CEADCA081D6EF773004C1D59 /* UIImage+CoreGraphics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CoreGraphics.swift"; sourceTree = "<group>"; };
-		CEEEF7991D8E7205004409DC /* WJLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WJLocalization.swift; path = ../../../WJLocalization/WJLocalization/WJLocalization.swift; sourceTree = "<group>"; };
 		FA4220F01CB910E70065047E /* NSAttributedString+Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Content.swift"; sourceTree = "<group>"; };
 		FA4220F11CB910E70065047E /* NSData+Transfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Transfer.swift"; sourceTree = "<group>"; };
 		FA4220F21CB910E70065047E /* NSDictionary+Transfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+Transfer.swift"; sourceTree = "<group>"; };
@@ -122,6 +124,8 @@
 		FA4220F61CB910E70065047E /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				CE6B4E0E1DC3339E0063B99E /* UIResponder+Track.swift */,
+				CE6B4E101DC34B1B0063B99E /* Appdelegate+EventTrack.swift */,
 				FA4220F71CB910E70065047E /* UIColor+Hex.swift */,
 				CEA190811D58BCBD00FAC073 /* UINavigationController+Autorotate.swift */,
 				FA4220F81CB910E70065047E /* UIImage+Process.swift */,
@@ -153,7 +157,6 @@
 		FA51D66D1C8D34240035384D /* DEMO */ = {
 			isa = PBXGroup;
 			children = (
-				CEEEF7991D8E7205004409DC /* WJLocalization.swift */,
 				FA4220ED1CB910E70065047E /* CCExtension */,
 				FA51D6711C8D34240035384D /* AppDelegate.h */,
 				FA51D6721C8D34240035384D /* AppDelegate.m */,
@@ -278,9 +281,10 @@
 				CE7DA9781D7D5CA500D8D0E1 /* NSCache+Sandbox.swift in Sources */,
 				FA4221001CB910E70065047E /* Swift+ObjcFeature.swift in Sources */,
 				CEADCA091D6EF773004C1D59 /* UIImage+CoreGraphics.swift in Sources */,
-				CEEEF79A1D8E7205004409DC /* WJLocalization.swift in Sources */,
 				FA4220FE1CB910E70065047E /* NSObject+Transfer.swift in Sources */,
+				CE6B4E0F1DC3339E0063B99E /* UIResponder+Track.swift in Sources */,
 				CEA190821D58BCBD00FAC073 /* UINavigationController+Autorotate.swift in Sources */,
+				CE6B4E111DC34B1B0063B99E /* Appdelegate+EventTrack.swift in Sources */,
 				CE83BDE51D6C410F00AF9B8D /* NSString+Regex.swift in Sources */,
 				FA51D67C1C8D34240035384D /* DEMO.xcdatamodeld in Sources */,
 				FA4221031CB910E70065047E /* UIVIew+UIImage.swift in Sources */,
