@@ -10,6 +10,8 @@
 #include <objc/runtime.h>
 #import "DEMO-Swift.h"
 
+#import "UIApplication+EventTrack.h"
+
 @interface AppDelegate ()
 
 @end
@@ -20,8 +22,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    
-    [application setEventWithEnable:YES];
+    //[UIApplication loadaaa];
+    //[application setEventWithEnable:YES];
     
     return YES;
 }
