@@ -11,6 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var slider: UISlider!
+    @IBAction func sliderAction(_ sender: UISlider) {
+        print(sender.value)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,7 +54,7 @@ class ViewController: UIViewController {
     func systemfunc(){
         print("system func log")
     }
-    dynamic func myfunc() {
+    func myfunc() {
         print("my func log")
     }
 }
