@@ -28,3 +28,4 @@ download and add CCExtension to your project
 |UIVIew+UIImage|image from UIView, CoreGraphics|
 |UIWebView+JavaScript|handle web javaScript function with native|
 |UIScrollView+UIRefreshControl|a pull refresh|
+|UIApplication+EventTrack|a hool for sendAction to track event|

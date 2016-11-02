@@ -3,7 +3,7 @@
 
 import UIKit
 
-public extension UINavigationController {
+extension UINavigationController {
     
     // 兼容iOS旋转问题 http://stackoverflow.com/questions/19817646/autorotation-not-working-in-ios-7-works-fine-in-ios-6
     open override var shouldAutorotate: Bool {

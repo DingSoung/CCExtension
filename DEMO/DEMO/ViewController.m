@@ -74,11 +74,6 @@
     self.tableView = [[UITableView alloc] init];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"reuseIdentifier"];
     
-//    [self.tableView cc_refreashInit];
-//    self.tableView.cc_refreshClosure = ^ {
-//        NSLog(@"-------table view freash");
-//    };
-    
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.models = @[@"1", @"3", @"5", @"7", @"9",];
@@ -89,19 +84,17 @@
     [super viewDidLayoutSubviews];
     
     self.tableView.frame = CGRectMake(0, 300, self.view.bounds.size.width, 100);
-    
-//    NSLog(@"  %@", self.tableView.cc_refreshControl);
-//    NSLog(@"  %@", self.tableView.cc_refreshClosure);
-//    
-//    self.tableView.cc_refreshClosure();
-//    [self.tableView.cc_refreshControl beginRefreshing];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)buttonAction:(UIButton *)sender {
+    NSLog(@"button touched");
+}
+
+#pragma mark - <UITableViewDataSource>
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return self.models.count > 0 ? 1 : 0;
 }
@@ -120,10 +113,8 @@
     return cell;
 }
 
-
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches with:(UIEvent *)event {
-    [super touchesBegan:touches with:event];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"table selected");
 }
 
 

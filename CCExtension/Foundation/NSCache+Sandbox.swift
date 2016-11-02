@@ -3,7 +3,7 @@
 
 import Foundation
 
-public extension NSObject {
+extension NSObject {
     
     @nonobjc private static var cacheDirectory:String {
         get {
