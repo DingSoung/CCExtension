@@ -6,9 +6,9 @@ import Foundation
 extension NSDictionary {
     
     // Dictionary -> JSON Data
-    public var jsonData: NSData? {
+    public var jsonData: Data? {
         do {
-            return try JSONSerialization.data(withJSONObject: self, options: JSONSerialization.WritingOptions.prettyPrinted) as NSData
+            return try JSONSerialization.data(withJSONObject: self, options: JSONSerialization.WritingOptions.prettyPrinted)
         } catch let error as NSError {
             print("format \(String(describing: self)) to Data fail:\(error.domain)")
             return nil
