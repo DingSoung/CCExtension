@@ -16,6 +16,8 @@
 		CEADCA051D6EF449004C1D59 /* NSString+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCA031D6EF449004C1D59 /* NSString+Content.swift */; };
 		CEADCA061D6EF449004C1D59 /* NSString+TypeCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCA041D6EF449004C1D59 /* NSString+TypeCheck.swift */; };
 		CEADCA091D6EF773004C1D59 /* UIImage+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCA081D6EF773004C1D59 /* UIImage+CoreGraphics.swift */; };
+		CEE419AE1DF2908C0046A161 /* Swift+Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE419AD1DF2908C0046A161 /* Swift+Global.swift */; };
+		CEE419B01DF2A1B90046A161 /* Global+ObjectiveC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE419AF1DF2A1B90046A161 /* Global+ObjectiveC.swift */; };
 		FA4220FB1CB910E70065047E /* NSAttributedString+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220F01CB910E70065047E /* NSAttributedString+Content.swift */; };
 		FA4220FC1CB910E70065047E /* NSData+Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220F11CB910E70065047E /* NSData+Transfer.swift */; };
 		FA4220FD1CB910E70065047E /* NSDictionary+Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220F21CB910E70065047E /* NSDictionary+Transfer.swift */; };
@@ -45,6 +47,8 @@
 		CEADCA031D6EF449004C1D59 /* NSString+Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Content.swift"; sourceTree = "<group>"; };
 		CEADCA041D6EF449004C1D59 /* NSString+TypeCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+TypeCheck.swift"; sourceTree = "<group>"; };
 		CEADCA081D6EF773004C1D59 /* UIImage+CoreGraphics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CoreGraphics.swift"; sourceTree = "<group>"; };
+		CEE419AD1DF2908C0046A161 /* Swift+Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Global.swift"; sourceTree = "<group>"; };
+		CEE419AF1DF2A1B90046A161 /* Global+ObjectiveC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Global+ObjectiveC.swift"; sourceTree = "<group>"; };
 		FA4220F01CB910E70065047E /* NSAttributedString+Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Content.swift"; sourceTree = "<group>"; };
 		FA4220F11CB910E70065047E /* NSData+Transfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Transfer.swift"; sourceTree = "<group>"; };
 		FA4220F21CB910E70065047E /* NSDictionary+Transfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+Transfer.swift"; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				FA4220F51CB910E70065047E /* Swift+ObjcFeature.swift */,
+				CEE419AD1DF2908C0046A161 /* Swift+Global.swift */,
+				CEE419AF1DF2A1B90046A161 /* Global+ObjectiveC.swift */,
 				CEADCA071D6EF6F5004C1D59 /* CoreGraphics */,
 				FA4220EF1CB910E70065047E /* Foundation */,
 				FA4220F61CB910E70065047E /* UIKit */,
@@ -273,7 +279,9 @@
 				CEADCA051D6EF449004C1D59 /* NSString+Content.swift in Sources */,
 				FA51D6761C8D34240035384D /* ViewController.m in Sources */,
 				CE0863E51CC4FDAD00570101 /* UIScrollView+UIRefreshControl.swift in Sources */,
+				CEE419B01DF2A1B90046A161 /* Global+ObjectiveC.swift in Sources */,
 				FA51D6731C8D34240035384D /* AppDelegate.m in Sources */,
+				CEE419AE1DF2908C0046A161 /* Swift+Global.swift in Sources */,
 				CE83BDE31D6AB0E500AF9B8D /* DEMO.swift in Sources */,
 				CE7DA9781D7D5CA500D8D0E1 /* NSCache+Sandbox.swift in Sources */,
 				FA4221001CB910E70065047E /* Swift+ObjcFeature.swift in Sources */,

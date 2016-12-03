@@ -3,34 +3,6 @@
 
 import Foundation
 
-// refer http://swifter.tips/regex/
-struct RegexHelper {
-    let regex: NSRegularExpression
-    init(_ pattern: String) throws {
-        try regex = NSRegularExpression(pattern: pattern,
-                                        options: .caseInsensitive)
-    }
-    func match(input: String) -> Bool {
-        let matches = regex.matches(in: input,
-                                            options: [],
-                                            range: NSMakeRange(0, input.utf16.count))
-        return matches.count > 0
-    }
-}
-
-infix operator =~ {
-associativity none
-precedence 130
-}
-
-func =~(lhs: String, rhs: String) -> Bool {
-    do {
-        return try RegexHelper(rhs).match(input: lhs)
-    } catch _ {
-        return false
-    }
-}
-
 extension NSString {
     /*
      提取信息中的网络链接:(h|H)(r|R)(e|E)(f|F) *= *('|")?(\w|\\|\/|\.)+('|"| *|>)?

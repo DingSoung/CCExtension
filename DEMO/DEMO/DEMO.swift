@@ -13,6 +13,7 @@ public class DEMO: NSObject {
     class public func testSwiftTools() -> Void {
         
         closure(mark: "test", run: true, block: {
+            print(log: "ddddd")
             print("test block")
         }) {
             print("test block finished")
@@ -23,6 +24,11 @@ public class DEMO: NSObject {
             // 在括号内 anObj 不会被其他线程改变
             print(anObj.hash)
         }
+        
+        
+        
+        
+        printssss(sssss, separator: <#T##String#>, terminator: <#T##String#>)
     }
     
 }
