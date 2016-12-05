@@ -12,16 +12,21 @@ extension UIColor {
         return (r,g,b,a)
     }
     
-    /// init color with RGB
-    public convenience init(red: Int, green: Int, blue: Int) {
-        let r = red & 0xFF
-        let g = green & 0xFF
-        let b = blue & 0xFF
-        self.init(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: 1.0)
+    /// init color with RGBA Hex 0x00 ~ 0xFF
+    public convenience init(r: Int, g: Int, b: Int, a:Int) {
+        self.init(red:CGFloat(r & 0xFF) / 255.0,
+                  green:CGFloat(g & 0xFF) / 255.0,
+                  blue:CGFloat(b & 0xFF) / 255.0,
+                  alpha:CGFloat(a & 0xFF) / 255.0)
     }
     
     /// init color with hex like 0xFF55AA
-    public convenience init(hex:Int) {
-        self.init(red:(hex >> 16) & 0xff, green:(hex >> 8) & 0xff, blue:hex & 0xff)
+    public convenience init(hex6:Int) {
+        self.init(r:(hex6 >> 16) & 0xff, g:(hex6 >> 8) & 0xff, b:hex6 & 0xff, a:0xFF)
+    }
+    
+    /// init color with hex like 0xFF55AABB
+    public convenience init(hex8:Int) {
+        self.init(r:(hex8 >> 24) & 0xff, g:(hex8 >> 16) & 0xff, b:(hex8 >> 8) & 0xff, a:hex8 & 0xff)
     }
 }
