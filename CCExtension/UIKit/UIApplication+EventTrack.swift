@@ -18,14 +18,14 @@ extension UIApplication {
     }
     
     public final class func switchHook() {
-        let cls: AnyClass = UIApplication.self
-        let originalSelector = #selector(sendAction(_:to:from:for:))
-        let swizzledSelector = #selector(hook_sendAction(_:to:from:for:))
-        let originalMethod = class_getInstanceMethod(cls, originalSelector)
-        let swizzledMethod = class_getInstanceMethod(cls, swizzledSelector)
+        let originalSelector = #selector(UIApplication.sendAction(_:to:from:for:))
+        let swizzledSelector = #selector(UIApplication.hook_sendAction(_:to:from:for:))
+        let originalMethod = class_getInstanceMethod(UIApplication.self, originalSelector)
+        let swizzledMethod = class_getInstanceMethod(UIApplication.self, swizzledSelector)
         
-        if class_addMethod(cls, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod)) {
-            class_replaceMethod(cls, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod))
+        if class_addMethod(UIApplication.self, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod)) {
+            class_replaceMethod(UIApplication.self, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod))
+            print("Application SendAction reseted")
         } else {
             method_exchangeImplementations(originalMethod, swizzledMethod)
             print("Application SendAction Hooked")

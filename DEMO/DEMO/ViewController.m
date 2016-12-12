@@ -42,6 +42,8 @@
     
     [DEMO testSwiftTools];
     
+    [[DEMO new] testSwizzle];
+    
     // Cache
     for (int i = 0; i < 100; i++) {
         self.index = i;
@@ -92,6 +94,8 @@
 
 - (IBAction)buttonAction:(UIButton *)sender {
     NSLog(@"button touched");
+    
+    [UIApplication switchHook];
 }
 
 #pragma mark - <UITableViewDataSource>
