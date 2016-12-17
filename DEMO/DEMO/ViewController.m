@@ -40,6 +40,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [DEMO testQueue];
+    
     [DEMO testSwiftTools];
     
     [[DEMO new] testSwizzle];

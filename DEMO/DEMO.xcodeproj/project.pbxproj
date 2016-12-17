@@ -45,6 +45,7 @@
 		CEADCA031D6EF449004C1D59 /* NSString+Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Content.swift"; sourceTree = "<group>"; };
 		CEADCA041D6EF449004C1D59 /* NSString+TypeCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+TypeCheck.swift"; sourceTree = "<group>"; };
 		CEADCA081D6EF773004C1D59 /* UIImage+CoreGraphics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CoreGraphics.swift"; sourceTree = "<group>"; };
+		CEF8CA001E03A2FF00011389 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FA4220F01CB910E70065047E /* NSAttributedString+Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Content.swift"; sourceTree = "<group>"; };
 		FA4220F11CB910E70065047E /* NSData+Transfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Transfer.swift"; sourceTree = "<group>"; };
 		FA4220F21CB910E70065047E /* NSDictionary+Transfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+Transfer.swift"; sourceTree = "<group>"; };
@@ -136,6 +137,7 @@
 		FA51D6621C8D34240035384D = {
 			isa = PBXGroup;
 			children = (
+				CEF8CA001E03A2FF00011389 /* PrefixHeader.pch */,
 				FA51D66D1C8D34240035384D /* DEMO */,
 				FA51D68A1C8D34240035384D /* DEMOTests */,
 				FA51D6951C8D34240035384D /* DEMOUITests */,
@@ -411,6 +413,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = C6989DMQ59;
 				INFOPLIST_FILE = DEMO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingsoung.DEMO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,6 +431,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = C6989DMQ59;
 				INFOPLIST_FILE = DEMO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingsoung.DEMO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
