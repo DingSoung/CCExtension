@@ -23,6 +23,86 @@ public extension NSObject {
 
 public class DEMO: NSObject {
     
+    enum OperateType: Error {
+        case noParameter
+        case emptyParameter
+    }
+    class func operate(parameter: String?) throws -> String {
+        guard let para = parameter else {
+            throw OperateType.noParameter
+        }
+        if para.characters.count > 0 {
+        } else {
+            throw OperateType.emptyParameter
+        }
+        return para.lowercased()
+    }
+    
+    
+//    class func operates(parameter: String?) throws -> String {
+//        OperationQueue.main.addOperation {
+//            
+//            if let para = parameter {
+//               // throw OperateType.noParameter
+//            } else {
+//                 //throw OperateType.noParameter
+//            }
+//        }
+//        
+//        
+////        () throws -> ()
+////        
+////        () -> ()
+//        
+//        
+//        
+//        
+//        
+//        
+//        
+//        
+//        guard let para = parameter else {
+//            throw OperateType.noParameter
+//        }
+//        if para.characters.count > 0 {
+//        } else {
+//            throw OperateType.emptyParameter
+//        }
+//        return "jsjsjsjsj"
+//    }
+    
+    class public func testNSOperationTryCatch() -> Void {
+        OperationQueue().addOperation {
+            do {
+                let _ = try operate(parameter: nil)
+            } catch let error {
+                print(error)
+            }
+        }
+        // 实验证明   在Swift中写不出  在try catch 中调用 异步线程的代码
+    }
+    
+    
+    class public func testGCDQOS() -> Void {
+        let queue = DispatchQueue.global(qos: DispatchQoS.QoSClass.default)
+        for i in 0..<500 {
+            queue.async {
+                print("\(i) at \(Thread.current)")
+            }
+        }
+    }
+    
+    class public func testNSOperationQOS() -> Void {
+        let queue = OperationQueue()
+        for i in 0..<500 {
+            queue.addOperation {
+               print("\(i) at \(Thread.current)")
+            }
+        }
+    }
+    
+    
+    
     class public func testQueue() ->Void {
         let serialQueue = DispatchQueue(label: "test serial Queue")
         let currentQueue = DispatchQueue(label: "test current Queue", attributes:  DispatchQueue.Attributes.concurrent)

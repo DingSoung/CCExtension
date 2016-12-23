@@ -40,11 +40,93 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [DEMO testQueue];
+    [DEMO testGCDQOS];
     
-    [DEMO testSwiftTools];
+    [DEMO testNSOperationTryCatch];
     
-    [[DEMO new] testSwizzle];
+    
+    void (^tryExcuseWithQueue)(NSOperationQueue*, void(^)(), void(^)(), void(^)()) = ^(NSOperationQueue* queue, void(^tryBlock)(), void(^catchBlock)(NSException *), void(^finishedBlock)()) {
+        [queue addOperationWithBlock:^{
+            @try {
+                if (tryBlock) {
+                    tryBlock();
+                }
+            } @catch (NSException *exception) {
+                if (catchBlock) {
+                    catchBlock(exception);
+                } else {
+                    NSLog(@"class:%@\n exception:%@\n model:%@",@"DataService", exception.reason, nil);
+                }
+            } @finally {
+                if (finishedBlock) {
+                    finishedBlock();
+                }
+            }
+        }];
+    };
+    
+    
+    tryExcuseWithQueue([[NSOperationQueue alloc] init], ^{
+        NSString *str = nil;
+        NSArray<NSString *> *strs = @[str];
+        NSLog(@"%lu",strs.count);
+    }, nil, nil);
+    
+    tryExcuseWithQueue([[NSOperationQueue alloc] init], ^{
+        NSString *str = nil;
+        NSArray<NSString *> *strs = @[str];
+        NSLog(@"%lu",strs.count);
+    }, ^(NSException *exception){
+        NSLog(@"xxxxxxx %@",exception);
+    }, nil);
+    
+    
+    tryExcuseWithQueue([[NSOperationQueue alloc] init], ^{
+        NSString *str = nil;
+        NSArray<NSString *> *strs = @[str];
+        NSLog(@"%lu",strs.count);
+    }, ^(NSException *exception){
+        NSLog(@"xxxxxxx %@",exception);
+    }, ^{
+        NSLog(@"xxxxxxxxxxxxxxx xxxxxxxxxxxx");
+    });
+    
+    
+    
+    
+    
+    @try {
+        NSString *str = nil;
+        NSArray<NSString *> *strs = @[str];
+        NSLog(@"%lu",strs.count);
+    } @catch (NSException *exception) {
+        NSLog(@"%@", exception.reason);
+    } @finally {
+    }
+    
+    @try {
+        [[[NSOperationQueue alloc] init] addOperationWithBlock:^{
+            @try {
+                NSString *str = nil;
+                NSArray<NSString *> *strs = @[str];
+                NSLog(@"%lu",strs.count);
+            } @catch (NSException *exception) {
+                NSLog(@"%@", exception.reason);
+                
+            } @finally {
+            }
+        }];
+    } @catch (NSException *exception) {
+        NSLog(@"%@", exception.reason);
+    } @finally {
+    }
+    
+    
+    //[DEMO testNSOperationQOS];
+    
+    //[DEMO testSwiftTools];
+    
+    //[[DEMO new] testSwizzle];
     
     // Cache
     for (int i = 0; i < 100; i++) {
