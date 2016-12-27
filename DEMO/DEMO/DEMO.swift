@@ -38,39 +38,6 @@ public class DEMO: NSObject {
         return para.lowercased()
     }
     
-    
-//    class func operates(parameter: String?) throws -> String {
-//        OperationQueue.main.addOperation {
-//            
-//            if let para = parameter {
-//               // throw OperateType.noParameter
-//            } else {
-//                 //throw OperateType.noParameter
-//            }
-//        }
-//        
-//        
-////        () throws -> ()
-////        
-////        () -> ()
-//        
-//        
-//        
-//        
-//        
-//        
-//        
-//        
-//        guard let para = parameter else {
-//            throw OperateType.noParameter
-//        }
-//        if para.characters.count > 0 {
-//        } else {
-//            throw OperateType.emptyParameter
-//        }
-//        return "jsjsjsjsj"
-//    }
-    
     class public func testNSOperationTryCatch() -> Void {
         OperationQueue().addOperation {
             do {
@@ -84,6 +51,18 @@ public class DEMO: NSObject {
     
     
     class public func testGCDQOS() -> Void {
+        
+
+        
+        
+        
+        
+        let  serialQueue = DispatchQueue(label: "serial queue")
+        
+        OperationQueue
+        
+        
+        
         let queue = DispatchQueue.global(qos: DispatchQoS.QoSClass.default)
         for i in 0..<500 {
             queue.async {
@@ -94,6 +73,7 @@ public class DEMO: NSObject {
     
     class public func testNSOperationQOS() -> Void {
         let queue = OperationQueue()
+        queue.maxConcurrentOperationCount = 10
         for i in 0..<500 {
             queue.addOperation {
                print("\(i) at \(Thread.current)")
@@ -104,9 +84,15 @@ public class DEMO: NSObject {
     
     
     class public func testQueue() ->Void {
+        DispatchQueue.main.sync {
+            //
+        }
+        
+        DispatchQueue.global(qos: <#T##DispatchQoS.QoSClass#>)
+        DispatchQueue(label: <#T##String#>, qos: <#T##DispatchQoS#>, attributes: <#T##DispatchQueue.Attributes#>, autoreleaseFrequency: <#T##DispatchQueue.AutoreleaseFrequency#>, target: <#T##DispatchQueue?#>)
+        
         let serialQueue = DispatchQueue(label: "test serial Queue")
         let currentQueue = DispatchQueue(label: "test current Queue", attributes:  DispatchQueue.Attributes.concurrent)
-        
         serialQueue.sync {
             print("1") // thread 1 serial
             var a = 0
@@ -160,6 +146,8 @@ public class DEMO: NSObject {
         TESTMODEL.printlog2(title: "before")
         
         
+        
+        
         let originalSelector = #selector(TESTMODEL.printlog(title:))
         let swizzledSelector = #selector(NSObject.printlog2(title:))
         let originalMethod = class_getInstanceMethod(TESTMODEL.self, originalSelector)
@@ -201,3 +189,4 @@ public class DEMO: NSObject {
     }
     
 }
+
