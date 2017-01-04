@@ -47,23 +47,20 @@ public class DEMO: NSObject {
             }
         }
         // 实验证明   在Swift中写不出  在try catch 中调用 异步线程的代码
+        
+        
+        let queue = OperationQueue()
+        static var name:String?
+        for time in 0..<100 {
+            queue.addOperation {
+                name = "\(time)"
+            }
+        }
     }
     
     
     class public func testGCDQOS() -> Void {
-        
-
-        
-        
-        
-        
-        let  serialQueue = DispatchQueue(label: "serial queue")
-        
-        OperationQueue
-        
-        
-        
-        let queue = DispatchQueue.global(qos: DispatchQoS.QoSClass.default)
+        let  queue = DispatchQueue(label: "serial queue")
         for i in 0..<500 {
             queue.async {
                 print("\(i) at \(Thread.current)")
