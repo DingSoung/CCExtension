@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE778B801E27A5B8005E7541 /* NSObject+HookBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE778B7F1E27A5B8005E7541 /* NSObject+HookBlock.swift */; };
 		CE82B3B31E129FA60016B5C3 /* UIImage+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82B39F1E129FA60016B5C3 /* UIImage+CoreGraphics.swift */; };
 		CE82B3B41E129FA60016B5C3 /* NSAttributedString+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82B3A11E129FA60016B5C3 /* NSAttributedString+Content.swift */; };
 		CE82B3B51E129FA60016B5C3 /* NSCache+Sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82B3A21E129FA60016B5C3 /* NSCache+Sandbox.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE778B7F1E27A5B8005E7541 /* NSObject+HookBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+HookBlock.swift"; sourceTree = "<group>"; };
 		CE82B39F1E129FA60016B5C3 /* UIImage+CoreGraphics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CoreGraphics.swift"; sourceTree = "<group>"; };
 		CE82B3A11E129FA60016B5C3 /* NSAttributedString+Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Content.swift"; sourceTree = "<group>"; };
 		CE82B3A21E129FA60016B5C3 /* NSCache+Sandbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCache+Sandbox.swift"; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				CE82B3A31E129FA60016B5C3 /* NSData+Transfer.swift */,
 				CE82B3A41E129FA60016B5C3 /* NSDictionary+Transfer.swift */,
 				CE82B3A51E129FA60016B5C3 /* NSObject+Transfer.swift */,
+				CE778B7F1E27A5B8005E7541 /* NSObject+HookBlock.swift */,
 				CE82B3A61E129FA60016B5C3 /* NSString+Content.swift */,
 				CE82B3A71E129FA60016B5C3 /* NSString+Regex.swift */,
 				CE82B3A81E129FA60016B5C3 /* NSString+Transfer.swift */,
@@ -288,6 +291,7 @@
 				CE83BDE31D6AB0E500AF9B8D /* DEMO.swift in Sources */,
 				FA51D67C1C8D34240035384D /* DEMO.xcdatamodeld in Sources */,
 				CE82B3C41E129FA60016B5C3 /* UIWebView+JavaScript.swift in Sources */,
+				CE778B801E27A5B8005E7541 /* NSObject+HookBlock.swift in Sources */,
 				FA51D6701C8D34240035384D /* main.m in Sources */,
 				CE82B3B81E129FA60016B5C3 /* NSObject+Transfer.swift in Sources */,
 				CE82B3B31E129FA60016B5C3 /* UIImage+CoreGraphics.swift in Sources */,

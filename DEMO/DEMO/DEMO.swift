@@ -50,7 +50,7 @@ public class DEMO: NSObject {
         
         
         let queue = OperationQueue()
-        static var name:String?
+        var name:String?
         for time in 0..<100 {
             queue.addOperation {
                 name = "\(time)"
@@ -84,9 +84,6 @@ public class DEMO: NSObject {
         DispatchQueue.main.sync {
             //
         }
-        
-        DispatchQueue.global(qos: <#T##DispatchQoS.QoSClass#>)
-        DispatchQueue(label: <#T##String#>, qos: <#T##DispatchQoS#>, attributes: <#T##DispatchQueue.Attributes#>, autoreleaseFrequency: <#T##DispatchQueue.AutoreleaseFrequency#>, target: <#T##DispatchQueue?#>)
         
         let serialQueue = DispatchQueue(label: "test serial Queue")
         let currentQueue = DispatchQueue(label: "test current Queue", attributes:  DispatchQueue.Attributes.concurrent)

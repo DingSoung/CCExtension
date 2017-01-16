@@ -49,6 +49,11 @@
     [DEMO testNSOperationTryCatch];
     
     
+    [UIViewController hookWithCls:[UIViewController class] originalSelector:@selector(viewWillAppear:) option:nil block:^{
+        NSLog(@"ssssss");
+    }];
+    
+    
     void (^tryExcuseWithQueue)(NSOperationQueue*, void(^)(), void(^)(), void(^)()) = ^(NSOperationQueue* queue, void(^tryBlock)(), void(^catchBlock)(NSException *), void(^finishedBlock)()) {
         [queue addOperationWithBlock:^{
             @try {
@@ -184,6 +189,11 @@
     NSLog(@"button touched");
     
     [UIApplication switchHook];
+    
+    
+    UIViewController *vc = [[UIViewController alloc] init];
+    [self presentViewController:vc animated:YES completion:^{
+    }];
 }
 
 #pragma mark - <UITableViewDataSource>
