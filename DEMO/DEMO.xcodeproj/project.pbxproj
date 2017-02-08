@@ -22,7 +22,7 @@
 		CE35A7E31E35E5A7007C8FC0 /* NSDictionary+Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35A7CF1E35E5A7007C8FC0 /* NSDictionary+Transfer.swift */; };
 		CE35A7E41E35E5A7007C8FC0 /* NSObject+HookBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35A7D01E35E5A7007C8FC0 /* NSObject+HookBlock.swift */; };
 		CE35A7E51E35E5A7007C8FC0 /* NSObject+Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35A7D11E35E5A7007C8FC0 /* NSObject+Transfer.swift */; };
-		CE35A7E61E35E5A7007C8FC0 /* NSString+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35A7D21E35E5A7007C8FC0 /* NSString+Content.swift */; };
+		CE35A7E61E35E5A7007C8FC0 /* NSString+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35A7D21E35E5A7007C8FC0 /* NSString+Size.swift */; };
 		CE35A7E71E35E5A7007C8FC0 /* NSString+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35A7D31E35E5A7007C8FC0 /* NSString+Regex.swift */; };
 		CE35A7E81E35E5A7007C8FC0 /* NSString+Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35A7D41E35E5A7007C8FC0 /* NSString+Transfer.swift */; };
 		CE35A7E91E35E5A7007C8FC0 /* NSString+TypeCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35A7D51E35E5A7007C8FC0 /* NSString+TypeCheck.swift */; };
@@ -78,7 +78,7 @@
 		CE35A7CF1E35E5A7007C8FC0 /* NSDictionary+Transfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+Transfer.swift"; sourceTree = "<group>"; };
 		CE35A7D01E35E5A7007C8FC0 /* NSObject+HookBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+HookBlock.swift"; sourceTree = "<group>"; };
 		CE35A7D11E35E5A7007C8FC0 /* NSObject+Transfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Transfer.swift"; sourceTree = "<group>"; };
-		CE35A7D21E35E5A7007C8FC0 /* NSString+Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Content.swift"; sourceTree = "<group>"; };
+		CE35A7D21E35E5A7007C8FC0 /* NSString+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Size.swift"; sourceTree = "<group>"; };
 		CE35A7D31E35E5A7007C8FC0 /* NSString+Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Regex.swift"; sourceTree = "<group>"; };
 		CE35A7D41E35E5A7007C8FC0 /* NSString+Transfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Transfer.swift"; sourceTree = "<group>"; };
 		CE35A7D51E35E5A7007C8FC0 /* NSString+TypeCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+TypeCheck.swift"; sourceTree = "<group>"; };
@@ -213,8 +213,8 @@
 				CE35A7CF1E35E5A7007C8FC0 /* NSDictionary+Transfer.swift */,
 				CE35A7D01E35E5A7007C8FC0 /* NSObject+HookBlock.swift */,
 				CE35A7D11E35E5A7007C8FC0 /* NSObject+Transfer.swift */,
-				CE35A7D21E35E5A7007C8FC0 /* NSString+Content.swift */,
 				CE35A7D31E35E5A7007C8FC0 /* NSString+Regex.swift */,
+				CE35A7D21E35E5A7007C8FC0 /* NSString+Size.swift */,
 				CE35A7D41E35E5A7007C8FC0 /* NSString+Transfer.swift */,
 				CE35A7D51E35E5A7007C8FC0 /* NSString+TypeCheck.swift */,
 			);
@@ -377,7 +377,7 @@
 				CE35A7E41E35E5A7007C8FC0 /* NSObject+HookBlock.swift in Sources */,
 				CE35A79D1E35E595007C8FC0 /* ViewController.m in Sources */,
 				CE35A7F01E35E5A7007C8FC0 /* UIVIew+UIImage.swift in Sources */,
-				CE35A7E61E35E5A7007C8FC0 /* NSString+Content.swift in Sources */,
+				CE35A7E61E35E5A7007C8FC0 /* NSString+Size.swift in Sources */,
 				CE35A7E81E35E5A7007C8FC0 /* NSString+Transfer.swift in Sources */,
 				CE35A7F41E35E65F007C8FC0 /* DEMO.swift in Sources */,
 				CE35A7EC1E35E5A7007C8FC0 /* UIColor+Hex.swift in Sources */,
@@ -648,6 +648,7 @@
 				CE35A7C11E35E595007C8FC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE35A7C21E35E595007C8FC0 /* Build configuration list for PBXNativeTarget "DEMOTests" */ = {
 			isa = XCConfigurationList;
@@ -656,6 +657,7 @@
 				CE35A7C41E35E595007C8FC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE35A7C51E35E595007C8FC0 /* Build configuration list for PBXNativeTarget "DEMOUITests" */ = {
 			isa = XCConfigurationList;
@@ -664,6 +666,7 @@
 				CE35A7C71E35E595007C8FC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

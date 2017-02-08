@@ -7,25 +7,26 @@ import UIKit
 
 extension NSString {
     
-    /// count lenght of String, one Chinese, Japanese etcis 2
-    public var lenghtOfZhEn: Int {
-        let enc = CFStringConvertEncodingToNSStringEncoding(CFStringEncoding(CFStringEncodings.GB_18030_2000.rawValue))
+    /*
+    /// lenght with encode，English 中文 國語 日本語の 😀, GB_2312_80
+    public func length(encode:CFStringEncodings) -> Int {
+        let enc = CFStringConvertEncodingToNSStringEncoding(CFStringEncoding(encode.rawValue))
         guard let da = self.data(using: enc) else {
             return 0
         }
         return da.count
-    }
+    }*/
     
     /// height for limit width with font
-    public func heightWithConstrainedWidth(width: CGFloat, font: UIFont) -> CGFloat {
-        let constraintRect = CGSize(width: width, height: CGFloat.greatestFiniteMagnitude)
+    public func height(constrainedWidth: CGFloat, font: UIFont) -> CGFloat {
+        let constraintRect = CGSize(width: constrainedWidth, height: CGFloat.greatestFiniteMagnitude)
         let boundingBox = self.boundingRect(with: constraintRect, options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
         return boundingBox.height
     }
     
     /// width for limit height with font
-    public func widthWithConstrainedHeight(height: CGFloat, font: UIFont) -> CGFloat {
-        let constraintRect = CGSize(width: CGFloat.greatestFiniteMagnitude, height: height)
+    public func width(constrainedHeight: CGFloat, font: UIFont) -> CGFloat {
+        let constraintRect = CGSize(width: CGFloat.greatestFiniteMagnitude, height: constrainedHeight)
         let boundingBox = self.boundingRect(with: constraintRect, options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
         return boundingBox.width
     }

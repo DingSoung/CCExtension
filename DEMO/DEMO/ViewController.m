@@ -28,6 +28,13 @@
         NSLog(@"ssssss");
     }];
     
+    NSString *string = @"English 中文 國語 日本語の 😀";
+    int  lengrh = [string lengthWithEncode:kCFStringEncodingGB_2312_80];
+    double width = [string widthWithConstrainedHeight:100 font:[UIFont systemFontOfSize:16]];
+    
+    const char *cString = [string UTF8String];
+    int textLength = (int)strlen(cString);
+    
     
     void (^tryExcuseWithQueue)(NSOperationQueue*, void(^)(), void(^)(), void(^)()) = ^(NSOperationQueue* queue, void(^tryBlock)(), void(^catchBlock)(NSException *), void(^finishedBlock)()) {
         [queue addOperationWithBlock:^{
