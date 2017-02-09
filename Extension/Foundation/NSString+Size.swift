@@ -19,16 +19,18 @@ extension NSString {
     
     /// height for limit width with font
     public func height(constrainedWidth: CGFloat, font: UIFont) -> CGFloat {
-        let constraintRect = CGSize(width: constrainedWidth, height: CGFloat.greatestFiniteMagnitude)
-        let boundingBox = self.boundingRect(with: constraintRect, options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
-        return boundingBox.height
+        return self.boundingRect(with: CGSize(width: constrainedWidth, height: CGFloat.greatestFiniteMagnitude),
+                                 options: NSStringDrawingOptions.usesLineFragmentOrigin,
+                                 attributes: [NSFontAttributeName: font],
+                                 context: nil).height
     }
     
     /// width for limit height with font
     public func width(constrainedHeight: CGFloat, font: UIFont) -> CGFloat {
-        let constraintRect = CGSize(width: CGFloat.greatestFiniteMagnitude, height: constrainedHeight)
-        let boundingBox = self.boundingRect(with: constraintRect, options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
-        return boundingBox.width
+        return self.boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: constrainedHeight),
+                                 options: NSStringDrawingOptions.usesLineFragmentOrigin,
+                                 attributes:  [NSFontAttributeName: font],
+                                 context: nil).width
     }
 }
 
