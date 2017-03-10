@@ -11,9 +11,18 @@
 @interface ViewController ()
 @property (nonatomic, assign) NSInteger index;
 @property (nonatomic, strong) NSString *validTitle;
+@property (nonatomic, copy) NSString *hello;
 @end
 
 @implementation ViewController
+
+- (void)testsgsgsg:(NSString *)str {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"%@---------      ----------", str);
+    });
+}
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,6 +31,17 @@
     [DEMO testGCDQOS];
     
     [DEMO testNSOperationTryCatch];
+    
+    [self testsgsgsg:@"111111111111"];
+    [self testsgsgsg:@"222222222222"];
+    
+    self.hello = @"hell0--------";
+     __weak typeof(self) weakSelf = self;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"%@",weakSelf.hello);
+    });
+    NSLog(@"%@",self.hello);
+    self.hello = @"hell1;;;;;;;;;;";
     
     
     [UIViewController hookWithCls:[UIViewController class] originalSelector:@selector(viewWillAppear:) option:nil block:^{
