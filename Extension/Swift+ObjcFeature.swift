@@ -3,6 +3,21 @@
 
 import Foundation
 
+/// print log with detail message
+public func print(log: Any,
+                  file: String = #file,
+                  line: Int = #line,
+                  function: String = #function) {
+    print([
+        "thread":Thread.current,
+        "file":file,
+        "line":line,
+        "function":function,
+        "message":log,
+        "callstack":Thread.callStackSymbols,
+        ])
+}
+
 /// code Block, used like C code block { }
 public func closure(mark:String? = "", run:Bool? = true, block:()->Void, complete:(()->Void)? = {()->Void in}) {
     if run != true {

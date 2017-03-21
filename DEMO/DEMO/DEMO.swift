@@ -21,6 +21,12 @@ public extension NSObject {
 }
 
 
+public class LOGSS: NSObject {
+    public func test() {
+        print(log: "hello world")
+    }
+}
+
 public class DEMO: NSObject {
     
     enum OperateType: Error {
