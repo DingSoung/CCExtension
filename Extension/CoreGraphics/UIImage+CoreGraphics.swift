@@ -6,7 +6,7 @@ import UIKit
 extension UIImage {
     
     /// render image with Core Graphics or UIBezierPath code
-    public class func imageWithRender(render:()->Void, size:CGSize, opaque:Bool) -> UIImage? {
+    public class func image(render:()->Void, size:CGSize, opaque:Bool) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(size, opaque, UIScreen.main.scale)
         guard let context = UIGraphicsGetCurrentContext() else {
             UIGraphicsEndImageContext()
