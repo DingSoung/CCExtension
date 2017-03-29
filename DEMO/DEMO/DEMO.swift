@@ -56,7 +56,7 @@ public class DEMO: NSObject {
         
         
         let queue = OperationQueue()
-        var name:String?
+        var name:String = ""
         for time in 0..<100 {
             queue.addOperation {
                 name = "\(time)"
@@ -142,7 +142,7 @@ public class DEMO: NSObject {
         let test1 = TESTMODEL()
         test1.printlog(title: "before")
         
-        let test2 = NSObject()
+        _ = NSObject()
         TESTMODEL.printlog2(title: "before")
         
         

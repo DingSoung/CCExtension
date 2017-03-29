@@ -13,7 +13,7 @@ extension UIApplication {
     }
     
     open func hook_sendAction(_ action: Selector, to target: Any?, from sender: Any?, for event: UIEvent?) -> Bool {
-        print("\n\(action)\n\(target)\n\(sender)\n\(event)")
+        print("\n\(action)\n\(String(describing: target))\n\(String(describing: sender))\n\(String(describing: event))")
         return self.hook_sendAction(action, to: target, from: sender, for: event)
     }
     
