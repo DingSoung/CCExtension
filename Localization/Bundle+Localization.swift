@@ -38,7 +38,7 @@ public extension Bundle {
 }
 
 private class BundleEx: Bundle {
-    private override func localizedString(forKey key: String, value: String?, table tableName: String?) -> String {
+    fileprivate override func localizedString(forKey key: String, value: String?, table tableName: String?) -> String {
         if let bundle = self.runTimeBundle {
             return bundle.localizedString(forKey: key, value: value, table: tableName)
         } else {
@@ -46,6 +46,7 @@ private class BundleEx: Bundle {
         }
     }
 }
+
 
 
 
