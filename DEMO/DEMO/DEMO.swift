@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Extension
 
 public class TESTMODEL:NSObject {
     dynamic func printlog(title:String) {
