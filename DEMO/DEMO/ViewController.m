@@ -2,48 +2,144 @@
 //  ViewController.m
 //  DEMO
 //
-//  Created by Songwen Ding on 3/7/16.
-//  Copyright © 2016 DingSoung. All rights reserved.
+//  Created by Songwen Ding on 2017/1/23.
+//  Copyright © 2017年 DingSoung. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "DEMO-Swift.h"
+#import <Extension/Extension.h>
 
-@interface ViewController () <NSCoding, UITableViewDataSource, UITableViewDelegate>
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, copy) NSArray *models;
-
+@interface ViewController ()
 @property (nonatomic, assign) NSInteger index;
 @property (nonatomic, strong) NSString *validTitle;
+@property (nonatomic, copy) NSString *hello;
 @end
 
 @implementation ViewController
-#pragma mark NSCoding
-- (void)encodeWithCoder:(NSCoder *)aCoder {
-    [super encodeWithCoder:aCoder];
-    
-    [aCoder encodeInteger:self.index     forKey:@"index"];
-    [aCoder encodeObject:self.validTitle     forKey:@"validTitle"];
+
+- (void)testsgsgsg:(NSString *)str {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"%@---------      ----------", str);
+    });
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    
-    if (self) {
-        self.index = [aDecoder decodeIntegerForKey:@"index"];
-        self.validTitle = [aDecoder decodeObjectForKey:@"validTitle"];
-    }
-    return self;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
     
-    [DEMO testSwiftTools];
+    [DEMO testReges];
     
-//    NSLog(<#NSString * _Nonnull format, ...#>)
-    [NSObject
+    [DEMO testLOGSS];
+    
+    [DEMO testGCDQOS];
+    
+    [DEMO testNSOperationTryCatch];
+    
+    
+    
+    [self testsgsgsg:@"111111111111"];
+    [self testsgsgsg:@"222222222222"];
+    
+    self.hello = @"hell0--------";
+     __weak typeof(self) weakSelf = self;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"%@",weakSelf.hello);
+    });
+    NSLog(@"%@",self.hello);
+    self.hello = @"hell1;;;;;;;;;;";
+    
+    
+    [UIViewController hookWithCls:[UIViewController class] originalSelector:@selector(viewWillAppear:) option:nil block:^{
+        NSLog(@"ssssss");
+    }];
+    
+    NSString *string = @"English 中文 國語 日本語の 😀";
+    [string widthWithConstrainedHeight:100 font:[UIFont systemFontOfSize:16]];
+    const char *cString = [string UTF8String];
+    NSLog(@"%d", (int)strlen(cString));
+    
+    void (^tryExcuseWithQueue)(NSOperationQueue*, void(^)(), void(^)(), void(^)()) = ^(NSOperationQueue* queue, void(^tryBlock)(), void(^catchBlock)(NSException *), void(^finishedBlock)()) {
+        [queue addOperationWithBlock:^{
+            @try {
+                if (tryBlock) {
+                    tryBlock();
+                }
+            } @catch (NSException *exception) {
+                if (catchBlock) {
+                    catchBlock(exception);
+                } else {
+                    NSLog(@"class:%@\n exception:%@\n model:%@",@"DataService", exception.reason, nil);
+                }
+            } @finally {
+                if (finishedBlock) {
+                    finishedBlock();
+                }
+            }
+        }];
+    };
+    
+    
+    tryExcuseWithQueue([[NSOperationQueue alloc] init], ^{
+        NSString *str = nil;
+        NSArray<NSString *> *strs = @[str];
+        NSLog(@"%lu",strs.count);
+    }, nil, nil);
+    
+    tryExcuseWithQueue([[NSOperationQueue alloc] init], ^{
+        NSString *str = nil;
+        NSArray<NSString *> *strs = @[str];
+        NSLog(@"%lu",strs.count);
+    }, ^(NSException *exception){
+        NSLog(@"xxxxxxx %@",exception);
+    }, nil);
+    
+    
+    tryExcuseWithQueue([[NSOperationQueue alloc] init], ^{
+        NSString *str = nil;
+        NSArray<NSString *> *strs = @[str];
+        NSLog(@"%lu",strs.count);
+    }, ^(NSException *exception){
+        NSLog(@"xxxxxxx %@",exception);
+    }, ^{
+        NSLog(@"xxxxxxxxxxxxxxx xxxxxxxxxxxx");
+    });
+    
+    
+    
+    @try {
+        NSString *str = nil;
+        NSArray<NSString *> *strs = @[str];
+        NSLog(@"%lu",strs.count);
+    } @catch (NSException *exception) {
+        NSLog(@"%@", exception.reason);
+    } @finally {
+    }
+    
+    @try {
+        [[[NSOperationQueue alloc] init] addOperationWithBlock:^{
+            @try {
+                NSString *str = nil;
+                NSArray<NSString *> *strs = @[str];
+                NSLog(@"%lu",strs.count);
+            } @catch (NSException *exception) {
+                NSLog(@"%@", exception.reason);
+                
+            } @finally {
+            }
+        }];
+    } @catch (NSException *exception) {
+        NSLog(@"%@", exception.reason);
+    } @finally {
+    }
+    
+    
+    //[DEMO testNSOperationQOS];
+    
+    //[DEMO testSwiftTools];
+    
+    //[[DEMO new] testSwizzle];
+    
     // Cache
     for (int i = 0; i < 100; i++) {
         self.index = i;
@@ -70,59 +166,35 @@
             NSLog(@"--------------->verify fail:");
         }
     }
-
+    
     // Do any additional setup after loading the view, typically from a nib.
-    self.imageView.image = [UIImage imageNamed:@"image"].roundImage;
-    self.tableView = [[UITableView alloc] init];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"reuseIdentifier"];
+    [UIImage imageNamed:@"image"].roundImage;
     
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-    self.models = @[@"1", @"3", @"5", @"7", @"9",];
-    [self.view addSubview:self.tableView];
+    [UIApplication switchHook];
 }
 
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
-    
-    self.tableView.frame = CGRectMake(0, 300, self.view.bounds.size.width, 100);
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)buttonAction:(UIButton *)sender {
-    NSLog(@"button touched");
+#pragma mark NSCoding
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [super encodeWithCoder:aCoder];
+    
+    [aCoder encodeInteger:self.index     forKey:@"index"];
+    [aCoder encodeObject:self.validTitle     forKey:@"validTitle"];
 }
 
-#pragma mark - <UITableViewDataSource>
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.models.count > 0 ? 1 : 0;
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        self.index = [aDecoder decodeIntegerForKey:@"index"];
+        self.validTitle = [aDecoder decodeObjectForKey:@"validTitle"];
+    }
+    return self;
 }
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 30;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.models.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier"];
-    cell.textLabel.text = self.models[indexPath.row];
-    return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"table selected");
-}
-
 
 @end
-
-
-
-
-
