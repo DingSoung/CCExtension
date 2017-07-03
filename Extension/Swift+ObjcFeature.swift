@@ -4,18 +4,22 @@
 import Foundation
 
 /// print log with detail message
-public func print(log: Any,
-                  file: String = #file,
-                  line: Int = #line,
-                  function: String = #function) {
-    print([
-        "thread":Thread.current,
-        "file":file,
-        "line":line,
-        "function":function,
-        "message":log,
-        "callstack":Thread.callStackSymbols,
-        ])
+@discardableResult public func print(log: Any,
+                                     file: String = #file,
+                                     line: Int = #line,
+                                     function: String = #function) -> [String : Any] {
+    let ret = [
+        "message" : log,
+        "file" : file,
+        "line" : line,
+        "function" : function,
+        "thread" : Thread.current,
+        "callstack" : Thread.callStackSymbols,
+        ];
+    #if DEBUG
+        print(ret)
+    #endif
+    return ret
 }
 
 /// code Block, used like C code block { }
