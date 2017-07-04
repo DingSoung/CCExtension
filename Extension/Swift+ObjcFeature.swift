@@ -4,22 +4,21 @@
 import Foundation
 
 /// print log with detail message
-@discardableResult public func print(log: Any,
+@discardableResult public func print(log: Any?,
                                      file: String = #file,
                                      line: Int = #line,
                                      function: String = #function) -> [String : Any] {
-    let ret = [
-        "message" : log,
+    #if DEBUG
+        print(log ?? "None")
+    #endif
+    return [
+        "message" : log ?? "None",
         "file" : file,
         "line" : line,
         "function" : function,
         "thread" : Thread.current,
         "callstack" : Thread.callStackSymbols,
-        ];
-    #if DEBUG
-        print(ret)
-    #endif
-    return ret
+    ]
 }
 
 /// code Block, used like C code block { }
