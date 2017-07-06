@@ -176,7 +176,7 @@
 				TargetAttributes = {
 					CE607EE81F051DB0007E99DC = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = C6989DMQ59;
+						DevelopmentTeam = JQ5JG33NKB;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -344,14 +344,14 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = C6989DMQ59;
+				DEVELOPMENT_TEAM = JQ5JG33NKB;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Extension/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dingsoung.Extension.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = DingSoung.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -363,14 +363,14 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = C6989DMQ59;
+				DEVELOPMENT_TEAM = JQ5JG33NKB;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Extension/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dingsoung.Extension.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = DingSoung.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
