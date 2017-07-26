@@ -4,7 +4,7 @@
 import Foundation
 
 /// code Block, used like C code block { }
-public func closure(mark:String? = "", run:Bool? = true, block:()->Void, complete:(()->Void)? = {()->Void in}) {
+public func closure(mark:String? = "", run:Bool? = true, block:()->Void, complete:(()->Void)? = {}) {
     if run != true {
         return
     } else {

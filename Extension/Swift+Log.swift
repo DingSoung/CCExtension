@@ -8,16 +8,16 @@ import Foundation
                                    file: String = #file,
                                    line: Int = #line,
                                    function: String = #function,
-                                   print: Bool? = false) -> [String : Any] {
+                                   debug: Bool? = false) -> [String : Any] {
     let dict = [
-        "message" : log ?? "None",
+        "message" : messgae ?? "None",
         "file" : file,
         "line" : line,
         "function" : function,
         "thread" : Thread.current,
         "callstack" : Thread.callStackSymbols,
         ]
-    if print {
+    if let dbg = debug, dbg == true {
         print(dict)
     }
     return dict
