@@ -6,7 +6,8 @@
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/DingSoung/Extension/master/LICENSE.md)
 [![Donate](https://img.shields.io/badge/donate-Alipay-00BBEE.svg)](https://qr.alipay.com/paipai/downloadQrCodeImg.resource?code=aex06042bir8odhpd1fgs00)
 
-#### Beief
+### Beief
+
  A collection Extension for quick developing
 
 ### Usage
@@ -15,24 +16,24 @@ add code below to your Cartfile and command `carthage update`
 github "DingSoung/Extension"
 ```
 
-### Extension list
-| file                              | discription                              |
-| :-------------------------------- | :--------------------------------------- |
-| Swift+ObjcFeature                 | add features of Objc for Swift           |
-| UIImage+CoreGraphics              | function of render with CoreGraphics     |
-| NSAttributedString+Content        | compute size of NSAttributedString       |
-| NSCache+Sandbox                   | A Sandbox Base Tools                     |
-| NSData+Transfer                   | NSData to String, Array ,Dictionary etc  |
-| NSDictionary+Transfer             | NSDictionary to NSData                   |
-| NSObject+Transfer                 | object from JSON String or Dictionary    |
-| NSString+Regex                    | A Regex base tool box                    |
-| NSString+Transfer                 | JSON String or URL to NSDictionary       |
-| NSString+Content                  | compute size with NSString               |
-| NSString+TypeCheck                | check ID                                 |
-| UIColor+Hex                       | color with hex or hex of color           |
-| UINavigationController+Autorotate | handle autorate of navigation and its controllers |
-| UIImage+Process                   | some image Process with CoreGraphics     |
-| UIVIew+UIImage                    | image from UIView, CoreGraphics          |
-| UIWebView+JavaScript              | handle web javaScript function with native |
-| UIScrollView+UIRefreshControl     | a pull refresh                           |
-| UIApplication+EventTrack          | a hool for sendAction to track event     |
+### 缓存设计
+
+* 线程安全
+* 支持读写
+* 写入自动创建文件夹
+* 支持删除单个文件或目录
+* 支持内存加速
+* 支持读取失败回调(延迟)
+* 支持返回写、删失败详情信息
+
+用法
+
+```objective-c
+UserModel *user = [UserModel cacheForKeyPath:@"/users/uid03879658" fail:^(NSError * _Nonnull error) {
+    NSLog(@"%@", error);
+}];
+NSError *err1 = [UserModel removeCacheForKeyPath:@"/users/uid03879658"];
+NSError *err2 = [UserModel removeCacheForPath:@"/users"];
+```
+
+高级用法参考[这里](https://github.com/DingSoung/Example)

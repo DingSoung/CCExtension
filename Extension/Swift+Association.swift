@@ -3,7 +3,7 @@
 
 import Foundation
 
-public final class Association<T: AnyObject> {
+public final class Association<T: Any> {
     
     private let policy: objc_AssociationPolicy
     
@@ -15,7 +15,7 @@ public final class Association<T: AnyObject> {
     
     /// Accesses associated object.
     /// - Parameter index: An object whose associated object is to be accessed.
-    public subscript(index: AnyObject) -> T? {
+    public subscript(index: Any) -> T? {
         get {return objc_getAssociatedObject(index, Unmanaged.passUnretained(self).toOpaque()) as? T}
         set { objc_setAssociatedObject(index, Unmanaged.passUnretained(self).toOpaque(), newValue, policy) }
     }
