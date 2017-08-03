@@ -1,9 +1,9 @@
-//  Created by Songwen Ding on 15/6/6.
-//  Copyright (c) 2015年 DingSoung. All rights reserved.
+//  Created by Songwen Ding on 2017/8/3.
+//  Copyright © 2017年 DingSoung. All rights reserved.
 
 import Foundation
 
-extension NSData {
+extension Data {
     
     /// JSON data -> JSON Object (Array or Dictionary)
     public var jsonObject: Any? {
@@ -27,11 +27,10 @@ extension NSData {
     
     /// JSON Data -> JSON String
     public var jsonString: NSString? {
-        guard let str = NSString(data: self as Data, encoding: String.Encoding.utf8.rawValue) else {
+        guard let str = NSString(data: self, encoding: String.Encoding.utf8.rawValue) else {
             print("format \(String(describing: self)) to String fail)")
             return nil
         }
         return str
     }
-    
 }

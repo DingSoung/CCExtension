@@ -3,9 +3,9 @@
 
 import Foundation
 
-extension NSObject {
+@objc public class Cache : NSObject {
     
-    @nonobjc private static var cacheDirectory : String {
+    @nonobjc public static var directory : String {
         guard let path = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.cachesDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first else {
             return ""
         }
@@ -13,8 +13,8 @@ extension NSObject {
     }
     
     private static let association = Association<NSCache<NSString, AnyObject>>()
-    public class final var memoryCache: NSCache<NSString, AnyObject> {
-        return NSObject.association[self] ?? {
+    public class final var memory: NSCache<NSString, AnyObject> {
+        return Cache.association[self] ?? {
             let cache = NSCache<NSString, AnyObject>()
             cache.countLimit = 1024
             cache.totalCostLimit = 1024 * 1024 * 50 // 50MB
@@ -22,20 +22,23 @@ extension NSObject {
             return cache
             }()
     }
+}
+
+extension NSObject {
     
     // MARK: set and get
     /// example key: "10209383" path: "/cities/street"
     @discardableResult public final func setCache(forKey key: String, atPath path: String) -> Error? {
         do {
-            try FileManager.default.createDirectory(atPath: NSObject.cacheDirectory + path, withIntermediateDirectories: true, attributes: nil)
+            try FileManager.default.createDirectory(atPath: Cache.directory + path, withIntermediateDirectories: true, attributes: nil)
         } catch let error {
             return error
         }
         let data = NSKeyedArchiver.archivedData(withRootObject: self)
         // if data.count < 20480, use SQLite else FileManager
         do {
-            try data.write(to: URL(fileURLWithPath: NSObject.cacheDirectory + path + "/" + key), options: Data.WritingOptions.atomic)
-            NSObject.memoryCache.setObject(self, forKey: (path + "/" + key) as NSString, cost: data.count)
+            try data.write(to: URL(fileURLWithPath: Cache.directory + path + "/" + key), options: Data.WritingOptions.atomic)
+            Cache.memory.setObject(self, forKey: (path + "/" + key) as NSString, cost: data.count)
             return nil
         } catch let error {
             return error
@@ -44,16 +47,16 @@ extension NSObject {
     
     /// example keypath: "/cities/street/10209383"
     public class final func cache(forKeyPath keyPath: String, fail: ((Error) -> Swift.Void)?) -> Any? {
-        if let object = self.memoryCache.object(forKey: keyPath as NSString) {
+        if let object = Cache.memory.object(forKey: keyPath as NSString) {
             return object
         }
         do {
-            let data = try NSData(contentsOf: URL(fileURLWithPath: self.cacheDirectory + keyPath), options: NSData.ReadingOptions.dataReadingMapped)
+            let data = try NSData(contentsOf: URL(fileURLWithPath: Cache.directory + keyPath), options: NSData.ReadingOptions.dataReadingMapped)
             guard let object = NSKeyedUnarchiver.unarchiveObject(with: data as Data) else {
                 fail?(NSError(domain: "unarchibe object fail", code: -1, userInfo: ["keyPath":keyPath,"data":data]) as Error)
                 return nil
             }
-            self.memoryCache.setObject(object as AnyObject, forKey: keyPath as NSString)
+            Cache.memory.setObject(object as AnyObject, forKey: keyPath as NSString)
             return object
         } catch let error {
             fail?(error)
@@ -82,7 +85,7 @@ extension NSObject {
     // MARK: clean
     private class final func removeFile(atPath path: String) -> Error? {
         do {
-            try FileManager.default.removeItem(atPath: self.cacheDirectory + path)
+            try FileManager.default.removeItem(atPath: Cache.directory + path)
         } catch let error {
             return error
         }
@@ -90,12 +93,12 @@ extension NSObject {
     }
     
     @discardableResult public class final func removeCache(forKeyPath keyPath:String) -> Error? {
-        self.memoryCache.removeObject(forKey: keyPath as NSString)
+        Cache.memory.removeObject(forKey: keyPath as NSString)
         return NSObject.removeFile(atPath: keyPath)
     }
     
     @discardableResult public class final func removeCache(forPath path:String) -> Error? {
-        self.memoryCache.removeAllObjects()
+        Cache.memory.removeAllObjects()
         return NSObject.removeFile(atPath: path)
     }
 }
