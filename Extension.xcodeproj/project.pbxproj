@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2B782F1F3AFA4200308A7D /* Array+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B782E1F3AFA4200308A7D /* Array+UIImage.swift */; };
+		CE2B78311F3AFA5800308A7D /* UITableView+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B78301F3AFA5800308A7D /* UITableView+UIImage.swift */; };
 		CE607EEE1F051DB0007E99DC /* Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = CE607EEC1F051DB0007E99DC /* Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CED972EA1F335388002CE9D1 /* UIImage+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED972CD1F335388002CE9D1 /* UIImage+CoreGraphics.swift */; };
 		CED972EB1F335388002CE9D1 /* NSArray+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED972CF1F335388002CE9D1 /* NSArray+JSON.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE2B782E1F3AFA4200308A7D /* Array+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+UIImage.swift"; sourceTree = "<group>"; };
+		CE2B78301F3AFA5800308A7D /* UITableView+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+UIImage.swift"; sourceTree = "<group>"; };
 		CE607EE91F051DB0007E99DC /* Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE607EEC1F051DB0007E99DC /* Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extension.h; sourceTree = "<group>"; };
 		CE607EED1F051DB0007E99DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				CED972DA1F335388002CE9D1 /* Array+JSON.swift */,
+				CE2B782E1F3AFA4200308A7D /* Array+UIImage.swift */,
 				CED973041F3353AE002CE9D1 /* Data+JSON.swift */,
 				CED972DB1F335388002CE9D1 /* Dictionary+JSON.swift */,
 				CED972DC1F335388002CE9D1 /* String+Dictionary.swift */,
@@ -153,6 +158,7 @@
 				CED972E51F335388002CE9D1 /* UIImage+Process.swift */,
 				CED972E61F335388002CE9D1 /* UINavigationController+Autorotate.swift */,
 				CED972E71F335388002CE9D1 /* UIScrollView+UIRefreshControl.swift */,
+				CE2B78301F3AFA5800308A7D /* UITableView+UIImage.swift */,
 				CED972E81F335388002CE9D1 /* UIVIew+UIImage.swift */,
 				CED972E91F335388002CE9D1 /* UIWebView+JavaScript.swift */,
 			);
@@ -250,6 +256,7 @@
 				CED972FB1F335388002CE9D1 /* Swift+Log.swift in Sources */,
 				CED972F61F335388002CE9D1 /* Dictionary+JSON.swift in Sources */,
 				CED972EA1F335388002CE9D1 /* UIImage+CoreGraphics.swift in Sources */,
+				CE2B782F1F3AFA4200308A7D /* Array+UIImage.swift in Sources */,
 				CED972F91F335388002CE9D1 /* Swift+Association.swift in Sources */,
 				CED972F31F335388002CE9D1 /* NSString+Regex.swift in Sources */,
 				CED972F51F335388002CE9D1 /* Array+JSON.swift in Sources */,
@@ -257,6 +264,7 @@
 				CED973011F335388002CE9D1 /* UIScrollView+UIRefreshControl.swift in Sources */,
 				CED973031F335388002CE9D1 /* UIWebView+JavaScript.swift in Sources */,
 				CED972FD1F335388002CE9D1 /* UIApplication+EventTrack.swift in Sources */,
+				CE2B78311F3AFA5800308A7D /* UITableView+UIImage.swift in Sources */,
 				CED972EE1F335388002CE9D1 /* NSDictionary+JSON.swift in Sources */,
 				CED972F81F335388002CE9D1 /* String+Regex.swift in Sources */,
 				CED972F01F335388002CE9D1 /* NSObject+HookBlock.swift in Sources */,
