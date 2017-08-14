@@ -11,7 +11,7 @@
 		CE2B78311F3AFA5800308A7D /* UITableView+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B78301F3AFA5800308A7D /* UITableView+UIImage.swift */; };
 		CE607EEE1F051DB0007E99DC /* Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = CE607EEC1F051DB0007E99DC /* Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CECAA5F61F416FE20018FE84 /* Bundle+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECAA5F41F416FE20018FE84 /* Bundle+Localization.swift */; };
-		CECAA5F71F416FE20018FE84 /* NSObject+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECAA5F51F416FE20018FE84 /* NSObject+Localization.swift */; };
+		CECAA6111F4183340018FE84 /* NSLocale+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECAA6101F4183340018FE84 /* NSLocale+Localization.swift */; };
 		CED972EA1F335388002CE9D1 /* UIImage+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED972CD1F335388002CE9D1 /* UIImage+CoreGraphics.swift */; };
 		CED972EB1F335388002CE9D1 /* NSArray+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED972CF1F335388002CE9D1 /* NSArray+JSON.swift */; };
 		CED972EC1F335388002CE9D1 /* NSAttributedString+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED972D01F335388002CE9D1 /* NSAttributedString+Content.swift */; };
@@ -46,7 +46,7 @@
 		CE607EEC1F051DB0007E99DC /* Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extension.h; sourceTree = "<group>"; };
 		CE607EED1F051DB0007E99DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CECAA5F41F416FE20018FE84 /* Bundle+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Localization.swift"; sourceTree = "<group>"; };
-		CECAA5F51F416FE20018FE84 /* NSObject+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Localization.swift"; sourceTree = "<group>"; };
+		CECAA6101F4183340018FE84 /* NSLocale+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLocale+Localization.swift"; sourceTree = "<group>"; };
 		CED972CD1F335388002CE9D1 /* UIImage+CoreGraphics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CoreGraphics.swift"; sourceTree = "<group>"; };
 		CED972CF1F335388002CE9D1 /* NSArray+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSArray+JSON.swift"; sourceTree = "<group>"; };
 		CED972D01F335388002CE9D1 /* NSAttributedString+Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Content.swift"; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				CECAA5F41F416FE20018FE84 /* Bundle+Localization.swift */,
-				CECAA5F51F416FE20018FE84 /* NSObject+Localization.swift */,
+				CECAA6101F4183340018FE84 /* NSLocale+Localization.swift */,
 				CED972CF1F335388002CE9D1 /* NSArray+JSON.swift */,
 				CED972D01F335388002CE9D1 /* NSAttributedString+Content.swift */,
 				CED972D11F335388002CE9D1 /* NSData+JSON.swift */,
@@ -270,11 +270,11 @@
 				CED973011F335388002CE9D1 /* UIScrollView+UIRefreshControl.swift in Sources */,
 				CED973031F335388002CE9D1 /* UIWebView+JavaScript.swift in Sources */,
 				CED972FD1F335388002CE9D1 /* UIApplication+EventTrack.swift in Sources */,
+				CECAA6111F4183340018FE84 /* NSLocale+Localization.swift in Sources */,
 				CE2B78311F3AFA5800308A7D /* UITableView+UIImage.swift in Sources */,
 				CED972EE1F335388002CE9D1 /* NSDictionary+JSON.swift in Sources */,
 				CED972F81F335388002CE9D1 /* String+Regex.swift in Sources */,
 				CECAA5F61F416FE20018FE84 /* Bundle+Localization.swift in Sources */,
-				CECAA5F71F416FE20018FE84 /* NSObject+Localization.swift in Sources */,
 				CED972F01F335388002CE9D1 /* NSObject+HookBlock.swift in Sources */,
 				CED972F71F335388002CE9D1 /* String+Dictionary.swift in Sources */,
 				CED972F21F335388002CE9D1 /* NSString+Dictionary.swift in Sources */,

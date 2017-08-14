@@ -1,11 +1,9 @@
-//  Created by Songwen Ding on 7/6/16.
-//  Copyright © 2016 Songwen Ding. All rights reserved.
+//  Created by Songwen Ding on 2017/8/14.
+//  Copyright © 2017年 DingSoung. All rights reserved.
 
-import Foundation
-
-public extension NSObject {
+public extension NSLocale {
     /// app language code: en, zh_Hans etc.
-    public class var languageCode:String? {
+    public class var localizationCode:String? {
         set {
             if let value = newValue {
                 UserDefaults.standard.set([value], forKey: "AppleLanguages")
@@ -23,8 +21,3 @@ public extension NSObject {
         }
     }
 }
-
-
-
-
-

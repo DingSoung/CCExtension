@@ -28,8 +28,9 @@ github "DingSoung/Extension"
 
 
 ```
-NSObject.languageCode = @"en";
+NSLocale.languageCode = @"en";
 [NSBundle mainBundle].localizationCode = @"en";
 custonBundle.localizationCode = @"en";
+anotherCustonBundle.localizationCode = @"en";
 /// reload your UI, ex: reload root viewcontroller
 ```
