@@ -8,8 +8,6 @@
 
 import Foundation
 
-import UIKit
-
 open class HookObject: NSObject {
     var block:(()->Void)?
     open func function() {

@@ -1,6 +1,8 @@
 //  Created by Songwen Ding on 2017/8/14.
 //  Copyright © 2017年 DingSoung. All rights reserved.
 
+import Foundation
+
 public extension NSLocale {
     /// app language code: en, zh_Hans etc.
     public class var localizationCode:String? {

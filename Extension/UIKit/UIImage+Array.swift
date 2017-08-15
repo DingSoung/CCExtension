@@ -3,6 +3,13 @@
 
 import UIKit
 
+extension UIImage {
+    
+    public func verticalImage(images:[UIImage]) -> UIImage? {
+        return images.verticalImage
+    }
+}
+
 extension Array where Element:UIImage {
     
     public var verticalImage: UIImage? {
