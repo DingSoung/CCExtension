@@ -10,9 +10,26 @@
  A collection Extension for quick developing
 
 ### Install
+#### Carthage
+
 add code below to your Cartfile and command `carthage update`
+
 ```
 github "DingSoung/Extension"
+```
+
+#### Swift Package Manager
+
+follow the [SPMExample](https://github.com/DingSoung/SPMExample), UIKit excluded
+
+```swift
+import PackageDescription
+let package = Package(
+    name: "SPMExample",
+    dependencies: [
+        .Package(url: "https://github.com/DingSoung/Extension.git", Version(0,6,0)),
+    ]
+)
 ```
 
 ### Localization
