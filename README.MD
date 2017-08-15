@@ -14,6 +14,18 @@
  A collection Extension for quick developing
 
 ### Install
+### Cocoa Pod
+
+add pod file below and command `pod update`
+
+```shell
+platform :ios, ‘8.0’
+use_frameworks!
+target 'AppStore' do
+	pod	'Extension'
+end
+```
+
 #### Carthage
 
 add code below to your Cartfile and command `carthage update`
