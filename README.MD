@@ -3,7 +3,7 @@
 ![CocoaPods](https://img.shields.io/cocoapods/v/Extension.svg)
 
 ![Carthage](https://img.shields.io/badge/Carthage-compatible-5CC9F5.svg?style=flat)
-![SwiftPackage](https://img.shields.io/badge/Swift Package-compatible-E66848.svg?style=flat)
+![SwiftPackage](https://img.shields.io/badge/SwiftPackage-compatible-E66848.svg?style=flat)
 ![Language](https://img.shields.io/badge/Swift-3.1-FFAC45.svg?style=flat)
 
 ![Platform](http://img.shields.io/badge/Platform-iOS-E9C2BD.svg?style=flat)
