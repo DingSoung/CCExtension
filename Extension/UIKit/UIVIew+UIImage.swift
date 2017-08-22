@@ -8,14 +8,16 @@ extension UIView {
     ///  capture image, Compatible, alpha
     public func image(alpha:CGFloat) -> UIImage? {
         var image: UIImage?
-        UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.isOpaque, UIScreen.main.scale);
-        if let contex = UIGraphicsGetCurrentContext() {
-            contex.setAlpha(alpha)
-            self.layer.render(in: contex)
-            image = UIGraphicsGetImageFromCurrentImageContext()
+        autoreleasepool { () -> Void in
+            UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.isOpaque, UIScreen.main.scale);
+            if let contex = UIGraphicsGetCurrentContext() {
+                contex.setAlpha(alpha)
+                self.layer.render(in: contex)
+                image = UIGraphicsGetImageFromCurrentImageContext()
+            }
+            UIGraphicsEndImageContext();
         }
-        UIGraphicsEndImageContext();
-        return image;
+        return image
     }
     
     public var image:UIImage? {

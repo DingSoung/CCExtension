@@ -7,15 +7,17 @@ extension UIImage {
     
     /// render image with Core Graphics or UIBezierPath code
     public class func image(render:()->Void, size:CGSize, opaque:Bool) -> UIImage? {
-        var image: UIImage?
-        UIGraphicsBeginImageContextWithOptions(size, opaque, UIScreen.main.scale)
-        if let context = UIGraphicsGetCurrentContext() {
-            UIGraphicsPushContext(context)
-            render()
-            UIGraphicsPopContext()
-            image = UIGraphicsGetImageFromCurrentImageContext()
+        return autoreleasepool { () -> UIImage? in
+            var image: UIImage?
+            UIGraphicsBeginImageContextWithOptions(size, opaque, UIScreen.main.scale)
+            if let context = UIGraphicsGetCurrentContext() {
+                UIGraphicsPushContext(context)
+                render()
+                UIGraphicsPopContext()
+                image = UIGraphicsGetImageFromCurrentImageContext()
+            }
+            UIGraphicsEndImageContext()
+            return image
         }
-        UIGraphicsEndImageContext()
-        return image
     }
 }
