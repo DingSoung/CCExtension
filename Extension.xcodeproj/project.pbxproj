@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE01223D1F66662000D55050 /* NSString+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB7F1F60292A0088F13F /* NSString+Size.swift */; };
+		CE01223E1F66687700D55050 /* NSString+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB7F1F60292A0088F13F /* NSString+Size.swift */; };
 		CE34AB4B1F6027EA0088F13F /* Extension_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = CE34AB491F6027EA0088F13F /* Extension_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE34AB581F6028030088F13F /* Extension_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = CE34AB561F6028030088F13F /* Extension_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE34AB651F60281C0088F13F /* Extension_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = CE34AB631F60281C0088F13F /* Extension_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -86,8 +88,6 @@
 		CE34ABD21F60292A0088F13F /* NSAttributedString+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB7E1F60292A0088F13F /* NSAttributedString+Content.swift */; };
 		CE34ABD31F60292A0088F13F /* NSAttributedString+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB7E1F60292A0088F13F /* NSAttributedString+Content.swift */; };
 		CE34ABD51F60292A0088F13F /* NSString+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB7F1F60292A0088F13F /* NSString+Size.swift */; };
-		CE34ABD61F60292A0088F13F /* NSString+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB7F1F60292A0088F13F /* NSString+Size.swift */; };
-		CE34ABD71F60292A0088F13F /* NSString+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB7F1F60292A0088F13F /* NSString+Size.swift */; };
 		CE34ABD91F60292A0088F13F /* UIApplication+EventTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB801F60292A0088F13F /* UIApplication+EventTrack.swift */; };
 		CE34ABDB1F60292A0088F13F /* UIApplication+EventTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB801F60292A0088F13F /* UIApplication+EventTrack.swift */; };
 		CE34ABDD1F60292A0088F13F /* UIImage+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB811F60292A0088F13F /* UIImage+Array.swift */; };
@@ -411,27 +411,31 @@
 		CE607EE01F051DB0007E99DC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = DingSoung;
 				TargetAttributes = {
 					CE34AB461F6027E90088F13F = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = C6989DMQ59;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					CE34AB531F6028030088F13F = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = C6989DMQ59;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					CE34AB601F60281C0088F13F = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = C6989DMQ59;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					CE607EE81F051DB0007E99DC = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = C6989DMQ59;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -496,7 +500,7 @@
 				CE34ABB21F60292A0088F13F /* Data+JSON.swift in Sources */,
 				CE34ABAA1F60292A0088F13F /* NSString+Regex.swift in Sources */,
 				CE34ABBA1F60292A0088F13F /* String+Dictionary.swift in Sources */,
-				CE34ABD61F60292A0088F13F /* NSString+Size.swift in Sources */,
+				CE01223D1F66662000D55050 /* NSString+Size.swift in Sources */,
 				CE34ABCA1F60292A0088F13F /* Swift+Log.swift in Sources */,
 				CE34ABAE1F60292A0088F13F /* Array+JSON.swift in Sources */,
 				CE34ABB61F60292A0088F13F /* Dictionary+JSON.swift in Sources */,
@@ -526,7 +530,6 @@
 				CE34ABE31F60292A0088F13F /* UIImage+CoreGraphics.swift in Sources */,
 				CE34ABAB1F60292A0088F13F /* NSString+Regex.swift in Sources */,
 				CE34ABBB1F60292A0088F13F /* String+Dictionary.swift in Sources */,
-				CE34ABD71F60292A0088F13F /* NSString+Size.swift in Sources */,
 				CE34ABCB1F60292A0088F13F /* Swift+Log.swift in Sources */,
 				CE34ABAF1F60292A0088F13F /* Array+JSON.swift in Sources */,
 				CE34ABB71F60292A0088F13F /* Dictionary+JSON.swift in Sources */,
@@ -543,6 +546,7 @@
 				CE34ABA71F60292A0088F13F /* NSString+Dictionary.swift in Sources */,
 				CE34ABF31F60292A0088F13F /* UITableView+UIImage.swift in Sources */,
 				CE34ABE71F60292A0088F13F /* UIImage+Process.swift in Sources */,
+				CE01223E1F66687700D55050 /* NSString+Size.swift in Sources */,
 				CE34AB9B1F60292A0088F13F /* NSLocale+Localization.swift in Sources */,
 				CE34ABCF1F60292A0088F13F /* Swift+Synchronized.swift in Sources */,
 				CE34AB931F60292A0088F13F /* NSData+JSON.swift in Sources */,
@@ -631,7 +635,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -654,7 +658,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -676,7 +680,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -698,7 +703,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -723,7 +729,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -746,7 +753,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -760,7 +768,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -768,7 +778,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -814,7 +828,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -822,7 +838,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -866,7 +886,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DingSoung.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -885,7 +905,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DingSoung.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

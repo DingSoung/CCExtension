@@ -10,7 +10,7 @@ import Foundation
 
 open class HookObject: NSObject {
     var block:(()->Void)?
-    open func function() {
+    @objc open func function() {
         self.block?()
     }
 }
@@ -24,6 +24,6 @@ extension NSObject {
         
         let originalMethod = class_getInstanceMethod(cls, originalSelector)
         
-        class_replaceMethod(HookObject.self, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod))
+        class_replaceMethod(HookObject.self, swizzledSelector, method_getImplementation(originalMethod!), method_getTypeEncoding(originalMethod!))
     }
 }

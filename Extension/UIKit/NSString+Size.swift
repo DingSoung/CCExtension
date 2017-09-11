@@ -20,7 +20,7 @@ extension NSString {
     public func height(constrainedWidth: CGFloat, font: UIFont) -> CGFloat {
         return self.boundingRect(with: CGSize(width: constrainedWidth, height: CGFloat.greatestFiniteMagnitude),
                                  options: NSStringDrawingOptions.usesLineFragmentOrigin,
-                                 attributes: [NSFontAttributeName: font],
+                                 attributes: [NSAttributedStringKey.font: font],
                                  context: nil).height
     }
     
@@ -28,7 +28,7 @@ extension NSString {
     public func width(constrainedHeight: CGFloat, font: UIFont) -> CGFloat {
         return self.boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: constrainedHeight),
                                  options: NSStringDrawingOptions.usesLineFragmentOrigin,
-                                 attributes:  [NSFontAttributeName: font],
+                                 attributes:  [NSAttributedStringKey.font: font],
                                  context: nil).width
     }
 }
