@@ -449,9 +449,9 @@
 			projectRoot = "";
 			targets = (
 				CE607EE81F051DB0007E99DC /* Extension */,
-				CE34AB461F6027E90088F13F /* Extension_watchOS */,
-				CE34AB531F6028030088F13F /* Extension_tvOS */,
 				CE34AB601F60281C0088F13F /* Extension_macOS */,
+				CE34AB531F6028030088F13F /* Extension_tvOS */,
+				CE34AB461F6027E90088F13F /* Extension_watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -627,7 +627,7 @@
 				INFOPLIST_FILE = Extension_watchOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "DingSoung.Extension-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = DingSoung.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -650,7 +650,7 @@
 				INFOPLIST_FILE = Extension_watchOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "DingSoung.Extension-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = DingSoung.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -672,7 +672,7 @@
 				INFOPLIST_FILE = Extension_tvOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "DingSoung.Extension-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = DingSoung.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -694,7 +694,7 @@
 				INFOPLIST_FILE = Extension_tvOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "DingSoung.Extension-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = DingSoung.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -719,7 +719,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "DingSoung.Extension-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = DingSoung.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -742,7 +742,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "DingSoung.Extension-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = DingSoung.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -899,6 +899,7 @@
 				CE34AB4D1F6027EA0088F13F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE34AB591F6028030088F13F /* Build configuration list for PBXNativeTarget "Extension_tvOS" */ = {
 			isa = XCConfigurationList;
@@ -907,6 +908,7 @@
 				CE34AB5B1F6028030088F13F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE34AB661F60281C0088F13F /* Build configuration list for PBXNativeTarget "Extension_macOS" */ = {
 			isa = XCConfigurationList;
@@ -915,6 +917,7 @@
 				CE34AB681F60281C0088F13F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE607EE31F051DB0007E99DC /* Build configuration list for PBXProject "Extension" */ = {
 			isa = XCConfigurationList;
