@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F9414C88BF118258F43D306613412A181D669DC2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2EA61D2B4A567E4CD149FA5C047C76373A272D80" : 0,
+    "F9414C88BF118258F43D306613412A181D669DC2" : 0,
+    "FA3EF39F28282E2DB2CC9E7031501BA7AC2A2D3C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BF8317BF-0344-4AA7-AA73-B362B3A4A1DF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2EA61D2B4A567E4CD149FA5C047C76373A272D80" : "CCNetwork\/",
+    "F9414C88BF118258F43D306613412A181D669DC2" : "CCKit\/",
+    "FA3EF39F28282E2DB2CC9E7031501BA7AC2A2D3C" : "CCExtension\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DEMO",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DEMO\/DEMO.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ifnil\/CCNetwork.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2EA61D2B4A567E4CD149FA5C047C76373A272D80"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DingSoung\/CCKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F9414C88BF118258F43D306613412A181D669DC2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ifnil\/CCExtension.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FA3EF39F28282E2DB2CC9E7031501BA7AC2A2D3C"
+    }
+  ]
+}

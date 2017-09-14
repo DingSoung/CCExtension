@@ -1,0 +1,10 @@
+PODS:
+  - CCKit (0.2.0)
+
+DEPENDENCIES:
+  - CCKit
+
+SPEC CHECKSUMS:
+  CCKit: ae1292fe2ce48d9d68ddfcafb0f7ce62f07f6c4a
+
+COCOAPODS: 0.39.0
