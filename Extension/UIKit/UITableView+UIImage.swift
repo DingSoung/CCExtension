@@ -24,11 +24,10 @@ extension UITableView {
     }
     
     public final func imageForRow(at indexPath:IndexPath) -> UIImage? {
-        var image:UIImage? = nil
         let offset = self.contentOffset
         self.scrollToRow(at: indexPath, at: UITableViewScrollPosition.top, animated: false)
-        image = self.cellForRow(at: indexPath)?.image(alpha: 1)
-        self .setContentOffset(offset, animated: false)
+        let image = self.cellForRow(at: indexPath)?.image(scale: UIScreen.main.scale)
+        self.setContentOffset(offset, animated: false)
         return image
     }
     
@@ -56,14 +55,13 @@ extension UITableView {
         if header == true {
             height += self.rectForHeader(inSection: section).size.height
         }
-        if footer == true{
+        if footer == true {
             height += self.rectForFooter(inSection: section).size.height
         }
         UIGraphicsBeginImageContextWithOptions(CGSize(width: self.contentSize.width,
                                                       height: height),
                                                false,
                                                UIScreen.main.scale) // +224.25MB
-        
         if let context = UIGraphicsGetCurrentContext() {
             context.setAlpha(1.0)
             let offset = self.contentOffset
