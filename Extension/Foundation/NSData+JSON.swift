@@ -3,6 +3,7 @@
 
 import Foundation
 
+@objc
 extension NSData {
     
     /// JSON data -> JSON Object (Array or Dictionary)

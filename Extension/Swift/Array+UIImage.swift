@@ -31,17 +31,3 @@ extension Array where Element:UIImage {
     }
 }
 
-extension NSArray {
-    
-    public var verticalImage: UIImage? {
-        return (self as? [UIImage])?.verticalImage
-    }
-}
-
-extension UIImage {
-
-    public func verticalImage(images:[UIImage]) -> UIImage? {
-        return images.verticalImage
-    }
-}
-

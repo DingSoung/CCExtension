@@ -3,6 +3,7 @@
 
 import UIKit
 
+@objc
 extension UIView {
     
     ///  capture image, Compatible, alpha

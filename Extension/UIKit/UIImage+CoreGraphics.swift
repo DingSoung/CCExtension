@@ -3,6 +3,7 @@
 
 import UIKit
 
+@objc
 extension UIImage {
     
     /// render image with Core Graphics or UIBezierPath code

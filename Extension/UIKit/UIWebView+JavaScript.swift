@@ -4,6 +4,7 @@
 import JavaScriptCore
 import UIKit
 
+@objc
 extension UIWebView {
     
     internal var context:JSContext? {

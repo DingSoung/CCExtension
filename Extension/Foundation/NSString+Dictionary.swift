@@ -3,6 +3,7 @@
 
 import Foundation
 
+@objc
 extension NSString {
     
     /// JSON String -> JSON Dictionary

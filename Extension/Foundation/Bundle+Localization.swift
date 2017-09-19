@@ -3,6 +3,7 @@
 
 import Foundation
 
+@objc
 public extension Bundle {
     
     private struct AssociatedKeys{

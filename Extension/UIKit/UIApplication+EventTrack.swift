@@ -3,6 +3,7 @@
 
 import UIKit
 
+@objc
 extension UIApplication {
     
     @objc open func hook_sendAction(_ action: Selector, to target: Any?, from sender: Any?, for event: UIEvent?) -> Bool {

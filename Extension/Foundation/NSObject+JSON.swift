@@ -3,6 +3,7 @@
 
 import Foundation
 
+@objc
 extension NSObject {
     
     /// init model with JSON String

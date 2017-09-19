@@ -3,6 +3,7 @@
 
 import UIKit
 
+@objc
 extension NSAttributedString {
     
     /// height for limit width with font

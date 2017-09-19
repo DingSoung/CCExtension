@@ -3,12 +3,14 @@
 
 import Foundation
 
+@objc
 extension NSString {
     public func match(regex:String) -> Bool {
         return (self as String) =~ regex
     }
 }
 
+@objc
 extension NSString {
     
     /// check is mobile phone number

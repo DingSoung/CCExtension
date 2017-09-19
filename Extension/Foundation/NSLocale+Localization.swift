@@ -3,6 +3,7 @@
 
 import Foundation
 
+@objc
 public extension NSLocale {
     /// app language code: en, zh_Hans etc.
     public class var localizationCode:String? {

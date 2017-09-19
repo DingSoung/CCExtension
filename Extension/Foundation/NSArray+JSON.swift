@@ -3,6 +3,7 @@
 
 import Foundation
 
+@objc
 extension NSArray {
     
     /// Dictionary -> JSON Data

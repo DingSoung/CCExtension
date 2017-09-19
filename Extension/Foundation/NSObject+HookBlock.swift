@@ -8,6 +8,7 @@
 
 import Foundation
 
+@objc
 open class HookObject: NSObject {
     var block:(()->Void)?
     @objc open func function() {
@@ -15,6 +16,7 @@ open class HookObject: NSObject {
     }
 }
 
+@objc
 extension NSObject {
     public class func hook(cls: Swift.AnyClass, originalSelector: Selector, option:Any, block:@escaping (()->Void)) {
         let hookObject = HookObject()

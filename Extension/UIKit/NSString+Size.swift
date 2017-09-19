@@ -5,6 +5,7 @@ import Foundation
 import CoreGraphics
 import UIKit
 
+@objc
 extension NSString {
     
     /// lenght with encode，English 中文 國語 日本語の 😀, GB_2312_80

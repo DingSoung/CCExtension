@@ -3,6 +3,7 @@
 
 import UIKit
 
+@objc
 extension UIImage {
     
     /// image to scale

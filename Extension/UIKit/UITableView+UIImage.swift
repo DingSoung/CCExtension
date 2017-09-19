@@ -3,6 +3,7 @@
 
 import UIKit
 
+@objc
 extension UITableView {
     
     public final var headerImage: UIImage? {
