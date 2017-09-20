@@ -6,7 +6,7 @@ import Foundation
 @objc
 public extension NSLocale {
     /// app language code: en, zh_Hans etc.
-    public class var localizationCode:String? {
+    public class var localizationCode: String? {
         set {
             if let value = newValue {
                 UserDefaults.standard.set([value], forKey: "AppleLanguages")
