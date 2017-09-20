@@ -89,27 +89,19 @@
 		CE34ABD31F60292A0088F13F /* NSAttributedString+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB7E1F60292A0088F13F /* NSAttributedString+Content.swift */; };
 		CE34ABD51F60292A0088F13F /* NSString+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB7F1F60292A0088F13F /* NSString+Size.swift */; };
 		CE34ABD91F60292A0088F13F /* UIApplication+EventTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB801F60292A0088F13F /* UIApplication+EventTrack.swift */; };
-		CE34ABDB1F60292A0088F13F /* UIApplication+EventTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB801F60292A0088F13F /* UIApplication+EventTrack.swift */; };
 		CE34ABE11F60292A0088F13F /* UIImage+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB821F60292A0088F13F /* UIImage+CoreGraphics.swift */; };
-		CE34ABE31F60292A0088F13F /* UIImage+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB821F60292A0088F13F /* UIImage+CoreGraphics.swift */; };
 		CE34ABE51F60292A0088F13F /* UIImage+Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB831F60292A0088F13F /* UIImage+Process.swift */; };
-		CE34ABE71F60292A0088F13F /* UIImage+Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB831F60292A0088F13F /* UIImage+Process.swift */; };
 		CE34ABE91F60292A0088F13F /* UINavigationController+Autorotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB841F60292A0088F13F /* UINavigationController+Autorotate.swift */; };
 		CE34ABED1F60292A0088F13F /* UIScrollView+UIRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB851F60292A0088F13F /* UIScrollView+UIRefreshControl.swift */; };
 		CE34ABEE1F60292A0088F13F /* UIScrollView+UIRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB851F60292A0088F13F /* UIScrollView+UIRefreshControl.swift */; };
 		CE34ABEF1F60292A0088F13F /* UIScrollView+UIRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB851F60292A0088F13F /* UIScrollView+UIRefreshControl.swift */; };
 		CE34ABF11F60292A0088F13F /* UITableView+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB861F60292A0088F13F /* UITableView+UIImage.swift */; };
-		CE34ABF31F60292A0088F13F /* UITableView+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB861F60292A0088F13F /* UITableView+UIImage.swift */; };
 		CE34ABF51F60292A0088F13F /* UIVIew+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB871F60292A0088F13F /* UIVIew+UIImage.swift */; };
-		CE34ABF71F60292A0088F13F /* UIVIew+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB871F60292A0088F13F /* UIVIew+UIImage.swift */; };
 		CE34ABF91F60292A0088F13F /* UIWebView+JavaScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34AB881F60292A0088F13F /* UIWebView+JavaScript.swift */; };
 		CE607EEE1F051DB0007E99DC /* Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = CE607EEC1F051DB0007E99DC /* Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE9AE9C81F7116B50010D22E /* NSArray+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE9C71F7116B50010D22E /* NSArray+UIImage.swift */; };
 		CE9AE9CA1F71185F0010D22E /* UIImage+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE9C91F71185F0010D22E /* UIImage+Array.swift */; };
-		CEFA04A31F710A02008A92F9 /* Array+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA04A21F710A02008A92F9 /* Array+UIImage.swift */; };
-		CEFA04A41F710A02008A92F9 /* Array+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA04A21F710A02008A92F9 /* Array+UIImage.swift */; };
-		CEFA04A51F710A02008A92F9 /* Array+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA04A21F710A02008A92F9 /* Array+UIImage.swift */; };
-		CEFA04A61F710A02008A92F9 /* Array+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA04A21F710A02008A92F9 /* Array+UIImage.swift */; };
+		CEDE086B1F728140006290F9 /* NSArray+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE086A1F72811E006290F9 /* NSArray+UIImage.swift */; };
+		CEDE086E1F728145006290F9 /* Array+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE08691F728104006290F9 /* Array+UIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -153,9 +145,10 @@
 		CE607EE91F051DB0007E99DC /* Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE607EEC1F051DB0007E99DC /* Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extension.h; sourceTree = "<group>"; };
 		CE607EED1F051DB0007E99DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE9AE9C71F7116B50010D22E /* NSArray+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSArray+UIImage.swift"; sourceTree = "<group>"; };
 		CE9AE9C91F71185F0010D22E /* UIImage+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Array.swift"; sourceTree = "<group>"; };
-		CEFA04A21F710A02008A92F9 /* Array+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+UIImage.swift"; sourceTree = "<group>"; };
+		CEDE08631F728026006290F9 /* NSAttributedString+Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Content.swift"; sourceTree = "<group>"; };
+		CEDE08691F728104006290F9 /* Array+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+UIImage.swift"; sourceTree = "<group>"; };
+		CEDE086A1F72811E006290F9 /* NSArray+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSArray+UIImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,7 +215,6 @@
 			children = (
 				CE34AB6A1F60292A0088F13F /* Bundle+Localization.swift */,
 				CE34AB6B1F60292A0088F13F /* NSArray+JSON.swift */,
-				CE9AE9C71F7116B50010D22E /* NSArray+UIImage.swift */,
 				CE34AB6C1F60292A0088F13F /* NSData+JSON.swift */,
 				CE34AB6D1F60292A0088F13F /* NSDictionary+JSON.swift */,
 				CE34AB6E1F60292A0088F13F /* NSLocale+Localization.swift */,
@@ -237,7 +229,6 @@
 		CE34AB731F60292A0088F13F /* Swift */ = {
 			isa = PBXGroup;
 			children = (
-				CEFA04A21F710A02008A92F9 /* Array+UIImage.swift */,
 				CE34AB741F60292A0088F13F /* Array+JSON.swift */,
 				CE34AB751F60292A0088F13F /* Data+JSON.swift */,
 				CE34AB761F60292A0088F13F /* Dictionary+JSON.swift */,
@@ -254,7 +245,10 @@
 		CE34AB7D1F60292A0088F13F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				CEDE086A1F72811E006290F9 /* NSArray+UIImage.swift */,
+				CEDE08691F728104006290F9 /* Array+UIImage.swift */,
 				CE34AB7E1F60292A0088F13F /* NSAttributedString+Content.swift */,
+				CEDE08631F728026006290F9 /* NSAttributedString+Content.swift */,
 				CE9AE9C91F71185F0010D22E /* UIImage+Array.swift */,
 				CE34AB7F1F60292A0088F13F /* NSString+Size.swift */,
 				CE34AB801F60292A0088F13F /* UIApplication+EventTrack.swift */,
@@ -519,7 +513,6 @@
 				CE34AB8A1F60292A0088F13F /* Bundle+Localization.swift in Sources */,
 				CE34ABA21F60292A0088F13F /* NSObject+JSON.swift in Sources */,
 				CE34ABEE1F60292A0088F13F /* UIScrollView+UIRefreshControl.swift in Sources */,
-				CEFA04A51F710A02008A92F9 /* Array+UIImage.swift in Sources */,
 				CE34AB961F60292A0088F13F /* NSDictionary+JSON.swift in Sources */,
 				CE34ABA61F60292A0088F13F /* NSString+Dictionary.swift in Sources */,
 				CE34AB9A1F60292A0088F13F /* NSLocale+Localization.swift in Sources */,
@@ -535,7 +528,6 @@
 			files = (
 				CE34ABBF1F60292A0088F13F /* String+Regex.swift in Sources */,
 				CE34ABB31F60292A0088F13F /* Data+JSON.swift in Sources */,
-				CE34ABE31F60292A0088F13F /* UIImage+CoreGraphics.swift in Sources */,
 				CE34ABAB1F60292A0088F13F /* NSString+Regex.swift in Sources */,
 				CE34ABBB1F60292A0088F13F /* String+Dictionary.swift in Sources */,
 				CE34ABCB1F60292A0088F13F /* Swift+Log.swift in Sources */,
@@ -545,16 +537,11 @@
 				CE34AB8F1F60292A0088F13F /* NSArray+JSON.swift in Sources */,
 				CE34ABC31F60292A0088F13F /* Swift+Association.swift in Sources */,
 				CE34ABD31F60292A0088F13F /* NSAttributedString+Content.swift in Sources */,
-				CEFA04A61F710A02008A92F9 /* Array+UIImage.swift in Sources */,
-				CE34ABDB1F60292A0088F13F /* UIApplication+EventTrack.swift in Sources */,
 				CE34AB8B1F60292A0088F13F /* Bundle+Localization.swift in Sources */,
-				CE34ABF71F60292A0088F13F /* UIVIew+UIImage.swift in Sources */,
 				CE34ABA31F60292A0088F13F /* NSObject+JSON.swift in Sources */,
 				CE34ABEF1F60292A0088F13F /* UIScrollView+UIRefreshControl.swift in Sources */,
 				CE34AB971F60292A0088F13F /* NSDictionary+JSON.swift in Sources */,
 				CE34ABA71F60292A0088F13F /* NSString+Dictionary.swift in Sources */,
-				CE34ABF31F60292A0088F13F /* UITableView+UIImage.swift in Sources */,
-				CE34ABE71F60292A0088F13F /* UIImage+Process.swift in Sources */,
 				CE01223E1F66687700D55050 /* NSString+Size.swift in Sources */,
 				CE34AB9B1F60292A0088F13F /* NSLocale+Localization.swift in Sources */,
 				CE34ABCF1F60292A0088F13F /* Swift+Synchronized.swift in Sources */,
@@ -580,7 +567,6 @@
 				CE34AB8C1F60292A0088F13F /* Bundle+Localization.swift in Sources */,
 				CE34ABA41F60292A0088F13F /* NSObject+JSON.swift in Sources */,
 				CE34AB981F60292A0088F13F /* NSDictionary+JSON.swift in Sources */,
-				CEFA04A41F710A02008A92F9 /* Array+UIImage.swift in Sources */,
 				CE34ABA81F60292A0088F13F /* NSString+Dictionary.swift in Sources */,
 				CE34AB9C1F60292A0088F13F /* NSLocale+Localization.swift in Sources */,
 				CE34ABD01F60292A0088F13F /* Swift+Synchronized.swift in Sources */,
@@ -594,13 +580,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE34ABBD1F60292A0088F13F /* String+Regex.swift in Sources */,
-				CEFA04A31F710A02008A92F9 /* Array+UIImage.swift in Sources */,
 				CE34ABB11F60292A0088F13F /* Data+JSON.swift in Sources */,
 				CE34ABE11F60292A0088F13F /* UIImage+CoreGraphics.swift in Sources */,
 				CE34ABA91F60292A0088F13F /* NSString+Regex.swift in Sources */,
 				CE34ABB91F60292A0088F13F /* String+Dictionary.swift in Sources */,
-				CE9AE9C81F7116B50010D22E /* NSArray+UIImage.swift in Sources */,
 				CE9AE9CA1F71185F0010D22E /* UIImage+Array.swift in Sources */,
+				CEDE086B1F728140006290F9 /* NSArray+UIImage.swift in Sources */,
 				CE34ABD51F60292A0088F13F /* NSString+Size.swift in Sources */,
 				CE34ABC91F60292A0088F13F /* Swift+Log.swift in Sources */,
 				CE34ABAD1F60292A0088F13F /* Array+JSON.swift in Sources */,
@@ -615,6 +600,7 @@
 				CE34ABF51F60292A0088F13F /* UIVIew+UIImage.swift in Sources */,
 				CE34ABA11F60292A0088F13F /* NSObject+JSON.swift in Sources */,
 				CE34ABED1F60292A0088F13F /* UIScrollView+UIRefreshControl.swift in Sources */,
+				CEDE086E1F728145006290F9 /* Array+UIImage.swift in Sources */,
 				CE34AB951F60292A0088F13F /* NSDictionary+JSON.swift in Sources */,
 				CE34ABA51F60292A0088F13F /* NSString+Dictionary.swift in Sources */,
 				CE34ABF11F60292A0088F13F /* UITableView+UIImage.swift in Sources */,

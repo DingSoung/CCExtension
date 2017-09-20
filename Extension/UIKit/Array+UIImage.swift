@@ -3,7 +3,7 @@
 
 import UIKit
 
-extension Array where Element:UIImage {
+extension Array where Element: UIImage {
     
     public func verticalImage(space:CGFloat) -> UIImage? {
         var size = CGSize.zero
