@@ -13,7 +13,6 @@ extension Array where Element: UIImage {
             size.width = Swift.max(size.width, sz.width)
         }
         size.height += CGFloat(Swift.max(0, self.count - 1)) * space
-        var image: UIImage?
         UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
         var y:CGFloat = 0
         for image in self {
@@ -21,7 +20,7 @@ extension Array where Element: UIImage {
             y += image.size.height
             y += space
         }
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext();
         return image;
     }

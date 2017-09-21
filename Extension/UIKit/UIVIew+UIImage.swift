@@ -7,40 +7,31 @@ import UIKit
 extension UIView {
     
     ///  capture image, Compatible, alpha
-    public func image(alpha:CGFloat, bounds:CGRect, scale:CGFloat) -> UIImage? {
-        return autoreleasepool { () -> UIImage? in
-            var image: UIImage?
-            UIGraphicsBeginImageContextWithOptions(bounds.size, self.isOpaque, scale);
+    public func image(alpha: CGFloat, bounds: CGRect, scale: CGFloat) -> UIImage? {
+        return UIImage.image(render: {
             if let context = UIGraphicsGetCurrentContext() {
+                context.saveGState()
                 context.setAlpha(alpha)
-                let t = CGAffineTransform(translationX: bounds.origin.x, y: bounds.origin.y).inverted()
-                context.concatenate(t)
+                context.concatenate(CGAffineTransform(translationX:bounds.origin.x,
+                                                      y: bounds.origin.y).inverted())
                 self.layer.render(in: context)
-                context.concatenate(t.inverted())
-                image = UIGraphicsGetImageFromCurrentImageContext()
+                context.restoreGState()
             }
-            UIGraphicsEndImageContext();
-            return image
-        }
+        }, size: bounds.size, opaque: self.isOpaque)
     }
 
-    public func image(scale:CGFloat) -> UIImage? {
-        return autoreleasepool { () -> UIImage? in
-            var image: UIImage?
-            UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.isOpaque, scale);
+    public func image(scale: CGFloat) -> UIImage? {
+        return UIImage.image(render: {
             if let contex = UIGraphicsGetCurrentContext() {
                 self.layer.render(in: contex)
-                image = UIGraphicsGetImageFromCurrentImageContext()
             }
-            UIGraphicsEndImageContext();
-            return image
-        }
+        }, size: self.bounds.size, opaque: self.isOpaque)
     }
 
     public var image: UIImage? {
         return self.image(scale: UIScreen.main.scale)
     }
-
+    
     /// capture image much faster refer http://stackoverflow.com/questions/4334233/how-to-capture-uiview-to-uiimage-without-loss-of-quality-on-retina-display
     public var fastImage:UIImage? {
         var image: UIImage?

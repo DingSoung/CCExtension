@@ -50,6 +50,41 @@ extension UITableView {
         return image
     }
     
+    public final func render(context: CGContext, section:Int, fromRow start:Int, to end:Int, withHeader header:Bool, footer:Bool) -> Swift.Void {
+        context.saveGState()
+        let offset = self.contentOffset
+        if header == true {
+            let rect = self.rectForHeader(inSection: section)
+            self.scrollRectToVisible(rect, animated: false)
+            if let view = self.headerView(forSection: section) {
+                self.scrollRectToVisible(view.frame, animated: false)
+                view.layer.render(in: context)
+                context.concatenate(CGAffineTransform(translationX: 0, y: rect.size.height))
+            }
+        }
+        for row in start..<end {
+            let indexPath = IndexPath(row: row, section: section)
+            self.scrollToRow(at: indexPath, at: UITableViewScrollPosition.top, animated: false)
+            if let cell = self.cellForRow(at: indexPath) {
+                cell.layer.render(in: context) // +1.6~1.8MB
+                context.concatenate(CGAffineTransform(translationX: 0, y: cell.bounds.size.height))
+            } else {
+                // draw empty
+            }
+        }
+        if footer == true {
+            let rect = self.rectForFooter(inSection: section)
+            self.scrollRectToVisible(rect, animated: false)
+            if let view = self.footerView(forSection: section) {
+                self.scrollRectToVisible(view.frame, animated: false)
+                view.layer.render(in: context)
+                context.concatenate(CGAffineTransform(translationX: 0, y: rect.size.height))
+            }
+        }
+        self.setContentOffset(offset, animated: false)
+        context.restoreGState()
+    }
+
     /// ⚠️ hight memory require when lines > 100, get image for one section
     public final func imageForSection(at section:Int, fromRow start:Int, to end:Int, totalHeight:CGFloat, withHeader header:Bool, footer:Bool) -> UIImage? {
         var height = totalHeight
@@ -64,37 +99,7 @@ extension UITableView {
                                                false,
                                                UIScreen.main.scale) // +224.25MB
         if let context = UIGraphicsGetCurrentContext() {
-            context.setAlpha(1.0)
-            let offset = self.contentOffset
-            if header == true {
-                let rect = self.rectForHeader(inSection: section)
-                self.scrollRectToVisible(rect, animated: false)
-                if let view = self.headerView(forSection: section) {
-                    self.scrollRectToVisible(view.frame, animated: false)
-                    view.layer.render(in: context)
-                    context.concatenate(CGAffineTransform(translationX: 0, y: rect.size.height))
-                }
-            }
-            for row in start..<end {
-                let indexPath = IndexPath(row: row, section: section)
-                self.scrollToRow(at: indexPath, at: UITableViewScrollPosition.top, animated: false)
-                if let cell = self.cellForRow(at: indexPath) {
-                    cell.layer.render(in: context) // +1.6~1.8MB
-                    context.concatenate(CGAffineTransform(translationX: 0, y: cell.bounds.size.height))
-                } else {
-                    // draw empty
-                }
-            }
-            if footer == true {
-                let rect = self.rectForFooter(inSection: section)
-                self.scrollRectToVisible(rect, animated: false)
-                if let view = self.footerView(forSection: section) {
-                    self.scrollRectToVisible(view.frame, animated: false)
-                    view.layer.render(in: context)
-                    context.concatenate(CGAffineTransform(translationX: 0, y: rect.size.height))
-                }
-            }
-            self.setContentOffset(offset, animated: false)
+            self.render(context: context, section: section, fromRow: start, to: end, withHeader: header, footer: footer)
         }
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext(); //-245.3M
