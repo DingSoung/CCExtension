@@ -4,13 +4,14 @@
 import Foundation
 
 /// print log with detail message
-@discardableResult public func log(messgae: Any?,
-                                   file: String = #file,
-                                   line: Int = #line,
-                                   function: String = #function,
-                                   debug: Bool? = false) -> [String : Any] {
+@discardableResult
+public func pring(log: Any?,
+                  debug: Bool? = false,
+                  file: String = #file,
+                  line: Int = #line,
+                  function: String = #function) -> [String : Any] {
     let dict = [
-        "message" : messgae ?? "None",
+        "log" : log ?? "None",
         "file" : file,
         "line" : line,
         "function" : function,
