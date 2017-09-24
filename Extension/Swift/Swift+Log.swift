@@ -3,23 +3,17 @@
 
 import Foundation
 
-/// print log with detail message
+/// log with detail message
 @discardableResult
-public func pring(log: Any?,
-                  debug: Bool? = false,
-                  file: String = #file,
-                  line: Int = #line,
-                  function: String = #function) -> [String : Any] {
-    let dict = [
-        "log" : log ?? "None",
-        "file" : file,
-        "line" : line,
-        "function" : function,
-        "thread" : Thread.current,
-        "callstack" : Thread.callStackSymbols,
-        ]
-    if let dbg = debug, dbg == true {
-        print(dict)
-    }
-    return dict
+public func log(_ items: Any...,
+    file: String = #file, line: Int = #line, function: String = #function) -> [Any] {
+    return items + [file, line, function, Thread.current, Thread.callStackSymbols]
+}
+
+public func print(_ items: Any..., separator: String =  " ", terminator: String = "\n",
+                  file: String = #file, line: Int = #line, function: String = #function) {
+    print(items, separator: separator, terminator: terminator)
+    debugPrint(file, line, function, Thread.current, Thread.callStackSymbols,
+               separator: separator,
+               terminator: terminator)
 }
