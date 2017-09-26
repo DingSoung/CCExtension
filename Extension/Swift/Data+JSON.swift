@@ -4,27 +4,28 @@
 import Foundation
 
 extension Data {
-    
+
     /// JSON data -> JSON Object (Array or Dictionary)
     public var jsonObject: Any? {
         do {
-            return try  JSONSerialization.jsonObject(with: self as Data, options: JSONSerialization.ReadingOptions.mutableLeaves)
+            return try  JSONSerialization.jsonObject(with: self as Data,
+                                                     options: JSONSerialization.ReadingOptions.mutableLeaves)
         } catch let error as NSError {
             print("data formar fail:\(error.domain)")
             return nil
         }
     }
-    
+
     /// JSON data -> JSON Array
     public var jsonArray: NSArray? {
         return self.jsonObject as? NSArray
     }
-    
+
     /// JSON data -> JSON Dictionary
     public var jsonDictionary: NSDictionary? {
         return self.jsonObject as? NSDictionary
     }
-    
+
     /// JSON Data -> JSON String
     public var jsonString: NSString? {
         guard let str = NSString(data: self, encoding: String.Encoding.utf8.rawValue) else {

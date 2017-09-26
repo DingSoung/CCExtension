@@ -7,14 +7,12 @@ import Foundation
 extension NSString {
     
     /// JSON String -> JSON Dictionary
-    public final var jsonDictionary: Dictionary<String, Any>? {
+    public final var jsonDictionary: [String: Any]? {
         return (self as String).jsonDictionary
     }
     
     /// url format -> Dictionary
-    public final var urlDictionary: Dictionary<String, Any> {
+    public final var urlDictionary: [String: Any] {
         return (self as String).urlDictionary
     }
 }
-
-

@@ -6,25 +6,23 @@ import Foundation
 extension String {
     
     /// JSON String -> JSON Dictionary
-    public var jsonDictionary: Dictionary<String, Any>? {
+    public var jsonDictionary: [String: Any]? {
         guard let JsonData = self.data(using: String.Encoding.utf8, allowLossyConversion: false) else {
             return nil
         }
         do {
-            if let JSONDictionary = try JSONSerialization.jsonObject(with: JsonData, options: JSONSerialization.ReadingOptions.mutableContainers) as? Dictionary<String, Any> {
-                return JSONDictionary
-            } else {
-                return nil
-            }
+            let json = try JSONSerialization.jsonObject(with: JsonData,
+                                                        options: JSONSerialization.ReadingOptions.mutableContainers)
+            return json as? [String: Any]
         } catch let error {
             print("format \(self) to Dictionary fail:\(error.localizedDescription)")
             return nil
         }
     }
-    
+
     /// url format -> Dictionary  ext:http://domain.com?ID=1&code=2
-    public var urlDictionary: Dictionary<String, Any> {
-        var dict = Dictionary<String, Any>()
+    public var urlDictionary: [String: Any] {
+        var dict = [String: Any]()
         let params = self.components(separatedBy: "&")
         for param in params {
             let strs = (param as NSString).components(separatedBy: "=")

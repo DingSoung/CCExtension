@@ -4,7 +4,10 @@
 import Foundation
 
 /// code Block, used like C code block { }
-public func closure(mark:String? = "", run:Bool? = true, block:()->Void, complete:(()->Void)? = {}) {
+public func closure(mark: String? = "",
+                    run: Bool? = true,
+                    block: () -> Void,
+                    complete: (() -> Void)? = {}) {
     if run != true {
         return
     } else {
@@ -20,6 +23,6 @@ public func closure(mark:String? = "", run:Bool? = true, block:()->Void, complet
 }
 
 /// code Block, used like C block { }
-public func closure(block:()->Void) {
+public func closure(block: () -> Void) {
     closure(block: block, complete: nil)
 }

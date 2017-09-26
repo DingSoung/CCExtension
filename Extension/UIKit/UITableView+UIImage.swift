@@ -1,11 +1,12 @@
 //  Created by Songwen Ding on 2017/8/9.
 //  Copyright © 2017年 DingSoung. All rights reserved.
 
+#if os(iOS)
 import UIKit
 
 @objc
 extension UITableView {
-    
+
     public final var headerImage: UIImage? {
         let offset = self.contentOffset
         guard let rect = self.tableHeaderView?.frame else {return nil}
@@ -14,8 +15,8 @@ extension UITableView {
         self.setContentOffset(offset, animated: false)
         return image
     }
-    
-    public final func headerImage(forSection section:Int) -> UIImage? {
+
+    public final func headerImage(forSection section: Int) -> UIImage? {
         let offset = self.contentOffset
         let rect = self.rectForHeader(inSection: section)
         self.scrollRectToVisible(rect, animated: false)
@@ -23,16 +24,16 @@ extension UITableView {
         self .setContentOffset(offset, animated: false)
         return image
     }
-    
-    public final func imageForRow(at indexPath:IndexPath) -> UIImage? {
+
+    public final func imageForRow(at indexPath: IndexPath) -> UIImage? {
         let offset = self.contentOffset
         self.scrollToRow(at: indexPath, at: UITableViewScrollPosition.top, animated: false)
         let image = self.cellForRow(at: indexPath)?.image(scale: UIScreen.main.scale)
         self.setContentOffset(offset, animated: false)
         return image
     }
-    
-    public final func footerImage(forSection section:Int) -> UIImage? {
+
+    public final func footerImage(forSection section: Int) -> UIImage? {
         let offset = self.contentOffset
         let rect = self.rectForFooter(inSection: section)
         self.scrollRectToVisible(rect, animated: false)
@@ -40,7 +41,7 @@ extension UITableView {
         self .setContentOffset(offset, animated: false)
         return image
     }
-    
+
     public final var footerImage: UIImage? {
         let offset = self.contentOffset
         guard let rect = self.tableFooterView?.frame else {return nil}
@@ -49,8 +50,13 @@ extension UITableView {
         self.setContentOffset(offset, animated: false)
         return image
     }
-    
-    public final func render(context: CGContext, section:Int, fromRow start:Int, to end:Int, withHeader header:Bool, footer:Bool) -> Swift.Void {
+
+    public final func render(context: CGContext,
+                             section: Int,
+                             fromRow start: Int,
+                             to end: Int,
+                             withHeader header: Bool,
+                             footer: Bool) -> Swift.Void {
         context.saveGState()
         let offset = self.contentOffset
         if header == true {
@@ -86,7 +92,12 @@ extension UITableView {
     }
 
     /// ⚠️ hight memory require when lines > 100, get image for one section
-    public final func imageForSection(at section:Int, fromRow start:Int, to end:Int, totalHeight:CGFloat, withHeader header:Bool, footer:Bool) -> UIImage? {
+    public final func imageForSection(at section: Int,
+                                      fromRow start: Int,
+                                      to end: Int,
+                                      totalHeight: CGFloat,
+                                      withHeader header: Bool,
+                                      footer: Bool) -> UIImage? {
         var height = totalHeight
         if header == true {
             height += self.rectForHeader(inSection: section).size.height
@@ -103,18 +114,18 @@ extension UITableView {
         }
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext(); //-245.3M
-        return image;
+        return image
     }
-    
+
     /// ⚠️ hight memory require when lines > 20, get image from section and all rows in it
-    public final func imageFromSection(_ start:Int, to end:Int, withHeader header:Bool, footer:Bool) -> UIImage? {
-        var images:[UIImage] = []
+    public final func imageFromSection(_ start: Int, to end: Int, withHeader header: Bool, footer: Bool) -> UIImage? {
+        var images: [UIImage] = []
         if let herderImage = self.headerImage, header == true {
             images.append(herderImage)
         }
         for section in start..<end {
             let totalHeight = { () -> CGFloat in
-                var height:CGFloat = 0
+                var height: CGFloat = 0
                 let rows = self.numberOfRows(inSection: section)
                 for row in 0..<rows {
                     height += self.rectForRow(at: IndexPath(row: row, section: section)).size.height
@@ -144,3 +155,4 @@ extension UITableView {
         return image
     }
 }
+#endif

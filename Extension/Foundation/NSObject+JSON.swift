@@ -7,30 +7,30 @@ import Foundation
 extension NSObject {
     
     /// init model with JSON String
-    public convenience init(JSONDict : [String : AnyObject]) {
+    public convenience init(JSONDict: [String: Any]) {
         self.init()
         self.setValuesForKeys(JSONDict)
     }
-    
     /// init model with JSON Dictionary
     public convenience init(JSONStr: String) {
         self.init()
-        let JSONData = JSONStr.data(using: String.Encoding.utf8, allowLossyConversion: false)
+        guard let data = JSONStr.data(using: String.Encoding.utf8, allowLossyConversion: false) else { return }
         do {
-            guard let jsonDictionary = try JSONSerialization.jsonObject(with: JSONData!, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String : Any] else {return}
-            self.setValuesForKeys(jsonDictionary)
+            let json = try JSONSerialization.jsonObject(with: data,
+                                                        options: JSONSerialization.ReadingOptions.mutableContainers)
+            guard let dict = json as? [String: Any] else { return }
+            self.setValuesForKeys(dict)
             /*
-            for (key, value) in JSONDictionary {
-                let keyName = key as! String
-                let keyValue: String = value as! String
-                self.setValue(keyValue, forKey: keyName)
-            }*/
+             for (key, value) in JSONDictionary {
+             let keyName = key as! String
+             let keyValue: String = value as! String
+             self.setValue(keyValue, forKey: keyName)
+             }*/
         } catch {
             print(error)
         }
     }
-    
-    //MARK: 字典转model array
+    // MARK: 字典转model array
     /*
      class func modelWithArray(dictArray:[NSDictionary]) -> NSArray {
      var dsts: NSMutableArray = []

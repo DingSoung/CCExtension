@@ -10,20 +10,20 @@ extension NSData {
     public final var jsonObject: Any? {
         return (self as Data).jsonObject
     }
-    
+
     /// JSON data -> JSON Array
     public final var jsonArray: NSArray? {
         return self.jsonObject as? NSArray
     }
-    
+
     /// JSON data -> JSON Dictionary
     public final var jsonDictionary: NSDictionary? {
         return self.jsonObject as? NSDictionary
     }
-    
+
     /// JSON Data -> JSON String
     public final var jsonString: NSString? {
         return (self as Data).jsonString
     }
-    
+
 }

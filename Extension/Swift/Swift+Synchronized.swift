@@ -4,7 +4,7 @@
 import Foundation
 
 /// keep lock syncronized when run closure http://swifter.tips/lock/
-public func synchronized(lock: AnyObject, closure: () -> ()) {
+public func synchronized(lock: AnyObject, closure: () -> Void ) {
     objc_sync_enter(lock)
     closure()
     objc_sync_exit(lock)

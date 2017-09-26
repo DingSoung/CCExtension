@@ -5,23 +5,26 @@ import Foundation
 
 @objc
 public extension Bundle {
-    
-    private struct AssociatedKeys{
+
+    private struct AssociatedKeys {
         static var languageCode = "languageCode"
     }
-    
+
     // bundle run time code en, zh_Hans ect, to update localization source without restart
-    public var localizationCode:String? {
+    public var localizationCode: String? {
         set {
             if let path = self.path(forResource: newValue, ofType: "lproj") {
                 if self.isMember(of: Bundle.self) {
-                    object_setClass(self, BundleEx.self);
+                    object_setClass(self, BundleEx.self)
                 }
                 let runTimeBundle = Bundle(path: path)
-                objc_setAssociatedObject(self, &AssociatedKeys.languageCode, runTimeBundle, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+                objc_setAssociatedObject(self,
+                                         &AssociatedKeys.languageCode,
+                                         runTimeBundle,
+                                         objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             } else {
                 if self.isMember(of: BundleEx.self) {
-                    object_setClass(self, Bundle.self);
+                    object_setClass(self, Bundle.self)
                 }
                 objc_removeAssociatedObjects(self)
             }
@@ -30,11 +33,9 @@ public extension Bundle {
             return self.preferredLocalizations.first
         }
     }
-    
+
     fileprivate var runTimeBundle: Bundle? {
-        get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.languageCode) as? Bundle
-        }
+        return objc_getAssociatedObject(self, &AssociatedKeys.languageCode) as? Bundle
     }
 }
 
@@ -47,9 +48,3 @@ private class BundleEx: Bundle {
         }
     }
 }
-
-
-
-
-
-
