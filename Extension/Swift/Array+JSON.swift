@@ -9,8 +9,8 @@ extension Array {
     public var jsonData: Data? {
         do {
             return try JSONSerialization.data(withJSONObject: self, options: JSONSerialization.WritingOptions.prettyPrinted)
-        } catch let error as NSError {
-            print("format \(String(describing: self)) to Data fail:\(error.domain)")
+        } catch let error {
+            debugPrint(error.localizedDescription, self.debugDescription)
             return nil
         }
     }

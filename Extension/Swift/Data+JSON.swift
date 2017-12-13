@@ -10,8 +10,8 @@ extension Data {
         do {
             return try  JSONSerialization.jsonObject(with: self as Data,
                                                      options: JSONSerialization.ReadingOptions.mutableLeaves)
-        } catch let error as NSError {
-            print("data formar fail:\(error.domain)")
+        } catch let error {
+            debugPrint(error.localizedDescription, self.debugDescription)
             return nil
         }
     }
@@ -29,7 +29,7 @@ extension Data {
     /// JSON Data -> JSON String
     public var jsonString: NSString? {
         guard let str = NSString(data: self, encoding: String.Encoding.utf8.rawValue) else {
-            print("format \(String(describing: self)) to String fail)")
+            debugPrint(self.debugDescription)
             return nil
         }
         return str

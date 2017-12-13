@@ -10,7 +10,7 @@ extension UIApplication {
                                     to target: Any?,
                                     from sender: Any?,
                                     for event: UIEvent?) -> Bool {
-        print("\n\(action)\n\(String(describing: target))\n\(String(describing: sender))\n\(String(describing: event))")
+        debugPrint("\n\(action)\n\(String(describing: target))\n\(String(describing: sender))\n\(String(describing: event))")
         return self.hook_sendAction(action, to: target, from: sender, for: event)
     }
 
@@ -21,10 +21,10 @@ extension UIApplication {
         let swizzledMethod = class_getInstanceMethod(UIApplication.self, swizzledSelector)
         if class_addMethod(UIApplication.self, originalSelector, method_getImplementation(swizzledMethod!), method_getTypeEncoding(swizzledMethod!)) {
             class_replaceMethod(UIApplication.self, swizzledSelector, method_getImplementation(originalMethod!), method_getTypeEncoding(originalMethod!))
-            print("Application SendAction reseted")
+            debugPrint("Application SendAction reseted")
         } else {
             method_exchangeImplementations(originalMethod!, swizzledMethod!)
-            print("Application SendAction Hooked")
+            debugPrint("Application SendAction Hooked")
         }
     }
 }

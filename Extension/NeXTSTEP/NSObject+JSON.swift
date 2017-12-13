@@ -27,7 +27,7 @@ extension NSObject {
              self.setValue(keyValue, forKey: keyName)
              }*/
         } catch {
-            print(error)
+            debugPrint(error)
         }
     }
     // MARK: 字典转model array
@@ -44,7 +44,7 @@ extension NSObject {
     /*
      func setValue(value: AnyObject!, forUndefinedKey key: String) {
      #if DEBUG
-     print("undefined \(key):\(value)")
+     debugPrint("undefined \(key):\(value)")
      #endif
      //override this func to deal with the key and value
      }*/

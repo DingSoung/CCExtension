@@ -15,7 +15,7 @@ extension String {
                                                         options: JSONSerialization.ReadingOptions.mutableContainers)
             return json as? [String: Any]
         } catch let error {
-            print("format \(self) to Dictionary fail:\(error.localizedDescription)")
+            debugPrint(error.localizedDescription, self.debugDescription)
             return nil
         }
     }
@@ -30,10 +30,10 @@ extension String {
                 if let value = (strs[1] as NSString).removingPercentEncoding {
                     dict[strs[0]] = value
                 } else {
-                    print("un-resolve key:\(strs[0]) value:\(strs[1])")
+                    debugPrint("un-resolve key:\(strs[0]) value:\(strs[1])")
                 }
             } else {
-                print("un-resolve strs \(strs)")
+                debugPrint("un-resolve strs \(strs)")
             }
         }
         return dict
