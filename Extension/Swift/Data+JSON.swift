@@ -8,7 +8,7 @@ extension Data {
     /// JSON data -> JSON Object (Array or Dictionary)
     public var jsonObject: Any? {
         do {
-            return try  JSONSerialization.jsonObject(with: self as Data,
+            return try  JSONSerialization.jsonObject(with: self,
                                                      options: JSONSerialization.ReadingOptions.mutableLeaves)
         } catch let error {
             debugPrint(error.localizedDescription, self.debugDescription)
