@@ -17,8 +17,8 @@ extension Data {
     }
 
     /// JSON data -> JSON Array
-    public var jsonArray: NSArray? {
-        return self.jsonObject as? NSArray
+    public var jsonArray: [Any]? {
+        return self.jsonObject as? Array
     }
 
     /// JSON data -> JSON Dictionary
@@ -27,11 +27,7 @@ extension Data {
     }
 
     /// JSON Data -> JSON String
-    public var jsonString: NSString? {
-        guard let str = NSString(data: self, encoding: String.Encoding.utf8.rawValue) else {
-            debugPrint(self.debugDescription)
-            return nil
-        }
-        return str
+    public var jsonString: String? {
+        return String(data: self, encoding: String.Encoding.utf8)
     }
 }

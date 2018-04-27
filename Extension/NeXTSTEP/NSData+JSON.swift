@@ -12,17 +12,17 @@ extension NSData {
     }
 
     /// JSON data -> JSON Array
-    public final var jsonArray: NSArray? {
-        return self.jsonObject as? NSArray
+    public final var jsonArray: [Any]? {
+        return (self as Data).jsonArray
     }
 
     /// JSON data -> JSON Dictionary
     public final var jsonDictionary: NSDictionary? {
-        return self.jsonObject as? NSDictionary
+        return (self as Data).jsonDictionary
     }
 
     /// JSON Data -> JSON String
-    public final var jsonString: NSString? {
+    public final var jsonString: String? {
         return (self as Data).jsonString
     }
 
