@@ -3,13 +3,10 @@
 
 import Foundation
 
-@objc
-public extension Bundle {
-
+@objc extension Bundle {
     private struct AssociatedKeys {
         static var languageCode = "languageCode"
     }
-
     // bundle run time code en, zh_Hans ect, to update localization source without restart
     public var localizationCode: String? {
         set {
@@ -33,7 +30,6 @@ public extension Bundle {
             return self.preferredLocalizations.first
         }
     }
-
     fileprivate var runTimeBundle: Bundle? {
         return objc_getAssociatedObject(self, &AssociatedKeys.languageCode) as? Bundle
     }

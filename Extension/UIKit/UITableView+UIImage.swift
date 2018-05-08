@@ -4,9 +4,7 @@
 #if os(iOS)
 import UIKit
 
-@objc
-extension UITableView {
-
+@objc extension UITableView {
     public final var headerImage: UIImage? {
         let offset = self.contentOffset
         guard let rect = self.tableHeaderView?.frame else {return nil}
@@ -15,7 +13,6 @@ extension UITableView {
         self.setContentOffset(offset, animated: false)
         return image
     }
-
     public final func headerImage(forSection section: Int) -> UIImage? {
         let offset = self.contentOffset
         let rect = self.rectForHeader(inSection: section)
@@ -24,7 +21,6 @@ extension UITableView {
         self .setContentOffset(offset, animated: false)
         return image
     }
-
     public final func imageForRow(at indexPath: IndexPath) -> UIImage? {
         let offset = self.contentOffset
         self.scrollToRow(at: indexPath, at: UITableViewScrollPosition.top, animated: false)
@@ -32,7 +28,6 @@ extension UITableView {
         self.setContentOffset(offset, animated: false)
         return image
     }
-
     public final func footerImage(forSection section: Int) -> UIImage? {
         let offset = self.contentOffset
         let rect = self.rectForFooter(inSection: section)
@@ -41,7 +36,6 @@ extension UITableView {
         self .setContentOffset(offset, animated: false)
         return image
     }
-
     public final var footerImage: UIImage? {
         let offset = self.contentOffset
         guard let rect = self.tableFooterView?.frame else {return nil}
@@ -50,7 +44,6 @@ extension UITableView {
         self.setContentOffset(offset, animated: false)
         return image
     }
-
     public final func render(context: CGContext,
                              section: Int,
                              fromRow start: Int,
@@ -90,7 +83,6 @@ extension UITableView {
         self.setContentOffset(offset, animated: false)
         context.restoreGState()
     }
-
     /// ⚠️ hight memory require when lines > 100, get image for one section
     public final func imageForSection(at section: Int,
                                       fromRow start: Int,
@@ -105,10 +97,7 @@ extension UITableView {
         if footer == true {
             height += self.rectForFooter(inSection: section).size.height
         }
-        UIGraphicsBeginImageContextWithOptions(CGSize(width: self.contentSize.width,
-                                                      height: height),
-                                               false,
-                                               UIScreen.main.scale) // +224.25MB
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: self.contentSize.width, height: height), false, UIScreen.main.scale) // +224.25MB
         if let context = UIGraphicsGetCurrentContext() {
             self.render(context: context, section: section, fromRow: start, to: end, withHeader: header, footer: footer)
         }
@@ -116,7 +105,6 @@ extension UITableView {
         UIGraphicsEndImageContext(); //-245.3M
         return image
     }
-
     /// ⚠️ hight memory require when lines > 20, get image from section and all rows in it
     public final func imageFromSection(_ start: Int, to end: Int, withHeader header: Bool, footer: Bool) -> UIImage? {
         var images: [UIImage] = []

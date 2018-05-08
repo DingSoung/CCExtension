@@ -4,9 +4,7 @@
 #if os(iOS)
 import UIKit
 
-@objc
-extension UIImage {
-
+@objc extension UIImage {
     /// image to scale
     public func imageWithScale(scale: CGFloat) -> UIImage {
         guard let cgImage = self.cgImage else {
@@ -14,7 +12,6 @@ extension UIImage {
         }
         return UIImage(cgImage: cgImage, scale: scale, orientation: UIImageOrientation.up)
     }
-
     /// scale with ratio
     public func imageScaleToRatio(ratio: CGFloat) -> UIImage? {
         UIGraphicsBeginImageContext(CGSize(width: self.size.width * ratio, height: self.size.height * ratio))
@@ -25,7 +22,6 @@ extension UIImage {
         UIGraphicsEndImageContext()
         return scaledImage
     }
-
     /// sacale to size
     public func imageScaleToSize(size: CGSize) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
@@ -34,7 +30,6 @@ extension UIImage {
         UIGraphicsEndImageContext()
         return image
     }
-
     /// image with cornal radius
     public func imageWithCornerRadius(radius: CGFloat) -> UIImage? {
         let rect = CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height)
@@ -47,7 +42,6 @@ extension UIImage {
         UIGraphicsEndImageContext()
         return image
     }
-
     /// image with corner radius with half of min width or height
     public var roundImage: UIImage? {
         return self.imageWithCornerRadius(radius: min(self.size.width, self.size.height) * 0.5)

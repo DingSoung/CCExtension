@@ -4,7 +4,6 @@
 import Foundation
 
 extension Data {
-
     /// JSON data -> JSON Object (Array or Dictionary)
     public var jsonObject: Any? {
         do {
@@ -15,17 +14,14 @@ extension Data {
             return nil
         }
     }
-
     /// JSON data -> JSON Array
     public var jsonArray: [Any]? {
         return self.jsonObject as? Array
     }
-
     /// JSON data -> JSON Dictionary
     public var jsonDictionary: NSDictionary? {
         return self.jsonObject as? NSDictionary
     }
-
     /// JSON Data -> JSON String
     public var jsonString: String? {
         return String(data: self, encoding: String.Encoding.utf8)

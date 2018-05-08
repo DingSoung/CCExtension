@@ -1,9 +1,5 @@
-//
-//  URL+CooKie.swift
-//
 //  Created by Songwen Ding on 2017/11/23.
 //  Copyright © 2017年 DingSoung. All rights reserved.
-//
 
 import Foundation
 

@@ -5,13 +5,12 @@
 import UIKit
 
 extension Array where Element: UIImage {
-
     public func verticalImage(space: CGFloat, backgroundColor: UIColor?) -> UIImage? {
         var size = CGSize.zero
         for image in self {
-            let sz = image.size
-            size.height += sz.height
-            size.width = Swift.max(size.width, sz.width)
+            let imgSize = image.size
+            size.height += imgSize.height
+            size.width = Swift.max(size.width, imgSize.width)
         }
         size.height += CGFloat(Swift.max(0, self.count - 1)) * space
         var image: UIImage?
@@ -21,11 +20,11 @@ extension Array where Element: UIImage {
             color.setFill()
             path.fill()
         }
-        var y: CGFloat = 0
+        var imgY: CGFloat = 0
         for image in self {
-            image.draw(at: CGPoint(x: 0, y: y))
-            y += image.size.height
-            y += space
+            image.draw(at: CGPoint(x: 0, y: imgY))
+            imgY += image.size.height
+            imgY += space
         }
         image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

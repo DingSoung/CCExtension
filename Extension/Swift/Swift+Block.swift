@@ -11,13 +11,13 @@ public func closure(mark: String? = "",
     if run != true {
         return
     } else {
-        if let mk = mark {
-            debugPrint("excode block \(mk)")
+        if let mrk = mark {
+            debugPrint("excode block \(mrk)")
         }
         block()
         complete?()
-        if let mk = mark {
-            debugPrint("excode block \(mk) finished")
+        if let mrk = mark {
+            debugPrint("excode block \(mrk) finished")
         }
     }
 }

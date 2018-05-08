@@ -3,9 +3,8 @@
 
 #if os(iOS)
 import UIKit
-@objc
-extension NSAttributedString {
 
+@objc extension NSAttributedString {
     /// height for limit width with font
     public func height(constrainedWidth: CGFloat) -> CGFloat {
         let constraintRect = CGSize(width: constrainedWidth, height: CGFloat.greatestFiniteMagnitude)
@@ -14,7 +13,6 @@ extension NSAttributedString {
                                             context: nil)
         return ceil(boundingBox.height)
     }
-
     /// width for limit height with font
     public func width(constrainedHeight: CGFloat) -> CGFloat {
         let constraintRect = CGSize(width: CGFloat.greatestFiniteMagnitude, height: constrainedHeight)

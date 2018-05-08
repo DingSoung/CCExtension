@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE35EB8020623CBB009A265A /* NSLocale+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35EB7F20623CBB009A265A /* NSLocale+Localization.swift */; };
-		CE35EB8120623CBE009A265A /* NSLocale+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35EB7F20623CBB009A265A /* NSLocale+Localization.swift */; };
-		CE35EB8220623CBE009A265A /* NSLocale+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35EB7F20623CBB009A265A /* NSLocale+Localization.swift */; };
-		CE35EB8320623CBE009A265A /* NSLocale+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35EB7F20623CBB009A265A /* NSLocale+Localization.swift */; };
 		CE607EEE1F051DB0007E99DC /* Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = CE607EEC1F051DB0007E99DC /* Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE86472520A1E0650043FB26 /* runtimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86472420A1E0650043FB26 /* runtimeHelper.swift */; };
+		CE86472620A1E0650043FB26 /* runtimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86472420A1E0650043FB26 /* runtimeHelper.swift */; };
+		CE86472720A1E0650043FB26 /* runtimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86472420A1E0650043FB26 /* runtimeHelper.swift */; };
+		CE86472820A1E0650043FB26 /* runtimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86472420A1E0650043FB26 /* runtimeHelper.swift */; };
 		CEF512121FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */; };
 		CEF512131FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */; };
 		CEF512141FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */; };
@@ -48,10 +48,6 @@
 		CEF512331FE0CA25008C84C9 /* UIWebView+JavaScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F71FE0CA25008C84C9 /* UIWebView+JavaScript.swift */; };
 		CEF512341FE0CA25008C84C9 /* UIWebView+JavaScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F71FE0CA25008C84C9 /* UIWebView+JavaScript.swift */; };
 		CEF512351FE0CA25008C84C9 /* UIWebView+JavaScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F71FE0CA25008C84C9 /* UIWebView+JavaScript.swift */; };
-		CEF512361FE0CA25008C84C9 /* NSArray+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F81FE0CA25008C84C9 /* NSArray+UIImage.swift */; };
-		CEF512371FE0CA25008C84C9 /* NSArray+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F81FE0CA25008C84C9 /* NSArray+UIImage.swift */; };
-		CEF512381FE0CA25008C84C9 /* NSArray+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F81FE0CA25008C84C9 /* NSArray+UIImage.swift */; };
-		CEF512391FE0CA25008C84C9 /* NSArray+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F81FE0CA25008C84C9 /* NSArray+UIImage.swift */; };
 		CEF5123A1FE0CA25008C84C9 /* UIImage+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F91FE0CA25008C84C9 /* UIImage+CoreGraphics.swift */; };
 		CEF5123B1FE0CA25008C84C9 /* UIImage+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F91FE0CA25008C84C9 /* UIImage+CoreGraphics.swift */; };
 		CEF5123C1FE0CA25008C84C9 /* UIImage+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F91FE0CA25008C84C9 /* UIImage+CoreGraphics.swift */; };
@@ -64,42 +60,11 @@
 		CEF512431FE0CA25008C84C9 /* Bundle+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511FC1FE0CA25008C84C9 /* Bundle+Localization.swift */; };
 		CEF512441FE0CA25008C84C9 /* Bundle+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511FC1FE0CA25008C84C9 /* Bundle+Localization.swift */; };
 		CEF512451FE0CA25008C84C9 /* Bundle+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511FC1FE0CA25008C84C9 /* Bundle+Localization.swift */; };
-		CEF512461FE0CA25008C84C9 /* NSObject+HookBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511FE1FE0CA25008C84C9 /* NSObject+HookBlock.swift */; };
-		CEF512471FE0CA25008C84C9 /* NSObject+HookBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511FE1FE0CA25008C84C9 /* NSObject+HookBlock.swift */; };
-		CEF512481FE0CA25008C84C9 /* NSObject+HookBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511FE1FE0CA25008C84C9 /* NSObject+HookBlock.swift */; };
-		CEF512491FE0CA25008C84C9 /* NSObject+HookBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511FE1FE0CA25008C84C9 /* NSObject+HookBlock.swift */; };
-		CEF5124A1FE0CA25008C84C9 /* NSString+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511FF1FE0CA25008C84C9 /* NSString+Regex.swift */; };
-		CEF5124B1FE0CA25008C84C9 /* NSString+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511FF1FE0CA25008C84C9 /* NSString+Regex.swift */; };
-		CEF5124C1FE0CA25008C84C9 /* NSString+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511FF1FE0CA25008C84C9 /* NSString+Regex.swift */; };
-		CEF5124D1FE0CA25008C84C9 /* NSString+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511FF1FE0CA25008C84C9 /* NSString+Regex.swift */; };
-		CEF5124E1FE0CA25008C84C9 /* NSArray+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512001FE0CA25008C84C9 /* NSArray+JSON.swift */; };
-		CEF5124F1FE0CA25008C84C9 /* NSArray+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512001FE0CA25008C84C9 /* NSArray+JSON.swift */; };
-		CEF512501FE0CA25008C84C9 /* NSArray+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512001FE0CA25008C84C9 /* NSArray+JSON.swift */; };
-		CEF512511FE0CA25008C84C9 /* NSArray+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512001FE0CA25008C84C9 /* NSArray+JSON.swift */; };
-		CEF512521FE0CA25008C84C9 /* NSURL+Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512011FE0CA25008C84C9 /* NSURL+Cookie.swift */; };
-		CEF512531FE0CA25008C84C9 /* NSURL+Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512011FE0CA25008C84C9 /* NSURL+Cookie.swift */; };
-		CEF512541FE0CA25008C84C9 /* NSURL+Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512011FE0CA25008C84C9 /* NSURL+Cookie.swift */; };
-		CEF512551FE0CA25008C84C9 /* NSURL+Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512011FE0CA25008C84C9 /* NSURL+Cookie.swift */; };
-		CEF512561FE0CA25008C84C9 /* NSDictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512021FE0CA25008C84C9 /* NSDictionary+JSON.swift */; };
-		CEF512571FE0CA25008C84C9 /* NSDictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512021FE0CA25008C84C9 /* NSDictionary+JSON.swift */; };
-		CEF512581FE0CA26008C84C9 /* NSDictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512021FE0CA25008C84C9 /* NSDictionary+JSON.swift */; };
-		CEF512591FE0CA26008C84C9 /* NSDictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512021FE0CA25008C84C9 /* NSDictionary+JSON.swift */; };
-		CEF5125A1FE0CA26008C84C9 /* NSObject+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512031FE0CA25008C84C9 /* NSObject+JSON.swift */; };
-		CEF5125B1FE0CA26008C84C9 /* NSObject+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512031FE0CA25008C84C9 /* NSObject+JSON.swift */; };
-		CEF5125C1FE0CA26008C84C9 /* NSObject+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512031FE0CA25008C84C9 /* NSObject+JSON.swift */; };
-		CEF5125D1FE0CA26008C84C9 /* NSObject+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512031FE0CA25008C84C9 /* NSObject+JSON.swift */; };
+		CEF512461FE0CA25008C84C9 /* Objc.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511FE1FE0CA25008C84C9 /* Objc.swift */; };
 		CEF5125E1FE0CA26008C84C9 /* Locale+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512041FE0CA25008C84C9 /* Locale+Localization.swift */; };
 		CEF5125F1FE0CA26008C84C9 /* Locale+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512041FE0CA25008C84C9 /* Locale+Localization.swift */; };
 		CEF512601FE0CA26008C84C9 /* Locale+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512041FE0CA25008C84C9 /* Locale+Localization.swift */; };
 		CEF512611FE0CA26008C84C9 /* Locale+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512041FE0CA25008C84C9 /* Locale+Localization.swift */; };
-		CEF512621FE0CA26008C84C9 /* NSString+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512051FE0CA25008C84C9 /* NSString+Dictionary.swift */; };
-		CEF512631FE0CA26008C84C9 /* NSString+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512051FE0CA25008C84C9 /* NSString+Dictionary.swift */; };
-		CEF512641FE0CA26008C84C9 /* NSString+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512051FE0CA25008C84C9 /* NSString+Dictionary.swift */; };
-		CEF512651FE0CA26008C84C9 /* NSString+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512051FE0CA25008C84C9 /* NSString+Dictionary.swift */; };
-		CEF512661FE0CA26008C84C9 /* NSData+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512061FE0CA25008C84C9 /* NSData+JSON.swift */; };
-		CEF512671FE0CA26008C84C9 /* NSData+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512061FE0CA25008C84C9 /* NSData+JSON.swift */; };
-		CEF512681FE0CA26008C84C9 /* NSData+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512061FE0CA25008C84C9 /* NSData+JSON.swift */; };
-		CEF512691FE0CA26008C84C9 /* NSData+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512061FE0CA25008C84C9 /* NSData+JSON.swift */; };
 		CEF5126A1FE0CA26008C84C9 /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512081FE0CA25008C84C9 /* Dictionary+JSON.swift */; };
 		CEF5126B1FE0CA26008C84C9 /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512081FE0CA25008C84C9 /* Dictionary+JSON.swift */; };
 		CEF5126C1FE0CA26008C84C9 /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512081FE0CA25008C84C9 /* Dictionary+JSON.swift */; };
@@ -146,10 +111,10 @@
 		CE34AB471F6027E90088F13F /* Extension_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extension_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE34AB541F6028030088F13F /* Extension_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extension_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE34AB611F60281C0088F13F /* Extension_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extension_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE35EB7F20623CBB009A265A /* NSLocale+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NSLocale+Localization.swift"; path = "Extension/NeXTSTEP/NSLocale+Localization.swift"; sourceTree = SOURCE_ROOT; };
 		CE607EE91F051DB0007E99DC /* Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE607EEC1F051DB0007E99DC /* Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extension.h; sourceTree = "<group>"; };
 		CE607EED1F051DB0007E99DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE86472420A1E0650043FB26 /* runtimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runtimeHelper.swift; sourceTree = "<group>"; };
 		CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+EventTrack.swift"; sourceTree = "<group>"; };
 		CEF511F01FE0CA25008C84C9 /* NSString+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Size.swift"; sourceTree = "<group>"; };
 		CEF511F11FE0CA25008C84C9 /* UIImage+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Array.swift"; sourceTree = "<group>"; };
@@ -159,19 +124,11 @@
 		CEF511F51FE0CA25008C84C9 /* UIVIew+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+UIImage.swift"; sourceTree = "<group>"; };
 		CEF511F61FE0CA25008C84C9 /* UINavigationController+Autorotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Autorotate.swift"; sourceTree = "<group>"; };
 		CEF511F71FE0CA25008C84C9 /* UIWebView+JavaScript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+JavaScript.swift"; sourceTree = "<group>"; };
-		CEF511F81FE0CA25008C84C9 /* NSArray+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSArray+UIImage.swift"; sourceTree = "<group>"; };
 		CEF511F91FE0CA25008C84C9 /* UIImage+CoreGraphics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CoreGraphics.swift"; sourceTree = "<group>"; };
 		CEF511FA1FE0CA25008C84C9 /* UIImage+Process.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Process.swift"; sourceTree = "<group>"; };
 		CEF511FC1FE0CA25008C84C9 /* Bundle+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Localization.swift"; sourceTree = "<group>"; };
-		CEF511FE1FE0CA25008C84C9 /* NSObject+HookBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+HookBlock.swift"; sourceTree = "<group>"; };
-		CEF511FF1FE0CA25008C84C9 /* NSString+Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Regex.swift"; sourceTree = "<group>"; };
-		CEF512001FE0CA25008C84C9 /* NSArray+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSArray+JSON.swift"; sourceTree = "<group>"; };
-		CEF512011FE0CA25008C84C9 /* NSURL+Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURL+Cookie.swift"; sourceTree = "<group>"; };
-		CEF512021FE0CA25008C84C9 /* NSDictionary+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+JSON.swift"; sourceTree = "<group>"; };
-		CEF512031FE0CA25008C84C9 /* NSObject+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+JSON.swift"; sourceTree = "<group>"; };
+		CEF511FE1FE0CA25008C84C9 /* Objc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Objc.swift; sourceTree = "<group>"; };
 		CEF512041FE0CA25008C84C9 /* Locale+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Locale+Localization.swift"; sourceTree = "<group>"; };
-		CEF512051FE0CA25008C84C9 /* NSString+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Dictionary.swift"; sourceTree = "<group>"; };
-		CEF512061FE0CA25008C84C9 /* NSData+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+JSON.swift"; sourceTree = "<group>"; };
 		CEF512081FE0CA25008C84C9 /* Dictionary+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+JSON.swift"; sourceTree = "<group>"; };
 		CEF512091FE0CA25008C84C9 /* Data+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+JSON.swift"; sourceTree = "<group>"; };
 		CEF5120A1FE0CA25008C84C9 /* Swift+Synchronized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Synchronized.swift"; sourceTree = "<group>"; };
@@ -238,8 +195,8 @@
 		CE607EEB1F051DB0007E99DC /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CEF511FE1FE0CA25008C84C9 /* Objc.swift */,
 				CEF511FB1FE0CA25008C84C9 /* Foundation */,
-				CEF511FD1FE0CA25008C84C9 /* NeXTSTEP */,
 				CEF512071FE0CA25008C84C9 /* Swift */,
 				CEF511EE1FE0CA25008C84C9 /* UIKit */,
 				CE607EEC1F051DB0007E99DC /* Extension.h */,
@@ -260,7 +217,6 @@
 				CEF511F51FE0CA25008C84C9 /* UIVIew+UIImage.swift */,
 				CEF511F61FE0CA25008C84C9 /* UINavigationController+Autorotate.swift */,
 				CEF511F71FE0CA25008C84C9 /* UIWebView+JavaScript.swift */,
-				CEF511F81FE0CA25008C84C9 /* NSArray+UIImage.swift */,
 				CEF511F91FE0CA25008C84C9 /* UIImage+CoreGraphics.swift */,
 				CEF511FA1FE0CA25008C84C9 /* UIImage+Process.swift */,
 			);
@@ -273,22 +229,6 @@
 				CEF511FC1FE0CA25008C84C9 /* Bundle+Localization.swift */,
 			);
 			path = Foundation;
-			sourceTree = "<group>";
-		};
-		CEF511FD1FE0CA25008C84C9 /* NeXTSTEP */ = {
-			isa = PBXGroup;
-			children = (
-				CEF511FE1FE0CA25008C84C9 /* NSObject+HookBlock.swift */,
-				CEF511FF1FE0CA25008C84C9 /* NSString+Regex.swift */,
-				CEF512001FE0CA25008C84C9 /* NSArray+JSON.swift */,
-				CEF512011FE0CA25008C84C9 /* NSURL+Cookie.swift */,
-				CEF512021FE0CA25008C84C9 /* NSDictionary+JSON.swift */,
-				CE35EB7F20623CBB009A265A /* NSLocale+Localization.swift */,
-				CEF512031FE0CA25008C84C9 /* NSObject+JSON.swift */,
-				CEF512051FE0CA25008C84C9 /* NSString+Dictionary.swift */,
-				CEF512061FE0CA25008C84C9 /* NSData+JSON.swift */,
-			);
-			path = NeXTSTEP;
 			sourceTree = "<group>";
 		};
 		CEF512071FE0CA25008C84C9 /* Swift */ = {
@@ -305,6 +245,7 @@
 				CEF5120F1FE0CA25008C84C9 /* URL+CooKie.swift */,
 				CEF512101FE0CA25008C84C9 /* Swift+Association.swift */,
 				CEF512111FE0CA25008C84C9 /* String+Dictionary.swift */,
+				CE86472420A1E0650043FB26 /* runtimeHelper.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -423,7 +364,7 @@
 		CE607EE01F051DB0007E99DC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = DingSoung;
 				TargetAttributes = {
 					CE34AB461F6027E90088F13F = {
@@ -525,33 +466,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF5124D1FE0CA25008C84C9 /* NSString+Regex.swift in Sources */,
 				CEF512891FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
 				CEF512711FE0CA26008C84C9 /* Data+JSON.swift in Sources */,
-				CE35EB8320623CBE009A265A /* NSLocale+Localization.swift in Sources */,
-				CEF5125D1FE0CA26008C84C9 /* NSObject+JSON.swift in Sources */,
 				CEF5121D1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */,
 				CEF512751FE0CA26008C84C9 /* Swift+Synchronized.swift in Sources */,
 				CEF512851FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
 				CEF512611FE0CA26008C84C9 /* Locale+Localization.swift in Sources */,
 				CEF5126D1FE0CA26008C84C9 /* Dictionary+JSON.swift in Sources */,
-				CEF512511FE0CA25008C84C9 /* NSArray+JSON.swift in Sources */,
 				CEF512911FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
 				CEF5127D1FE0CA26008C84C9 /* Swift+Block.swift in Sources */,
 				CEF512291FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
+				CE86472820A1E0650043FB26 /* runtimeHelper.swift in Sources */,
 				CEF5128D1FE0CA26008C84C9 /* Swift+Association.swift in Sources */,
-				CEF512691FE0CA26008C84C9 /* NSData+JSON.swift in Sources */,
 				CEF5122D1FE0CA25008C84C9 /* UIVIew+UIImage.swift in Sources */,
 				CEF512351FE0CA25008C84C9 /* UIWebView+JavaScript.swift in Sources */,
 				CEF512211FE0CA25008C84C9 /* UITableView+UIImage.swift in Sources */,
-				CEF512551FE0CA25008C84C9 /* NSURL+Cookie.swift in Sources */,
 				CEF5123D1FE0CA25008C84C9 /* UIImage+CoreGraphics.swift in Sources */,
-				CEF512491FE0CA25008C84C9 /* NSObject+HookBlock.swift in Sources */,
 				CEF512251FE0CA25008C84C9 /* NSAttributedString+Content.swift in Sources */,
 				CEF512411FE0CA25008C84C9 /* UIImage+Process.swift in Sources */,
-				CEF512651FE0CA26008C84C9 /* NSString+Dictionary.swift in Sources */,
-				CEF512591FE0CA26008C84C9 /* NSDictionary+JSON.swift in Sources */,
-				CEF512391FE0CA25008C84C9 /* NSArray+UIImage.swift in Sources */,
 				CEF512191FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
 				CEF512791FE0CA26008C84C9 /* String+Regex.swift in Sources */,
 				CEF512811FE0CA26008C84C9 /* Swift+Log.swift in Sources */,
@@ -565,33 +497,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF5124C1FE0CA25008C84C9 /* NSString+Regex.swift in Sources */,
 				CEF512881FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
 				CEF512701FE0CA26008C84C9 /* Data+JSON.swift in Sources */,
-				CE35EB8120623CBE009A265A /* NSLocale+Localization.swift in Sources */,
-				CEF5125C1FE0CA26008C84C9 /* NSObject+JSON.swift in Sources */,
 				CEF5121C1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */,
 				CEF512741FE0CA26008C84C9 /* Swift+Synchronized.swift in Sources */,
 				CEF512841FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
 				CEF512601FE0CA26008C84C9 /* Locale+Localization.swift in Sources */,
 				CEF5126C1FE0CA26008C84C9 /* Dictionary+JSON.swift in Sources */,
-				CEF512501FE0CA25008C84C9 /* NSArray+JSON.swift in Sources */,
 				CEF512901FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
 				CEF5127C1FE0CA26008C84C9 /* Swift+Block.swift in Sources */,
 				CEF512281FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
+				CE86472720A1E0650043FB26 /* runtimeHelper.swift in Sources */,
 				CEF5128C1FE0CA26008C84C9 /* Swift+Association.swift in Sources */,
-				CEF512681FE0CA26008C84C9 /* NSData+JSON.swift in Sources */,
 				CEF5122C1FE0CA25008C84C9 /* UIVIew+UIImage.swift in Sources */,
 				CEF512341FE0CA25008C84C9 /* UIWebView+JavaScript.swift in Sources */,
 				CEF512201FE0CA25008C84C9 /* UITableView+UIImage.swift in Sources */,
-				CEF512541FE0CA25008C84C9 /* NSURL+Cookie.swift in Sources */,
 				CEF5123C1FE0CA25008C84C9 /* UIImage+CoreGraphics.swift in Sources */,
-				CEF512481FE0CA25008C84C9 /* NSObject+HookBlock.swift in Sources */,
 				CEF512241FE0CA25008C84C9 /* NSAttributedString+Content.swift in Sources */,
 				CEF512401FE0CA25008C84C9 /* UIImage+Process.swift in Sources */,
-				CEF512641FE0CA26008C84C9 /* NSString+Dictionary.swift in Sources */,
-				CEF512581FE0CA26008C84C9 /* NSDictionary+JSON.swift in Sources */,
-				CEF512381FE0CA25008C84C9 /* NSArray+UIImage.swift in Sources */,
 				CEF512181FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
 				CEF512781FE0CA26008C84C9 /* String+Regex.swift in Sources */,
 				CEF512801FE0CA26008C84C9 /* Swift+Log.swift in Sources */,
@@ -605,33 +528,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF5124B1FE0CA25008C84C9 /* NSString+Regex.swift in Sources */,
 				CEF512871FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
 				CEF5126F1FE0CA26008C84C9 /* Data+JSON.swift in Sources */,
-				CE35EB8220623CBE009A265A /* NSLocale+Localization.swift in Sources */,
-				CEF5125B1FE0CA26008C84C9 /* NSObject+JSON.swift in Sources */,
 				CEF5121B1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */,
 				CEF512731FE0CA26008C84C9 /* Swift+Synchronized.swift in Sources */,
 				CEF512831FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
 				CEF5125F1FE0CA26008C84C9 /* Locale+Localization.swift in Sources */,
 				CEF5126B1FE0CA26008C84C9 /* Dictionary+JSON.swift in Sources */,
-				CEF5124F1FE0CA25008C84C9 /* NSArray+JSON.swift in Sources */,
 				CEF5128F1FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
 				CEF5127B1FE0CA26008C84C9 /* Swift+Block.swift in Sources */,
 				CEF512271FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
+				CE86472620A1E0650043FB26 /* runtimeHelper.swift in Sources */,
 				CEF5128B1FE0CA26008C84C9 /* Swift+Association.swift in Sources */,
-				CEF512671FE0CA26008C84C9 /* NSData+JSON.swift in Sources */,
 				CEF5122B1FE0CA25008C84C9 /* UIVIew+UIImage.swift in Sources */,
 				CEF512331FE0CA25008C84C9 /* UIWebView+JavaScript.swift in Sources */,
 				CEF5121F1FE0CA25008C84C9 /* UITableView+UIImage.swift in Sources */,
-				CEF512531FE0CA25008C84C9 /* NSURL+Cookie.swift in Sources */,
 				CEF5123B1FE0CA25008C84C9 /* UIImage+CoreGraphics.swift in Sources */,
-				CEF512471FE0CA25008C84C9 /* NSObject+HookBlock.swift in Sources */,
 				CEF512231FE0CA25008C84C9 /* NSAttributedString+Content.swift in Sources */,
 				CEF5123F1FE0CA25008C84C9 /* UIImage+Process.swift in Sources */,
-				CEF512631FE0CA26008C84C9 /* NSString+Dictionary.swift in Sources */,
-				CEF512571FE0CA25008C84C9 /* NSDictionary+JSON.swift in Sources */,
-				CEF512371FE0CA25008C84C9 /* NSArray+UIImage.swift in Sources */,
 				CEF512171FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
 				CEF512771FE0CA26008C84C9 /* String+Regex.swift in Sources */,
 				CEF5127F1FE0CA26008C84C9 /* Swift+Log.swift in Sources */,
@@ -645,33 +559,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF5124A1FE0CA25008C84C9 /* NSString+Regex.swift in Sources */,
 				CEF512861FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
 				CEF5126E1FE0CA26008C84C9 /* Data+JSON.swift in Sources */,
-				CE35EB8020623CBB009A265A /* NSLocale+Localization.swift in Sources */,
-				CEF5125A1FE0CA26008C84C9 /* NSObject+JSON.swift in Sources */,
 				CEF5121A1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */,
 				CEF512721FE0CA26008C84C9 /* Swift+Synchronized.swift in Sources */,
 				CEF512821FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
 				CEF5125E1FE0CA26008C84C9 /* Locale+Localization.swift in Sources */,
 				CEF5126A1FE0CA26008C84C9 /* Dictionary+JSON.swift in Sources */,
-				CEF5124E1FE0CA25008C84C9 /* NSArray+JSON.swift in Sources */,
 				CEF5128E1FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
 				CEF5127A1FE0CA26008C84C9 /* Swift+Block.swift in Sources */,
 				CEF512261FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
+				CE86472520A1E0650043FB26 /* runtimeHelper.swift in Sources */,
 				CEF5128A1FE0CA26008C84C9 /* Swift+Association.swift in Sources */,
-				CEF512661FE0CA26008C84C9 /* NSData+JSON.swift in Sources */,
 				CEF5122A1FE0CA25008C84C9 /* UIVIew+UIImage.swift in Sources */,
 				CEF512321FE0CA25008C84C9 /* UIWebView+JavaScript.swift in Sources */,
 				CEF5121E1FE0CA25008C84C9 /* UITableView+UIImage.swift in Sources */,
-				CEF512521FE0CA25008C84C9 /* NSURL+Cookie.swift in Sources */,
 				CEF5123A1FE0CA25008C84C9 /* UIImage+CoreGraphics.swift in Sources */,
-				CEF512461FE0CA25008C84C9 /* NSObject+HookBlock.swift in Sources */,
+				CEF512461FE0CA25008C84C9 /* Objc.swift in Sources */,
 				CEF512221FE0CA25008C84C9 /* NSAttributedString+Content.swift in Sources */,
 				CEF5123E1FE0CA25008C84C9 /* UIImage+Process.swift in Sources */,
-				CEF512621FE0CA26008C84C9 /* NSString+Dictionary.swift in Sources */,
-				CEF512561FE0CA25008C84C9 /* NSDictionary+JSON.swift in Sources */,
-				CEF512361FE0CA25008C84C9 /* NSArray+UIImage.swift in Sources */,
 				CEF512161FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
 				CEF512761FE0CA26008C84C9 /* String+Regex.swift in Sources */,
 				CEF5127E1FE0CA26008C84C9 /* Swift+Log.swift in Sources */,
@@ -834,6 +740,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -841,6 +748,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -894,6 +802,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -901,6 +810,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

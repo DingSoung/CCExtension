@@ -4,22 +4,19 @@
 import Foundation
 
 extension String {
-    
     /// JSON String -> JSON Dictionary
     public var jsonDictionary: [String: Any]? {
-        guard let JsonData = self.data(using: String.Encoding.utf8, allowLossyConversion: false) else {
+        guard let jsonData = self.data(using: .utf8, allowLossyConversion: false) else {
             return nil
         }
         do {
-            let json = try JSONSerialization.jsonObject(with: JsonData,
-                                                        options: JSONSerialization.ReadingOptions.mutableContainers)
+            let json = try JSONSerialization.jsonObject(with: jsonData, options: .mutableContainers)
             return json as? [String: Any]
         } catch let error {
             debugPrint(error.localizedDescription, self.debugDescription)
             return nil
         }
     }
-
     /// url format -> Dictionary  ext:http://domain.com?ID=1&code=2
     public var urlDictionary: [String: Any] {
         var dict = [String: Any]()

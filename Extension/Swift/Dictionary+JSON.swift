@@ -4,7 +4,6 @@
 import Foundation
 
 extension Dictionary {
-
     /// Dictionary -> JSON Data
     public var jsonData: Data? {
         do {

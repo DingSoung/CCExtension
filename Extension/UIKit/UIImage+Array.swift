@@ -4,9 +4,7 @@
 import Foundation
 
 #if os(iOS)
-@objc
-extension UIImage {
-
+@objc extension UIImage {
     public func verticalImage(images: [UIImage]) -> UIImage? {
         return images.verticalImage
     }

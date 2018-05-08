@@ -3,19 +3,20 @@
 
 import Foundation
 
-public extension Locale {
-    private static let appForceLocaleKey = "AppleLanguages"
+extension Locale {
+    private static let perferredIdentifierKey = "AppleLanguages"
     /// app language code: en, zh, zh-Hans, zh-Hans-HK etc.
-    public var forceLocale: String? {
-        return (UserDefaults.standard.object(forKey: Locale.appForceLocaleKey) as? [String])?.first
-            ?? Locale.current.identifier
-    }
-    public func setForceLocale(locale: String?) {
-        if let value = locale {
-            UserDefaults.standard.set([value], forKey: Locale.appForceLocaleKey)
-        } else {
-            UserDefaults.standard.removeObject(forKey: Locale.appForceLocaleKey)
+    public static var perferredIdentifier: String? {
+        set {
+            if let value = newValue {
+                UserDefaults.standard.set([value], forKey: Locale.perferredIdentifierKey)
+            } else {
+                UserDefaults.standard.removeObject(forKey: Locale.perferredIdentifierKey)
+            }
+            UserDefaults.standard.synchronize()
         }
-        UserDefaults.standard.synchronize()
+        get {
+            return Locale.preferredLanguages.first ?? Locale.current.identifier
+        }
     }
 }

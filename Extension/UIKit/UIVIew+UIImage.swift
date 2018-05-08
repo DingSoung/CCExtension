@@ -4,9 +4,7 @@
 #if os(iOS)
 import UIKit
 
-@objc
-extension UIView {
-
+@objc extension UIView {
     ///  capture image, Compatible, alpha
     public func image(alpha: CGFloat, bounds: CGRect, scale: CGFloat) -> UIImage? {
         return UIImage.image(render: {
@@ -20,7 +18,6 @@ extension UIView {
             }
         }, size: bounds.size, opaque: self.isOpaque)
     }
-
     public func image(scale: CGFloat) -> UIImage? {
         return UIImage.image(render: {
             if let contex = UIGraphicsGetCurrentContext() {
@@ -28,11 +25,9 @@ extension UIView {
             }
         }, size: self.bounds.size, opaque: self.isOpaque)
     }
-
     public var image: UIImage? {
         return self.image(scale: UIScreen.main.scale)
     }
-
     public var fastImage: UIImage? {
         var image: UIImage?
         UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.isOpaque, UIScreen.main.scale)

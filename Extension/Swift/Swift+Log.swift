@@ -4,8 +4,7 @@
 import Foundation
 
 /// log with detail message
-@discardableResult
-public func log(_ items: Any...,
+@discardableResult public func log(_ items: Any...,
     file: String = #file, line: Int = #line, function: String = #function) -> [Any] {
     return items + [file, line, function, Thread.current, Thread.callStackSymbols]
 }
