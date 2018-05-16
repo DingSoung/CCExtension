@@ -7,8 +7,7 @@ extension Data {
     /// JSON data -> JSON Object (Array or Dictionary)
     public var jsonObject: Any? {
         do {
-            return try  JSONSerialization.jsonObject(with: self,
-                                                     options: JSONSerialization.ReadingOptions.mutableLeaves)
+            return try  JSONSerialization.jsonObject(with: self)
         } catch let error {
             debugPrint(error.localizedDescription, self.debugDescription)
             return nil
@@ -19,11 +18,11 @@ extension Data {
         return self.jsonObject as? Array
     }
     /// JSON data -> JSON Dictionary
-    public var jsonDictionary: NSDictionary? {
-        return self.jsonObject as? NSDictionary
+    public var jsonDictionary: [String: Any]? {
+        return self.jsonObject as? [String: Any]
     }
     /// JSON Data -> JSON String
     public var jsonString: String? {
-        return String(data: self, encoding: String.Encoding.utf8)
+        return String(data: self, encoding: .utf8)
     }
 }

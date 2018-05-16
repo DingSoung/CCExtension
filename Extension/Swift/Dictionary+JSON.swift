@@ -7,8 +7,7 @@ extension Dictionary {
     /// Dictionary -> JSON Data
     public var jsonData: Data? {
         do {
-            return try JSONSerialization.data(withJSONObject: self,
-                                              options: JSONSerialization.WritingOptions.prettyPrinted)
+            return try JSONSerialization.data(withJSONObject: self)
         } catch let error {
             debugPrint(error.localizedDescription, self.debugDescription)
             return nil
