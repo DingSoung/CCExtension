@@ -100,7 +100,7 @@ open class HookObject: NSObject {
         return (self as Data).jsonArray
     }
      public final var jsonDictionary: NSDictionary? {
-        return (self as Data).jsonDictionary
+        return (self as Data).jsonDictionary as NSDictionary?
     }
      public final var jsonString: String? {
         return (self as Data).jsonString
