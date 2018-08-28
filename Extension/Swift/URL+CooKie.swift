@@ -4,20 +4,24 @@
 import Foundation
 
 public extension URL {
-    public func setCookie(value: String, forName name: String) {
-        var cookies = HTTPCookieStorage.shared.cookies(for: self) ?? []
-        for index in 0..<cookies.count where cookies[index].name == name {
-            cookies.remove(at: index)
-            break
-        }
-        guard let cookie = HTTPCookie(properties: [
+    public func cookiePreperties(value: String, forName name: String) -> [HTTPCookiePropertyKey: Any] {
+        var properties: [HTTPCookiePropertyKey: Any] = [
             .name: name,
             .value: value,
+            .path: "/", //self.path,
+            .expires: Date(timeIntervalSinceNow: 24 * 60 * 60),
             .originURL: self,
-            .path: "/",
-            .expires: Date.init(timeIntervalSinceNow: 3 * 365 * 24 * 60 * 60)
-            ]) else { return }
-        cookies.append(cookie)
-        HTTPCookieStorage.shared.setCookies(cookies, for: self, mainDocumentURL: nil)
+            //.maximumAge
+            //.discard
+            .version: "0"
+            //.comment
+            ] as [HTTPCookiePropertyKey: Any]
+        if let host = self.host { properties[.domain] = host }
+        if let port = self.port { properties[.port] = port }
+        return properties
+    }
+    public func cookie(value: String, forName name: String) -> HTTPCookie? {
+        let properties = self.cookiePreperties(value: value, forName: name)
+        return HTTPCookie(properties: properties)
     }
 }

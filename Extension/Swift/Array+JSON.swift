@@ -4,7 +4,7 @@
 import Foundation
 
 extension Array {
-    /// Dictionary -> JSON Data
+    /// -> JSON data
     public var jsonData: Data? {
         do {
             return try JSONSerialization.data(withJSONObject: self, options: .prettyPrinted)

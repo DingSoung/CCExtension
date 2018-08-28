@@ -8,11 +8,3 @@ import Foundation
     file: String = #file, line: Int = #line, function: String = #function) -> [Any] {
     return items + [file, line, function, Thread.current, Thread.callStackSymbols]
 }
-
-public func debugPrint(_ items: Any..., separator: String =  " ", terminator: String = "\n",
-                  file: String = #file, line: Int = #line, function: String = #function) {
-    debugPrint(items, separator: separator, terminator: terminator)
-    debugPrint(file, line, function, Thread.current, Thread.callStackSymbols,
-               separator: separator,
-               terminator: terminator)
-}
