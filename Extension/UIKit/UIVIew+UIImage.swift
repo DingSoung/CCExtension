@@ -4,7 +4,7 @@
 #if os(iOS)
 import UIKit
 
-@objc extension UIView {
+extension UIView {
     ///  capture image, Compatible, alpha
     public func image(alpha: CGFloat, bounds: CGRect, scale: CGFloat) -> UIImage? {
         return UIImage.image(render: {

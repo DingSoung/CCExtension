@@ -7,7 +7,7 @@ import CoreGraphics
 #if os(watchOS)
 import UIKit
 
-@objc extension NSString {
+extension NSString {
     /// lenght with encode，English 中文 國語 日本語の 😀, GB_2312_80
     public func length(encode: CFStringEncodings) -> Int {
         let enc = CFStringConvertEncodingToNSStringEncoding(CFStringEncoding(encode.rawValue))

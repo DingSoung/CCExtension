@@ -3,7 +3,7 @@
 
 import Foundation
 
-@objc extension Bundle {
+extension Bundle {
     private struct AssociatedKeys {
         static var languageCode = "languageCode"
     }

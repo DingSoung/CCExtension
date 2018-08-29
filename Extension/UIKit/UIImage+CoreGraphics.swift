@@ -4,7 +4,7 @@
 #if os(iOS)
 import UIKit
 
-@objc  extension UIImage {
+extension UIImage {
     /// render image with Core Graphics or UIBezierPath code
     public class func image(render:() -> Void, size: CGSize, opaque: Bool) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(size, opaque, UIScreen.main.scale)

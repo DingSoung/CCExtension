@@ -66,22 +66,22 @@
 		CEF5125F1FE0CA26008C84C9 /* Locale+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512041FE0CA25008C84C9 /* Locale+Localization.swift */; };
 		CEF512601FE0CA26008C84C9 /* Locale+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512041FE0CA25008C84C9 /* Locale+Localization.swift */; };
 		CEF512611FE0CA26008C84C9 /* Locale+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512041FE0CA25008C84C9 /* Locale+Localization.swift */; };
-		CEF512721FE0CA26008C84C9 /* Swift+Synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120A1FE0CA25008C84C9 /* Swift+Synchronized.swift */; };
-		CEF512731FE0CA26008C84C9 /* Swift+Synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120A1FE0CA25008C84C9 /* Swift+Synchronized.swift */; };
-		CEF512741FE0CA26008C84C9 /* Swift+Synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120A1FE0CA25008C84C9 /* Swift+Synchronized.swift */; };
-		CEF512751FE0CA26008C84C9 /* Swift+Synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120A1FE0CA25008C84C9 /* Swift+Synchronized.swift */; };
-		CEF512761FE0CA26008C84C9 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120B1FE0CA25008C84C9 /* String+Regex.swift */; };
-		CEF512771FE0CA26008C84C9 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120B1FE0CA25008C84C9 /* String+Regex.swift */; };
-		CEF512781FE0CA26008C84C9 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120B1FE0CA25008C84C9 /* String+Regex.swift */; };
-		CEF512791FE0CA26008C84C9 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120B1FE0CA25008C84C9 /* String+Regex.swift */; };
-		CEF5127A1FE0CA26008C84C9 /* Swift+Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120C1FE0CA25008C84C9 /* Swift+Block.swift */; };
-		CEF5127B1FE0CA26008C84C9 /* Swift+Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120C1FE0CA25008C84C9 /* Swift+Block.swift */; };
-		CEF5127C1FE0CA26008C84C9 /* Swift+Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120C1FE0CA25008C84C9 /* Swift+Block.swift */; };
-		CEF5127D1FE0CA26008C84C9 /* Swift+Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120C1FE0CA25008C84C9 /* Swift+Block.swift */; };
-		CEF5127E1FE0CA26008C84C9 /* Swift+Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120D1FE0CA25008C84C9 /* Swift+Log.swift */; };
-		CEF5127F1FE0CA26008C84C9 /* Swift+Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120D1FE0CA25008C84C9 /* Swift+Log.swift */; };
-		CEF512801FE0CA26008C84C9 /* Swift+Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120D1FE0CA25008C84C9 /* Swift+Log.swift */; };
-		CEF512811FE0CA26008C84C9 /* Swift+Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120D1FE0CA25008C84C9 /* Swift+Log.swift */; };
+		CEF512721FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120A1FE0CA25008C84C9 /* Swift+synchronized.swift */; };
+		CEF512731FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120A1FE0CA25008C84C9 /* Swift+synchronized.swift */; };
+		CEF512741FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120A1FE0CA25008C84C9 /* Swift+synchronized.swift */; };
+		CEF512751FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120A1FE0CA25008C84C9 /* Swift+synchronized.swift */; };
+		CEF512761FE0CA26008C84C9 /* String+regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120B1FE0CA25008C84C9 /* String+regex.swift */; };
+		CEF512771FE0CA26008C84C9 /* String+regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120B1FE0CA25008C84C9 /* String+regex.swift */; };
+		CEF512781FE0CA26008C84C9 /* String+regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120B1FE0CA25008C84C9 /* String+regex.swift */; };
+		CEF512791FE0CA26008C84C9 /* String+regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120B1FE0CA25008C84C9 /* String+regex.swift */; };
+		CEF5127A1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120C1FE0CA25008C84C9 /* Swift+closuer.swift */; };
+		CEF5127B1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120C1FE0CA25008C84C9 /* Swift+closuer.swift */; };
+		CEF5127C1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120C1FE0CA25008C84C9 /* Swift+closuer.swift */; };
+		CEF5127D1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120C1FE0CA25008C84C9 /* Swift+closuer.swift */; };
+		CEF5127E1FE0CA26008C84C9 /* Swift+log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120D1FE0CA25008C84C9 /* Swift+log.swift */; };
+		CEF5127F1FE0CA26008C84C9 /* Swift+log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120D1FE0CA25008C84C9 /* Swift+log.swift */; };
+		CEF512801FE0CA26008C84C9 /* Swift+log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120D1FE0CA25008C84C9 /* Swift+log.swift */; };
+		CEF512811FE0CA26008C84C9 /* Swift+log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120D1FE0CA25008C84C9 /* Swift+log.swift */; };
 		CEF512821FE0CA26008C84C9 /* Array+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */; };
 		CEF512831FE0CA26008C84C9 /* Array+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */; };
 		CEF512841FE0CA26008C84C9 /* Array+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */; };
@@ -123,10 +123,10 @@
 		CEF511FC1FE0CA25008C84C9 /* Bundle+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Localization.swift"; sourceTree = "<group>"; };
 		CEF511FE1FE0CA25008C84C9 /* Objc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Objc.swift; sourceTree = "<group>"; };
 		CEF512041FE0CA25008C84C9 /* Locale+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Locale+Localization.swift"; sourceTree = "<group>"; };
-		CEF5120A1FE0CA25008C84C9 /* Swift+Synchronized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Synchronized.swift"; sourceTree = "<group>"; };
-		CEF5120B1FE0CA25008C84C9 /* String+Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Regex.swift"; sourceTree = "<group>"; };
-		CEF5120C1FE0CA25008C84C9 /* Swift+Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Block.swift"; sourceTree = "<group>"; };
-		CEF5120D1FE0CA25008C84C9 /* Swift+Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Log.swift"; sourceTree = "<group>"; };
+		CEF5120A1FE0CA25008C84C9 /* Swift+synchronized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+synchronized.swift"; sourceTree = "<group>"; };
+		CEF5120B1FE0CA25008C84C9 /* String+regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+regex.swift"; sourceTree = "<group>"; };
+		CEF5120C1FE0CA25008C84C9 /* Swift+closuer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+closuer.swift"; sourceTree = "<group>"; };
+		CEF5120D1FE0CA25008C84C9 /* Swift+log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+log.swift"; sourceTree = "<group>"; };
 		CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+JSON.swift"; sourceTree = "<group>"; };
 		CEF5120F1FE0CA25008C84C9 /* URL+CooKie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+CooKie.swift"; sourceTree = "<group>"; };
 		CEF512101FE0CA25008C84C9 /* Swift+Association.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Association.swift"; sourceTree = "<group>"; };
@@ -220,6 +220,9 @@
 			isa = PBXGroup;
 			children = (
 				CEF511FC1FE0CA25008C84C9 /* Bundle+Localization.swift */,
+				CEF512041FE0CA25008C84C9 /* Locale+Localization.swift */,
+				CEF5120F1FE0CA25008C84C9 /* URL+CooKie.swift */,
+				CEE63DCC21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -227,14 +230,11 @@
 		CEF512071FE0CA25008C84C9 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
-				CEF512041FE0CA25008C84C9 /* Locale+Localization.swift */,
-				CEF5120A1FE0CA25008C84C9 /* Swift+Synchronized.swift */,
-				CEF5120B1FE0CA25008C84C9 /* String+Regex.swift */,
-				CEF5120C1FE0CA25008C84C9 /* Swift+Block.swift */,
-				CEF5120D1FE0CA25008C84C9 /* Swift+Log.swift */,
+				CEF5120A1FE0CA25008C84C9 /* Swift+synchronized.swift */,
+				CEF5120B1FE0CA25008C84C9 /* String+regex.swift */,
+				CEF5120C1FE0CA25008C84C9 /* Swift+closuer.swift */,
+				CEF5120D1FE0CA25008C84C9 /* Swift+log.swift */,
 				CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */,
-				CEF5120F1FE0CA25008C84C9 /* URL+CooKie.swift */,
-				CEE63DCC21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift */,
 				CEF512101FE0CA25008C84C9 /* Swift+Association.swift */,
 				CEF512111FE0CA25008C84C9 /* String+Dictionary.swift */,
 			);
@@ -459,12 +459,12 @@
 			files = (
 				CEF512891FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
 				CEF5121D1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */,
-				CEF512751FE0CA26008C84C9 /* Swift+Synchronized.swift in Sources */,
+				CEF512751FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CEF512851FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
 				CEE63DD021357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift in Sources */,
 				CEF512611FE0CA26008C84C9 /* Locale+Localization.swift in Sources */,
 				CEF512911FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
-				CEF5127D1FE0CA26008C84C9 /* Swift+Block.swift in Sources */,
+				CEF5127D1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */,
 				CEF512291FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
 				CEF5128D1FE0CA26008C84C9 /* Swift+Association.swift in Sources */,
 				CEF5122D1FE0CA25008C84C9 /* UIVIew+UIImage.swift in Sources */,
@@ -474,8 +474,8 @@
 				CEF512251FE0CA25008C84C9 /* NSAttributedString+Content.swift in Sources */,
 				CEF512411FE0CA25008C84C9 /* UIImage+Process.swift in Sources */,
 				CEF512191FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
-				CEF512791FE0CA26008C84C9 /* String+Regex.swift in Sources */,
-				CEF512811FE0CA26008C84C9 /* Swift+Log.swift in Sources */,
+				CEF512791FE0CA26008C84C9 /* String+regex.swift in Sources */,
+				CEF512811FE0CA26008C84C9 /* Swift+log.swift in Sources */,
 				CEF512151FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */,
 				CEF512451FE0CA25008C84C9 /* Bundle+Localization.swift in Sources */,
 				CEF512311FE0CA25008C84C9 /* UINavigationController+Autorotate.swift in Sources */,
@@ -488,12 +488,12 @@
 			files = (
 				CEF512881FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
 				CEF5121C1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */,
-				CEF512741FE0CA26008C84C9 /* Swift+Synchronized.swift in Sources */,
+				CEF512741FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CEF512841FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
 				CEE63DCF21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift in Sources */,
 				CEF512601FE0CA26008C84C9 /* Locale+Localization.swift in Sources */,
 				CEF512901FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
-				CEF5127C1FE0CA26008C84C9 /* Swift+Block.swift in Sources */,
+				CEF5127C1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */,
 				CEF512281FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
 				CEF5128C1FE0CA26008C84C9 /* Swift+Association.swift in Sources */,
 				CEF5122C1FE0CA25008C84C9 /* UIVIew+UIImage.swift in Sources */,
@@ -503,8 +503,8 @@
 				CEF512241FE0CA25008C84C9 /* NSAttributedString+Content.swift in Sources */,
 				CEF512401FE0CA25008C84C9 /* UIImage+Process.swift in Sources */,
 				CEF512181FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
-				CEF512781FE0CA26008C84C9 /* String+Regex.swift in Sources */,
-				CEF512801FE0CA26008C84C9 /* Swift+Log.swift in Sources */,
+				CEF512781FE0CA26008C84C9 /* String+regex.swift in Sources */,
+				CEF512801FE0CA26008C84C9 /* Swift+log.swift in Sources */,
 				CEF512141FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */,
 				CEF512441FE0CA25008C84C9 /* Bundle+Localization.swift in Sources */,
 				CEF512301FE0CA25008C84C9 /* UINavigationController+Autorotate.swift in Sources */,
@@ -517,12 +517,12 @@
 			files = (
 				CEF512871FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
 				CEF5121B1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */,
-				CEF512731FE0CA26008C84C9 /* Swift+Synchronized.swift in Sources */,
+				CEF512731FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CEF512831FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
 				CEE63DCE21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift in Sources */,
 				CEF5125F1FE0CA26008C84C9 /* Locale+Localization.swift in Sources */,
 				CEF5128F1FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
-				CEF5127B1FE0CA26008C84C9 /* Swift+Block.swift in Sources */,
+				CEF5127B1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */,
 				CEF512271FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
 				CEF5128B1FE0CA26008C84C9 /* Swift+Association.swift in Sources */,
 				CEF5122B1FE0CA25008C84C9 /* UIVIew+UIImage.swift in Sources */,
@@ -532,8 +532,8 @@
 				CEF512231FE0CA25008C84C9 /* NSAttributedString+Content.swift in Sources */,
 				CEF5123F1FE0CA25008C84C9 /* UIImage+Process.swift in Sources */,
 				CEF512171FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
-				CEF512771FE0CA26008C84C9 /* String+Regex.swift in Sources */,
-				CEF5127F1FE0CA26008C84C9 /* Swift+Log.swift in Sources */,
+				CEF512771FE0CA26008C84C9 /* String+regex.swift in Sources */,
+				CEF5127F1FE0CA26008C84C9 /* Swift+log.swift in Sources */,
 				CEF512131FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */,
 				CEF512431FE0CA25008C84C9 /* Bundle+Localization.swift in Sources */,
 				CEF5122F1FE0CA25008C84C9 /* UINavigationController+Autorotate.swift in Sources */,
@@ -546,11 +546,11 @@
 			files = (
 				CEF512861FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
 				CEF5121A1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */,
-				CEF512721FE0CA26008C84C9 /* Swift+Synchronized.swift in Sources */,
+				CEF512721FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CEF512821FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
 				CEF5125E1FE0CA26008C84C9 /* Locale+Localization.swift in Sources */,
 				CEF5128E1FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
-				CEF5127A1FE0CA26008C84C9 /* Swift+Block.swift in Sources */,
+				CEF5127A1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */,
 				CEF512261FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
 				CE86472520A1E0650043FB26 /* runtime_aop.swift in Sources */,
 				CEE63DCD21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift in Sources */,
@@ -563,8 +563,8 @@
 				CEF512221FE0CA25008C84C9 /* NSAttributedString+Content.swift in Sources */,
 				CEF5123E1FE0CA25008C84C9 /* UIImage+Process.swift in Sources */,
 				CEF512161FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
-				CEF512761FE0CA26008C84C9 /* String+Regex.swift in Sources */,
-				CEF5127E1FE0CA26008C84C9 /* Swift+Log.swift in Sources */,
+				CEF512761FE0CA26008C84C9 /* String+regex.swift in Sources */,
+				CEF5127E1FE0CA26008C84C9 /* Swift+log.swift in Sources */,
 				CEF512121FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */,
 				CEF512421FE0CA25008C84C9 /* Bundle+Localization.swift in Sources */,
 				CEF5122E1FE0CA25008C84C9 /* UINavigationController+Autorotate.swift in Sources */,

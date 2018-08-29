@@ -4,8 +4,8 @@
 #if os(iOS)
 import UIKit
 
-@objc extension UIApplication {
-    func hook_sendAction(_ action: Selector, to target: Any?, from sender: Any?, for event: UIEvent?) -> Bool {
+extension UIApplication {
+    @objc func hook_sendAction(_ action: Selector, to target: Any?, from sender: Any?, for event: UIEvent?) -> Bool {
         print(action, target ?? "", sender ?? "", event ?? "")
         return self.hook_sendAction(action, to: target, from: sender, for: event)
     }

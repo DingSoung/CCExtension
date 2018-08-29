@@ -5,7 +5,7 @@
 import JavaScriptCore
 import UIKit
 
-@objc extension UIWebView {
+extension UIWebView {
     private static var jsContextKey: UInt8 = 0
     public var jsContext: JSContext? {
         set {
@@ -22,7 +22,7 @@ import UIKit
     }
 }
 
-@objc extension JSContext {
+extension JSContext {
     /// register func: (Any) -> Void
     public func register(function: String, block: @convention(block)(Any) -> Void) {
         self.setObject(unsafeBitCast(block, to: AnyObject.self),

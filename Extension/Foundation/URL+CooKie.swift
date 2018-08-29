@@ -3,7 +3,7 @@
 
 import Foundation
 
-public extension URL {
+extension URL {
     public func cookiePreperties(value: String, forName name: String) -> [HTTPCookiePropertyKey: Any] {
         var properties: [HTTPCookiePropertyKey: Any] = [
             .name: name,

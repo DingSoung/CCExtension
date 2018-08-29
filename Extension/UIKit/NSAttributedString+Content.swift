@@ -4,7 +4,7 @@
 #if os(iOS)
 import UIKit
 
-@objc extension NSAttributedString {
+extension NSAttributedString {
     /// height for limit width with font
     public func height(constrainedWidth: CGFloat) -> CGFloat {
         let constraintRect = CGSize(width: constrainedWidth, height: CGFloat.greatestFiniteMagnitude)

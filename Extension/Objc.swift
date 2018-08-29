@@ -10,7 +10,7 @@ open class HookObject: NSObject {
     }
 }
 
-@objc extension NSObject {
+extension NSObject {
     public class func hook(cls: Swift.AnyClass,
                            originalSelector: Selector,
                            option: Any, block: @escaping (() -> Void)) {
@@ -24,13 +24,13 @@ open class HookObject: NSObject {
     }
 }
 
-@objc extension NSString {
+extension NSString {
     public func match(regex: String) -> Bool {
         return (self as String) =~ regex
     }
 }
 
-@objc extension NSString {
+extension NSString {
      public final var isPRCMobileNumber: Bool {
         return (self as String).isPRCMobileNumber
     }
@@ -39,32 +39,20 @@ open class HookObject: NSObject {
     }
 }
 
-@objc extension NSArray {
+extension NSArray {
      public final var jsonData: Data? {
         return (self as Array).jsonData
     }
 }
 
-@objc extension NSURL {
-     public func setCookie(value: String, forName name: String) {
-        (self as URL).setCookie(value: value, forName: name)
-    }
-}
-
-@objc extension NSDictionary {
-     public final var jsonData: Data? {
-        return (self as Dictionary).jsonData
-    }
-}
-
-@objc extension NSLocale {
+extension NSLocale {
      public class var perferredIdentifier: String? {
         set { Locale.perferredIdentifier = newValue }
         get { return Locale.perferredIdentifier }
     }
 }
 
-@objc extension NSObject {
+extension NSObject {
      public convenience init(JSONDict: [String: Any]) {
         self.init()
         self.setValuesForKeys(JSONDict)
@@ -83,7 +71,7 @@ open class HookObject: NSObject {
     }
 }
 
-@objc extension NSString {
+extension NSString {
      public final var jsonDictionary: [String: Any]? {
         return (self as String).jsonDictionary
     }
@@ -92,23 +80,8 @@ open class HookObject: NSObject {
     }
 }
 
-@objc extension NSData {
-     public final var jsonObject: Any? {
-        return (self as Data).jsonObject
-    }
-     public final var jsonArray: [Any]? {
-        return (self as Data).jsonArray
-    }
-     public final var jsonDictionary: NSDictionary? {
-        return (self as Data).jsonDictionary as NSDictionary?
-    }
-     public final var jsonString: String? {
-        return (self as Data).jsonString
-    }
-}
-
 #if os(iOS)
-@objc extension NSArray {
+extension NSArray {
      public func verticalImage(space: CGFloat, backgroundColor: UIColor?) -> UIImage? {
         return (self as? [UIImage])?.verticalImage(space: space, backgroundColor: backgroundColor)
     }

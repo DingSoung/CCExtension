@@ -4,7 +4,7 @@
 #if os(iOS)
 import UIKit
 
-@objc extension UITableView {
+extension UITableView {
     public final var headerImage: UIImage? {
         let offset = self.contentOffset
         guard let rect = self.tableHeaderView?.frame else {return nil}

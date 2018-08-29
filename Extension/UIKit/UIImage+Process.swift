@@ -4,7 +4,7 @@
 #if os(iOS)
 import UIKit
 
-@objc extension UIImage {
+extension UIImage {
     /// image to scale
     public func imageWithScale(scale: CGFloat) -> UIImage {
         guard let cgImage = self.cgImage else {
