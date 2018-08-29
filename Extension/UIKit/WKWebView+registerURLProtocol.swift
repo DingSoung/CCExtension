@@ -11,32 +11,33 @@ extension WKWebView {
         guard let obj =  WKWebView().value(forKey: str) else { return nil }
         return type(of: obj) as? NSObject.Type
     }
+    @discardableResult private class func perform_wk_browsing_contextController(aSelector: Selector, schemes: Set<String>) -> Bool {
+        guard let obj = wk_browsing_contextController(), obj.responds(to: aSelector), schemes.count > 0 else {
+            assertionFailure(); return false
+        }
+        schemes.forEach({ (scheme) in
+            obj.perform(aSelector, with: scheme)
+        })
+        return true
+    }
 }
 
 extension WKWebView {
     @discardableResult private class func wk_register(schemes: Set<String>) -> Bool {
-        guard let str = "cmVnaXN0ZXJTY2hlbWVGb3JDdXN0b21Qcm90b2NvbDo=".base64Decode else { assertionFailure(); return false}
+        guard let str = "cmVnaXN0ZXJTY2hlbWVGb3JDdXN0b21Qcm90b2NvbDo=".base64Decode else {
+            assertionFailure(); return false
+        }
         // str: "registerSchemeForCustomProtocol:"
         let register = NSSelectorFromString(str)
-        if let obj = wk_browsing_contextController(),
-            obj.responds(to: register) {
-            schemes.forEach({ (scheme) in
-                obj.perform(register, with: scheme)
-            })
-        }
-        return true
+        return perform_wk_browsing_contextController(aSelector: register, schemes: schemes)
     }
     @discardableResult private class func wk_unregister(schemes: Set<String>) -> Bool {
-        guard let str = "dW5yZWdpc3RlclNjaGVtZUZvckN1c3RvbVByb3RvY29sOg==".base64Decode else { assertionFailure(); return false }
+        guard let str = "dW5yZWdpc3RlclNjaGVtZUZvckN1c3RvbVByb3RvY29sOg==".base64Decode else {
+            assertionFailure(); return false
+        }
         //str: "unregisterSchemeForCustomProtocol:"
         let unregister = NSSelectorFromString(str)
-        if let obj = wk_browsing_contextController(),
-            obj.responds(to: unregister) {
-            schemes.forEach({ (scheme) in
-                obj.perform(unregister, with: scheme)
-            })
-        }
-        return true
+        return perform_wk_browsing_contextController(aSelector: unregister, schemes: schemes)
     }
 }
 
