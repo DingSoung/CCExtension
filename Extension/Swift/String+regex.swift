@@ -5,7 +5,7 @@ import Foundation
 
 infix operator =~: AdditionPrecedence
 
-fileprivate struct RegexHelper {
+private struct RegexHelper {
     let regex: NSRegularExpression
     init(_ pattern: String) throws {
         try regex = NSRegularExpression(pattern: pattern,
