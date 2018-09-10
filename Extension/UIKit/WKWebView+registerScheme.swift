@@ -1,6 +1,7 @@
 //  Created by Songwen on 2018/8/29.
 //  Copyright © 2018 DingSoung. All rights reserved.
 
+#if os(iOS)
 import WebKit
 import Foundation
 
@@ -44,3 +45,4 @@ extension WKWebView {
         return perform_browsing_contextController(aSelector: unregister, schemes: schemes)
     }
 }
+#endif

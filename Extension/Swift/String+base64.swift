@@ -1,5 +1,7 @@
 //  Copyright © 2018 DingSoung. All rights reserved.
 
+import Foundation
+
 extension String {
     public var base64Decode: String? {
         guard let data = Data(base64Encoded: self) else { return nil }
