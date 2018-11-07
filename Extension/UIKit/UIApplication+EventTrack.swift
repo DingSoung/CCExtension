@@ -9,6 +9,7 @@ extension UIApplication {
         print(action, target ?? "", sender ?? "", event ?? "")
         return self.hook_sendAction(action, to: target, from: sender, for: event)
     }
+
     public final class func switchHook() {
         aop(originClass: UIApplication.self,
             originSelector: #selector(sendAction(_:to:from:for:)),

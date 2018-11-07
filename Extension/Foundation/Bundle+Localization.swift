@@ -1,7 +1,9 @@
 //  Created by Songwen Ding on 7/6/16.
 //  Copyright © 2016 Songwen Ding. All rights reserved.
 
-import Foundation
+#if canImport(Foundation)
+import Foundation.NSBundle
+import ObjectiveC.objc_api
 
 extension Bundle {
     private struct AssociatedKeys {
@@ -44,3 +46,4 @@ private class BundleEx: Bundle {
         }
     }
 }
+#endif

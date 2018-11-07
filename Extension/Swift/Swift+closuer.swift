@@ -1,8 +1,6 @@
 //  Created by Songwen Ding on 2017/7/26.
 //  Copyright © 2017年 DingSoung. All rights reserved.
 
-import Foundation
-
 /// code Block, used like C code block { }
 public func closure(mark: String? = "",
                     run: Bool? = true,

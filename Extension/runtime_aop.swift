@@ -1,7 +1,8 @@
 //  Created by Songwen Ding on 2018/5/8.
 //  Copyright © 2018年 DingSoung. All rights reserved.
 
-import Foundation
+#if canImport(ObjectiveC)
+import ObjectiveC.runtime
 
 public func aop(originClass: AnyClass, originSelector: Selector,
                 newClass: AnyClass, newSelector: Selector) {
@@ -21,3 +22,4 @@ public func aop(originClass: AnyClass, originSelector: Selector,
         method_exchangeImplementations(originalMethod, newMethod)
     }
 }
+#endif

@@ -1,7 +1,9 @@
 //  Created by Songwen Ding on 2017/11/23.
 //  Copyright © 2017年 DingSoung. All rights reserved.
 
-import Foundation
+#if canImport(Foundation)
+import Foundation.NSURL
+import Foundation.NSHTTPCookie
 
 extension URL {
     public func cookiePreperties(value: String, forName name: String) -> [HTTPCookiePropertyKey: Any] {
@@ -25,3 +27,4 @@ extension URL {
         return HTTPCookie(properties: properties)
     }
 }
+#endif

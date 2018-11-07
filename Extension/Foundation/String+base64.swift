@@ -1,6 +1,7 @@
 //  Copyright © 2018 DingSoung. All rights reserved.
 
-import Foundation
+#if canImport(Foundation)
+import Foundation.NSData
 
 extension String {
     public var base64Decode: String? {
@@ -11,3 +12,4 @@ extension String {
         return Data(self.utf8).base64EncodedString()
     }
 }
+#endif

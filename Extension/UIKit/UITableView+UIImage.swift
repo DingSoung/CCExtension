@@ -48,8 +48,8 @@ extension UITableView {
                              section: Int,
                              fromRow start: Int,
                              to end: Int,
-                             withHeader header: Bool,
-                             footer: Bool) -> Swift.Void {
+                             withHeader header: Bool = false,
+                             footer: Bool = false) -> Swift.Void {
         context.saveGState()
         let offset = self.contentOffset
         if header == true {
@@ -88,8 +88,8 @@ extension UITableView {
                                       fromRow start: Int,
                                       to end: Int,
                                       totalHeight: CGFloat,
-                                      withHeader header: Bool,
-                                      footer: Bool) -> UIImage? {
+                                      withHeader header: Bool = false,
+                                      footer: Bool = false) -> UIImage? {
         var height = totalHeight
         if header == true {
             height += self.rectForHeader(inSection: section).size.height
@@ -97,7 +97,9 @@ extension UITableView {
         if footer == true {
             height += self.rectForFooter(inSection: section).size.height
         }
-        UIGraphicsBeginImageContextWithOptions(CGSize(width: self.contentSize.width, height: height), false, UIScreen.main.scale) // +224.25MB
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: self.contentSize.width, height: height),
+                                               false,
+                                               UIScreen.main.scale) // +224.25MB
         if let context = UIGraphicsGetCurrentContext() {
             self.render(context: context, section: section, fromRow: start, to: end, withHeader: header, footer: footer)
         }

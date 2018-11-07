@@ -106,6 +106,38 @@
 		CEF5128F1FE0CA26008C84C9 /* String+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512111FE0CA25008C84C9 /* String+Dictionary.swift */; };
 		CEF512901FE0CA26008C84C9 /* String+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512111FE0CA25008C84C9 /* String+Dictionary.swift */; };
 		CEF512911FE0CA26008C84C9 /* String+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512111FE0CA25008C84C9 /* String+Dictionary.swift */; };
+		CEF574E62192D3A000F6C559 /* URL+query.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF574E52192D3A000F6C559 /* URL+query.swift */; };
+		CEF574E72192D3A000F6C559 /* URL+query.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF574E52192D3A000F6C559 /* URL+query.swift */; };
+		CEF574E82192D3A000F6C559 /* URL+query.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF574E52192D3A000F6C559 /* URL+query.swift */; };
+		CEF574E92192D3A000F6C559 /* URL+query.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF574E52192D3A000F6C559 /* URL+query.swift */; };
+		CEF574EB2192D5AD00F6C559 /* UserDefaults+subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF574EA2192D5AD00F6C559 /* UserDefaults+subscript.swift */; };
+		CEF574EC2192D5AD00F6C559 /* UserDefaults+subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF574EA2192D5AD00F6C559 /* UserDefaults+subscript.swift */; };
+		CEF574ED2192D5AD00F6C559 /* UserDefaults+subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF574EA2192D5AD00F6C559 /* UserDefaults+subscript.swift */; };
+		CEF574EE2192D5AD00F6C559 /* UserDefaults+subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF574EA2192D5AD00F6C559 /* UserDefaults+subscript.swift */; };
+		CEF574F02192D86A00F6C559 /* UserDefaults+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF574EF2192D86A00F6C559 /* UserDefaults+Codable.swift */; };
+		CEF574F12192D86A00F6C559 /* UserDefaults+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF574EF2192D86A00F6C559 /* UserDefaults+Codable.swift */; };
+		CEF574F22192D86A00F6C559 /* UserDefaults+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF574EF2192D86A00F6C559 /* UserDefaults+Codable.swift */; };
+		CEF574F32192D86A00F6C559 /* UserDefaults+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF574EF2192D86A00F6C559 /* UserDefaults+Codable.swift */; };
+		CEF574F52192DA0E00F6C559 /* DispatchQueue+once.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF574F42192DA0E00F6C559 /* DispatchQueue+once.swift */; };
+		CEF574F62192DA0E00F6C559 /* DispatchQueue+once.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF574F42192DA0E00F6C559 /* DispatchQueue+once.swift */; };
+		CEF574F72192DA0E00F6C559 /* DispatchQueue+once.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF574F42192DA0E00F6C559 /* DispatchQueue+once.swift */; };
+		CEF574F82192DA0E00F6C559 /* DispatchQueue+once.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF574F42192DA0E00F6C559 /* DispatchQueue+once.swift */; };
+		CEF575222192DE7600F6C559 /* Color+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5751E2192DE7600F6C559 /* Color+hex.swift */; };
+		CEF575232192DE7600F6C559 /* Color+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5751E2192DE7600F6C559 /* Color+hex.swift */; };
+		CEF575242192DE7600F6C559 /* Color+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5751E2192DE7600F6C559 /* Color+hex.swift */; };
+		CEF575252192DE7600F6C559 /* Color+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5751E2192DE7600F6C559 /* Color+hex.swift */; };
+		CEF575262192DE7600F6C559 /* Color+components.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5751F2192DE7600F6C559 /* Color+components.swift */; };
+		CEF575272192DE7600F6C559 /* Color+components.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5751F2192DE7600F6C559 /* Color+components.swift */; };
+		CEF575282192DE7600F6C559 /* Color+components.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5751F2192DE7600F6C559 /* Color+components.swift */; };
+		CEF575292192DE7600F6C559 /* Color+components.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5751F2192DE7600F6C559 /* Color+components.swift */; };
+		CEF5752A2192DE7600F6C559 /* Color+rgba.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF575202192DE7600F6C559 /* Color+rgba.swift */; };
+		CEF5752B2192DE7600F6C559 /* Color+rgba.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF575202192DE7600F6C559 /* Color+rgba.swift */; };
+		CEF5752C2192DE7600F6C559 /* Color+rgba.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF575202192DE7600F6C559 /* Color+rgba.swift */; };
+		CEF5752D2192DE7600F6C559 /* Color+rgba.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF575202192DE7600F6C559 /* Color+rgba.swift */; };
+		CEF5752E2192DE7600F6C559 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF575212192DE7600F6C559 /* Color.swift */; };
+		CEF5752F2192DE7600F6C559 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF575212192DE7600F6C559 /* Color.swift */; };
+		CEF575302192DE7600F6C559 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF575212192DE7600F6C559 /* Color.swift */; };
+		CEF575312192DE7600F6C559 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF575212192DE7600F6C559 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +173,14 @@
 		CEF5120F1FE0CA25008C84C9 /* URL+CooKie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+CooKie.swift"; sourceTree = "<group>"; };
 		CEF512101FE0CA25008C84C9 /* Swift+Association.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Association.swift"; sourceTree = "<group>"; };
 		CEF512111FE0CA25008C84C9 /* String+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Dictionary.swift"; sourceTree = "<group>"; };
+		CEF574E52192D3A000F6C559 /* URL+query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+query.swift"; sourceTree = "<group>"; };
+		CEF574EA2192D5AD00F6C559 /* UserDefaults+subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+subscript.swift"; sourceTree = "<group>"; };
+		CEF574EF2192D86A00F6C559 /* UserDefaults+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Codable.swift"; sourceTree = "<group>"; };
+		CEF574F42192DA0E00F6C559 /* DispatchQueue+once.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+once.swift"; sourceTree = "<group>"; };
+		CEF5751E2192DE7600F6C559 /* Color+hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+hex.swift"; sourceTree = "<group>"; };
+		CEF5751F2192DE7600F6C559 /* Color+components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+components.swift"; sourceTree = "<group>"; };
+		CEF575202192DE7600F6C559 /* Color+rgba.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+rgba.swift"; sourceTree = "<group>"; };
+		CEF575212192DE7600F6C559 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +218,7 @@
 		CE607EDF1F051DB0007E99DC = {
 			isa = PBXGroup;
 			children = (
+				CEF574F92192DA2200F6C559 /* Dispatch */,
 				CE607EEB1F051DB0007E99DC /* Extension */,
 				CE607EEA1F051DB0007E99DC /* Products */,
 			);
@@ -234,6 +275,14 @@
 				CEF512041FE0CA25008C84C9 /* Locale+Localization.swift */,
 				CEF5120F1FE0CA25008C84C9 /* URL+CooKie.swift */,
 				CEE63DCC21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift */,
+				CEE63DD12136465400CF7E69 /* String+base64.swift */,
+				CEF512111FE0CA25008C84C9 /* String+Dictionary.swift */,
+				CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */,
+				CEF5120D1FE0CA25008C84C9 /* Swift+log.swift */,
+				CEF5120B1FE0CA25008C84C9 /* String+regex.swift */,
+				CEF574E52192D3A000F6C559 /* URL+query.swift */,
+				CEF574EA2192D5AD00F6C559 /* UserDefaults+subscript.swift */,
+				CEF574EF2192D86A00F6C559 /* UserDefaults+Codable.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -241,16 +290,32 @@
 		CEF512071FE0CA25008C84C9 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				CEF5751D2192DE7600F6C559 /* Color */,
 				CEF5120A1FE0CA25008C84C9 /* Swift+synchronized.swift */,
-				CEF5120B1FE0CA25008C84C9 /* String+regex.swift */,
 				CEF5120C1FE0CA25008C84C9 /* Swift+closuer.swift */,
-				CEF5120D1FE0CA25008C84C9 /* Swift+log.swift */,
-				CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */,
 				CEF512101FE0CA25008C84C9 /* Swift+Association.swift */,
-				CEF512111FE0CA25008C84C9 /* String+Dictionary.swift */,
-				CEE63DD12136465400CF7E69 /* String+base64.swift */,
 			);
 			path = Swift;
+			sourceTree = "<group>";
+		};
+		CEF574F92192DA2200F6C559 /* Dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				CEF574F42192DA0E00F6C559 /* DispatchQueue+once.swift */,
+			);
+			name = Dispatch;
+			path = Extension/Dispatch;
+			sourceTree = "<group>";
+		};
+		CEF5751D2192DE7600F6C559 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				CEF5751E2192DE7600F6C559 /* Color+hex.swift */,
+				CEF5751F2192DE7600F6C559 /* Color+components.swift */,
+				CEF575202192DE7600F6C559 /* Color+rgba.swift */,
+				CEF575212192DE7600F6C559 /* Color.swift */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,7 +525,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -469,14 +534,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF574F32192D86A00F6C559 /* UserDefaults+Codable.swift in Sources */,
 				CEF512891FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
 				CEF5121D1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */,
 				CEF512751FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CEF512851FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
+				CEF575312192DE7600F6C559 /* Color.swift in Sources */,
 				CEE63DD021357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift in Sources */,
 				CEF512611FE0CA26008C84C9 /* Locale+Localization.swift in Sources */,
 				CEE63DDA2136472200CF7E69 /* WKWebView+registerScheme.swift in Sources */,
 				CEF512911FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
+				CEF575292192DE7600F6C559 /* Color+components.swift in Sources */,
 				CEE63DD52136465400CF7E69 /* String+base64.swift in Sources */,
 				CEF5127D1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */,
 				CEF512291FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
@@ -487,12 +555,17 @@
 				CEF5123D1FE0CA25008C84C9 /* UIImage+CoreGraphics.swift in Sources */,
 				CEF512251FE0CA25008C84C9 /* NSAttributedString+Content.swift in Sources */,
 				CEF512411FE0CA25008C84C9 /* UIImage+Process.swift in Sources */,
+				CEF574EE2192D5AD00F6C559 /* UserDefaults+subscript.swift in Sources */,
+				CEF574E92192D3A000F6C559 /* URL+query.swift in Sources */,
+				CEF5752D2192DE7600F6C559 /* Color+rgba.swift in Sources */,
 				CEF512191FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
 				CEF512791FE0CA26008C84C9 /* String+regex.swift in Sources */,
 				CEF512811FE0CA26008C84C9 /* Swift+log.swift in Sources */,
+				CEF574F82192DA0E00F6C559 /* DispatchQueue+once.swift in Sources */,
 				CEF512151FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */,
 				CEF512451FE0CA25008C84C9 /* Bundle+Localization.swift in Sources */,
 				CEF512311FE0CA25008C84C9 /* UINavigationController+Autorotate.swift in Sources */,
+				CEF575252192DE7600F6C559 /* Color+hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,14 +573,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF574F22192D86A00F6C559 /* UserDefaults+Codable.swift in Sources */,
 				CEF512881FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
 				CEF5121C1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */,
 				CEF512741FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CEF512841FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
+				CEF575302192DE7600F6C559 /* Color.swift in Sources */,
 				CEE63DCF21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift in Sources */,
 				CEF512601FE0CA26008C84C9 /* Locale+Localization.swift in Sources */,
 				CEE63DD92136472200CF7E69 /* WKWebView+registerScheme.swift in Sources */,
 				CEF512901FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
+				CEF575282192DE7600F6C559 /* Color+components.swift in Sources */,
 				CEE63DD42136465400CF7E69 /* String+base64.swift in Sources */,
 				CEF5127C1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */,
 				CEF512281FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
@@ -518,12 +594,17 @@
 				CEF5123C1FE0CA25008C84C9 /* UIImage+CoreGraphics.swift in Sources */,
 				CEF512241FE0CA25008C84C9 /* NSAttributedString+Content.swift in Sources */,
 				CEF512401FE0CA25008C84C9 /* UIImage+Process.swift in Sources */,
+				CEF574ED2192D5AD00F6C559 /* UserDefaults+subscript.swift in Sources */,
+				CEF574E82192D3A000F6C559 /* URL+query.swift in Sources */,
+				CEF5752C2192DE7600F6C559 /* Color+rgba.swift in Sources */,
 				CEF512181FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
 				CEF512781FE0CA26008C84C9 /* String+regex.swift in Sources */,
 				CEF512801FE0CA26008C84C9 /* Swift+log.swift in Sources */,
+				CEF574F72192DA0E00F6C559 /* DispatchQueue+once.swift in Sources */,
 				CEF512141FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */,
 				CEF512441FE0CA25008C84C9 /* Bundle+Localization.swift in Sources */,
 				CEF512301FE0CA25008C84C9 /* UINavigationController+Autorotate.swift in Sources */,
+				CEF575242192DE7600F6C559 /* Color+hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,14 +612,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF574F12192D86A00F6C559 /* UserDefaults+Codable.swift in Sources */,
 				CEF512871FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
 				CEF5121B1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */,
 				CEF512731FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CEF512831FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
+				CEF5752F2192DE7600F6C559 /* Color.swift in Sources */,
 				CEE63DCE21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift in Sources */,
 				CEF5125F1FE0CA26008C84C9 /* Locale+Localization.swift in Sources */,
 				CEE63DD82136472200CF7E69 /* WKWebView+registerScheme.swift in Sources */,
 				CEF5128F1FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
+				CEF575272192DE7600F6C559 /* Color+components.swift in Sources */,
 				CEE63DD32136465400CF7E69 /* String+base64.swift in Sources */,
 				CEF5127B1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */,
 				CEF512271FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
@@ -549,12 +633,17 @@
 				CEF5123B1FE0CA25008C84C9 /* UIImage+CoreGraphics.swift in Sources */,
 				CEF512231FE0CA25008C84C9 /* NSAttributedString+Content.swift in Sources */,
 				CEF5123F1FE0CA25008C84C9 /* UIImage+Process.swift in Sources */,
+				CEF574EC2192D5AD00F6C559 /* UserDefaults+subscript.swift in Sources */,
+				CEF574E72192D3A000F6C559 /* URL+query.swift in Sources */,
+				CEF5752B2192DE7600F6C559 /* Color+rgba.swift in Sources */,
 				CEF512171FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
 				CEF512771FE0CA26008C84C9 /* String+regex.swift in Sources */,
 				CEF5127F1FE0CA26008C84C9 /* Swift+log.swift in Sources */,
+				CEF574F62192DA0E00F6C559 /* DispatchQueue+once.swift in Sources */,
 				CEF512131FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */,
 				CEF512431FE0CA25008C84C9 /* Bundle+Localization.swift in Sources */,
 				CEF5122F1FE0CA25008C84C9 /* UINavigationController+Autorotate.swift in Sources */,
+				CEF575232192DE7600F6C559 /* Color+hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,20 +652,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF512861FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
+				CEF575262192DE7600F6C559 /* Color+components.swift in Sources */,
 				CEF5121A1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */,
 				CEF512721FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CEF512821FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
+				CEF575222192DE7600F6C559 /* Color+hex.swift in Sources */,
+				CEF574EB2192D5AD00F6C559 /* UserDefaults+subscript.swift in Sources */,
 				CEE63DD22136465400CF7E69 /* String+base64.swift in Sources */,
 				CEF5125E1FE0CA26008C84C9 /* Locale+Localization.swift in Sources */,
 				CEF5128E1FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
 				CEF5127A1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */,
+				CEF574F02192D86A00F6C559 /* UserDefaults+Codable.swift in Sources */,
 				CEF512261FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
 				CE86472520A1E0650043FB26 /* runtime_aop.swift in Sources */,
+				CEF574F52192DA0E00F6C559 /* DispatchQueue+once.swift in Sources */,
+				CEF574E62192D3A000F6C559 /* URL+query.swift in Sources */,
 				CEE63DCD21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift in Sources */,
 				CEF5128A1FE0CA26008C84C9 /* Swift+Association.swift in Sources */,
 				CEF5122A1FE0CA25008C84C9 /* UIVIew+UIImage.swift in Sources */,
 				CEF512321FE0CA25008C84C9 /* UIWebView+JavaScript.swift in Sources */,
 				CEF5121E1FE0CA25008C84C9 /* UITableView+UIImage.swift in Sources */,
+				CEF5752E2192DE7600F6C559 /* Color.swift in Sources */,
 				CEF5123A1FE0CA25008C84C9 /* UIImage+CoreGraphics.swift in Sources */,
 				CEF512461FE0CA25008C84C9 /* Objc.swift in Sources */,
 				CEF512221FE0CA25008C84C9 /* NSAttributedString+Content.swift in Sources */,
@@ -585,6 +681,7 @@
 				CEF512761FE0CA26008C84C9 /* String+regex.swift in Sources */,
 				CEF5127E1FE0CA26008C84C9 /* Swift+log.swift in Sources */,
 				CEE63DD72136472200CF7E69 /* WKWebView+registerScheme.swift in Sources */,
+				CEF5752A2192DE7600F6C559 /* Color+rgba.swift in Sources */,
 				CEF512121FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */,
 				CEF512421FE0CA25008C84C9 /* Bundle+Localization.swift in Sources */,
 				CEF5122E1FE0CA25008C84C9 /* UINavigationController+Autorotate.swift in Sources */,

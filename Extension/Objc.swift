@@ -31,33 +31,33 @@ extension NSString {
 }
 
 extension NSString {
-     public final var isPRCMobileNumber: Bool {
+    public final var isPRCMobileNumber: Bool {
         return (self as String).isPRCMobileNumber
     }
-     public final var isPRCIDNumber: Bool {
+    public final var isPRCIDNumber: Bool {
         return (self as String).isPRCIDNumber
     }
 }
 
 extension NSArray {
-     public final var jsonData: Data? {
+    public final var jsonData: Data? {
         return (self as Array).jsonData
     }
 }
 
 extension NSLocale {
-     public class var perferredIdentifier: String? {
+    public class var perferredIdentifier: String? {
         set { Locale.perferredIdentifier = newValue }
         get { return Locale.perferredIdentifier }
     }
 }
 
 extension NSObject {
-     public convenience init(JSONDict: [String: Any]) {
+    public convenience init(JSONDict: [String: Any]) {
         self.init()
         self.setValuesForKeys(JSONDict)
     }
-     public convenience init(JSONStr: String) {
+    public convenience init(JSONStr: String) {
         self.init()
         guard let data = JSONStr.data(using: String.Encoding.utf8, allowLossyConversion: false) else { return }
         do {
@@ -72,11 +72,8 @@ extension NSObject {
 }
 
 extension NSString {
-     public final var jsonDictionary: [String: Any]? {
+    public final var jsonDictionary: [String: Any]? {
         return (self as String).jsonDictionary
-    }
-     public final var urlDictionary: [String: Any] {
-        return (self as String).urlDictionary
     }
 }
 

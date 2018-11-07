@@ -6,13 +6,14 @@
 //  Copyright © 2018 DingSoung. All rights reserved.
 //
 
-import Foundation
+#if canImport(Foundation)
+import Foundation.NSHTTPCookie
 
 extension HTTPCookieStorage {
     public func setCookie(cookie: HTTPCookie) {
         var cookies: [HTTPCookie]
-        if let url = cookie.commentURL, let cs = self.cookies(for: url) {
-            cookies = cs
+        if let url = cookie.commentURL, let cos = self.cookies(for: url) {
+            cookies = cos
         } else {
             cookies = []
         }
@@ -24,3 +25,4 @@ extension HTTPCookieStorage {
         self.setCookies(cookies, for: cookie.commentURL, mainDocumentURL: nil)
     }
 }
+#endif

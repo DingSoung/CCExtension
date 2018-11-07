@@ -1,7 +1,8 @@
 //  Created by Songwen Ding on 15/5/26.
 //  Copyright (c) 2015 DingSoung. All rights reserved.
 
-import Foundation
+#if canImport(Foundation)
+import Foundation.NSThread
 
 /// log with detail message
 @discardableResult public func log(_ items: Any..., file: String = #file,
@@ -18,3 +19,4 @@ import Foundation
     let messages = [file, line, function] + items + [Thread.current, Thread.callStackSymbols]
     return messages
 }
+#endif
