@@ -46,7 +46,11 @@ extension WKWebView {
 extension WKWebView {
     @objc public class Input: NSObject {
         private weak var target: WKWebView?
-        private override init() { super.init() }
+
+        private override init() {
+            super.init()
+        }
+
         public init(target: WKWebView) {
             self.target = target
             super.init()
@@ -58,14 +62,23 @@ extension WKWebView {
             // replace or update class
             let selectors = [#selector(getter: inputView), #selector(getter: inputAccessoryView)]
             for selector in selectors {
-                guard let method = class_getInstanceMethod(WKWebView.self, selector) else { assertionFailure(); continue }
-                if class_addMethod(nickClass.self, selector, method_getImplementation(method), method_getTypeEncoding(method)) {
+                guard let method = class_getInstanceMethod(WKWebView.self, selector) else {
+                    assertionFailure(); continue
+                }
+                if class_addMethod(nickClass.self,
+                                   selector,
+                                   method_getImplementation(method),
+                                   method_getTypeEncoding(method)) {
                 } else {
-                    class_replaceMethod(nickClass.self, selector, method_getImplementation(method), method_getTypeEncoding(method))
+                    class_replaceMethod(nickClass.self,
+                                        selector,
+                                        method_getImplementation(method),
+                                        method_getTypeEncoding(method))
                 }
             }
             object_setClass(contentView, nickClass)
         }
+
         deinit {
             // no need to restore
         }
@@ -77,7 +90,10 @@ extension WKWebView.Input {
     @objc dynamic public var view: UIView? {
         set {
             if let webView = self.target {
-                objc_setAssociatedObject(webView, &WKWebView.inputViewKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+                objc_setAssociatedObject(webView,
+                                         &WKWebView.inputViewKey,
+                                         newValue,
+                                         .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
                 webView.reloadInputViews()
             }
             self.target?.contentView?.reloadInputViews()
@@ -91,7 +107,10 @@ extension WKWebView.Input {
     @objc dynamic public var accessoryView: UIView? {
         set {
             if let webView = self.target {
-                objc_setAssociatedObject(webView, &WKWebView.inputAccessoryViewKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+                objc_setAssociatedObject(webView,
+                                         &WKWebView.inputAccessoryViewKey,
+                                         newValue,
+                                         .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
                 webView.reloadInputViews()
             }
             self.target?.contentView?.reloadInputViews()
