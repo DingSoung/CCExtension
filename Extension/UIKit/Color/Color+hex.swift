@@ -1,12 +1,20 @@
 //  Created by Songwen on 2018/11/7.
 //  Copyright © 2018 DingSoung. All rights reserved.
 
+#if canImport(Foundation)
+import Foundation
+#endif
+
+#if canImport(CoreGraphics)
+import CoreGraphics
+#endif
+
 #if !os(Linux)
 extension Color {
-    private static let association = Association<NSCache<NSString, UIColor>>()
-    public class final var memoryCache: NSCache<NSString, UIColor> {
+    private static let association = Association<NSCache<NSString, Color>>()
+    public class final var memoryCache: NSCache<NSString, Color> {
         return Color.association[self] ?? {
-            let cache = NSCache<NSString, UIColor>()
+            let cache = NSCache<NSString, Color>()
             cache.countLimit = 1024 // 1K
             cache.totalCostLimit = 0 // no limit
             cache.evictsObjectsWithDiscardedContent = true
@@ -24,7 +32,7 @@ extension Color {
     }
 
     /// convert hex to UIColor #RGB, #ARGB, #RRGGBB, #AARRGGBB
-    public class final func color(hex: String) -> UIColor? {
+    public class final func color(hex: String) -> Color? {
         if let color = Color.memoryCache.object(forKey: hex as NSString) {
             return color
         }
@@ -57,7 +65,7 @@ extension Color {
         default:
             return nil
         }
-        let color = UIColor(red: red, green: green, blue: blue, alpha: alpha)
+        let color = Color(red: red, green: green, blue: blue, alpha: alpha)
         Color.memoryCache.setObject(color, forKey: hex as NSString)
         return color
     }

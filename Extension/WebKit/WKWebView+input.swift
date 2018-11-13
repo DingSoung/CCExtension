@@ -1,14 +1,14 @@
 //  Created by Songwen Ding on 2018/11/13.
 //  Copyright © 2018年 DingSoung. All rights reserved.
 
-#if canImport(WebKit)
+#if canImport(WebKit) && iOS
 import WebKit
 
 // MARK: - WebView override to return custom view
 extension WKWebView {
     private static var inputViewKey: UInt8 = 0
-    open override var inputView: UIView? {
-        if let view = objc_getAssociatedObject(self, &WKWebView.inputViewKey) as? UIView {
+    @objc open override var inputView: View? {
+        if let view = objc_getAssociatedObject(self, &WKWebView.inputViewKey) as? View {
             return view
         } else {
             return super.inputAccessoryView
@@ -18,8 +18,8 @@ extension WKWebView {
 
 extension WKWebView {
     private static var inputAccessoryViewKey: UInt8 = 0
-    open override var inputAccessoryView: UIView? {
-        if let view = objc_getAssociatedObject(self, &WKWebView.inputAccessoryViewKey) as? UIView {
+    @objc open override var inputAccessoryView: View? {
+        if let view = objc_getAssociatedObject(self, &WKWebView.inputAccessoryViewKey) as? View {
             return view
         } else {
             return super.inputAccessoryView
@@ -87,7 +87,7 @@ extension WKWebView {
 
 extension WKWebView.Input {
     /// input view
-    @objc dynamic public var view: UIView? {
+    @objc dynamic public var view: View? {
         set {
             if let webView = self.target {
                 objc_setAssociatedObject(webView,
@@ -100,11 +100,11 @@ extension WKWebView.Input {
         }
         get {
             guard let webView = self.target else { return nil }
-            return objc_getAssociatedObject(webView, &WKWebView.inputViewKey) as? UIView
+            return objc_getAssociatedObject(webView, &WKWebView.inputViewKey) as? View
         }
     }
     /// input accessory view
-    @objc dynamic public var accessoryView: UIView? {
+    @objc dynamic public var accessoryView: View? {
         set {
             if let webView = self.target {
                 objc_setAssociatedObject(webView,
@@ -117,7 +117,7 @@ extension WKWebView.Input {
         }
         get {
             guard let webView = self.target else { return nil }
-            return objc_getAssociatedObject(webView, &WKWebView.inputAccessoryViewKey) as? UIView
+            return objc_getAssociatedObject(webView, &WKWebView.inputAccessoryViewKey) as? View
         }
     }
 }

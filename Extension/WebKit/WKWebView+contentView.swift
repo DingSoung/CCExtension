@@ -1,12 +1,12 @@
 //  Created by Songwen on 2018/11/13.
 //  Copyright © 2018 DingSoung. All rights reserved.
 
-#if canImport(WebKit)
+#if canImport(WebKit) && iOS
 import WebKit
 
 extension WKWebView {
     /// refer contentView
-    @objc public var contentView: UIView? {
+    @objc public var contentView: View? {
         guard let prifix = "V0tDb250ZW50Vmlldw==".base64Decode else { assertionFailure(); return nil }
         for view in self.scrollView.subviews {
             if String(describing: type(of: view)).hasPrefix(prifix) {
