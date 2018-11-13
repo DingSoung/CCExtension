@@ -1,7 +1,7 @@
 //  Created by Songwen Ding on 2018/11/13.
 //  Copyright © 2018年 DingSoung. All rights reserved.
 
-#if canImport(WebKit) && iOS
+#if canImport(WebKit) && os(iOS)
 import WebKit
 
 // MARK: - WebView override to return custom view
