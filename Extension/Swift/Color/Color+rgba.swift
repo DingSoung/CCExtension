@@ -8,7 +8,7 @@ import CoreGraphics
 #if !os(Linux)
 extension Color {
     /// init color with RGBA Hex 0x00 ~ 0xFF
-    public convenience init(red: Int, green: Int, blue: Int, alpha: Int) {
+    public convenience init(red: UInt, green: UInt, blue: UInt, alpha: UInt) {
         self.init(red: CGFloat(red & 0xFF) / 255.0,
                   green: CGFloat(green & 0xFF) / 255.0,
                   blue: CGFloat(blue & 0xFF) / 255.0,

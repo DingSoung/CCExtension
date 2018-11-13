@@ -65,7 +65,7 @@ extension Color {
 
 extension Color {
     /// init color with hex like 0xFF55AABB
-    public convenience init(hex8: Int) {
+    public convenience init(hex8: UInt) {
         self.init(red: (hex8 >> 24) & 0xFF,
                   green: (hex8 >> 16) & 0xFF,
                   blue: (hex8 >> 8) & 0xFF,
@@ -73,24 +73,24 @@ extension Color {
     }
 
     /// init color with hex like 0xFF55AA
-    public convenience init(hex6: Int) {
+    public convenience init(hex6: UInt) {
         self.init(hex8: hex6 << 8 + 0xFF)
     }
 }
 
 extension Color {
     /// convert UIColor to hex number, 0xFF4477AA
-    public final var hex8: Int {
+    public final var hex8: UInt {
         var red: CGFloat = 0
         var green: CGFloat = 0
         var blue: CGFloat = 0
         var alpha: CGFloat = 0
         self.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-        return (Int)(red * 0xFF) << 24 | (Int)(green * 0xFF) << 16 | (Int)(blue * 0xFF) << 8 | (Int)(alpha * 0xFF) << 0
+        return (UInt)(red * 0xFF) << 24 | (UInt)(green * 0xFF) << 16 | (UInt)(blue * 0xFF) << 8 | (UInt)(alpha * 0xFF) << 0
     }
 
     /// convert UIColor to hex number, 0xFF4477AA
-    public final var hex6: Int {
+    public final var hex6: UInt {
         return self.hex8 & 0xFFFFFF00 >> 8
     }
 }
