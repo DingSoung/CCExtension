@@ -15,6 +15,7 @@ extension WKWebView {
         }
         return nil
     }
+
     /// generate or get class with uniqueid(bundle only prefered)
     public func contentViewNickClass(id: String) -> AnyClass? {
         guard var name = "V0tDb250ZW50Vmlldw==".base64Decode else { assertionFailure(); return nil }

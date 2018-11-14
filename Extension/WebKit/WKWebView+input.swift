@@ -6,7 +6,7 @@ import WebKit
 
 // MARK: WKWebView.Input Holder
 extension WKWebView {
-    @objc(WKWebViewInput) public class Input: NSObject {
+    @objc(WKWebViewInput) @objcMembers public class Input: NSObject {
         private weak var target: WKWebView?
 
         private override init() {
@@ -52,9 +52,8 @@ extension WKWebView {
 extension WKWebView.Input {
     fileprivate static var inputViewKey: UInt8 = 0
     fileprivate static var inputAccessoryViewKey: UInt8 = 1
-
     /// input view
-    @objc dynamic public var view: View? {
+    public var view: View? {
         set {
             if let webView = self.target {
                 objc_setAssociatedObject(webView,
@@ -71,7 +70,7 @@ extension WKWebView.Input {
         }
     }
     /// input accessory view
-    @objc dynamic public var accessoryView: View? {
+    public var accessoryView: View? {
         set {
             if let webView = self.target {
                 objc_setAssociatedObject(webView,
