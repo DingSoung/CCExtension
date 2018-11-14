@@ -16,18 +16,20 @@ extension NSString {
         }
         return dat.count
     }
+
     /// height for limit width with font
     public func height(constrainedWidth: CGFloat, font: UIFont) -> CGFloat {
         return self.boundingRect(with: CGSize(width: constrainedWidth, height: CGFloat.greatestFiniteMagnitude),
                                  options: NSStringDrawingOptions.usesLineFragmentOrigin,
-                                 attributes: [NSAttributedStringKey.font: font],
+                                 attributes: [NSAttributedString.Key.font: font],
                                  context: nil).height
     }
+
     /// width for limit height with font
     public func width(constrainedHeight: CGFloat, font: UIFont) -> CGFloat {
         return self.boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: constrainedHeight),
                                  options: NSStringDrawingOptions.usesLineFragmentOrigin,
-                                 attributes: [NSAttributedStringKey.font: font],
+                                 attributes: [NSAttributedString.Key.font: font],
                                  context: nil).width
     }
 }

@@ -41,10 +41,6 @@
 		CEF512171FE0CA25008C84C9 /* NSString+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F01FE0CA25008C84C9 /* NSString+Size.swift */; };
 		CEF512181FE0CA25008C84C9 /* NSString+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F01FE0CA25008C84C9 /* NSString+Size.swift */; };
 		CEF512191FE0CA25008C84C9 /* NSString+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F01FE0CA25008C84C9 /* NSString+Size.swift */; };
-		CEF5121A1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F11FE0CA25008C84C9 /* UIImage+Array.swift */; };
-		CEF5121B1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F11FE0CA25008C84C9 /* UIImage+Array.swift */; };
-		CEF5121C1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F11FE0CA25008C84C9 /* UIImage+Array.swift */; };
-		CEF5121D1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F11FE0CA25008C84C9 /* UIImage+Array.swift */; };
 		CEF5121E1FE0CA25008C84C9 /* UITableView+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F21FE0CA25008C84C9 /* UITableView+UIImage.swift */; };
 		CEF5121F1FE0CA25008C84C9 /* UITableView+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F21FE0CA25008C84C9 /* UITableView+UIImage.swift */; };
 		CEF512201FE0CA25008C84C9 /* UITableView+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F21FE0CA25008C84C9 /* UITableView+UIImage.swift */; };
@@ -168,7 +164,6 @@
 		CEE63DD62136472200CF7E69 /* WKWebView+registerScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+registerScheme.swift"; sourceTree = "<group>"; };
 		CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+EventTrack.swift"; sourceTree = "<group>"; };
 		CEF511F01FE0CA25008C84C9 /* NSString+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Size.swift"; sourceTree = "<group>"; };
-		CEF511F11FE0CA25008C84C9 /* UIImage+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Array.swift"; sourceTree = "<group>"; };
 		CEF511F21FE0CA25008C84C9 /* UITableView+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+UIImage.swift"; sourceTree = "<group>"; };
 		CEF511F31FE0CA25008C84C9 /* NSAttributedString+Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Content.swift"; sourceTree = "<group>"; };
 		CEF511F41FE0CA25008C84C9 /* Array+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+UIImage.swift"; sourceTree = "<group>"; };
@@ -289,7 +284,6 @@
 				CEF5751D2192DE7600F6C559 /* Color */,
 				CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */,
 				CEF511F01FE0CA25008C84C9 /* NSString+Size.swift */,
-				CEF511F11FE0CA25008C84C9 /* UIImage+Array.swift */,
 				CEF511F21FE0CA25008C84C9 /* UITableView+UIImage.swift */,
 				CEF511F31FE0CA25008C84C9 /* NSAttributedString+Content.swift */,
 				CEF511F41FE0CA25008C84C9 /* Array+UIImage.swift */,
@@ -570,7 +564,6 @@
 			files = (
 				CEF574F32192D86A00F6C559 /* UserDefaults+Codable.swift in Sources */,
 				CEF512891FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
-				CEF5121D1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */,
 				CEF512751FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CEF512851FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
 				CEF575312192DE7600F6C559 /* Color.swift in Sources */,
@@ -612,7 +605,6 @@
 			files = (
 				CEF574F22192D86A00F6C559 /* UserDefaults+Codable.swift in Sources */,
 				CEF512881FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
-				CEF5121C1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */,
 				CEF512741FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CEF512841FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
 				CEF575302192DE7600F6C559 /* Color.swift in Sources */,
@@ -654,7 +646,6 @@
 			files = (
 				CEF574F12192D86A00F6C559 /* UserDefaults+Codable.swift in Sources */,
 				CEF512871FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
-				CEF5121B1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */,
 				CEF512731FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CEF512831FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
 				CEF5752F2192DE7600F6C559 /* Color.swift in Sources */,
@@ -696,7 +687,6 @@
 			files = (
 				CEF512861FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
 				CEF575262192DE7600F6C559 /* Color+components.swift in Sources */,
-				CEF5121A1FE0CA25008C84C9 /* UIImage+Array.swift in Sources */,
 				CEF512721FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CEF512821FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
 				CEF575222192DE7600F6C559 /* Color+hex.swift in Sources */,
