@@ -1,6 +1,7 @@
 //  Created by Songwen Ding on 2017/1/12.
 //  Copyright © 2017年 Alex. All rights reserved.
 
+#if canImport(Foundation)
 import Foundation
 
 open class HookObject: NSObject {
@@ -74,16 +75,6 @@ extension NSObject {
 extension NSString {
     public final var jsonDictionary: [String: Any]? {
         return (self as String).jsonDictionary
-    }
-}
-
-#if os(iOS)
-extension NSArray {
-     public func verticalImage(space: CGFloat, backgroundColor: UIColor?) -> UIImage? {
-        return (self as? [UIImage])?.verticalImage(space: space, backgroundColor: backgroundColor)
-    }
-     public var verticalImage: UIImage? {
-        return (self as? [UIImage])?.verticalImage
     }
 }
 #endif

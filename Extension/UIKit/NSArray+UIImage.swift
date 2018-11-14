@@ -1,7 +1,8 @@
 //  NSArray+UIImage.swift
 //  Extension
 
-import Foundation
+#if canImport(UIKit)
+import UIKit
 
 @objc
 extension NSArray {
@@ -13,3 +14,4 @@ extension NSArray {
         return (self as? [UIImage])?.verticalImage
     }
 }
+#endif

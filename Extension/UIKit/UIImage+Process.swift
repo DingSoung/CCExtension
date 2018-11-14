@@ -10,7 +10,7 @@ extension UIImage {
         guard let cgImage = self.cgImage else {
             return self
         }
-        return UIImage(cgImage: cgImage, scale: scale, orientation: UIImageOrientation.up)
+        return UIImage(cgImage: cgImage, scale: scale, orientation: UIImage.Orientation.up)
     }
     /// scale with ratio
     public func imageScaleToRatio(ratio: CGFloat) -> UIImage? {

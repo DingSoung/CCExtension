@@ -23,7 +23,7 @@ extension UITableView {
     }
     public final func imageForRow(at indexPath: IndexPath) -> UIImage? {
         let offset = self.contentOffset
-        self.scrollToRow(at: indexPath, at: UITableViewScrollPosition.top, animated: false)
+        self.scrollToRow(at: indexPath, at: UITableView.ScrollPosition.top, animated: false)
         let image = self.cellForRow(at: indexPath)?.image(scale: UIScreen.main.scale)
         self.setContentOffset(offset, animated: false)
         return image
@@ -63,7 +63,7 @@ extension UITableView {
         }
         for row in start..<end {
             let indexPath = IndexPath(row: row, section: section)
-            self.scrollToRow(at: indexPath, at: UITableViewScrollPosition.top, animated: false)
+            self.scrollToRow(at: indexPath, at: UITableView.ScrollPosition.top, animated: false)
             if let cell = self.cellForRow(at: indexPath) {
                 cell.layer.render(in: context) // +1.6~1.8MB
                 context.concatenate(CGAffineTransform(translationX: 0, y: cell.bounds.size.height))
