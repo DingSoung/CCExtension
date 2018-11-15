@@ -5,11 +5,11 @@
 import UIKit
 
 extension UIView {
+    @objc public enum KeyboardAction: Int {
+        case hide = 0
+        case show = 1
+    }
     @objc(UIViewKeyboardInfo) @objcMembers public final class KeyboardInfo: NSObject {
-        public enum Action: Int {
-            case hide = 0
-            case show = 1
-        }
         public var frame: CGRect {
             return self.frameEnd
         }
@@ -17,7 +17,7 @@ extension UIView {
         public var option: UIView.AnimationOptions {
             return UIView.AnimationOptions.init(rawValue: self.curve << 16)
         }
-        public var action: KeyboardInfo.Action {
+        public var action: KeyboardAction {
             return self.frameEnd.maxY > UIScreen.main.bounds.maxY ? .hide : .show
         }
         // internal status
@@ -76,7 +76,7 @@ extension UIView {
     /// keyboard frame update callback
     @objc public var keyboardInfoDidUpdateCallBack: ((KeyboardInfo) -> Swift.Void)? {
         set {
-            if (newValue != nil) {
+            if newValue != nil {
                 KeyboardInfo.shared.weakArray.add(self)
             } else {
                 KeyboardInfo.shared.weakArray.remove(self)
