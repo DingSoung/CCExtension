@@ -19,10 +19,6 @@
 		CE19B603219B027F007B3D72 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B601219B027F007B3D72 /* View.swift */; };
 		CE19B604219B027F007B3D72 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B601219B027F007B3D72 /* View.swift */; };
 		CE19B605219B027F007B3D72 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B601219B027F007B3D72 /* View.swift */; };
-		CE19B69A219D160C007B3D72 /* NSArray+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B698219D160C007B3D72 /* NSArray+UIImage.swift */; };
-		CE19B69B219D160C007B3D72 /* NSArray+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B698219D160C007B3D72 /* NSArray+UIImage.swift */; };
-		CE19B69C219D160C007B3D72 /* NSArray+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B698219D160C007B3D72 /* NSArray+UIImage.swift */; };
-		CE19B69D219D160C007B3D72 /* NSArray+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B698219D160C007B3D72 /* NSArray+UIImage.swift */; };
 		CE19B69E219D160C007B3D72 /* UIView+KeyboardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B699219D160C007B3D72 /* UIView+KeyboardInfo.swift */; };
 		CE19B69F219D160C007B3D72 /* UIView+KeyboardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B699219D160C007B3D72 /* UIView+KeyboardInfo.swift */; };
 		CE19B6A0219D160C007B3D72 /* UIView+KeyboardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B699219D160C007B3D72 /* UIView+KeyboardInfo.swift */; };
@@ -160,7 +156,6 @@
 		CE19B5F1219AF29D007B3D72 /* WKWebView+input.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WKWebView+input.swift"; sourceTree = "<group>"; };
 		CE19B5F6219AF47F007B3D72 /* WKWebView+contentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "WKWebView+contentView.swift"; path = "Extension/WebKit/WKWebView+contentView.swift"; sourceTree = SOURCE_ROOT; };
 		CE19B601219B027F007B3D72 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		CE19B698219D160C007B3D72 /* NSArray+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSArray+UIImage.swift"; sourceTree = "<group>"; };
 		CE19B699219D160C007B3D72 /* UIView+KeyboardInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+KeyboardInfo.swift"; sourceTree = "<group>"; };
 		CE34AB471F6027E90088F13F /* Extension_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extension_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE34AB541F6028030088F13F /* Extension_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extension_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -290,7 +285,6 @@
 		CEF511EE1FE0CA25008C84C9 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				CE19B698219D160C007B3D72 /* NSArray+UIImage.swift */,
 				CE19B699219D160C007B3D72 /* UIView+KeyboardInfo.swift */,
 				CE19B600219B0270007B3D72 /* View */,
 				CEF5751D2192DE7600F6C559 /* Color */,
@@ -586,7 +580,6 @@
 				CEF512911FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
 				CEF575292192DE7600F6C559 /* Color+components.swift in Sources */,
 				CEE63DD52136465400CF7E69 /* String+base64.swift in Sources */,
-				CE19B69D219D160C007B3D72 /* NSArray+UIImage.swift in Sources */,
 				CE19B605219B027F007B3D72 /* View.swift in Sources */,
 				CE19B5FA219AF47F007B3D72 /* WKWebView+contentView.swift in Sources */,
 				CEF5127D1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */,
@@ -629,7 +622,6 @@
 				CEF512901FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
 				CEF575282192DE7600F6C559 /* Color+components.swift in Sources */,
 				CEE63DD42136465400CF7E69 /* String+base64.swift in Sources */,
-				CE19B69C219D160C007B3D72 /* NSArray+UIImage.swift in Sources */,
 				CE19B604219B027F007B3D72 /* View.swift in Sources */,
 				CE19B5F9219AF47F007B3D72 /* WKWebView+contentView.swift in Sources */,
 				CEF5127C1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */,
@@ -672,7 +664,6 @@
 				CEF5128F1FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
 				CEF575272192DE7600F6C559 /* Color+components.swift in Sources */,
 				CEE63DD32136465400CF7E69 /* String+base64.swift in Sources */,
-				CE19B69B219D160C007B3D72 /* NSArray+UIImage.swift in Sources */,
 				CE19B603219B027F007B3D72 /* View.swift in Sources */,
 				CE19B5F8219AF47F007B3D72 /* WKWebView+contentView.swift in Sources */,
 				CEF5127B1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */,
@@ -715,7 +706,6 @@
 				CE19B602219B027F007B3D72 /* View.swift in Sources */,
 				CEF5128E1FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
 				CEF5127A1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */,
-				CE19B69A219D160C007B3D72 /* NSArray+UIImage.swift in Sources */,
 				CEF574F02192D86A00F6C559 /* UserDefaults+Codable.swift in Sources */,
 				CEF512261FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
 				CE86472520A1E0650043FB26 /* runtime_aop.swift in Sources */,
