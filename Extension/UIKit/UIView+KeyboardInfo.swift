@@ -40,10 +40,12 @@ extension UIView {
 extension UIView.KeyboardInfo {
     /// active
     public func active() {
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(keyboardFrameWillChanged(notification:)),
-                                               name: UIResponder.keyboardWillChangeFrameNotification,
-                                               object: nil)
+        [UIResponder.keyboardWillChangeFrameNotification].forEach { (name) in
+            NotificationCenter.default.addObserver(self,
+                                                   selector: #selector(updateKeyboardInfo(notification:)),
+                                                   name: name,
+                                                   object: nil)
+        }
     }
     /// invalid
     public func invalid() {
@@ -55,7 +57,7 @@ extension UIView.KeyboardInfo {
 
 extension UIView.KeyboardInfo {
     // MARK: - Notification
-    @objc private func keyboardFrameWillChanged(notification: Notification) {
+    @objc private func updateKeyboardInfo(notification: Notification) {
         guard let frameBegin = notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? CGRect,
             let frameEnd = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect,
             let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval,
