@@ -8,7 +8,7 @@ extension WKWebView {
     /// refer contentView
     @objc public var contentView: View? {
         guard let prifix = "V0tDb250ZW50Vmlldw==".base64Decode else { assertionFailure(); return nil }
-        for view in self.scrollView.subviews {
+        for view in scrollView.subviews {
             if String(describing: type(of: view)).hasPrefix(prifix) {
                 return view
             }
@@ -17,12 +17,12 @@ extension WKWebView {
     }
 
     /// generate or get class with uniqueid(bundle only prefered)
-    public func contentViewNickClass(id: String) -> AnyClass? {
+    public func contentViewNickClass(uid: String) -> AnyClass? {
         guard var name = "V0tDb250ZW50Vmlldw==".base64Decode else { assertionFailure(); return nil }
-        name += id
+        name += uid
         var cls: AnyClass? = NSClassFromString(name)
         if cls == nil,
-            let contentView = self.contentView,
+            let contentView = contentView,
             let newCls = objc_allocateClassPair(type(of: contentView).self, name, 0) {
             objc_registerClassPair(newCls)
             cls = newCls

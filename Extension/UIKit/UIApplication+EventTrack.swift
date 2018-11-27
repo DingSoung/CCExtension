@@ -7,7 +7,7 @@ import UIKit
 extension UIApplication {
     @objc func hook_sendAction(_ action: Selector, to target: Any?, from sender: Any?, for event: UIEvent?) -> Bool {
         print(action, target ?? "", sender ?? "", event ?? "")
-        return self.hook_sendAction(action, to: target, from: sender, for: event)
+        return hook_sendAction(action, to: target, from: sender, for: event)
     }
 
     public final class func switchHook() {

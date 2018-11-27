@@ -17,7 +17,7 @@ extension WKWebView {
             self.target = target
             super.init()
             guard let contentView = target.contentView,
-                let nickClass = target.contentViewNickClass(id: Bundle.main.bundlePath.hashValue.description) else {
+                let nickClass = target.contentViewNickClass(uid: Bundle.main.bundlePath.hashValue.description) else {
                     assertionFailure()
                     return
             }
@@ -55,34 +55,34 @@ extension WKWebView.Input {
     /// input view
     public var view: View? {
         set {
-            if let webView = self.target {
+            if let webView = target {
                 objc_setAssociatedObject(webView,
                                          &WKWebView.Input.inputViewKey,
                                          newValue,
                                          .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
                 webView.reloadInputViews()
             }
-            self.target?.contentView?.reloadInputViews()
+            target?.contentView?.reloadInputViews()
         }
         get {
-            guard let webView = self.target else { return nil }
+            guard let webView = target else { return nil }
             return objc_getAssociatedObject(webView, &WKWebView.Input.inputViewKey) as? View
         }
     }
     /// input accessory view
     public var accessoryView: View? {
         set {
-            if let webView = self.target {
+            if let webView = target {
                 objc_setAssociatedObject(webView,
                                          &WKWebView.Input.inputAccessoryViewKey,
                                          newValue,
                                          .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
                 webView.reloadInputViews()
             }
-            self.target?.contentView?.reloadInputViews()
+            target?.contentView?.reloadInputViews()
         }
         get {
-            guard let webView = self.target else { return nil }
+            guard let webView = target else { return nil }
             return objc_getAssociatedObject(webView, &WKWebView.Input.inputAccessoryViewKey) as? View
         }
     }
@@ -91,18 +91,10 @@ extension WKWebView.Input {
 // MARK: - WebView override to return custom view
 extension WKWebView {
     public final override var inputView: View? {
-        if let view = objc_getAssociatedObject(self, &WKWebView.Input.inputViewKey) as? View {
-            return view
-        } else {
-            return super.inputView
-        }
+        return objc_getAssociatedObject(self, &WKWebView.Input.inputViewKey) as? View ?? super.inputView
     }
     public final override var inputAccessoryView: View? {
-        if let view = objc_getAssociatedObject(self, &WKWebView.Input.inputAccessoryViewKey) as? View {
-            return view
-        } else {
-            return super.inputAccessoryView
-        }
+        return objc_getAssociatedObject(self, &WKWebView.Input.inputAccessoryViewKey) as? View ?? super.inputAccessoryView
     }
 }
 

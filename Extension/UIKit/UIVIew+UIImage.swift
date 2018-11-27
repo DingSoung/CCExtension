@@ -13,25 +13,25 @@ extension UIView {
                 context.setAlpha(alpha)
                 context.concatenate(CGAffineTransform(translationX: bounds.origin.x,
                                                       y: bounds.origin.y).inverted())
-                self.layer.render(in: context)
+                layer.render(in: context)
                 context.restoreGState()
             }
-        }, size: bounds.size, opaque: self.isOpaque)
+        }, size: bounds.size, opaque: isOpaque)
     }
     public func image(scale: CGFloat) -> UIImage? {
         return UIImage.image(render: {
             if let contex = UIGraphicsGetCurrentContext() {
-                self.layer.render(in: contex)
+                layer.render(in: contex)
             }
-        }, size: self.bounds.size, opaque: self.isOpaque)
+        }, size: bounds.size, opaque: isOpaque)
     }
     public var image: UIImage? {
-        return self.image(scale: UIScreen.main.scale)
+        return image(scale: UIScreen.main.scale)
     }
     public var fastImage: UIImage? {
         var image: UIImage?
-        UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.isOpaque, UIScreen.main.scale)
-        self.drawHierarchy(in: self.bounds, afterScreenUpdates: false)
+        UIGraphicsBeginImageContextWithOptions(bounds.size, isOpaque, UIScreen.main.scale)
+        drawHierarchy(in: bounds, afterScreenUpdates: false)
         image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image

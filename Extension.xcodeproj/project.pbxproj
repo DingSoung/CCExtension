@@ -37,6 +37,10 @@
 		CEE63DD82136472200CF7E69 /* WKWebView+registerScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE63DD62136472200CF7E69 /* WKWebView+registerScheme.swift */; };
 		CEE63DD92136472200CF7E69 /* WKWebView+registerScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE63DD62136472200CF7E69 /* WKWebView+registerScheme.swift */; };
 		CEE63DDA2136472200CF7E69 /* WKWebView+registerScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE63DD62136472200CF7E69 /* WKWebView+registerScheme.swift */; };
+		CEED10E021ABEADA00E76F27 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED10DF21ABEADA00E76F27 /* KeyChain.swift */; };
+		CEED10E121ABEADA00E76F27 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED10DF21ABEADA00E76F27 /* KeyChain.swift */; };
+		CEED10E221ABEADA00E76F27 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED10DF21ABEADA00E76F27 /* KeyChain.swift */; };
+		CEED10E321ABEADA00E76F27 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED10DF21ABEADA00E76F27 /* KeyChain.swift */; };
 		CEF512121FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */; };
 		CEF512131FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */; };
 		CEF512141FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */; };
@@ -167,6 +171,7 @@
 		CEE63DCC21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPCookieStorage+setCookie.swift"; sourceTree = "<group>"; };
 		CEE63DD12136465400CF7E69 /* String+base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+base64.swift"; sourceTree = "<group>"; };
 		CEE63DD62136472200CF7E69 /* WKWebView+registerScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+registerScheme.swift"; sourceTree = "<group>"; };
+		CEED10DF21ABEADA00E76F27 /* KeyChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+EventTrack.swift"; sourceTree = "<group>"; };
 		CEF511F01FE0CA25008C84C9 /* NSString+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Size.swift"; sourceTree = "<group>"; };
 		CEF511F21FE0CA25008C84C9 /* UITableView+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+UIImage.swift"; sourceTree = "<group>"; };
@@ -306,6 +311,7 @@
 		CEF511FB1FE0CA25008C84C9 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				CEED10DF21ABEADA00E76F27 /* KeyChain.swift */,
 				CEF511FC1FE0CA25008C84C9 /* Bundle+Localization.swift */,
 				CEF512041FE0CA25008C84C9 /* Locale+Localization.swift */,
 				CEF5120F1FE0CA25008C84C9 /* URL+CooKie.swift */,
@@ -593,6 +599,7 @@
 				CEF512251FE0CA25008C84C9 /* NSAttributedString+Content.swift in Sources */,
 				CEF512411FE0CA25008C84C9 /* UIImage+Process.swift in Sources */,
 				CEF574EE2192D5AD00F6C559 /* UserDefaults+subscript.swift in Sources */,
+				CEED10E321ABEADA00E76F27 /* KeyChain.swift in Sources */,
 				CEF574E92192D3A000F6C559 /* URL+query.swift in Sources */,
 				CEF5752D2192DE7600F6C559 /* Color+rgba.swift in Sources */,
 				CEF512191FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
@@ -635,6 +642,7 @@
 				CEF512241FE0CA25008C84C9 /* NSAttributedString+Content.swift in Sources */,
 				CEF512401FE0CA25008C84C9 /* UIImage+Process.swift in Sources */,
 				CEF574ED2192D5AD00F6C559 /* UserDefaults+subscript.swift in Sources */,
+				CEED10E221ABEADA00E76F27 /* KeyChain.swift in Sources */,
 				CEF574E82192D3A000F6C559 /* URL+query.swift in Sources */,
 				CEF5752C2192DE7600F6C559 /* Color+rgba.swift in Sources */,
 				CEF512181FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
@@ -677,6 +685,7 @@
 				CEF512231FE0CA25008C84C9 /* NSAttributedString+Content.swift in Sources */,
 				CEF5123F1FE0CA25008C84C9 /* UIImage+Process.swift in Sources */,
 				CEF574EC2192D5AD00F6C559 /* UserDefaults+subscript.swift in Sources */,
+				CEED10E121ABEADA00E76F27 /* KeyChain.swift in Sources */,
 				CEF574E72192D3A000F6C559 /* URL+query.swift in Sources */,
 				CEF5752B2192DE7600F6C559 /* Color+rgba.swift in Sources */,
 				CEF512171FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
@@ -723,6 +732,7 @@
 				CEF5123E1FE0CA25008C84C9 /* UIImage+Process.swift in Sources */,
 				CEF512161FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
 				CEF512761FE0CA26008C84C9 /* String+regex.swift in Sources */,
+				CEED10E021ABEADA00E76F27 /* KeyChain.swift in Sources */,
 				CEF5127E1FE0CA26008C84C9 /* Swift+log.swift in Sources */,
 				CEE63DD72136472200CF7E69 /* WKWebView+registerScheme.swift in Sources */,
 				CEF5752A2192DE7600F6C559 /* Color+rgba.swift in Sources */,

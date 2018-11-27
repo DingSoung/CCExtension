@@ -6,42 +6,42 @@ import UIKit
 
 extension UITableView {
     public final var headerImage: UIImage? {
-        let offset = self.contentOffset
-        guard let rect = self.tableHeaderView?.frame else {return nil}
+        let offset = contentOffset
+        guard let rect = tableHeaderView?.frame else {return nil}
         self.scrollRectToVisible(rect, animated: false)
-        let image = self.tableHeaderView?.image
+        let image = tableHeaderView?.image
         self.setContentOffset(offset, animated: false)
         return image
     }
     public final func headerImage(forSection section: Int) -> UIImage? {
-        let offset = self.contentOffset
-        let rect = self.rectForHeader(inSection: section)
+        let offset = contentOffset
+        let rect = rectForHeader(inSection: section)
         self.scrollRectToVisible(rect, animated: false)
-        let image = self.headerView(forSection: section)?.image
+        let image = headerView(forSection: section)?.image
         self .setContentOffset(offset, animated: false)
         return image
     }
     public final func imageForRow(at indexPath: IndexPath) -> UIImage? {
-        let offset = self.contentOffset
+        let offset = contentOffset
         self.scrollToRow(at: indexPath, at: UITableView.ScrollPosition.top, animated: false)
-        let image = self.cellForRow(at: indexPath)?.image(scale: UIScreen.main.scale)
+        let image = cellForRow(at: indexPath)?.image(scale: UIScreen.main.scale)
         self.setContentOffset(offset, animated: false)
         return image
     }
     public final func footerImage(forSection section: Int) -> UIImage? {
-        let offset = self.contentOffset
-        let rect = self.rectForFooter(inSection: section)
+        let offset = contentOffset
+        let rect = rectForFooter(inSection: section)
         self.scrollRectToVisible(rect, animated: false)
-        let image = self.headerView(forSection: section)?.image
-        self .setContentOffset(offset, animated: false)
+        let image = headerView(forSection: section)?.image
+        setContentOffset(offset, animated: false)
         return image
     }
     public final var footerImage: UIImage? {
-        let offset = self.contentOffset
-        guard let rect = self.tableFooterView?.frame else {return nil}
-        self.scrollRectToVisible(rect, animated: false)
-        let image = self.tableHeaderView?.image
-        self.setContentOffset(offset, animated: false)
+        let offset = contentOffset
+        guard let rect = tableFooterView?.frame else {return nil}
+        scrollRectToVisible(rect, animated: false)
+        let image = tableHeaderView?.image
+        setContentOffset(offset, animated: false)
         return image
     }
     public final func render(context: CGContext,
@@ -51,20 +51,20 @@ extension UITableView {
                              withHeader header: Bool = false,
                              footer: Bool = false) -> Swift.Void {
         context.saveGState()
-        let offset = self.contentOffset
+        let offset = contentOffset
         if header == true {
-            let rect = self.rectForHeader(inSection: section)
+            let rect = rectForHeader(inSection: section)
             self.scrollRectToVisible(rect, animated: false)
-            if let view = self.headerView(forSection: section) {
-                self.scrollRectToVisible(view.frame, animated: false)
+            if let view = headerView(forSection: section) {
+                scrollRectToVisible(view.frame, animated: false)
                 view.layer.render(in: context)
                 context.concatenate(CGAffineTransform(translationX: 0, y: rect.size.height))
             }
         }
         for row in start..<end {
             let indexPath = IndexPath(row: row, section: section)
-            self.scrollToRow(at: indexPath, at: UITableView.ScrollPosition.top, animated: false)
-            if let cell = self.cellForRow(at: indexPath) {
+            scrollToRow(at: indexPath, at: UITableView.ScrollPosition.top, animated: false)
+            if let cell = cellForRow(at: indexPath) {
                 cell.layer.render(in: context) // +1.6~1.8MB
                 context.concatenate(CGAffineTransform(translationX: 0, y: cell.bounds.size.height))
             } else {
@@ -72,15 +72,15 @@ extension UITableView {
             }
         }
         if footer == true {
-            let rect = self.rectForFooter(inSection: section)
-            self.scrollRectToVisible(rect, animated: false)
-            if let view = self.footerView(forSection: section) {
-                self.scrollRectToVisible(view.frame, animated: false)
+            let rect = rectForFooter(inSection: section)
+            scrollRectToVisible(rect, animated: false)
+            if let view = footerView(forSection: section) {
+                scrollRectToVisible(view.frame, animated: false)
                 view.layer.render(in: context)
                 context.concatenate(CGAffineTransform(translationX: 0, y: rect.size.height))
             }
         }
-        self.setContentOffset(offset, animated: false)
+        setContentOffset(offset, animated: false)
         context.restoreGState()
     }
     /// ⚠️ hight memory require when lines > 100, get image for one section
@@ -92,16 +92,16 @@ extension UITableView {
                                       footer: Bool = false) -> UIImage? {
         var height = totalHeight
         if header == true {
-            height += self.rectForHeader(inSection: section).size.height
+            height += rectForHeader(inSection: section).size.height
         }
         if footer == true {
-            height += self.rectForFooter(inSection: section).size.height
+            height += rectForFooter(inSection: section).size.height
         }
-        UIGraphicsBeginImageContextWithOptions(CGSize(width: self.contentSize.width, height: height),
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: contentSize.width, height: height),
                                                false,
                                                UIScreen.main.scale) // +224.25MB
         if let context = UIGraphicsGetCurrentContext() {
-            self.render(context: context, section: section, fromRow: start, to: end, withHeader: header, footer: footer)
+            render(context: context, section: section, fromRow: start, to: end, withHeader: header, footer: footer)
         }
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext(); //-245.3M
@@ -110,24 +110,24 @@ extension UITableView {
     /// ⚠️ hight memory require when lines > 20, get image from section and all rows in it
     public final func imageFromSection(_ start: Int, to end: Int, withHeader header: Bool, footer: Bool) -> UIImage? {
         var images: [UIImage] = []
-        if let herderImage = self.headerImage, header == true {
+        if let herderImage = headerImage, header == true {
             images.append(herderImage)
         }
         for section in start..<end {
             let totalHeight = { () -> CGFloat in
                 var height: CGFloat = 0
-                let rows = self.numberOfRows(inSection: section)
+                let rows = numberOfRows(inSection: section)
                 for row in 0..<rows {
-                    height += self.rectForRow(at: IndexPath(row: row, section: section)).size.height
+                    height += rectForRow(at: IndexPath(row: row, section: section)).size.height
                 }
                 return height
             }()
-            if let image = self.imageForSection(at: section,
-                                                fromRow: 0,
-                                                to: self.numberOfRows(inSection: section),
-                                                totalHeight: totalHeight,
-                                                withHeader: true,
-                                                footer: true) {
+            if let image = imageForSection(at: section,
+                                           fromRow: 0,
+                                           to: numberOfRows(inSection: section),
+                                           totalHeight: totalHeight,
+                                           withHeader: true,
+                                           footer: true) {
                 images.append(image)
                 if images.count > 5 {
                     if let image = images.verticalImage {
@@ -137,7 +137,7 @@ extension UITableView {
                 }
             }
         }
-        if let image = self.footerImage, footer == true {
+        if let image = footerImage, footer == true {
             images.append(image)
         }
         let image = images.verticalImage

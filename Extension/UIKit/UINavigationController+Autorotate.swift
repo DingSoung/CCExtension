@@ -7,21 +7,21 @@ import UIKit
 extension UINavigationController {
     // 兼容iOS旋转问题 http://stackoverflow.com/questions/19817646/autorotation-not-working-in-ios-7-works-fine-in-ios-6
     open override var shouldAutorotate: Bool {
-        if let autoTotate = self.viewControllers.last?.shouldAutorotate {
+        if let autoTotate = viewControllers.last?.shouldAutorotate {
             return autoTotate
         } else {
             return super.shouldAutorotate
         }
     }
     open override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
-        if let orientation = self.viewControllers.last?.preferredInterfaceOrientationForPresentation {
+        if let orientation = viewControllers.last?.preferredInterfaceOrientationForPresentation {
             return orientation
         } else {
             return super.preferredInterfaceOrientationForPresentation
         }
     }
     open override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if let orientation = self.viewControllers.last?.supportedInterfaceOrientations {
+        if let orientation = viewControllers.last?.supportedInterfaceOrientations {
             return orientation
         } else {
             return super.supportedInterfaceOrientations

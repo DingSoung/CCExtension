@@ -11,14 +11,14 @@ extension UIView {
     }
     @objc(UIViewKeyboardInfo) @objcMembers public final class KeyboardInfo: NSObject {
         public var frame: CGRect {
-            return self.frameEnd
+            return frameEnd
         }
         public var duration: TimeInterval = 0
         public var option: UIView.AnimationOptions {
             return UIView.AnimationOptions.init(rawValue: self.curve << 16)
         }
         public var action: KeyboardAction {
-            return self.frameEnd.maxY > UIScreen.main.bounds.maxY ? .hide : .show
+            return frameEnd.maxY > UIScreen.main.bounds.maxY ? .hide : .show
         }
         // internal status
         private var frameBegin = CGRect.zero

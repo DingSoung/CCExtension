@@ -99,7 +99,7 @@ extension Color {
 
     /// convert UIColor to hex number, 0xFF4477AA
     public final var hex6: UInt {
-        return self.hex8 & 0xFFFFFF00 >> 8
+        return hex8 & 0xFFFFFF00 >> 8
     }
 }
 
