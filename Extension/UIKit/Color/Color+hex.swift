@@ -94,7 +94,10 @@ extension Color {
         var blue: CGFloat = 0
         var alpha: CGFloat = 0
         self.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-        return (UInt)(red * 0xFF) << 24 | (UInt)(green * 0xFF) << 16 | (UInt)(blue * 0xFF) << 8 | (UInt)(alpha * 0xFF) << 0
+        return (UInt)(red * 0xFF) << 24
+            | (UInt)(green * 0xFF) << 16
+            | (UInt)(blue * 0xFF) << 8
+            | (UInt)(alpha * 0xFF) << 0
     }
 
     /// convert UIColor to hex number, 0xFF4477AA

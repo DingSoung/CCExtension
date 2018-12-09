@@ -91,10 +91,10 @@ extension WKWebView.Input {
 // MARK: - WebView override to return custom view
 extension WKWebView {
     public final override var inputView: View? {
-        return objc_getAssociatedObject(self, &WKWebView.Input.inputViewKey) as? View ?? super.inputView
+        return objc_getAssociatedObject(self, &Input.inputViewKey) as? View ?? super.inputView
     }
     public final override var inputAccessoryView: View? {
-        return objc_getAssociatedObject(self, &WKWebView.Input.inputAccessoryViewKey) as? View ?? super.inputAccessoryView
+        return objc_getAssociatedObject(self, &Input.inputAccessoryViewKey) as? View ?? super.inputAccessoryView
     }
 }
 

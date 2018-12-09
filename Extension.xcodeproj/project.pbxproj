@@ -41,6 +41,10 @@
 		CEED10E121ABEADA00E76F27 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED10DF21ABEADA00E76F27 /* KeyChain.swift */; };
 		CEED10E221ABEADA00E76F27 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED10DF21ABEADA00E76F27 /* KeyChain.swift */; };
 		CEED10E321ABEADA00E76F27 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED10DF21ABEADA00E76F27 /* KeyChain.swift */; };
+		CEED110521BA5F6B00E76F27 /* UIImage+pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED110421BA5F6B00E76F27 /* UIImage+pdf.swift */; };
+		CEED110621BA5F6B00E76F27 /* UIImage+pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED110421BA5F6B00E76F27 /* UIImage+pdf.swift */; };
+		CEED110721BA5F6B00E76F27 /* UIImage+pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED110421BA5F6B00E76F27 /* UIImage+pdf.swift */; };
+		CEED110821BA5F6B00E76F27 /* UIImage+pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED110421BA5F6B00E76F27 /* UIImage+pdf.swift */; };
 		CEF512121FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */; };
 		CEF512131FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */; };
 		CEF512141FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */; };
@@ -172,6 +176,7 @@
 		CEE63DD12136465400CF7E69 /* String+base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+base64.swift"; sourceTree = "<group>"; };
 		CEE63DD62136472200CF7E69 /* WKWebView+registerScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+registerScheme.swift"; sourceTree = "<group>"; };
 		CEED10DF21ABEADA00E76F27 /* KeyChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
+		CEED110421BA5F6B00E76F27 /* UIImage+pdf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+pdf.swift"; sourceTree = "<group>"; };
 		CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+EventTrack.swift"; sourceTree = "<group>"; };
 		CEF511F01FE0CA25008C84C9 /* NSString+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Size.swift"; sourceTree = "<group>"; };
 		CEF511F21FE0CA25008C84C9 /* UITableView+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+UIImage.swift"; sourceTree = "<group>"; };
@@ -238,6 +243,7 @@
 		CE19B5F0219AF29D007B3D72 /* WebKit */ = {
 			isa = PBXGroup;
 			children = (
+				CEE63DD62136472200CF7E69 /* WKWebView+registerScheme.swift */,
 				CE19B5F1219AF29D007B3D72 /* WKWebView+input.swift */,
 				CE19B5F6219AF47F007B3D72 /* WKWebView+contentView.swift */,
 			);
@@ -303,7 +309,7 @@
 				CEF511F71FE0CA25008C84C9 /* UIWebView+JavaScript.swift */,
 				CEF511F91FE0CA25008C84C9 /* UIImage+CoreGraphics.swift */,
 				CEF511FA1FE0CA25008C84C9 /* UIImage+Process.swift */,
-				CEE63DD62136472200CF7E69 /* WKWebView+registerScheme.swift */,
+				CEED110421BA5F6B00E76F27 /* UIImage+pdf.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -584,6 +590,7 @@
 				CEF512611FE0CA26008C84C9 /* Locale+Localization.swift in Sources */,
 				CEE63DDA2136472200CF7E69 /* WKWebView+registerScheme.swift in Sources */,
 				CEF512911FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
+				CEED110821BA5F6B00E76F27 /* UIImage+pdf.swift in Sources */,
 				CEF575292192DE7600F6C559 /* Color+components.swift in Sources */,
 				CEE63DD52136465400CF7E69 /* String+base64.swift in Sources */,
 				CE19B605219B027F007B3D72 /* View.swift in Sources */,
@@ -627,6 +634,7 @@
 				CEF512601FE0CA26008C84C9 /* Locale+Localization.swift in Sources */,
 				CEE63DD92136472200CF7E69 /* WKWebView+registerScheme.swift in Sources */,
 				CEF512901FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
+				CEED110721BA5F6B00E76F27 /* UIImage+pdf.swift in Sources */,
 				CEF575282192DE7600F6C559 /* Color+components.swift in Sources */,
 				CEE63DD42136465400CF7E69 /* String+base64.swift in Sources */,
 				CE19B604219B027F007B3D72 /* View.swift in Sources */,
@@ -670,6 +678,7 @@
 				CEF5125F1FE0CA26008C84C9 /* Locale+Localization.swift in Sources */,
 				CEE63DD82136472200CF7E69 /* WKWebView+registerScheme.swift in Sources */,
 				CEF5128F1FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
+				CEED110621BA5F6B00E76F27 /* UIImage+pdf.swift in Sources */,
 				CEF575272192DE7600F6C559 /* Color+components.swift in Sources */,
 				CEE63DD32136465400CF7E69 /* String+base64.swift in Sources */,
 				CE19B603219B027F007B3D72 /* View.swift in Sources */,
@@ -736,6 +745,7 @@
 				CEF5127E1FE0CA26008C84C9 /* Swift+log.swift in Sources */,
 				CEE63DD72136472200CF7E69 /* WKWebView+registerScheme.swift in Sources */,
 				CEF5752A2192DE7600F6C559 /* Color+rgba.swift in Sources */,
+				CEED110521BA5F6B00E76F27 /* UIImage+pdf.swift in Sources */,
 				CEF512121FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */,
 				CEF512421FE0CA25008C84C9 /* Bundle+Localization.swift in Sources */,
 				CEF5122E1FE0CA25008C84C9 /* UINavigationController+Autorotate.swift in Sources */,
