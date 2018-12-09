@@ -1,5 +1,10 @@
 //  Created by Songwen Ding on 2017/11/28.
 
+#if canImport(Foundation)
+import Foundation
+#endif
+
+#if canImport(Security)
 import Security
 
 public class Keychain {
@@ -44,3 +49,5 @@ public class Keychain {
         return status == noErr
     }
 }
+
+#endif
