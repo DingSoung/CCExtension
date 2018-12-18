@@ -45,6 +45,10 @@
 		CEED110621BA5F6B00E76F27 /* UIImage+pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED110421BA5F6B00E76F27 /* UIImage+pdf.swift */; };
 		CEED110721BA5F6B00E76F27 /* UIImage+pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED110421BA5F6B00E76F27 /* UIImage+pdf.swift */; };
 		CEED110821BA5F6B00E76F27 /* UIImage+pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED110421BA5F6B00E76F27 /* UIImage+pdf.swift */; };
+		CEED117521C8EE2B00E76F27 /* Array+cookieString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED117421C8EE2B00E76F27 /* Array+cookieString.swift */; };
+		CEED117621C8EE2B00E76F27 /* Array+cookieString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED117421C8EE2B00E76F27 /* Array+cookieString.swift */; };
+		CEED117721C8EE2B00E76F27 /* Array+cookieString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED117421C8EE2B00E76F27 /* Array+cookieString.swift */; };
+		CEED117821C8EE2B00E76F27 /* Array+cookieString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED117421C8EE2B00E76F27 /* Array+cookieString.swift */; };
 		CEF512121FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */; };
 		CEF512131FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */; };
 		CEF512141FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */; };
@@ -114,10 +118,10 @@
 		CEF512831FE0CA26008C84C9 /* Array+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */; };
 		CEF512841FE0CA26008C84C9 /* Array+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */; };
 		CEF512851FE0CA26008C84C9 /* Array+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */; };
-		CEF512861FE0CA26008C84C9 /* URL+CooKie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120F1FE0CA25008C84C9 /* URL+CooKie.swift */; };
-		CEF512871FE0CA26008C84C9 /* URL+CooKie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120F1FE0CA25008C84C9 /* URL+CooKie.swift */; };
-		CEF512881FE0CA26008C84C9 /* URL+CooKie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120F1FE0CA25008C84C9 /* URL+CooKie.swift */; };
-		CEF512891FE0CA26008C84C9 /* URL+CooKie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120F1FE0CA25008C84C9 /* URL+CooKie.swift */; };
+		CEF512861FE0CA26008C84C9 /* URL+Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120F1FE0CA25008C84C9 /* URL+Cookie.swift */; };
+		CEF512871FE0CA26008C84C9 /* URL+Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120F1FE0CA25008C84C9 /* URL+Cookie.swift */; };
+		CEF512881FE0CA26008C84C9 /* URL+Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120F1FE0CA25008C84C9 /* URL+Cookie.swift */; };
+		CEF512891FE0CA26008C84C9 /* URL+Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120F1FE0CA25008C84C9 /* URL+Cookie.swift */; };
 		CEF5128A1FE0CA26008C84C9 /* Swift+Association.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512101FE0CA25008C84C9 /* Swift+Association.swift */; };
 		CEF5128B1FE0CA26008C84C9 /* Swift+Association.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512101FE0CA25008C84C9 /* Swift+Association.swift */; };
 		CEF5128C1FE0CA26008C84C9 /* Swift+Association.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF512101FE0CA25008C84C9 /* Swift+Association.swift */; };
@@ -177,6 +181,7 @@
 		CEE63DD62136472200CF7E69 /* WKWebView+registerScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+registerScheme.swift"; sourceTree = "<group>"; };
 		CEED10DF21ABEADA00E76F27 /* KeyChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		CEED110421BA5F6B00E76F27 /* UIImage+pdf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+pdf.swift"; sourceTree = "<group>"; };
+		CEED117421C8EE2B00E76F27 /* Array+cookieString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+cookieString.swift"; sourceTree = "<group>"; };
 		CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+EventTrack.swift"; sourceTree = "<group>"; };
 		CEF511F01FE0CA25008C84C9 /* NSString+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Size.swift"; sourceTree = "<group>"; };
 		CEF511F21FE0CA25008C84C9 /* UITableView+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+UIImage.swift"; sourceTree = "<group>"; };
@@ -195,7 +200,7 @@
 		CEF5120C1FE0CA25008C84C9 /* Swift+closuer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+closuer.swift"; sourceTree = "<group>"; };
 		CEF5120D1FE0CA25008C84C9 /* Swift+log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+log.swift"; sourceTree = "<group>"; };
 		CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+JSON.swift"; sourceTree = "<group>"; };
-		CEF5120F1FE0CA25008C84C9 /* URL+CooKie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+CooKie.swift"; sourceTree = "<group>"; };
+		CEF5120F1FE0CA25008C84C9 /* URL+Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Cookie.swift"; sourceTree = "<group>"; };
 		CEF512101FE0CA25008C84C9 /* Swift+Association.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Association.swift"; sourceTree = "<group>"; };
 		CEF512111FE0CA25008C84C9 /* String+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Dictionary.swift"; sourceTree = "<group>"; };
 		CEF574E52192D3A000F6C559 /* URL+query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+query.swift"; sourceTree = "<group>"; };
@@ -320,7 +325,7 @@
 				CEED10DF21ABEADA00E76F27 /* KeyChain.swift */,
 				CEF511FC1FE0CA25008C84C9 /* Bundle+Localization.swift */,
 				CEF512041FE0CA25008C84C9 /* Locale+Localization.swift */,
-				CEF5120F1FE0CA25008C84C9 /* URL+CooKie.swift */,
+				CEF5120F1FE0CA25008C84C9 /* URL+Cookie.swift */,
 				CEE63DCC21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift */,
 				CEE63DD12136465400CF7E69 /* String+base64.swift */,
 				CEF512111FE0CA25008C84C9 /* String+Dictionary.swift */,
@@ -330,6 +335,7 @@
 				CEF574E52192D3A000F6C559 /* URL+query.swift */,
 				CEF574EA2192D5AD00F6C559 /* UserDefaults+subscript.swift */,
 				CEF574EF2192D86A00F6C559 /* UserDefaults+Codable.swift */,
+				CEED117421C8EE2B00E76F27 /* Array+cookieString.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -581,7 +587,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF574F32192D86A00F6C559 /* UserDefaults+Codable.swift in Sources */,
-				CEF512891FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
+				CEF512891FE0CA26008C84C9 /* URL+Cookie.swift in Sources */,
 				CEF512751FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CEF512851FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
 				CEF575312192DE7600F6C559 /* Color.swift in Sources */,
@@ -597,6 +603,7 @@
 				CE19B5FA219AF47F007B3D72 /* WKWebView+contentView.swift in Sources */,
 				CEF5127D1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */,
 				CEF512291FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
+				CEED117821C8EE2B00E76F27 /* Array+cookieString.swift in Sources */,
 				CEF5128D1FE0CA26008C84C9 /* Swift+Association.swift in Sources */,
 				CEF5122D1FE0CA25008C84C9 /* UIVIew+UIImage.swift in Sources */,
 				CEF512351FE0CA25008C84C9 /* UIWebView+JavaScript.swift in Sources */,
@@ -625,7 +632,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF574F22192D86A00F6C559 /* UserDefaults+Codable.swift in Sources */,
-				CEF512881FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
+				CEF512881FE0CA26008C84C9 /* URL+Cookie.swift in Sources */,
 				CEF512741FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CEF512841FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
 				CEF575302192DE7600F6C559 /* Color.swift in Sources */,
@@ -641,6 +648,7 @@
 				CE19B5F9219AF47F007B3D72 /* WKWebView+contentView.swift in Sources */,
 				CEF5127C1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */,
 				CEF512281FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
+				CEED117721C8EE2B00E76F27 /* Array+cookieString.swift in Sources */,
 				CEF5128C1FE0CA26008C84C9 /* Swift+Association.swift in Sources */,
 				CEF5122C1FE0CA25008C84C9 /* UIVIew+UIImage.swift in Sources */,
 				CEF512341FE0CA25008C84C9 /* UIWebView+JavaScript.swift in Sources */,
@@ -669,7 +677,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF574F12192D86A00F6C559 /* UserDefaults+Codable.swift in Sources */,
-				CEF512871FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
+				CEF512871FE0CA26008C84C9 /* URL+Cookie.swift in Sources */,
 				CEF512731FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CEF512831FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
 				CEF5752F2192DE7600F6C559 /* Color.swift in Sources */,
@@ -685,6 +693,7 @@
 				CE19B5F8219AF47F007B3D72 /* WKWebView+contentView.swift in Sources */,
 				CEF5127B1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */,
 				CEF512271FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
+				CEED117621C8EE2B00E76F27 /* Array+cookieString.swift in Sources */,
 				CEF5128B1FE0CA26008C84C9 /* Swift+Association.swift in Sources */,
 				CEF5122B1FE0CA25008C84C9 /* UIVIew+UIImage.swift in Sources */,
 				CEF512331FE0CA25008C84C9 /* UIWebView+JavaScript.swift in Sources */,
@@ -712,11 +721,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF512861FE0CA26008C84C9 /* URL+CooKie.swift in Sources */,
+				CEF512861FE0CA26008C84C9 /* URL+Cookie.swift in Sources */,
 				CEF575262192DE7600F6C559 /* Color+components.swift in Sources */,
 				CEF512721FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CE19B69E219D160C007B3D72 /* UIView+KeyboardInfo.swift in Sources */,
 				CEF512821FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
+				CEED117521C8EE2B00E76F27 /* Array+cookieString.swift in Sources */,
 				CEF575222192DE7600F6C559 /* Color+hex.swift in Sources */,
 				CEF574EB2192D5AD00F6C559 /* UserDefaults+subscript.swift in Sources */,
 				CEE63DD22136465400CF7E69 /* String+base64.swift in Sources */,
