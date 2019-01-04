@@ -6,11 +6,7 @@ import UIKit
 public typealias Color = UIColor
 #endif
 
-#if canImport(Cocoa)
-import Cocoa
+#if canImport(AppKit)
+import AppKit
 public typealias Color = NSColor
-#endif
-
-#if !os(watchOS)
-import CoreImage
 #endif

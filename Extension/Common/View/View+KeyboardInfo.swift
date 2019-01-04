@@ -1,10 +1,10 @@
 //  Created by Songwen on 2018/11/14.
 //  Copyright © 2018 DingSoung. All rights reserved.
 
-#if canImport(UIKit) && (os(iOS) || os(macOS))
+#if canImport(UIKit) && !os(watchOS)
 import UIKit
 
-extension UIView {
+extension View {
     @objc public enum KeyboardAction: Int {
         case hide = 0
         case show = 1
@@ -14,8 +14,8 @@ extension UIView {
             return frameEnd
         }
         public var duration: TimeInterval = 0
-        public var option: UIView.AnimationOptions {
-            return UIView.AnimationOptions.init(rawValue: self.curve << 16)
+        public var option: View.AnimationOptions {
+            return View.AnimationOptions.init(rawValue: self.curve << 16)
         }
         public var action: KeyboardAction {
             return frameEnd.maxY > UIScreen.main.bounds.maxY ? .hide : .show
@@ -37,7 +37,7 @@ extension UIView {
     }
 }
 
-extension UIView.KeyboardInfo {
+extension View.KeyboardInfo {
     /// active
     public func active() {
         [UIResponder.keyboardWillChangeFrameNotification].forEach { (name) in
@@ -55,7 +55,7 @@ extension UIView.KeyboardInfo {
     }
 }
 
-extension UIView.KeyboardInfo {
+extension View.KeyboardInfo {
     // MARK: - Notification
     @objc private func updateKeyboardInfo(notification: Notification) {
         guard let frameBegin = notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? CGRect,
@@ -73,7 +73,7 @@ extension UIView.KeyboardInfo {
     }
 }
 
-extension UIView {
+extension View {
     private static var keyboardInfoDidUpdateCallBackKey: UInt8 = 0
     /// keyboard frame update callback
     @objc public var keyboardInfoDidUpdateCallBack: ((KeyboardInfo) -> Swift.Void)? {

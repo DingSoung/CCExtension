@@ -1,13 +1,13 @@
 //  Created by Songwen Ding on 15/5/27.
 //  Copyright (c) 2015年 DingSoung. All rights reserved.
 
-#if os(iOS)
+#if canImport(UIKit) && os(iOS)
 import UIKit
 
-extension UIView {
+extension View {
     ///  capture image, Compatible, alpha
-    public func image(alpha: CGFloat, bounds: CGRect, scale: CGFloat) -> UIImage? {
-        return UIImage.image(render: {
+    public func image(alpha: CGFloat, bounds: CGRect, scale: CGFloat) -> Image? {
+        return Image.image(render: {
             if let context = UIGraphicsGetCurrentContext() {
                 context.saveGState()
                 context.setAlpha(alpha)
@@ -18,18 +18,18 @@ extension UIView {
             }
         }, size: bounds.size, opaque: isOpaque)
     }
-    public func image(scale: CGFloat) -> UIImage? {
-        return UIImage.image(render: {
+    public func image(scale: CGFloat) -> Image? {
+        return Image.image(render: {
             if let contex = UIGraphicsGetCurrentContext() {
                 layer.render(in: contex)
             }
         }, size: bounds.size, opaque: isOpaque)
     }
-    public var image: UIImage? {
+    public var image: Image? {
         return image(scale: UIScreen.main.scale)
     }
-    public var fastImage: UIImage? {
-        var image: UIImage?
+    public var fastImage: Image? {
+        var image: Image?
         UIGraphicsBeginImageContextWithOptions(bounds.size, isOpaque, UIScreen.main.scale)
         drawHierarchy(in: bounds, afterScreenUpdates: false)
         image = UIGraphicsGetImageFromCurrentImageContext()

@@ -19,10 +19,11 @@
 		CE19B603219B027F007B3D72 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B601219B027F007B3D72 /* View.swift */; };
 		CE19B604219B027F007B3D72 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B601219B027F007B3D72 /* View.swift */; };
 		CE19B605219B027F007B3D72 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B601219B027F007B3D72 /* View.swift */; };
-		CE19B69E219D160C007B3D72 /* UIView+KeyboardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B699219D160C007B3D72 /* UIView+KeyboardInfo.swift */; };
-		CE19B69F219D160C007B3D72 /* UIView+KeyboardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B699219D160C007B3D72 /* UIView+KeyboardInfo.swift */; };
-		CE19B6A0219D160C007B3D72 /* UIView+KeyboardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B699219D160C007B3D72 /* UIView+KeyboardInfo.swift */; };
-		CE19B6A1219D160C007B3D72 /* UIView+KeyboardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B699219D160C007B3D72 /* UIView+KeyboardInfo.swift */; };
+		CE19B69E219D160C007B3D72 /* View+KeyboardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B699219D160C007B3D72 /* View+KeyboardInfo.swift */; };
+		CE19B69F219D160C007B3D72 /* View+KeyboardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B699219D160C007B3D72 /* View+KeyboardInfo.swift */; };
+		CE19B6A0219D160C007B3D72 /* View+KeyboardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B699219D160C007B3D72 /* View+KeyboardInfo.swift */; };
+		CE19B6A1219D160C007B3D72 /* View+KeyboardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19B699219D160C007B3D72 /* View+KeyboardInfo.swift */; };
+		CE5597D521DF4CE600C48765 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5597D421DF4CE600C48765 /* Image.swift */; };
 		CE607EEE1F051DB0007E99DC /* Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = CE607EEC1F051DB0007E99DC /* Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE86472520A1E0650043FB26 /* runtime_aop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86472420A1E0650043FB26 /* runtime_aop.swift */; };
 		CEE63DCD21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE63DCC21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift */; };
@@ -69,10 +70,10 @@
 		CEF512271FE0CA25008C84C9 /* Array+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F41FE0CA25008C84C9 /* Array+UIImage.swift */; };
 		CEF512281FE0CA25008C84C9 /* Array+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F41FE0CA25008C84C9 /* Array+UIImage.swift */; };
 		CEF512291FE0CA25008C84C9 /* Array+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F41FE0CA25008C84C9 /* Array+UIImage.swift */; };
-		CEF5122A1FE0CA25008C84C9 /* UIVIew+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F51FE0CA25008C84C9 /* UIVIew+UIImage.swift */; };
-		CEF5122B1FE0CA25008C84C9 /* UIVIew+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F51FE0CA25008C84C9 /* UIVIew+UIImage.swift */; };
-		CEF5122C1FE0CA25008C84C9 /* UIVIew+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F51FE0CA25008C84C9 /* UIVIew+UIImage.swift */; };
-		CEF5122D1FE0CA25008C84C9 /* UIVIew+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F51FE0CA25008C84C9 /* UIVIew+UIImage.swift */; };
+		CEF5122A1FE0CA25008C84C9 /* VIew+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F51FE0CA25008C84C9 /* VIew+UIImage.swift */; };
+		CEF5122B1FE0CA25008C84C9 /* VIew+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F51FE0CA25008C84C9 /* VIew+UIImage.swift */; };
+		CEF5122C1FE0CA25008C84C9 /* VIew+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F51FE0CA25008C84C9 /* VIew+UIImage.swift */; };
+		CEF5122D1FE0CA25008C84C9 /* VIew+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F51FE0CA25008C84C9 /* VIew+UIImage.swift */; };
 		CEF5122E1FE0CA25008C84C9 /* UINavigationController+Autorotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F61FE0CA25008C84C9 /* UINavigationController+Autorotate.swift */; };
 		CEF5122F1FE0CA25008C84C9 /* UINavigationController+Autorotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F61FE0CA25008C84C9 /* UINavigationController+Autorotate.swift */; };
 		CEF512301FE0CA25008C84C9 /* UINavigationController+Autorotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF511F61FE0CA25008C84C9 /* UINavigationController+Autorotate.swift */; };
@@ -168,10 +169,11 @@
 		CE19B5F1219AF29D007B3D72 /* WKWebView+input.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WKWebView+input.swift"; sourceTree = "<group>"; };
 		CE19B5F6219AF47F007B3D72 /* WKWebView+contentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "WKWebView+contentView.swift"; path = "Extension/WebKit/WKWebView+contentView.swift"; sourceTree = SOURCE_ROOT; };
 		CE19B601219B027F007B3D72 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		CE19B699219D160C007B3D72 /* UIView+KeyboardInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+KeyboardInfo.swift"; sourceTree = "<group>"; };
+		CE19B699219D160C007B3D72 /* View+KeyboardInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+KeyboardInfo.swift"; sourceTree = "<group>"; };
 		CE34AB471F6027E90088F13F /* Extension_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extension_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE34AB541F6028030088F13F /* Extension_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extension_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE34AB611F60281C0088F13F /* Extension_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extension_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5597D421DF4CE600C48765 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		CE607EE91F051DB0007E99DC /* Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE607EEC1F051DB0007E99DC /* Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extension.h; sourceTree = "<group>"; };
 		CE607EED1F051DB0007E99DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -187,7 +189,7 @@
 		CEF511F21FE0CA25008C84C9 /* UITableView+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+UIImage.swift"; sourceTree = "<group>"; };
 		CEF511F31FE0CA25008C84C9 /* NSAttributedString+Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Content.swift"; sourceTree = "<group>"; };
 		CEF511F41FE0CA25008C84C9 /* Array+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+UIImage.swift"; sourceTree = "<group>"; };
-		CEF511F51FE0CA25008C84C9 /* UIVIew+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+UIImage.swift"; sourceTree = "<group>"; };
+		CEF511F51FE0CA25008C84C9 /* VIew+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VIew+UIImage.swift"; sourceTree = "<group>"; };
 		CEF511F61FE0CA25008C84C9 /* UINavigationController+Autorotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Autorotate.swift"; sourceTree = "<group>"; };
 		CEF511F71FE0CA25008C84C9 /* UIWebView+JavaScript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+JavaScript.swift"; sourceTree = "<group>"; };
 		CEF511F91FE0CA25008C84C9 /* UIImage+CoreGraphics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CoreGraphics.swift"; sourceTree = "<group>"; };
@@ -259,14 +261,35 @@
 			isa = PBXGroup;
 			children = (
 				CE19B601219B027F007B3D72 /* View.swift */,
+				CE19B699219D160C007B3D72 /* View+KeyboardInfo.swift */,
+				CEF511F51FE0CA25008C84C9 /* VIew+UIImage.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CE5597D321DF4C6800C48765 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CEF511FE1FE0CA25008C84C9 /* Objc.swift */,
+				CE86472420A1E0650043FB26 /* runtime_aop.swift */,
+				CE5597D621DF4CED00C48765 /* Image */,
+				CEF5751D2192DE7600F6C559 /* Color */,
+				CE19B600219B0270007B3D72 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CE5597D621DF4CED00C48765 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				CE5597D421DF4CE600C48765 /* Image.swift */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 		CE607EDF1F051DB0007E99DC = {
 			isa = PBXGroup;
 			children = (
-				CEF574F92192DA2200F6C559 /* Dispatch */,
 				CE607EEB1F051DB0007E99DC /* Extension */,
 				CE607EEA1F051DB0007E99DC /* Products */,
 			);
@@ -286,8 +309,8 @@
 		CE607EEB1F051DB0007E99DC /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				CEF511FE1FE0CA25008C84C9 /* Objc.swift */,
-				CE86472420A1E0650043FB26 /* runtime_aop.swift */,
+				CE5597D321DF4C6800C48765 /* Common */,
+				CEF574F92192DA2200F6C559 /* Dispatch */,
 				CEF511FB1FE0CA25008C84C9 /* Foundation */,
 				CEF512071FE0CA25008C84C9 /* Swift */,
 				CEF511EE1FE0CA25008C84C9 /* UIKit */,
@@ -301,15 +324,11 @@
 		CEF511EE1FE0CA25008C84C9 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				CE19B699219D160C007B3D72 /* UIView+KeyboardInfo.swift */,
-				CE19B600219B0270007B3D72 /* View */,
-				CEF5751D2192DE7600F6C559 /* Color */,
 				CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */,
 				CEF511F01FE0CA25008C84C9 /* NSString+Size.swift */,
 				CEF511F21FE0CA25008C84C9 /* UITableView+UIImage.swift */,
 				CEF511F31FE0CA25008C84C9 /* NSAttributedString+Content.swift */,
 				CEF511F41FE0CA25008C84C9 /* Array+UIImage.swift */,
-				CEF511F51FE0CA25008C84C9 /* UIVIew+UIImage.swift */,
 				CEF511F61FE0CA25008C84C9 /* UINavigationController+Autorotate.swift */,
 				CEF511F71FE0CA25008C84C9 /* UIWebView+JavaScript.swift */,
 				CEF511F91FE0CA25008C84C9 /* UIImage+CoreGraphics.swift */,
@@ -355,8 +374,7 @@
 			children = (
 				CEF574F42192DA0E00F6C559 /* DispatchQueue+once.swift */,
 			);
-			name = Dispatch;
-			path = Extension/Dispatch;
+			path = Dispatch;
 			sourceTree = "<group>";
 		};
 		CEF5751D2192DE7600F6C559 /* Color */ = {
@@ -591,7 +609,7 @@
 				CEF512751FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CEF512851FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
 				CEF575312192DE7600F6C559 /* Color.swift in Sources */,
-				CE19B6A1219D160C007B3D72 /* UIView+KeyboardInfo.swift in Sources */,
+				CE19B6A1219D160C007B3D72 /* View+KeyboardInfo.swift in Sources */,
 				CEE63DD021357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift in Sources */,
 				CEF512611FE0CA26008C84C9 /* Locale+Localization.swift in Sources */,
 				CEE63DDA2136472200CF7E69 /* WKWebView+registerScheme.swift in Sources */,
@@ -605,7 +623,7 @@
 				CEF512291FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
 				CEED117821C8EE2B00E76F27 /* Array+cookieString.swift in Sources */,
 				CEF5128D1FE0CA26008C84C9 /* Swift+Association.swift in Sources */,
-				CEF5122D1FE0CA25008C84C9 /* UIVIew+UIImage.swift in Sources */,
+				CEF5122D1FE0CA25008C84C9 /* VIew+UIImage.swift in Sources */,
 				CEF512351FE0CA25008C84C9 /* UIWebView+JavaScript.swift in Sources */,
 				CEF512211FE0CA25008C84C9 /* UITableView+UIImage.swift in Sources */,
 				CE19B5F5219AF29D007B3D72 /* WKWebView+input.swift in Sources */,
@@ -636,7 +654,7 @@
 				CEF512741FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CEF512841FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
 				CEF575302192DE7600F6C559 /* Color.swift in Sources */,
-				CE19B6A0219D160C007B3D72 /* UIView+KeyboardInfo.swift in Sources */,
+				CE19B6A0219D160C007B3D72 /* View+KeyboardInfo.swift in Sources */,
 				CEE63DCF21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift in Sources */,
 				CEF512601FE0CA26008C84C9 /* Locale+Localization.swift in Sources */,
 				CEE63DD92136472200CF7E69 /* WKWebView+registerScheme.swift in Sources */,
@@ -650,7 +668,7 @@
 				CEF512281FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
 				CEED117721C8EE2B00E76F27 /* Array+cookieString.swift in Sources */,
 				CEF5128C1FE0CA26008C84C9 /* Swift+Association.swift in Sources */,
-				CEF5122C1FE0CA25008C84C9 /* UIVIew+UIImage.swift in Sources */,
+				CEF5122C1FE0CA25008C84C9 /* VIew+UIImage.swift in Sources */,
 				CEF512341FE0CA25008C84C9 /* UIWebView+JavaScript.swift in Sources */,
 				CEF512201FE0CA25008C84C9 /* UITableView+UIImage.swift in Sources */,
 				CE19B5F4219AF29D007B3D72 /* WKWebView+input.swift in Sources */,
@@ -681,7 +699,7 @@
 				CEF512731FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CEF512831FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
 				CEF5752F2192DE7600F6C559 /* Color.swift in Sources */,
-				CE19B69F219D160C007B3D72 /* UIView+KeyboardInfo.swift in Sources */,
+				CE19B69F219D160C007B3D72 /* View+KeyboardInfo.swift in Sources */,
 				CEE63DCE21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift in Sources */,
 				CEF5125F1FE0CA26008C84C9 /* Locale+Localization.swift in Sources */,
 				CEE63DD82136472200CF7E69 /* WKWebView+registerScheme.swift in Sources */,
@@ -695,7 +713,7 @@
 				CEF512271FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
 				CEED117621C8EE2B00E76F27 /* Array+cookieString.swift in Sources */,
 				CEF5128B1FE0CA26008C84C9 /* Swift+Association.swift in Sources */,
-				CEF5122B1FE0CA25008C84C9 /* UIVIew+UIImage.swift in Sources */,
+				CEF5122B1FE0CA25008C84C9 /* VIew+UIImage.swift in Sources */,
 				CEF512331FE0CA25008C84C9 /* UIWebView+JavaScript.swift in Sources */,
 				CEF5121F1FE0CA25008C84C9 /* UITableView+UIImage.swift in Sources */,
 				CE19B5F3219AF29D007B3D72 /* WKWebView+input.swift in Sources */,
@@ -724,7 +742,7 @@
 				CEF512861FE0CA26008C84C9 /* URL+Cookie.swift in Sources */,
 				CEF575262192DE7600F6C559 /* Color+components.swift in Sources */,
 				CEF512721FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
-				CE19B69E219D160C007B3D72 /* UIView+KeyboardInfo.swift in Sources */,
+				CE19B69E219D160C007B3D72 /* View+KeyboardInfo.swift in Sources */,
 				CEF512821FE0CA26008C84C9 /* Array+JSON.swift in Sources */,
 				CEED117521C8EE2B00E76F27 /* Array+cookieString.swift in Sources */,
 				CEF575222192DE7600F6C559 /* Color+hex.swift in Sources */,
@@ -733,6 +751,7 @@
 				CEF5125E1FE0CA26008C84C9 /* Locale+Localization.swift in Sources */,
 				CE19B602219B027F007B3D72 /* View.swift in Sources */,
 				CEF5128E1FE0CA26008C84C9 /* String+Dictionary.swift in Sources */,
+				CE5597D521DF4CE600C48765 /* Image.swift in Sources */,
 				CEF5127A1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */,
 				CEF574F02192D86A00F6C559 /* UserDefaults+Codable.swift in Sources */,
 				CEF512261FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
@@ -741,7 +760,7 @@
 				CEF574E62192D3A000F6C559 /* URL+query.swift in Sources */,
 				CEE63DCD21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift in Sources */,
 				CEF5128A1FE0CA26008C84C9 /* Swift+Association.swift in Sources */,
-				CEF5122A1FE0CA25008C84C9 /* UIVIew+UIImage.swift in Sources */,
+				CEF5122A1FE0CA25008C84C9 /* VIew+UIImage.swift in Sources */,
 				CEF512321FE0CA25008C84C9 /* UIWebView+JavaScript.swift in Sources */,
 				CEF5121E1FE0CA25008C84C9 /* UITableView+UIImage.swift in Sources */,
 				CEF5752E2192DE7600F6C559 /* Color.swift in Sources */,
