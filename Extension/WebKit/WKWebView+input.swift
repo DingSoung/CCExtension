@@ -50,14 +50,14 @@ extension WKWebView {
 
 // MARK: dynamic set views
 extension WKWebView.Input {
-    fileprivate static var inputViewKey: UInt8 = 0
-    fileprivate static var inputAccessoryViewKey: UInt8 = 1
+    fileprivate static var viewKey: UInt8 = 0
+    fileprivate static var accessoryViewKey: UInt8 = 1
     /// input view
     public var view: View? {
         set {
             if let webView = target {
                 objc_setAssociatedObject(webView,
-                                         &WKWebView.Input.inputViewKey,
+                                         &WKWebView.Input.viewKey,
                                          newValue,
                                          .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
                 webView.reloadInputViews()
@@ -66,7 +66,7 @@ extension WKWebView.Input {
         }
         get {
             guard let webView = target else { return nil }
-            return objc_getAssociatedObject(webView, &WKWebView.Input.inputViewKey) as? View
+            return objc_getAssociatedObject(webView, &WKWebView.Input.viewKey) as? View
         }
     }
     /// input accessory view
@@ -74,7 +74,7 @@ extension WKWebView.Input {
         set {
             if let webView = target {
                 objc_setAssociatedObject(webView,
-                                         &WKWebView.Input.inputAccessoryViewKey,
+                                         &WKWebView.Input.accessoryViewKey,
                                          newValue,
                                          .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
                 webView.reloadInputViews()
@@ -83,7 +83,7 @@ extension WKWebView.Input {
         }
         get {
             guard let webView = target else { return nil }
-            return objc_getAssociatedObject(webView, &WKWebView.Input.inputAccessoryViewKey) as? View
+            return objc_getAssociatedObject(webView, &WKWebView.Input.accessoryViewKey) as? View
         }
     }
 }
@@ -91,10 +91,10 @@ extension WKWebView.Input {
 // MARK: - WebView override to return custom view
 extension WKWebView {
     public final override var inputView: View? {
-        return objc_getAssociatedObject(self, &Input.inputViewKey) as? View ?? super.inputView
+        return objc_getAssociatedObject(self, &Input.viewKey) as? View ?? super.inputView
     }
     public final override var inputAccessoryView: View? {
-        return objc_getAssociatedObject(self, &Input.inputAccessoryViewKey) as? View ?? super.inputAccessoryView
+        return objc_getAssociatedObject(self, &Input.accessoryViewKey) as? View ?? super.inputAccessoryView
     }
 }
 
