@@ -26,6 +26,10 @@
 		CE5597D521DF4CE600C48765 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5597D421DF4CE600C48765 /* Image.swift */; };
 		CE607EEE1F051DB0007E99DC /* Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = CE607EEC1F051DB0007E99DC /* Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE86472520A1E0650043FB26 /* runtime_aop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86472420A1E0650043FB26 /* runtime_aop.swift */; };
+		CEA8735821FEE789002DD114 /* String+URLEscaped.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8735721FEE789002DD114 /* String+URLEscaped.swift */; };
+		CEA8735921FEE789002DD114 /* String+URLEscaped.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8735721FEE789002DD114 /* String+URLEscaped.swift */; };
+		CEA8735A21FEE789002DD114 /* String+URLEscaped.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8735721FEE789002DD114 /* String+URLEscaped.swift */; };
+		CEA8735B21FEE789002DD114 /* String+URLEscaped.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8735721FEE789002DD114 /* String+URLEscaped.swift */; };
 		CEE63DCD21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE63DCC21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift */; };
 		CEE63DCE21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE63DCC21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift */; };
 		CEE63DCF21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE63DCC21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift */; };
@@ -178,6 +182,7 @@
 		CE607EEC1F051DB0007E99DC /* Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extension.h; sourceTree = "<group>"; };
 		CE607EED1F051DB0007E99DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE86472420A1E0650043FB26 /* runtime_aop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runtime_aop.swift; sourceTree = "<group>"; };
+		CEA8735721FEE789002DD114 /* String+URLEscaped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URLEscaped.swift"; sourceTree = "<group>"; };
 		CEE63DCC21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPCookieStorage+setCookie.swift"; sourceTree = "<group>"; };
 		CEE63DD12136465400CF7E69 /* String+base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+base64.swift"; sourceTree = "<group>"; };
 		CEE63DD62136472200CF7E69 /* WKWebView+registerScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+registerScheme.swift"; sourceTree = "<group>"; };
@@ -348,6 +353,7 @@
 				CEE63DCC21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift */,
 				CEE63DD12136465400CF7E69 /* String+base64.swift */,
 				CEF512111FE0CA25008C84C9 /* String+Dictionary.swift */,
+				CEA8735721FEE789002DD114 /* String+URLEscaped.swift */,
 				CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */,
 				CEF5120D1FE0CA25008C84C9 /* Swift+log.swift */,
 				CEF5120B1FE0CA25008C84C9 /* String+regex.swift */,
@@ -641,6 +647,7 @@
 				CEF512151FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */,
 				CEF512451FE0CA25008C84C9 /* Bundle+Localization.swift in Sources */,
 				CEF512311FE0CA25008C84C9 /* UINavigationController+Autorotate.swift in Sources */,
+				CEA8735B21FEE789002DD114 /* String+URLEscaped.swift in Sources */,
 				CEF575252192DE7600F6C559 /* Color+hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,6 +693,7 @@
 				CEF512141FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */,
 				CEF512441FE0CA25008C84C9 /* Bundle+Localization.swift in Sources */,
 				CEF512301FE0CA25008C84C9 /* UINavigationController+Autorotate.swift in Sources */,
+				CEA8735A21FEE789002DD114 /* String+URLEscaped.swift in Sources */,
 				CEF575242192DE7600F6C559 /* Color+hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -731,6 +739,7 @@
 				CEF512131FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */,
 				CEF512431FE0CA25008C84C9 /* Bundle+Localization.swift in Sources */,
 				CEF5122F1FE0CA25008C84C9 /* UINavigationController+Autorotate.swift in Sources */,
+				CEA8735921FEE789002DD114 /* String+URLEscaped.swift in Sources */,
 				CEF575232192DE7600F6C559 /* Color+hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -779,6 +788,7 @@
 				CEF512421FE0CA25008C84C9 /* Bundle+Localization.swift in Sources */,
 				CEF5122E1FE0CA25008C84C9 /* UINavigationController+Autorotate.swift in Sources */,
 				CE19B5F7219AF47F007B3D72 /* WKWebView+contentView.swift in Sources */,
+				CEA8735821FEE789002DD114 /* String+URLEscaped.swift in Sources */,
 				CE19B5F2219AF29D007B3D72 /* WKWebView+input.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
