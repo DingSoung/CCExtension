@@ -53,25 +53,6 @@ extension NSLocale {
     }
 }
 
-extension NSObject {
-    public convenience init(JSONDict: [String: Any]) {
-        self.init()
-        self.setValuesForKeys(JSONDict)
-    }
-    public convenience init(JSONStr: String) {
-        self.init()
-        guard let data = JSONStr.data(using: String.Encoding.utf8, allowLossyConversion: false) else { return }
-        do {
-            let json = try JSONSerialization.jsonObject(with: data,
-                                                        options: JSONSerialization.ReadingOptions.mutableContainers)
-            guard let dict = json as? [String: Any] else { return }
-            self.setValuesForKeys(dict)
-        } catch {
-            debugPrint(error)
-        }
-    }
-}
-
 extension NSString {
     public final var jsonDictionary: [String: Any]? {
         return (self as String).jsonDictionary
