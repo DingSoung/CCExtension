@@ -4,7 +4,7 @@
 #if canImport(ObjectiveC)
 import ObjectiveC.runtime
 
-/// dynamic add selector for classes; int *countOfNumbers(_ numbers: [int])  i@:[i]; see Objective-C Runtime Programming Guide > Type Encodings.
+/// dynamic add selector for classes; int *countOfNumbers(_ numbers: [int])  i@:[i];
 public func selector(uid: String, types: String, classes: [AnyClass], block: (() -> Swift.Void)?) -> Selector {
     let aSelector = NSSelectorFromString(uid)
     let block = { () -> Swift.Void in block?() }
@@ -24,7 +24,8 @@ public func selector(uid: String, types: String, classes: [AnyClass], block: (()
     return class_addMethod(target.self, selector, imp, types)
 }
 
-@discardableResult public func replace(_ selector1: Selector, in  cls1: AnyClass, with seletor2: Selector, in cls2: AnyClass) -> Bool {
+@discardableResult
+public func replace(_ selector1: Selector, in  cls1: AnyClass, with seletor2: Selector, in cls2: AnyClass) -> Bool {
     guard let method = class_getInstanceMethod(cls2, seletor2) else { return false }
     let imp = method_getImplementation(method)
     let types = method_getTypeEncoding(method)
@@ -33,7 +34,8 @@ public func selector(uid: String, types: String, classes: [AnyClass], block: (()
     return true
 }
 
-@discardableResult public func exchange(_ selector1: Selector, in  cls1: AnyClass, with selector2: Selector, in cls2: AnyClass) -> Bool {
+@discardableResult
+public func exchange(_ selector1: Selector, in  cls1: AnyClass, with selector2: Selector, in cls2: AnyClass) -> Bool {
     guard let method2 = class_getInstanceMethod(cls2, selector2) else { return false }
     let imp2 = method_getImplementation(method2)
     let types2 = method_getTypeEncoding(method2)
@@ -52,8 +54,8 @@ public func methods(cls: AnyClass) -> [(Any)] {
     var methodCount: UInt32 = 0
     let methodList = class_copyMethodList(cls.self, &methodCount)
     var ret = [(Any)]()
-    for i in 0..<methodCount {
-        guard let temp = methodList?[Int(i)] else { continue }
+    for index in 0..<methodCount {
+        guard let temp = methodList?[Int(index)] else { continue }
         let set = (
             method_getName(temp),
             method_getNumberOfArguments(temp),
@@ -70,8 +72,8 @@ public func methods(cls: AnyClass) -> [(Any)] {
 public func existSelector(selector: Selector, cls: AnyClass) -> Bool {
     var methodCount: UInt32 = 0
     let methodList = class_copyMethodList(cls.self, &methodCount)
-    for i in 0..<methodCount {
-        guard let temp = methodList?[Int(i)] else { continue }
+    for index in 0..<methodCount {
+        guard let temp = methodList?[Int(index)] else { continue }
         if NSStringFromSelector(method_getName(temp)) == NSStringFromSelector(selector) {
             return true
         }

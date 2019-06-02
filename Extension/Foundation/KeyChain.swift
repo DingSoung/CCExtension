@@ -23,7 +23,7 @@ public class Keychain {
         var query: [CFString: Any] = [
             kSecClass: kSecClassGenericPassword,
             kSecAttrAccount: key,
-            kSecReturnData: kCFBooleanTrue,
+            kSecReturnData: kCFBooleanTrue as Any,
             kSecMatchLimit: kSecMatchLimitOne]
         if let group = group { query[kSecAttrAccessGroup] = group }
         var dataTypeRef: AnyObject?

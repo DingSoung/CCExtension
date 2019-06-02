@@ -13,4 +13,3 @@ extension CGPoint {
         self = CGPoint(x: CGFloat(x), y: CGFloat(y))
     }
 }
-

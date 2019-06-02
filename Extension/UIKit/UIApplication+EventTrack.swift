@@ -11,10 +11,10 @@ extension UIApplication {
     }
 
     public final class func switchHook() {
-        aop(originClass: UIApplication.self,
-            originSelector: #selector(sendAction(_:to:from:for:)),
-            newClass: UIApplication.self,
-            newSelector: #selector(hook_sendAction(_:to:from:for:)))
+        exchange(#selector(sendAction(_:to:from:for:)),
+                 in: UIApplication.self,
+                 with: #selector(hook_sendAction(_:to:from:for:)),
+                 in: UIApplication.self)
     }
 }
 #endif

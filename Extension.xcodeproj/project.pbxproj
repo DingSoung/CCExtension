@@ -526,7 +526,7 @@
 		CE607EE01F051DB0007E99DC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = DingSoung;
 				TargetAttributes = {
 					CE34AB461F6027E90088F13F = {
@@ -550,18 +550,18 @@
 					CE607EE81F051DB0007E99DC = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = DD5P45UV7Y;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = CE607EE31F051DB0007E99DC /* Build configuration list for PBXProject "Extension" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = CE607EDF1F051DB0007E99DC;
 			productRefGroup = CE607EEA1F051DB0007E99DC /* Products */;
@@ -1094,6 +1094,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1113,6 +1114,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
