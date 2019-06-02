@@ -25,10 +25,9 @@ public func print(
     _ items: Any...,
     file: String = #file, line: Int = #line, function: String = #function,
     logLevel: LogLevel = .info) {
-    let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
     let messages: [Any] = [
         logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
-        fileName, line, function,
+        URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent, line, function,
         items
     ]
     switch logLevel {
