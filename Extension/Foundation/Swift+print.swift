@@ -26,7 +26,6 @@ public func print(
     file: String = #file, line: Int = #line, function: String = #function,
     logLevel: LogLevel = .info) {
     let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
-    
     switch logLevel {
     case .info, .debug, .warning:
         #if DEBUG
