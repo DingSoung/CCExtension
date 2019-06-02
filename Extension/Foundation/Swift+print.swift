@@ -44,7 +44,7 @@ public func print(
 public func info(
     _ items: Any...,
     file: String = #file, line: Int = #line, function: String = #function,
-    logLevel: LogLevel = .info) -> Any {
+    logLevel: LogLevel = .info) -> [Any] {
     return print(items, file: file, line: line, function: function, logLevel: .info)
 }
 
@@ -52,7 +52,7 @@ public func info(
 public func debug(
     _ items: Any...,
     file: String = #file, line: Int = #line, function: String = #function,
-    logLevel: LogLevel = .info) -> Any {
+    logLevel: LogLevel = .info) -> [Any] {
     return print(items, file: file, line: line, function: function, logLevel: .debug)
 }
 
@@ -60,7 +60,7 @@ public func debug(
 public func warning(
     _ items: Any...,
     file: String = #file, line: Int = #line, function: String = #function,
-    logLevel: LogLevel = .info) -> Any {
+    logLevel: LogLevel = .info) -> [Any] {
     return print(items, file: file, line: line, function: function, logLevel: .warning)
 }
 
@@ -68,7 +68,7 @@ public func warning(
 public func error(
     _ items: Any...,
     file: String = #file, line: Int = #line, function: String = #function,
-    logLevel: LogLevel = .info) -> Any {
+    logLevel: LogLevel = .info) -> [Any] {
     return print(items, file: file, line: line, function: function, logLevel: .error)
 }
 
@@ -76,7 +76,7 @@ public func error(
 public func exception(
     _ items: Any...,
     file: String = #file, line: Int = #line, function: String = #function,
-    logLevel: LogLevel = .info) -> Any {
+    logLevel: LogLevel = .info) -> [Any] {
     return print(items, file: file, line: line, function: function, logLevel: .exception)
 }
 
