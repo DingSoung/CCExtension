@@ -26,6 +26,7 @@ public func print(
     file: String = #file, line: Int = #line, function: String = #function,
     logLevel: LogLevel = .info) {
     let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
+    
     switch logLevel {
     case .info, .debug, .warning:
         #if DEBUG
@@ -36,8 +37,8 @@ public func print(
     case .error, .exception:
         print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
               fileName, line, function,
-              items,
-              Thread.current, Thread.callStackSymbols)
+              items)
+        print(Thread.current, Thread.callStackSymbols, separator: "\n")
     }
 }
 
