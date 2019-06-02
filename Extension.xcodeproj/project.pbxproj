@@ -127,10 +127,10 @@
 		CEF5127B1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120C1FE0CA25008C84C9 /* Swift+closuer.swift */; };
 		CEF5127C1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120C1FE0CA25008C84C9 /* Swift+closuer.swift */; };
 		CEF5127D1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120C1FE0CA25008C84C9 /* Swift+closuer.swift */; };
-		CEF5127E1FE0CA26008C84C9 /* Swift+log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120D1FE0CA25008C84C9 /* Swift+log.swift */; };
-		CEF5127F1FE0CA26008C84C9 /* Swift+log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120D1FE0CA25008C84C9 /* Swift+log.swift */; };
-		CEF512801FE0CA26008C84C9 /* Swift+log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120D1FE0CA25008C84C9 /* Swift+log.swift */; };
-		CEF512811FE0CA26008C84C9 /* Swift+log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120D1FE0CA25008C84C9 /* Swift+log.swift */; };
+		CEF5127E1FE0CA26008C84C9 /* Swift+print.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120D1FE0CA25008C84C9 /* Swift+print.swift */; };
+		CEF5127F1FE0CA26008C84C9 /* Swift+print.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120D1FE0CA25008C84C9 /* Swift+print.swift */; };
+		CEF512801FE0CA26008C84C9 /* Swift+print.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120D1FE0CA25008C84C9 /* Swift+print.swift */; };
+		CEF512811FE0CA26008C84C9 /* Swift+print.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120D1FE0CA25008C84C9 /* Swift+print.swift */; };
 		CEF512821FE0CA26008C84C9 /* Array+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */; };
 		CEF512831FE0CA26008C84C9 /* Array+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */; };
 		CEF512841FE0CA26008C84C9 /* Array+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */; };
@@ -220,7 +220,7 @@
 		CEF5120A1FE0CA25008C84C9 /* Swift+synchronized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+synchronized.swift"; sourceTree = "<group>"; };
 		CEF5120B1FE0CA25008C84C9 /* String+regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+regex.swift"; sourceTree = "<group>"; };
 		CEF5120C1FE0CA25008C84C9 /* Swift+closuer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+closuer.swift"; sourceTree = "<group>"; };
-		CEF5120D1FE0CA25008C84C9 /* Swift+log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+log.swift"; sourceTree = "<group>"; };
+		CEF5120D1FE0CA25008C84C9 /* Swift+print.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+print.swift"; sourceTree = "<group>"; };
 		CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+JSON.swift"; sourceTree = "<group>"; };
 		CEF5120F1FE0CA25008C84C9 /* URL+Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Cookie.swift"; sourceTree = "<group>"; };
 		CEF512101FE0CA25008C84C9 /* Swift+Association.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Association.swift"; sourceTree = "<group>"; };
@@ -373,7 +373,7 @@
 				CEF512111FE0CA25008C84C9 /* String+Dictionary.swift */,
 				CEA8735721FEE789002DD114 /* String+URLEscaped.swift */,
 				CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */,
-				CEF5120D1FE0CA25008C84C9 /* Swift+log.swift */,
+				CEF5120D1FE0CA25008C84C9 /* Swift+print.swift */,
 				CEF5120B1FE0CA25008C84C9 /* String+regex.swift */,
 				CEF574E52192D3A000F6C559 /* URL+query.swift */,
 				CEF574EA2192D5AD00F6C559 /* UserDefaults+subscript.swift */,
@@ -663,7 +663,7 @@
 				CE6BC70B229F807D00611ABD /* CGRect+Float.swift in Sources */,
 				CEF512191FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
 				CEF512791FE0CA26008C84C9 /* String+regex.swift in Sources */,
-				CEF512811FE0CA26008C84C9 /* Swift+log.swift in Sources */,
+				CEF512811FE0CA26008C84C9 /* Swift+print.swift in Sources */,
 				CE6BC715229F80C200611ABD /* CGpoint+Float.swift in Sources */,
 				CEF574F82192DA0E00F6C559 /* DispatchQueue+once.swift in Sources */,
 				CEF512151FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */,
@@ -712,7 +712,7 @@
 				CE6BC70A229F807D00611ABD /* CGRect+Float.swift in Sources */,
 				CEF512181FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
 				CEF512781FE0CA26008C84C9 /* String+regex.swift in Sources */,
-				CEF512801FE0CA26008C84C9 /* Swift+log.swift in Sources */,
+				CEF512801FE0CA26008C84C9 /* Swift+print.swift in Sources */,
 				CE6BC714229F80C200611ABD /* CGpoint+Float.swift in Sources */,
 				CEF574F72192DA0E00F6C559 /* DispatchQueue+once.swift in Sources */,
 				CEF512141FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */,
@@ -761,7 +761,7 @@
 				CE6BC709229F807D00611ABD /* CGRect+Float.swift in Sources */,
 				CEF512171FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
 				CEF512771FE0CA26008C84C9 /* String+regex.swift in Sources */,
-				CEF5127F1FE0CA26008C84C9 /* Swift+log.swift in Sources */,
+				CEF5127F1FE0CA26008C84C9 /* Swift+print.swift in Sources */,
 				CE6BC713229F80C200611ABD /* CGpoint+Float.swift in Sources */,
 				CEF574F62192DA0E00F6C559 /* DispatchQueue+once.swift in Sources */,
 				CEF512131FE0CA25008C84C9 /* UIApplication+EventTrack.swift in Sources */,
@@ -811,7 +811,7 @@
 				CEF512161FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
 				CEF512761FE0CA26008C84C9 /* String+regex.swift in Sources */,
 				CEED10E021ABEADA00E76F27 /* KeyChain.swift in Sources */,
-				CEF5127E1FE0CA26008C84C9 /* Swift+log.swift in Sources */,
+				CEF5127E1FE0CA26008C84C9 /* Swift+print.swift in Sources */,
 				CEE63DD72136472200CF7E69 /* WKWebView+registerScheme.swift in Sources */,
 				CEF5752A2192DE7600F6C559 /* Color+rgba.swift in Sources */,
 				CEED110521BA5F6B00E76F27 /* UIImage+pdf.swift in Sources */,
