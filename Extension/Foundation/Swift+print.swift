@@ -25,18 +25,20 @@ public func print(
     _ items: Any...,
     file: String = #file, line: Int = #line, function: String = #function,
     logLevel: LogLevel = .info) {
-    let messages: [Any] = [
-        logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
-        URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent, line, function,
-        items
-    ]
+    let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
     switch logLevel {
     case .info, .debug, .warning:
         #if DEBUG
-        messages.forEach { print($0) }
+        print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
+              fileName, line, function,
+              items)
         #endif
     case .error, .exception:
-        (messages + [Thread.current] + Thread.callStackSymbols).forEach { print($0) }
+        print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
+              fileName, line, function,
+              items)
+        print(Thread.current)
+        Thread.callStackSymbols.forEach { print($0) }
     }
 }
 
