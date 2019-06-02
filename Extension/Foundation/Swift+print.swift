@@ -29,14 +29,12 @@ public func print(
     switch logLevel {
     case .info, .debug, .warning:
         #if DEBUG
-        print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
-              fileName, line, function,
-              items)
+        print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function)
+        print(items)
         #endif
     case .error, .exception:
-        print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
-              fileName, line, function,
-              items)
+        print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function)
+        print(items)
         print(Thread.current)
         Thread.callStackSymbols.forEach { print($0) }
     }
