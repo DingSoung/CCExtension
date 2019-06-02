@@ -21,62 +21,58 @@ fileprivate extension LogLevel {
 }
 
 /// log with detail message
-@discardableResult
 public func print(
     _ items: Any...,
     file: String = #file, line: Int = #line, function: String = #function,
-    logLevel: LogLevel = .info) -> [Any] {
-    let messages: [Any] = [logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
-                           file, line, function,
-                           items]
+    logLevel: LogLevel = .info) {
+    let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
     switch logLevel {
     case .info, .debug, .warning:
         #if DEBUG
-        print(messages)
+        print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
+              fileName, line, function,
+              items)
         #endif
     case .error, .exception:
-        print(messages + [Thread.current, Thread.callStackSymbols])
+        print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
+              fileName, line, function,
+              items,
+              Thread.current, Thread.callStackSymbols)
     }
-    return messages
 }
 
-@discardableResult
 public func info(
     _ items: Any...,
     file: String = #file, line: Int = #line, function: String = #function,
-    logLevel: LogLevel = .info) -> [Any] {
+    logLevel: LogLevel = .info) {
     return print(items, file: file, line: line, function: function, logLevel: .info)
 }
 
-@discardableResult
 public func debug(
     _ items: Any...,
     file: String = #file, line: Int = #line, function: String = #function,
-    logLevel: LogLevel = .info) -> [Any] {
+    logLevel: LogLevel = .info) {
     return print(items, file: file, line: line, function: function, logLevel: .debug)
 }
 
-@discardableResult
 public func warning(
     _ items: Any...,
     file: String = #file, line: Int = #line, function: String = #function,
-    logLevel: LogLevel = .info) -> [Any] {
+    logLevel: LogLevel = .info) {
     return print(items, file: file, line: line, function: function, logLevel: .warning)
 }
 
-@discardableResult
 public func error(
     _ items: Any...,
     file: String = #file, line: Int = #line, function: String = #function,
-    logLevel: LogLevel = .info) -> [Any] {
+    logLevel: LogLevel = .info) {
     return print(items, file: file, line: line, function: function, logLevel: .error)
 }
 
-@discardableResult
 public func exception(
     _ items: Any...,
     file: String = #file, line: Int = #line, function: String = #function,
-    logLevel: LogLevel = .info) -> [Any] {
+    logLevel: LogLevel = .info) {
     return print(items, file: file, line: line, function: function, logLevel: .exception)
 }
 
