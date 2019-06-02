@@ -20,7 +20,6 @@ extension WKWebView {
     public func contentViewNickClass(uid: String) -> AnyClass? {
         guard var name = "V0tDb250ZW50Vmlldw==".base64Decode else { assertionFailure(); return nil }
         name += uid
-        self.inputAccessoryView
         var cls: AnyClass? = NSClassFromString(name)
         if cls == nil,
             let contentView = contentView,

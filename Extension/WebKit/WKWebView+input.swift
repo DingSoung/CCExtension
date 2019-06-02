@@ -17,7 +17,7 @@ extension WKWebView {
             self.target = target
             super.init()
             guard let contentView = target.contentView,
-                let nickClass = target.contentViewNickClass(uid: Bundle.main.bundlePath.hashValue.description) else {
+                let nickClass = target.contentViewNickClass(uid: target.hashValue.description) else {
                     assertionFailure()
                     return
             }
