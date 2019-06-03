@@ -21,7 +21,7 @@ fileprivate extension LogLevel {
 }
 
 private struct Log: TextOutputStream {
-    static var log = Log()
+    static var shared = Log()
     #if DEBUG
     var file = "debug_log.txt"
     #else
@@ -30,9 +30,6 @@ private struct Log: TextOutputStream {
     private init() {}
     /// Appends the given string to the stream.
     mutating func write(_ string: String) {
-        #if DEBUG
-        Swift.print(string)
-        #endif
         let paths = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask)
         let documentDirectoryPath = paths.first!
         let log = documentDirectoryPath.appendingPathComponent(self.file)
@@ -58,18 +55,20 @@ public func print(
     file: String = #file, line: Int = #line, function: String = #function,
     logLevel: LogLevel = .info) {
     let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
-    print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
-        fileName, line, function,
-        to: &Log.log)
-    items.forEach { print($0, to: &Log.log) }
+    let log = { (items: Any...) in
+        print(items, to: &Log.shared)
+    }
+    log(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
+        fileName, line, function)
+    items.forEach { log($0) }
     switch logLevel {
     case .debug, .info:
         break
     case .warning:
-        print(Thread.current, to: &Log.log)
+        log(Thread.current)
     case .error, .exception:
-        print(Thread.current, to: &Log.log)
-        Thread.callStackSymbols.forEach { print($0, to: &Log.log) }
+        log(Thread.current)
+        Thread.callStackSymbols.forEach { log($0) }
     }
 }
 
