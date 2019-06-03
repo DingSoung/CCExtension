@@ -20,31 +20,6 @@ fileprivate extension LogLevel {
     }
 }
 
-private struct BaseLog {
-    var fileName = "log.txt"
-    init(fileName: String) {
-        self.fileName = fileName
-    }
-    mutating func write(_ string: String) {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask)
-        let documentDirectoryPath = paths.first!
-        let log = documentDirectoryPath.appendingPathComponent(self.fileName)
-        do {
-            let handle = try FileHandle(forWritingTo: log)
-            handle.seekToEndOfFile()
-            handle.write(string.data(using: .utf8)!)
-            handle.closeFile()
-        } catch {
-            print(error.localizedDescription)
-            do {
-                try string.data(using: .utf8)?.write(to: log)
-            } catch {
-                print(error.localizedDescription)
-            }
-        }
-    }
-}
-
 private struct Log: TextOutputStream {
     static var log = Log()
     #if DEBUG
