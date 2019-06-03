@@ -4,11 +4,11 @@
 #if canImport(Foundation)
 import Foundation.NSThread
 
-public enum LogLevel: String {
+private enum LogLevel: String {
     case debug, info, warning, error, exception
 }
 
-fileprivate extension LogLevel {
+private extension LogLevel {
     var symbol: String {
         switch self {
         case .debug: return "\u{0001F539}"
@@ -50,10 +50,10 @@ private struct Log: TextOutputStream {
 }
 
 /// log with detail message
-private func print(
+private func log(
     _ items: Any..., separator: String = " ", terminator: String = "\n",
     file: String = #file, line: Int = #line, function: String = #function,
-    logLevel: LogLevel = .info) {
+    logLevel: LogLevel) {
     let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
     print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function)
     print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function, to: &Log.shared)
@@ -78,36 +78,36 @@ private func print(
 public func info(
     _ items: Any..., separator: String = " ", terminator: String = "\n",
     file: String = #file, line: Int = #line, function: String = #function) {
-    return print(items, separator: separator, terminator: terminator,
-                 file: file, line: line, function: function, logLevel: .info)
+    return log(items, separator: separator, terminator: terminator,
+               file: file, line: line, function: function, logLevel: .info)
 }
 
 public func debug(
     _ items: Any..., separator: String = " ", terminator: String = "\n",
     file: String = #file, line: Int = #line, function: String = #function) {
-    return print(items, separator: separator, terminator: terminator,
-                 file: file, line: line, function: function, logLevel: .debug)
+    return log(items, separator: separator, terminator: terminator,
+               file: file, line: line, function: function, logLevel: .debug)
 }
 
 public func warning(
     _ items: Any..., separator: String = " ", terminator: String = "\n",
     file: String = #file, line: Int = #line, function: String = #function) {
-    return print(items, separator: separator, terminator: terminator,
-                 file: file, line: line, function: function, logLevel: .warning)
+    return log(items, separator: separator, terminator: terminator,
+               file: file, line: line, function: function, logLevel: .warning)
 }
 
 public func error(
     _ items: Any..., separator: String = " ", terminator: String = "\n",
     file: String = #file, line: Int = #line, function: String = #function) {
-    return print(items, separator: separator, terminator: terminator,
-                 file: file, line: line, function: function, logLevel: .error)
+    return log(items, separator: separator, terminator: terminator,
+               file: file, line: line, function: function, logLevel: .error)
 }
 
 public func exception(
     _ items: Any..., separator: String = " ", terminator: String = "\n",
     file: String = #file, line: Int = #line, function: String = #function) {
-    return print(items, separator: separator, terminator: terminator,
-                 file: file, line: line, function: function, logLevel: .exception)
+    return log(items, separator: separator, terminator: terminator,
+               file: file, line: line, function: function, logLevel: .exception)
 }
 
 #endif
