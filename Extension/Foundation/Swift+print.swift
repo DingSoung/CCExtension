@@ -49,31 +49,31 @@ private struct Log: TextOutputStream {
     }
 }
 
-extension Log {
-    static func log(_ items: Any...) {
-        #if DEBUG
-        print(items)
-        #endif
-        print(items, to: &Log.shared)
-    }
-}
-
 /// log with detail message
 public func print(
     _ items: Any...,
     file: String = #file, line: Int = #line, function: String = #function,
     logLevel: LogLevel = .info) {
     let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
-    Log.log(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function)
-    items.forEach { Log.log($0) }
+    print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function)
+    print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function, to: &Log.shared)
+    items.forEach {
+        print($0)
+        print($0, to: &Log.shared)
+    }
     switch logLevel {
     case .debug, .info:
         break
     case .warning:
-        Log.log(Thread.current)
+        print(Thread.current)
+        print(Thread.current, to: &Log.shared)
     case .error, .exception:
-        Log.log(Thread.current)
-        Thread.callStackSymbols.forEach { Log.log($0) }
+        print(Thread.current)
+        print(Thread.current, to: &Log.shared)
+        Thread.callStackSymbols.forEach {
+            print($0)
+            print($0, to: &Log.shared)
+        }
     }
 }
 
