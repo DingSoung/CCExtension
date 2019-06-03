@@ -57,13 +57,13 @@ public func print(
     let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
     let log = { (items: Any...) in
         print(items, to: &Log.shared)
-        //#if DEBUG
+        #if DEBUG
         Swift.print(items)
-        //#endif
+        #endif
     }
     log(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
         fileName, line, function)
-    items.forEach { log($0) }
+    log(items)
     switch logLevel {
     case .debug, .info:
         break
