@@ -20,14 +20,14 @@ fileprivate extension LogLevel {
     }
 }
 
-struct TextLog: TextOutputStream {
-    
+private struct Log: TextOutputStream {
+    static var log: Log = Log()
+    private init() {}
     /// Appends the given string to the stream.
     mutating func write(_ string: String) {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask)
         let documentDirectoryPath = paths.first!
         let log = documentDirectoryPath.appendingPathComponent("log.txt")
-        
         do {
             let handle = try FileHandle(forWritingTo: log)
             handle.seekToEndOfFile()
@@ -53,14 +53,18 @@ public func print(
     switch logLevel {
     case .info, .debug, .warning:
         #if DEBUG
-        print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function)
+        print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
+              fileName, line, function,
+              to: &Log.log)
         items.forEach { print($0) }
         #endif
     case .error, .exception:
-        print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function)
-        items.forEach { print($0) }
-        print(Thread.current)
-        Thread.callStackSymbols.forEach { print($0) }
+        print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
+              fileName, line, function,
+              to: &Log.log)
+        items.forEach { print($0, to: &Log.log) }
+        print(Thread.current, to: &Log.log)
+        Thread.callStackSymbols.forEach { print($0, to: &Log.log) }
     }
 }
 
