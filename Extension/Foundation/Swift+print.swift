@@ -56,7 +56,7 @@ private struct Log: TextOutputStream {
     /// Appends the given string to the stream.
     mutating func write(_ string: String) {
         #if DEBUG
-        print(string)
+        Swift.print(string)
         #endif
         let paths = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask)
         let documentDirectoryPath = paths.first!
@@ -67,11 +67,11 @@ private struct Log: TextOutputStream {
             handle.write(string.data(using: .utf8)!)
             handle.closeFile()
         } catch {
-            print(error.localizedDescription)
+            Swift.print(error.localizedDescription)
             do {
                 try string.data(using: .utf8)?.write(to: log)
             } catch {
-                print(error.localizedDescription)
+                Swift.print(error.localizedDescription)
             }
         }
     }
