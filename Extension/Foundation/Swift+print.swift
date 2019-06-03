@@ -57,10 +57,10 @@ private func log(
     let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
     #if DEBUG
     print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function)
-    print(items)
+    items.forEach { print($0) }
     #endif
     print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function, to: &Log.shared)
-    print(items, to: &Log.shared)
+    items.forEach { print($0, to: &Log.shared) }
     switch logLevel {
     case .debug, .info:
         break
