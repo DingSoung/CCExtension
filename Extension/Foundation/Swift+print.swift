@@ -55,10 +55,13 @@ private func log(
     file: String = #file, line: Int = #line, function: String = #function,
     logLevel: LogLevel) {
     let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
+    
     print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function)
     print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function, to: &Log.shared)
+    
     print(items, separator: separator, terminator: terminator)
     print(items, to: &Log.shared)
+    
     switch logLevel {
     case .debug, .info:
         break
