@@ -5,14 +5,14 @@
 import Foundation.NSThread
 
 public enum LogLevel: String {
-    case info, debug, warning, error, exception
+    case debug, info, warning, error, exception
 }
 
 fileprivate extension LogLevel {
     var symbol: String {
         switch self {
-        case .info: return "\u{0001F538}"
         case .debug: return "\u{0001F539}"
+        case .info: return "\u{0001F538}"
         case .warning: return "\u{26A0}\u{FE0F}"
         case .error: return "\u{0001F6AB}"
         case .exception: return "\u{2757}\u{FE0F}"
@@ -49,22 +49,25 @@ public func print(
     _ items: Any...,
     file: String = #file, line: Int = #line, function: String = #function,
     logLevel: LogLevel = .info) {
-    let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
-    switch logLevel {
-    case .info, .debug, .warning:
+    let log = { (items: Any...) in
         #if DEBUG
-        print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
-              fileName, line, function,
-              to: &Log.log)
-        items.forEach { print($0) }
+        print(items)
+        #else
+        print(items, to: &Log.log)
         #endif
+    }
+    let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
+    log(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
+        fileName, line, function)
+    items.forEach { log($0) }
+    switch logLevel {
+    case .debug, .info:
+        break
+    case .warning:
+        log(Thread.current)
     case .error, .exception:
-        print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
-              fileName, line, function,
-              to: &Log.log)
-        items.forEach { print($0, to: &Log.log) }
-        print(Thread.current, to: &Log.log)
-        Thread.callStackSymbols.forEach { print($0, to: &Log.log) }
+        log(Thread.current)
+        Thread.callStackSymbols.forEach { log($0) }
     }
 }
 
