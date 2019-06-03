@@ -20,14 +20,44 @@ fileprivate extension LogLevel {
     }
 }
 
+private struct BaseLog {
+    var fileName = "log.txt"
+    init(fileName: String) {
+        self.fileName = fileName
+    }
+    mutating func write(_ string: String) {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask)
+        let documentDirectoryPath = paths.first!
+        let log = documentDirectoryPath.appendingPathComponent(self.fileName)
+        do {
+            let handle = try FileHandle(forWritingTo: log)
+            handle.seekToEndOfFile()
+            handle.write(string.data(using: .utf8)!)
+            handle.closeFile()
+        } catch {
+            print(error.localizedDescription)
+            do {
+                try string.data(using: .utf8)?.write(to: log)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
+}
+
 private struct Log: TextOutputStream {
-    static var log: Log = Log()
+    static var log = Log()
+    #if DEBUG
+    var file = "log.txt"
+    #else
+    var file = "debug-log.txt"
+    #endif
     private init() {}
     /// Appends the given string to the stream.
     mutating func write(_ string: String) {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask)
         let documentDirectoryPath = paths.first!
-        let log = documentDirectoryPath.appendingPathComponent("log.txt")
+        let log = documentDirectoryPath.appendingPathComponent(self.file)
         do {
             let handle = try FileHandle(forWritingTo: log)
             handle.seekToEndOfFile()
@@ -49,34 +79,19 @@ public func print(
     _ items: Any...,
     file: String = #file, line: Int = #line, function: String = #function,
     logLevel: LogLevel = .info) {
-    let log = { (items: Any...) in
-        #if DEBUG
-        print(items)
-        #else
-        print(items, to: &Log.log)
-        #endif
-    }
-    guard logLevel != .debug else {
-        #if DEBUG
-        let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
-        log(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
-            fileName, line, function)
-        items.forEach { log($0) }
-        #endif
-        return
-    }
     let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
-    log(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
-        fileName, line, function)
-    items.forEach { log($0) }
+    print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
+        fileName, line, function,
+        to: &Log.log)
+    items.forEach { print($0, to: &Log.log) }
     switch logLevel {
     case .debug, .info:
         break
     case .warning:
-        log(Thread.current)
+        print(Thread.current, to: &Log.log)
     case .error, .exception:
-        log(Thread.current)
-        Thread.callStackSymbols.forEach { log($0) }
+        print(Thread.current, to: &Log.log)
+        Thread.callStackSymbols.forEach { print($0, to: &Log.log) }
     }
 }
 
