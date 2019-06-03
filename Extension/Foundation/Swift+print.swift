@@ -50,7 +50,7 @@ private struct Log: TextOutputStream {
     #if DEBUG
     var file = "log.txt"
     #else
-    var file = "debug-log.txt"
+    var file = "debug_log.txt"
     #endif
     private init() {}
     /// Appends the given string to the stream.
