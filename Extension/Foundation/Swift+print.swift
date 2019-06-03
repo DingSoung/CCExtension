@@ -50,17 +50,15 @@ private struct Log: TextOutputStream {
 }
 
 /// log with detail message
-public func print(
-    _ items: Any...,
+private func print(
+    _ items: Any..., separator: String = " ", terminator: String = "\n",
     file: String = #file, line: Int = #line, function: String = #function,
     logLevel: LogLevel = .info) {
     let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
     print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function)
     print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function, to: &Log.shared)
-    items.forEach {
-        print($0)
-        print($0, to: &Log.shared)
-    }
+    print(items, separator: separator, terminator: terminator)
+    print(items, to: &Log.shared)
     switch logLevel {
     case .debug, .info:
         break
@@ -78,38 +76,38 @@ public func print(
 }
 
 public func info(
-    _ items: Any...,
-    file: String = #file, line: Int = #line, function: String = #function,
-    logLevel: LogLevel = .info) {
-    return print(items, file: file, line: line, function: function, logLevel: .info)
+    _ items: Any..., separator: String = " ", terminator: String = "\n",
+    file: String = #file, line: Int = #line, function: String = #function) {
+    return print(items, separator: separator, terminator: terminator,
+                 file: file, line: line, function: function, logLevel: .info)
 }
 
 public func debug(
-    _ items: Any...,
-    file: String = #file, line: Int = #line, function: String = #function,
-    logLevel: LogLevel = .info) {
-    return print(items, file: file, line: line, function: function, logLevel: .debug)
+    _ items: Any..., separator: String = " ", terminator: String = "\n",
+    file: String = #file, line: Int = #line, function: String = #function) {
+    return print(items, separator: separator, terminator: terminator,
+                 file: file, line: line, function: function, logLevel: .debug)
 }
 
 public func warning(
-    _ items: Any...,
-    file: String = #file, line: Int = #line, function: String = #function,
-    logLevel: LogLevel = .info) {
-    return print(items, file: file, line: line, function: function, logLevel: .warning)
+    _ items: Any..., separator: String = " ", terminator: String = "\n",
+    file: String = #file, line: Int = #line, function: String = #function) {
+    return print(items, separator: separator, terminator: terminator,
+                 file: file, line: line, function: function, logLevel: .warning)
 }
 
 public func error(
-    _ items: Any...,
-    file: String = #file, line: Int = #line, function: String = #function,
-    logLevel: LogLevel = .info) {
-    return print(items, file: file, line: line, function: function, logLevel: .error)
+    _ items: Any..., separator: String = " ", terminator: String = "\n",
+    file: String = #file, line: Int = #line, function: String = #function) {
+    return print(items, separator: separator, terminator: terminator,
+                 file: file, line: line, function: function, logLevel: .error)
 }
 
 public func exception(
-    _ items: Any...,
-    file: String = #file, line: Int = #line, function: String = #function,
-    logLevel: LogLevel = .info) {
-    return print(items, file: file, line: line, function: function, logLevel: .exception)
+    _ items: Any..., separator: String = " ", terminator: String = "\n",
+    file: String = #file, line: Int = #line, function: String = #function) {
+    return print(items, separator: separator, terminator: terminator,
+                 file: file, line: line, function: function, logLevel: .exception)
 }
 
 #endif
