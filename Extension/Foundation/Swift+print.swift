@@ -23,9 +23,9 @@ fileprivate extension LogLevel {
 private struct Log: TextOutputStream {
     static var shared = Log()
     #if DEBUG
-    var file = "debug_log.txt"
+    let file = "debug_log.txt"
     #else
-    var file = "log.txt"
+    let file = "log.txt"
     #endif
     private init() {}
     /// Appends the given string to the stream.
