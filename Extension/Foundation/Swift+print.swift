@@ -58,6 +58,9 @@ private struct Log: TextOutputStream {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask)
         let documentDirectoryPath = paths.first!
         let log = documentDirectoryPath.appendingPathComponent(self.file)
+        #if DEBUG
+        print(string)
+        #endif
         do {
             let handle = try FileHandle(forWritingTo: log)
             handle.seekToEndOfFile()
