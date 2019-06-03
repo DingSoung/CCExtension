@@ -20,6 +20,30 @@ fileprivate extension LogLevel {
     }
 }
 
+struct TextLog: TextOutputStream {
+    
+    /// Appends the given string to the stream.
+    mutating func write(_ string: String) {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask)
+        let documentDirectoryPath = paths.first!
+        let log = documentDirectoryPath.appendingPathComponent("log.txt")
+        
+        do {
+            let handle = try FileHandle(forWritingTo: log)
+            handle.seekToEndOfFile()
+            handle.write(string.data(using: .utf8)!)
+            handle.closeFile()
+        } catch {
+            print(error.localizedDescription)
+            do {
+                try string.data(using: .utf8)?.write(to: log)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
+}
+
 /// log with detail message
 public func print(
     _ items: Any...,
@@ -30,11 +54,11 @@ public func print(
     case .info, .debug, .warning:
         #if DEBUG
         print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function)
-        print(items)
+        items.forEach { print($0) }
         #endif
     case .error, .exception:
         print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function)
-        print(items)
+        items.forEach { print($0) }
         print(Thread.current)
         Thread.callStackSymbols.forEach { print($0) }
     }
