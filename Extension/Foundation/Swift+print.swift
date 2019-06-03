@@ -56,6 +56,15 @@ public func print(
         print(items, to: &Log.log)
         #endif
     }
+    guard logLevel != .debug else {
+        #if DEBUG
+        let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
+        log(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
+            fileName, line, function)
+        items.forEach { log($0) }
+        #endif
+        return
+    }
     let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
     log(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
         fileName, line, function)
