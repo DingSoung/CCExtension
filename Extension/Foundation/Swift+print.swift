@@ -48,19 +48,19 @@ private struct BaseLog {
 private struct Log: TextOutputStream {
     static var log = Log()
     #if DEBUG
-    var file = "log.txt"
-    #else
     var file = "debug_log.txt"
+    #else
+    var file = "log.txt"
     #endif
     private init() {}
     /// Appends the given string to the stream.
     mutating func write(_ string: String) {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask)
-        let documentDirectoryPath = paths.first!
-        let log = documentDirectoryPath.appendingPathComponent(self.file)
         #if DEBUG
         print(string)
         #endif
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask)
+        let documentDirectoryPath = paths.first!
+        let log = documentDirectoryPath.appendingPathComponent(self.file)
         do {
             let handle = try FileHandle(forWritingTo: log)
             handle.seekToEndOfFile()
