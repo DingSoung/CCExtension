@@ -61,9 +61,9 @@ public func print(
         Swift.print(items)
         #endif
     }
-    log(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
+    Swift.print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
         fileName, line, function)
-    log(items)
+    items.forEach { Swift.print($0) }
     switch logLevel {
     case .debug, .info:
         break
