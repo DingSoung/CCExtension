@@ -39,11 +39,11 @@ private struct Log: TextOutputStream {
             handle.write(string.data(using: .utf8)!)
             handle.closeFile()
         } catch {
-            Swift.print(error.localizedDescription)
+            print(error.localizedDescription)
             do {
                 try string.data(using: .utf8)?.write(to: log)
             } catch {
-                Swift.print(error.localizedDescription)
+                print(error.localizedDescription)
             }
         }
     }
@@ -56,14 +56,14 @@ public func print(
     logLevel: LogLevel = .info) {
     let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
     let log = { (items: Any...) in
-        print(items, to: &Log.shared)
         #if DEBUG
-        Swift.print(items)
+        print(items)
         #endif
+        print(items, to: &Log.shared)
     }
-    Swift.print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
+    log(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
         fileName, line, function)
-    items.forEach { Swift.print($0) }
+    items.forEach { log($0) }
     switch logLevel {
     case .debug, .info:
         break
