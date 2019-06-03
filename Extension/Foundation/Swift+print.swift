@@ -30,9 +30,6 @@ private struct Log: TextOutputStream {
     private init() {}
     /// Appends the given string to the stream.
     mutating func write(_ string: String) {
-        #if DEBUG
-        print(string)
-        #endif
         let paths = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask)
         let documentDirectoryPath = paths.first!
         let log = documentDirectoryPath.appendingPathComponent(self.file)
@@ -52,24 +49,31 @@ private struct Log: TextOutputStream {
     }
 }
 
+extension Log {
+    static func log(_ items: Any...) {
+        #if DEBUG
+        print(items)
+        #endif
+        print(items, to: &Log.shared)
+    }
+}
+
 /// log with detail message
 public func print(
     _ items: Any...,
     file: String = #file, line: Int = #line, function: String = #function,
     logLevel: LogLevel = .info) {
     let fileName = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
-    print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨",
-          fileName, line, function,
-          to: &Log.shared)
-    items.forEach { print($0, to: &Log.shared) }
+    Log.log(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function)
+    items.forEach { Log.log($0) }
     switch logLevel {
     case .debug, .info:
         break
     case .warning:
-        print(Thread.current, to: &Log.shared)
+        Log.log(Thread.current)
     case .error, .exception:
-        print(Thread.current, to: &Log.shared)
-        Thread.callStackSymbols.forEach { print($0, to: &Log.shared) }
+        Log.log(Thread.current)
+        Thread.callStackSymbols.forEach { Log.log($0) }
     }
 }
 
