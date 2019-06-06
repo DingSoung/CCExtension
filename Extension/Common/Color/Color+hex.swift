@@ -32,11 +32,11 @@ extension Color {
     }
 
     /// convert hex to UIColor #RGB, #ARGB, #RRGGBB, #AARRGGBB
-    public class final func color(hex: String) -> Color? {
-        if let color = Color.memoryCache.object(forKey: hex as NSString) {
+    public class final func hex(_ name: String) -> Color? {
+        if let color = Color.memoryCache.object(forKey: name as NSString) {
             return color
         }
-        let formatHex = (hex as NSString).replacingOccurrences(of: "#", with: "").uppercased()
+        let formatHex = (name as NSString).replacingOccurrences(of: "#", with: "").uppercased()
         var alpha: CGFloat = 0
         var red: CGFloat = 0
         var blue: CGFloat = 0
@@ -66,7 +66,7 @@ extension Color {
             return nil
         }
         let color = Color(red: red, green: green, blue: blue, alpha: alpha)
-        Color.memoryCache.setObject(color, forKey: hex as NSString)
+        Color.memoryCache.setObject(color, forKey: name as NSString)
         return color
     }
 }

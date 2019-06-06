@@ -38,6 +38,10 @@
 		CE6BC714229F80C200611ABD /* CGpoint+Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6BC711229F80C200611ABD /* CGpoint+Float.swift */; };
 		CE6BC715229F80C200611ABD /* CGpoint+Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6BC711229F80C200611ABD /* CGpoint+Float.swift */; };
 		CE86472520A1E0650043FB26 /* runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86472420A1E0650043FB26 /* runtime.swift */; };
+		CE94886022A9119D002EB78B /* Color+css.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94885F22A9119D002EB78B /* Color+css.swift */; };
+		CE94886122A9119D002EB78B /* Color+css.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94885F22A9119D002EB78B /* Color+css.swift */; };
+		CE94886222A9119D002EB78B /* Color+css.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94885F22A9119D002EB78B /* Color+css.swift */; };
+		CE94886322A9119D002EB78B /* Color+css.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94885F22A9119D002EB78B /* Color+css.swift */; };
 		CEA8735821FEE789002DD114 /* String+URLEscaped.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8735721FEE789002DD114 /* String+URLEscaped.swift */; };
 		CEA8735921FEE789002DD114 /* String+URLEscaped.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8735721FEE789002DD114 /* String+URLEscaped.swift */; };
 		CEA8735A21FEE789002DD114 /* String+URLEscaped.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8735721FEE789002DD114 /* String+URLEscaped.swift */; };
@@ -197,6 +201,7 @@
 		CE6BC70C229F809600611ABD /* CGSize+Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Float.swift"; sourceTree = "<group>"; };
 		CE6BC711229F80C200611ABD /* CGpoint+Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGpoint+Float.swift"; sourceTree = "<group>"; };
 		CE86472420A1E0650043FB26 /* runtime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runtime.swift; sourceTree = "<group>"; };
+		CE94885F22A9119D002EB78B /* Color+css.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+css.swift"; sourceTree = "<group>"; };
 		CEA8735721FEE789002DD114 /* String+URLEscaped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URLEscaped.swift"; sourceTree = "<group>"; };
 		CEE63DCC21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPCookieStorage+setCookie.swift"; sourceTree = "<group>"; };
 		CEE63DD12136465400CF7E69 /* String+base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+base64.swift"; sourceTree = "<group>"; };
@@ -408,6 +413,7 @@
 				CEF5751F2192DE7600F6C559 /* Color+components.swift */,
 				CEF575202192DE7600F6C559 /* Color+rgba.swift */,
 				CEF575212192DE7600F6C559 /* Color.swift */,
+				CE94885F22A9119D002EB78B /* Color+css.swift */,
 			);
 			path = Color;
 			sourceTree = "<group>";
@@ -643,6 +649,7 @@
 				CEF575292192DE7600F6C559 /* Color+components.swift in Sources */,
 				CEE63DD52136465400CF7E69 /* String+base64.swift in Sources */,
 				CE19B605219B027F007B3D72 /* View.swift in Sources */,
+				CE94886322A9119D002EB78B /* Color+css.swift in Sources */,
 				CE19B5FA219AF47F007B3D72 /* WKWebView+contentView.swift in Sources */,
 				CEF5127D1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */,
 				CEF512291FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
@@ -692,6 +699,7 @@
 				CEF575282192DE7600F6C559 /* Color+components.swift in Sources */,
 				CEE63DD42136465400CF7E69 /* String+base64.swift in Sources */,
 				CE19B604219B027F007B3D72 /* View.swift in Sources */,
+				CE94886222A9119D002EB78B /* Color+css.swift in Sources */,
 				CE19B5F9219AF47F007B3D72 /* WKWebView+contentView.swift in Sources */,
 				CEF5127C1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */,
 				CEF512281FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
@@ -741,6 +749,7 @@
 				CEF575272192DE7600F6C559 /* Color+components.swift in Sources */,
 				CEE63DD32136465400CF7E69 /* String+base64.swift in Sources */,
 				CE19B603219B027F007B3D72 /* View.swift in Sources */,
+				CE94886122A9119D002EB78B /* Color+css.swift in Sources */,
 				CE19B5F8219AF47F007B3D72 /* WKWebView+contentView.swift in Sources */,
 				CEF5127B1FE0CA26008C84C9 /* Swift+closuer.swift in Sources */,
 				CEF512271FE0CA25008C84C9 /* Array+UIImage.swift in Sources */,
@@ -779,6 +788,7 @@
 				CEF512861FE0CA26008C84C9 /* URL+Cookie.swift in Sources */,
 				CEF575262192DE7600F6C559 /* Color+components.swift in Sources */,
 				CE6BC712229F80C200611ABD /* CGpoint+Float.swift in Sources */,
+				CE94886022A9119D002EB78B /* Color+css.swift in Sources */,
 				CEF512721FE0CA26008C84C9 /* Swift+synchronized.swift in Sources */,
 				CE6BC70D229F809600611ABD /* CGSize+Float.swift in Sources */,
 				CE19B69E219D160C007B3D72 /* View+KeyboardInfo.swift in Sources */,

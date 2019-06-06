@@ -59,7 +59,8 @@ private func log(
     print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function)
     items.forEach { print($0) }
     #endif
-    print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function, to: &Log.shared)
+    print(logLevel.symbol, logLevel.rawValue, CFAbsoluteTimeGetCurrent(), "⇨", fileName, line, function,
+          to: &Log.shared)
     items.forEach { print($0, to: &Log.shared) }
     switch logLevel {
     case .debug, .info:
