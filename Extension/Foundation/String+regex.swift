@@ -16,13 +16,13 @@ private struct RegexHelper {
     func match(input: String) -> Bool {
         let matches = regex.matches(in: input,
                                     options: [],
-                                    range: NSMakeRange(0, input.utf16.count))
+                                    range: NSRange(location: 0, length: input.utf16.count))
         return matches.count > 0
     }
 }
 
 extension String {
-    static func =~(str: String, regex: String) -> Bool {
+    static func =~ (str: String, regex: String) -> Bool {
         do {
             return try RegexHelper(regex).match(input: str as String)
         } catch _ {

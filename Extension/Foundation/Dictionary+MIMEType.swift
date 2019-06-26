@@ -86,7 +86,8 @@ extension String {
                 let endIndex = self.index(index, offsetBy: batchSize, limitedBy: self.endIndex) ?? self.endIndex
                 let range = startIndex..<endIndex
                 let substring = self[range]
-                escaped += substring.addingPercentEncoding(withAllowedCharacters: allowedCharacterSet) ?? String(substring)
+                escaped += substring.addingPercentEncoding(withAllowedCharacters: allowedCharacterSet)
+                    ?? String(substring)
                 index = endIndex
             }
         }
