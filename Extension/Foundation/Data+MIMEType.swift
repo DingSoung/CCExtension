@@ -8,8 +8,8 @@ extension Data {
     public var jsonObject: Any? {
         do {
             return try  JSONSerialization.jsonObject(with: self)
-        } catch let error {
-            debugPrint(error.localizedDescription, self.debugDescription)
+        } catch let err {
+            error("serize json data fail", err.localizedDescription)
             return nil
         }
     }

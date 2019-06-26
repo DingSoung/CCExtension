@@ -8,8 +8,8 @@ extension Dictionary where Key == String {
     public var json: Data? {
         do {
             return try JSONSerialization.data(withJSONObject: self)
-        } catch let error {
-            debugPrint(error.localizedDescription, self.debugDescription)
+        } catch let err {
+            error("serizee json dic fail", err.localizedDescription)
             return nil
         }
     }

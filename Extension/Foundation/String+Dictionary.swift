@@ -13,8 +13,8 @@ extension String {
         do {
             let json = try JSONSerialization.jsonObject(with: jsonData, options: .mutableContainers)
             return json as? [String: Any]
-        } catch let error {
-            debugPrint(error.localizedDescription, self.debugDescription)
+        } catch let err {
+            error("serlize json string fail", err.localizedDescription)
             return nil
         }
     }

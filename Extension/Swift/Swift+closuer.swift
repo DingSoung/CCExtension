@@ -10,12 +10,12 @@ public func closure(mark: String? = "",
         return
     } else {
         if let mrk = mark {
-            debugPrint("excode block \(mrk)")
+            error("excode block \(mrk)")
         }
         block()
         complete?()
         if let mrk = mark {
-            debugPrint("excode block \(mrk) finished")
+            error("excode block \(mrk) finished")
         }
     }
 }
