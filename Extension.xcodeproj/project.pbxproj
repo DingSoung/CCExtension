@@ -46,6 +46,10 @@
 		CEA8735921FEE789002DD114 /* String+URLEscaped.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8735721FEE789002DD114 /* String+URLEscaped.swift */; };
 		CEA8735A21FEE789002DD114 /* String+URLEscaped.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8735721FEE789002DD114 /* String+URLEscaped.swift */; };
 		CEA8735B21FEE789002DD114 /* String+URLEscaped.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8735721FEE789002DD114 /* String+URLEscaped.swift */; };
+		CEB826E722C473140091F6CB /* CFAbsoluteTime+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB826E622C473140091F6CB /* CFAbsoluteTime+init.swift */; };
+		CEB826E822C473140091F6CB /* CFAbsoluteTime+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB826E622C473140091F6CB /* CFAbsoluteTime+init.swift */; };
+		CEB826E922C473140091F6CB /* CFAbsoluteTime+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB826E622C473140091F6CB /* CFAbsoluteTime+init.swift */; };
+		CEB826EA22C473140091F6CB /* CFAbsoluteTime+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB826E622C473140091F6CB /* CFAbsoluteTime+init.swift */; };
 		CEE10EEE22C3A8C100CA7770 /* Data+MIMEType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE10EEC22C3A8C000CA7770 /* Data+MIMEType.swift */; };
 		CEE10EEF22C3A8C100CA7770 /* Data+MIMEType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE10EEC22C3A8C000CA7770 /* Data+MIMEType.swift */; };
 		CEE10EF022C3A8C100CA7770 /* Data+MIMEType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE10EEC22C3A8C000CA7770 /* Data+MIMEType.swift */; };
@@ -211,6 +215,7 @@
 		CE86472420A1E0650043FB26 /* runtime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runtime.swift; sourceTree = "<group>"; };
 		CE94885F22A9119D002EB78B /* Color+css.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+css.swift"; sourceTree = "<group>"; };
 		CEA8735721FEE789002DD114 /* String+URLEscaped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URLEscaped.swift"; sourceTree = "<group>"; };
+		CEB826E622C473140091F6CB /* CFAbsoluteTime+init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CFAbsoluteTime+init.swift"; sourceTree = "<group>"; };
 		CEE10EEC22C3A8C000CA7770 /* Data+MIMEType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+MIMEType.swift"; sourceTree = "<group>"; };
 		CEE10EED22C3A8C000CA7770 /* Dictionary+MIMEType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+MIMEType.swift"; sourceTree = "<group>"; };
 		CEE63DCC21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPCookieStorage+setCookie.swift"; sourceTree = "<group>"; };
@@ -285,9 +290,9 @@
 		CE19B5F0219AF29D007B3D72 /* WebKit */ = {
 			isa = PBXGroup;
 			children = (
-				CEE63DD62136472200CF7E69 /* WKWebView+registerScheme.swift */,
-				CE19B5F1219AF29D007B3D72 /* WKWebView+input.swift */,
 				CE19B5F6219AF47F007B3D72 /* WKWebView+contentView.swift */,
+				CE19B5F1219AF29D007B3D72 /* WKWebView+input.swift */,
+				CEE63DD62136472200CF7E69 /* WKWebView+registerScheme.swift */,
 			);
 			path = WebKit;
 			sourceTree = "<group>";
@@ -305,10 +310,10 @@
 		CE5597D321DF4C6800C48765 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CEF5751D2192DE7600F6C559 /* Color */,
+				CE5597D621DF4CED00C48765 /* Image */,
 				CEF511FE1FE0CA25008C84C9 /* Objc.swift */,
 				CE86472420A1E0650043FB26 /* runtime.swift */,
-				CE5597D621DF4CED00C48765 /* Image */,
-				CEF5751D2192DE7600F6C559 /* Color */,
 				CE19B600219B0270007B3D72 /* View */,
 			);
 			path = Common;
@@ -359,19 +364,19 @@
 		CEF511EE1FE0CA25008C84C9 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */,
-				CEF511F01FE0CA25008C84C9 /* NSString+Size.swift */,
-				CEF511F21FE0CA25008C84C9 /* UITableView+UIImage.swift */,
-				CEF511F31FE0CA25008C84C9 /* NSAttributedString+Content.swift */,
 				CEF511F41FE0CA25008C84C9 /* Array+UIImage.swift */,
-				CEF511F61FE0CA25008C84C9 /* UINavigationController+Autorotate.swift */,
-				CEF511F71FE0CA25008C84C9 /* UIWebView+JavaScript.swift */,
-				CEF511F91FE0CA25008C84C9 /* UIImage+CoreGraphics.swift */,
-				CEF511FA1FE0CA25008C84C9 /* UIImage+Process.swift */,
-				CEED110421BA5F6B00E76F27 /* UIImage+pdf.swift */,
+				CE6BC711229F80C200611ABD /* CGpoint+Float.swift */,
 				CE6BC707229F807D00611ABD /* CGRect+Float.swift */,
 				CE6BC70C229F809600611ABD /* CGSize+Float.swift */,
-				CE6BC711229F80C200611ABD /* CGpoint+Float.swift */,
+				CEF511F31FE0CA25008C84C9 /* NSAttributedString+Content.swift */,
+				CEF511F01FE0CA25008C84C9 /* NSString+Size.swift */,
+				CEF511EF1FE0CA25008C84C9 /* UIApplication+EventTrack.swift */,
+				CEF511F91FE0CA25008C84C9 /* UIImage+CoreGraphics.swift */,
+				CEED110421BA5F6B00E76F27 /* UIImage+pdf.swift */,
+				CEF511FA1FE0CA25008C84C9 /* UIImage+Process.swift */,
+				CEF511F61FE0CA25008C84C9 /* UINavigationController+Autorotate.swift */,
+				CEF511F21FE0CA25008C84C9 /* UITableView+UIImage.swift */,
+				CEF511F71FE0CA25008C84C9 /* UIWebView+JavaScript.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -379,21 +384,22 @@
 		CEF511FB1FE0CA25008C84C9 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				CEED117421C8EE2B00E76F27 /* Array+cookieString.swift */,
+				CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */,
+				CEF511FC1FE0CA25008C84C9 /* Bundle+Localization.swift */,
+				CEB826E622C473140091F6CB /* CFAbsoluteTime+init.swift */,
 				CEE10EEC22C3A8C000CA7770 /* Data+MIMEType.swift */,
 				CEE10EED22C3A8C000CA7770 /* Dictionary+MIMEType.swift */,
-				CEED10DF21ABEADA00E76F27 /* KeyChain.swift */,
-				CEF511FC1FE0CA25008C84C9 /* Bundle+Localization.swift */,
-				CEF512041FE0CA25008C84C9 /* Locale+Localization.swift */,
-				CEF5120F1FE0CA25008C84C9 /* URL+Cookie.swift */,
 				CEE63DCC21357D7700CF7E69 /* HTTPCookieStorage+setCookie.swift */,
+				CEED10DF21ABEADA00E76F27 /* KeyChain.swift */,
+				CEF512041FE0CA25008C84C9 /* Locale+Localization.swift */,
 				CEE63DD12136465400CF7E69 /* String+base64.swift */,
 				CEF512111FE0CA25008C84C9 /* String+Dictionary.swift */,
 				CEA8735721FEE789002DD114 /* String+URLEscaped.swift */,
-				CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */,
+				CEF5120F1FE0CA25008C84C9 /* URL+Cookie.swift */,
 				CEF574E52192D3A000F6C559 /* URL+query.swift */,
-				CEF574EA2192D5AD00F6C559 /* UserDefaults+subscript.swift */,
 				CEF574EF2192D86A00F6C559 /* UserDefaults+Codable.swift */,
-				CEED117421C8EE2B00E76F27 /* Array+cookieString.swift */,
+				CEF574EA2192D5AD00F6C559 /* UserDefaults+subscript.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -401,11 +407,11 @@
 		CEF512071FE0CA25008C84C9 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
-				CEF5120D1FE0CA25008C84C9 /* Swift+print.swift */,
 				CEF5120B1FE0CA25008C84C9 /* String+regex.swift */,
-				CEF5120A1FE0CA25008C84C9 /* Swift+synchronized.swift */,
-				CEF5120C1FE0CA25008C84C9 /* Swift+closuer.swift */,
 				CEF512101FE0CA25008C84C9 /* Swift+Association.swift */,
+				CEF5120C1FE0CA25008C84C9 /* Swift+closuer.swift */,
+				CEF5120D1FE0CA25008C84C9 /* Swift+print.swift */,
+				CEF5120A1FE0CA25008C84C9 /* Swift+synchronized.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -421,11 +427,11 @@
 		CEF5751D2192DE7600F6C559 /* Color */ = {
 			isa = PBXGroup;
 			children = (
-				CEF5751E2192DE7600F6C559 /* Color+hex.swift */,
-				CEF5751F2192DE7600F6C559 /* Color+components.swift */,
-				CEF575202192DE7600F6C559 /* Color+rgba.swift */,
 				CEF575212192DE7600F6C559 /* Color.swift */,
+				CEF5751F2192DE7600F6C559 /* Color+components.swift */,
 				CE94885F22A9119D002EB78B /* Color+css.swift */,
+				CEF5751E2192DE7600F6C559 /* Color+hex.swift */,
+				CEF575202192DE7600F6C559 /* Color+rgba.swift */,
 			);
 			path = Color;
 			sourceTree = "<group>";
@@ -673,6 +679,7 @@
 				CEF512211FE0CA25008C84C9 /* UITableView+UIImage.swift in Sources */,
 				CE6BC710229F809600611ABD /* CGSize+Float.swift in Sources */,
 				CE19B5F5219AF29D007B3D72 /* WKWebView+input.swift in Sources */,
+				CEB826EA22C473140091F6CB /* CFAbsoluteTime+init.swift in Sources */,
 				CEF5123D1FE0CA25008C84C9 /* UIImage+CoreGraphics.swift in Sources */,
 				CEF512251FE0CA25008C84C9 /* NSAttributedString+Content.swift in Sources */,
 				CEF512411FE0CA25008C84C9 /* UIImage+Process.swift in Sources */,
@@ -725,6 +732,7 @@
 				CEF512201FE0CA25008C84C9 /* UITableView+UIImage.swift in Sources */,
 				CE6BC70F229F809600611ABD /* CGSize+Float.swift in Sources */,
 				CE19B5F4219AF29D007B3D72 /* WKWebView+input.swift in Sources */,
+				CEB826E922C473140091F6CB /* CFAbsoluteTime+init.swift in Sources */,
 				CEF5123C1FE0CA25008C84C9 /* UIImage+CoreGraphics.swift in Sources */,
 				CEF512241FE0CA25008C84C9 /* NSAttributedString+Content.swift in Sources */,
 				CEF512401FE0CA25008C84C9 /* UIImage+Process.swift in Sources */,
@@ -777,6 +785,7 @@
 				CEF5121F1FE0CA25008C84C9 /* UITableView+UIImage.swift in Sources */,
 				CE6BC70E229F809600611ABD /* CGSize+Float.swift in Sources */,
 				CE19B5F3219AF29D007B3D72 /* WKWebView+input.swift in Sources */,
+				CEB826E822C473140091F6CB /* CFAbsoluteTime+init.swift in Sources */,
 				CEF5123B1FE0CA25008C84C9 /* UIImage+CoreGraphics.swift in Sources */,
 				CEF512231FE0CA25008C84C9 /* NSAttributedString+Content.swift in Sources */,
 				CEF5123F1FE0CA25008C84C9 /* UIImage+Process.swift in Sources */,
@@ -839,6 +848,7 @@
 				CEF5123E1FE0CA25008C84C9 /* UIImage+Process.swift in Sources */,
 				CEF512161FE0CA25008C84C9 /* NSString+Size.swift in Sources */,
 				CEF512761FE0CA26008C84C9 /* String+regex.swift in Sources */,
+				CEB826E722C473140091F6CB /* CFAbsoluteTime+init.swift in Sources */,
 				CEED10E021ABEADA00E76F27 /* KeyChain.swift in Sources */,
 				CEF5127E1FE0CA26008C84C9 /* Swift+print.swift in Sources */,
 				CEE63DD72136472200CF7E69 /* WKWebView+registerScheme.swift in Sources */,
@@ -874,7 +884,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Debug;
@@ -896,7 +905,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Release;
@@ -1126,7 +1134,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1146,7 +1153,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

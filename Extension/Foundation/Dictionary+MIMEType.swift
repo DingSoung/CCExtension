@@ -1,6 +1,7 @@
 //  Created by Songwen Ding on 10/12/17.
 //  Copyright © 2017 DingSoung. All rights reserved.
 
+#if canImport(Foundation)
 import Foundation
 
 extension Dictionary where Key == String {
@@ -117,3 +118,4 @@ extension String {
         return components
     }
 }
+#endif

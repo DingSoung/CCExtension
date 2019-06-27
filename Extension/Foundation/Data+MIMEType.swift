@@ -3,6 +3,7 @@
 
 import Foundation
 
+#if canImport(Foundation)
 extension Data {
     /// -> json object
     public var jsonObject: Any? {
@@ -25,3 +26,4 @@ extension Data {
         return self.jsonObject as? [String: Any]
     }
 }
+#endif
