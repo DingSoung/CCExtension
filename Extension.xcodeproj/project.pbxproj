@@ -390,8 +390,6 @@
 				CEF512111FE0CA25008C84C9 /* String+Dictionary.swift */,
 				CEA8735721FEE789002DD114 /* String+URLEscaped.swift */,
 				CEF5120E1FE0CA25008C84C9 /* Array+JSON.swift */,
-				CEF5120D1FE0CA25008C84C9 /* Swift+print.swift */,
-				CEF5120B1FE0CA25008C84C9 /* String+regex.swift */,
 				CEF574E52192D3A000F6C559 /* URL+query.swift */,
 				CEF574EA2192D5AD00F6C559 /* UserDefaults+subscript.swift */,
 				CEF574EF2192D86A00F6C559 /* UserDefaults+Codable.swift */,
@@ -403,6 +401,8 @@
 		CEF512071FE0CA25008C84C9 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				CEF5120D1FE0CA25008C84C9 /* Swift+print.swift */,
+				CEF5120B1FE0CA25008C84C9 /* String+regex.swift */,
 				CEF5120A1FE0CA25008C84C9 /* Swift+synchronized.swift */,
 				CEF5120C1FE0CA25008C84C9 /* Swift+closuer.swift */,
 				CEF512101FE0CA25008C84C9 /* Swift+Association.swift */,
