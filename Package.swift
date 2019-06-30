@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.0.0
 
 import PackageDescription
 
@@ -17,6 +17,6 @@ let package = Package(
         .target(name: "Extension", dependencies: [], path: "Extension")
     ],
     swiftLanguageVersions: [
-        .version("5.1")
+        .version("5.0.0")
     ]
 )
