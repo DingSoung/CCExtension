@@ -3,7 +3,6 @@
 
 #if canImport(Foundation)
 import Foundation
-import Foundation
 
 extension CFAbsoluteTime {
     public init(_ syncBlock: () -> Void) {

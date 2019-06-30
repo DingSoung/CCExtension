@@ -2,7 +2,8 @@
 //  Copyright © 2018年 DingSoung. All rights reserved.
 
 #if canImport(ObjectiveC)
-import ObjectiveC.runtime
+import ObjectiveC
+import Foundation
 
 /// dynamic add selector for classes; int *countOfNumbers(_ numbers: [int])  i@:[i];
 public func selector(uid: String, types: String, classes: [AnyClass], block: (() -> Swift.Void)?) -> Selector {
