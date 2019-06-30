@@ -3,5 +3,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "Extension"
+    name: "Extension",
+    products: [
+        .library(name: "Extension", targets: ["Extension"])
+    ],
+    targets: [
+        .target(name: "Extension", dependencies: [], path: "Extension")
+    ]
 )
