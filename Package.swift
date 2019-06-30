@@ -14,7 +14,7 @@ let package = Package(
         .library(name: "Extension", targets: ["Extension"])
     ],
     targets: [
-        .target(name: "Extension", dependencies: [], path: "Extension")
+        .target(name: "Extension", path: "Sources")
     ],
     swiftLanguageVersions: [
         .version("5.0.0")
