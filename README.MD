@@ -1,8 +1,6 @@
 ![Release](https://img.shields.io/github/release/DingSoung/Extension.svg)
 ![Status](https://travis-ci.org/DingSoung/Extension.svg?branch=master)
 
-![CocoaPods](https://img.shields.io/cocoapods/v/Extension.svg)
-![Carthage](https://img.shields.io/badge/Carthage-compatible-5CC9F5.svg?style=flat)
 ![SwiftPackage](https://img.shields.io/badge/SwiftPackage-compatible-E66848.svg?style=flat)
 
 ![Language](https://img.shields.io/badge/Swift-5-FFAC45.svg?style=flat)
