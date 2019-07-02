@@ -13,7 +13,7 @@ public final class Association<T: Any> {
 
     /// - Parameter index: An object whose associated object is to be accessed.
     public subscript(index: Any) -> T? {
-        get {return objc_getAssociatedObject(index, Unmanaged.passUnretained(self).toOpaque()) as? T}
+        get { return objc_getAssociatedObject(index, Unmanaged.passUnretained(self).toOpaque()) as? T }
         set { objc_setAssociatedObject(index, Unmanaged.passUnretained(self).toOpaque(), newValue, policy) }
     }
 }

@@ -100,17 +100,18 @@ extension WKWebView {
 
 // MARK: add property for WKWebView
 extension WKWebView {
-    private static var inputKey: UInt8 = 0
+    private static let association = Association<Input>()
     /// customize input and accessory view
     @objc public var input: Input {
-        set { objc_setAssociatedObject(self, &WKWebView.inputKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
+        set { WKWebView.association[self] = newValue }
         get {
-            guard let value = objc_getAssociatedObject(self, &WKWebView.inputKey) as? Input else {
+            if let obj = WKWebView.association[self] {
+                return obj
+            } else {
                 let obj = Input(target: self)
-                self.input = obj
+                WKWebView.association[self] = obj
                 return obj
             }
-            return value
         }
     }
 }
