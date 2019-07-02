@@ -86,35 +86,4 @@ extension Color {
     }
 }
 
-extension Color {
-    /// convert UIColor to hex number, 0xFF4477AA
-    public final var hex8: UInt {
-        var red: CGFloat = 0
-        var green: CGFloat = 0
-        var blue: CGFloat = 0
-        var alpha: CGFloat = 0
-        self.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-        return (UInt)(red * 0xFF) << 24
-            | (UInt)(green * 0xFF) << 16
-            | (UInt)(blue * 0xFF) << 8
-            | (UInt)(alpha * 0xFF) << 0
-    }
-
-    /// convert UIColor to hex number, 0xFF4477AA
-    public final var hex6: UInt {
-        return hex8 & 0xFFFFFF00 >> 8
-    }
-}
-
-extension Color {
-    /// convert UIColor to hex string "#FF4477AA"
-    public final var hex8String: String {
-        return String(format: "#%08x", self.hex8)
-    }
-
-    /// convert UIColor to hex string "#FF4477AA"
-    public final var hex6String: String {
-        return String(format: "#%08x", self.hex6)
-    }
-}
 #endif
