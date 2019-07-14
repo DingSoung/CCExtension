@@ -1,3 +1,6 @@
+#if canImport(Foundation)
+import Foundation
+
 extension URL: ExpressibleByStringLiteral {
     public typealias StringLiteralType = String
     public init(stringLiteral value: String) {
@@ -8,3 +11,5 @@ extension URL: ExpressibleByStringLiteral {
         }
     }
 }
+
+#endif
