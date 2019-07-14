@@ -164,6 +164,9 @@
 		CECB854822CB2C76004650B5 /* CGFloat+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB854722CB2C76004650B5 /* CGFloat+String.swift */; };
 		CECB854922CB2C77004650B5 /* CGFloat+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB854722CB2C76004650B5 /* CGFloat+String.swift */; };
 		CECB854A22CB2C77004650B5 /* CGFloat+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB854722CB2C76004650B5 /* CGFloat+String.swift */; };
+		CEF0E30A22DB68E60000C940 /* URL+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF0E30922DB68E50000C940 /* URL+String.swift */; };
+		CEF0E30B22DB68E60000C940 /* URL+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF0E30922DB68E50000C940 /* URL+String.swift */; };
+		CEF0E30C22DB68E60000C940 /* URL+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF0E30922DB68E50000C940 /* URL+String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -224,6 +227,7 @@
 		CECB853F22CB2C12004650B5 /* Float+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+String.swift"; sourceTree = "<group>"; };
 		CECB854322CB2C4C004650B5 /* Int+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+String.swift"; sourceTree = "<group>"; };
 		CECB854722CB2C76004650B5 /* CGFloat+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+String.swift"; sourceTree = "<group>"; };
+		CEF0E30922DB68E50000C940 /* URL+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+String.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,6 +326,7 @@
 				CE0F0CB522C8B17200F72849 /* Data+MIMEType.swift */,
 				CE0F0CB622C8B17200F72849 /* Array+cookieString.swift */,
 				CE0F0CB722C8B17200F72849 /* URL+query.swift */,
+				CEF0E30922DB68E50000C940 /* URL+String.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -638,6 +643,7 @@
 				CE0F0CE422C8B17300F72849 /* CGRect+Float.swift in Sources */,
 				CE0F0D0B22C8B17300F72849 /* String+URLEscaped.swift in Sources */,
 				CE0F0D3822C8B17300F72849 /* Color+hex.swift in Sources */,
+				CEF0E30C22DB68E60000C940 /* URL+String.swift in Sources */,
 				CE0F0D2622C8B17300F72849 /* String+Dictionary.swift in Sources */,
 				CE0F0CD822C8B17300F72849 /* CGpoint+Float.swift in Sources */,
 			);
@@ -697,6 +703,7 @@
 				CE0F0CE322C8B17300F72849 /* CGRect+Float.swift in Sources */,
 				CE0F0D0A22C8B17300F72849 /* String+URLEscaped.swift in Sources */,
 				CE0F0D3722C8B17300F72849 /* Color+hex.swift in Sources */,
+				CEF0E30B22DB68E60000C940 /* URL+String.swift in Sources */,
 				CE0F0D2522C8B17300F72849 /* String+Dictionary.swift in Sources */,
 				CE0F0CD722C8B17300F72849 /* CGpoint+Float.swift in Sources */,
 			);
@@ -756,6 +763,7 @@
 				CE0F0CE222C8B17300F72849 /* CGRect+Float.swift in Sources */,
 				CE0F0D0922C8B17300F72849 /* String+URLEscaped.swift in Sources */,
 				CE0F0D3622C8B17300F72849 /* Color+hex.swift in Sources */,
+				CEF0E30A22DB68E60000C940 /* URL+String.swift in Sources */,
 				CE0F0D2422C8B17300F72849 /* String+Dictionary.swift in Sources */,
 				CE0F0CD622C8B17300F72849 /* CGpoint+Float.swift in Sources */,
 			);
