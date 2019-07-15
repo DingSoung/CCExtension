@@ -8,34 +8,63 @@
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-9EA59D.svg)](https://paypal.me/DingSongwen)
 
-### Beief
+# Beief
 
  A collection Extension for quick developing
 
-### Install
+# Install
 
 #### Swift Package Manager
 
 ```swift
-"https://github.com/DingSoung/Extension.git", Version(0,9,0))
+"https://github.com/DingSoung/Extension", master
 ```
 
-### Localization
+### # Module
 
-- no need to restart app
-- support custom bundle
-- support NSLocalizedString
-- support xibs
-- support to reset
-- use extension, no need to subclass
-- light weight (only on file), easy to use(ref usage)
+## Color hex and css 
 
-
-
-```objective-c
-NSLocale.languageCode = @"en";
-[NSBundle mainBundle].localizationCode = @"en";
-custonBundle.localizationCode = @"en";
-anotherCustonBundle.localizationCode = @"en";
-/// reload your UI, ex: reload root viewcontroller
+```swift
+let color1 = Color(hex8: 0xAABBCCDD)
 ```
+
+## View Keyboard
+
+- [x] color hex
+
+- [x] View kaybodt
+
+- [x] userdefault
+
+- [x] http cookie
+
+- [x] CFAbsoluteTime
+
+- [x] bundle localizationCode
+
+- [x] Dictionary Array Data MIME Type
+
+- [x] KeyChain
+
+- [x] WKWebView keyboard
+
+- [x] WKWebView protocol
+
+- [x] URL query
+
+- [x] Log
+
+- [x] Dispatch once
+
+- [x] String Size
+
+- [x] TableView to image
+
+- [x] UINavigationController rota
+
+- [x] PDF to image
+
+- [x] Image with block
+
+  
+
