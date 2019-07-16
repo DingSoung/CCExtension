@@ -57,6 +57,7 @@
 		CE0F0D5A22C8B17300F72849 /* Swift+print.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CCB22C8B17200F72849 /* Swift+print.swift */; };
 		CE0F0D5D22C8B17300F72849 /* Swift+Association.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CCC22C8B17200F72849 /* Swift+Association.swift */; };
 		CE607EEE1F051DB0007E99DC /* Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = CE607EEC1F051DB0007E99DC /* Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE940DDC22DD933D00BC38B5 /* UIFont+SymbolicTraits.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE940DDB22DD933D00BC38B5 /* UIFont+SymbolicTraits.swift */; };
 		CECB854022CB2C12004650B5 /* Float+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB853F22CB2C12004650B5 /* Float+String.swift */; };
 		CECB854422CB2C4C004650B5 /* Int+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB854322CB2C4C004650B5 /* Int+String.swift */; };
 		CECB854822CB2C76004650B5 /* CGFloat+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB854722CB2C76004650B5 /* CGFloat+String.swift */; };
@@ -116,6 +117,7 @@
 		CE607EE91F051DB0007E99DC /* Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE607EEC1F051DB0007E99DC /* Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extension.h; sourceTree = "<group>"; };
 		CE607EED1F051DB0007E99DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE940DDB22DD933D00BC38B5 /* UIFont+SymbolicTraits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+SymbolicTraits.swift"; sourceTree = "<group>"; };
 		CECB853F22CB2C12004650B5 /* Float+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+String.swift"; sourceTree = "<group>"; };
 		CECB854322CB2C4C004650B5 /* Int+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+String.swift"; sourceTree = "<group>"; };
 		CECB854722CB2C76004650B5 /* CGFloat+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+String.swift"; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				CE0F0CA222C8B17200F72849 /* UIImage+pdf.swift */,
 				CE0F0CA322C8B17200F72849 /* UIImage+CoreGraphics.swift */,
 				CE0F0CA422C8B17200F72849 /* UIImage+Process.swift */,
+				CE940DDB22DD933D00BC38B5 /* UIFont+SymbolicTraits.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				CE0F0D1B22C8B17300F72849 /* Array+JSON.swift in Sources */,
 				CE0F0CFD22C8B17300F72849 /* DispatchQueue+once.swift in Sources */,
 				CE0F0D0C22C8B17300F72849 /* Bundle+Localization.swift in Sources */,
+				CE940DDC22DD933D00BC38B5 /* UIFont+SymbolicTraits.swift in Sources */,
 				CECB854822CB2C76004650B5 /* CGFloat+String.swift in Sources */,
 				CECB854022CB2C12004650B5 /* Float+String.swift in Sources */,
 				CE0F0CD922C8B17300F72849 /* CGSize+Float.swift in Sources */,
