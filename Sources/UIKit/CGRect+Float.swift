@@ -6,6 +6,7 @@
 //  Copyright © 2019 DingSoung. All rights reserved.
 //
 
+#if canImport(CoreGraphics)
 import CoreGraphics
 
 extension CGRect {
@@ -13,3 +14,4 @@ extension CGRect {
         self = CGRect(x: CGFloat(x), y: CGFloat(y), width: CGFloat(width), height: CGFloat(height))
     }
 }
+#endif

@@ -1,7 +1,7 @@
 //  Created by Songwen Ding on 2017/8/9.
 //  Copyright © 2017年 DingSoung. All rights reserved.
 
-#if os(iOS)
+#if canImport(UIKit)
 import UIKit
 
 extension UITableView {

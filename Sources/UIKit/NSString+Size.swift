@@ -1,10 +1,9 @@
 //  Created by Songwen Ding on 12/15/15.
 //  Copyright © 2015 DingSoung. All rights reserved.
 
+#if canImport(UIKit)
 import Foundation
 import CoreGraphics
-
-#if os(watchOS)
 import UIKit
 
 extension NSString {

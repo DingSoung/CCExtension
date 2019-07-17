@@ -1,7 +1,7 @@
 //  Created by Songwen Ding on 2018/12/7.
 //  Copyright © 2018 DingSoung. All rights reserved.
 
-#if os(iOS)
+#if canImport(UIKit)
 import UIKit
 
 extension UIImage {

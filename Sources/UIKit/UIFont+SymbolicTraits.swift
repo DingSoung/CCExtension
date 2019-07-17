@@ -1,6 +1,7 @@
 //  Created by Songwen Ding on 2019/7/16.
 //  Copyright © 2019 DingSoung. All rights reserved.
 
+#if canImport(UIKit)
 import UIKit
 
 extension UIFont {
@@ -20,3 +21,4 @@ extension UIFont {
         return UIFont(descriptor: descriptor, size: 0)
     }
 }
+#endif

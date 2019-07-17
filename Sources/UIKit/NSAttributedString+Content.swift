@@ -1,7 +1,7 @@
 //  Created by Songwen Ding on 4/9/16.
 //  Copyright © 2016 DingSoung. All rights reserved.
 
-#if os(iOS)
+#if canImport(UIKit)
 import UIKit
 
 extension NSAttributedString {

@@ -6,8 +6,7 @@
 //  Copyright © 2019 DingSoung. All rights reserved.
 //
 
-import Foundation
-
+#if canImport(CoreGraphics)
 import CoreGraphics
 
 extension CGSize {
@@ -15,3 +14,4 @@ extension CGSize {
         self = CGSize(width: CGFloat(width), height: CGFloat(height))
     }
 }
+#endif

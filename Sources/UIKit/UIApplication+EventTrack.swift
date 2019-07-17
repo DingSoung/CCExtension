@@ -1,7 +1,7 @@
 //  Created by Songwen Ding on 10/28/16.
 //  Copyright © 2016 Alex. All rights reserved.
 
-#if os(iOS)
+#if canImport(UIKit)
 import UIKit
 
 extension UIApplication {

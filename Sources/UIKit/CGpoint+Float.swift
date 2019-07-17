@@ -6,6 +6,7 @@
 //  Copyright © 2019 DingSoung. All rights reserved.
 //
 
+#if canImport(CoreGraphics)
 import CoreGraphics
 
 extension CGPoint {
@@ -13,3 +14,4 @@ extension CGPoint {
         self = CGPoint(x: CGFloat(x), y: CGFloat(y))
     }
 }
+#endif
