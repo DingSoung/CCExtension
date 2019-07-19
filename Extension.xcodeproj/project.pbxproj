@@ -54,7 +54,7 @@
 		CE0F0D5122C8B17300F72849 /* Swift+closuer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CC822C8B17200F72849 /* Swift+closuer.swift */; };
 		CE0F0D5422C8B17300F72849 /* Swift+synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CC922C8B17200F72849 /* Swift+synchronized.swift */; };
 		CE0F0D5722C8B17300F72849 /* String+regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CCA22C8B17200F72849 /* String+regex.swift */; };
-		CE0F0D5A22C8B17300F72849 /* Swift+print.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CCB22C8B17200F72849 /* Swift+print.swift */; };
+		CE0F0D5A22C8B17300F72849 /* Swift+log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CCB22C8B17200F72849 /* Swift+log.swift */; };
 		CE0F0D5D22C8B17300F72849 /* Swift+Association.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CCC22C8B17200F72849 /* Swift+Association.swift */; };
 		CE32EBE822DF5933004CCD62 /* UIControl+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32EBE722DF5933004CCD62 /* UIControl+Event.swift */; };
 		CE607EEE1F051DB0007E99DC /* Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = CE607EEC1F051DB0007E99DC /* Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -113,7 +113,7 @@
 		CE0F0CC822C8B17200F72849 /* Swift+closuer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+closuer.swift"; sourceTree = "<group>"; };
 		CE0F0CC922C8B17200F72849 /* Swift+synchronized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+synchronized.swift"; sourceTree = "<group>"; };
 		CE0F0CCA22C8B17200F72849 /* String+regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+regex.swift"; sourceTree = "<group>"; };
-		CE0F0CCB22C8B17200F72849 /* Swift+print.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+print.swift"; sourceTree = "<group>"; };
+		CE0F0CCB22C8B17200F72849 /* Swift+log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+log.swift"; sourceTree = "<group>"; };
 		CE0F0CCC22C8B17200F72849 /* Swift+Association.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Association.swift"; sourceTree = "<group>"; };
 		CE32EBE722DF5933004CCD62 /* UIControl+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Event.swift"; sourceTree = "<group>"; };
 		CE607EE91F051DB0007E99DC /* Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -265,7 +265,7 @@
 				CE0F0CC822C8B17200F72849 /* Swift+closuer.swift */,
 				CE0F0CC922C8B17200F72849 /* Swift+synchronized.swift */,
 				CE0F0CCA22C8B17200F72849 /* String+regex.swift */,
-				CE0F0CCB22C8B17200F72849 /* Swift+print.swift */,
+				CE0F0CCB22C8B17200F72849 /* Swift+log.swift */,
 				CE0F0CCC22C8B17200F72849 /* Swift+Association.swift */,
 			);
 			path = Swift;
@@ -418,7 +418,7 @@
 				CE0F0D3922C8B17300F72849 /* Color+components.swift in Sources */,
 				CE0F0CF122C8B17300F72849 /* UIWebView+JavaScript.swift in Sources */,
 				CE0F0D5D22C8B17300F72849 /* Swift+Association.swift in Sources */,
-				CE0F0D5A22C8B17300F72849 /* Swift+print.swift in Sources */,
+				CE0F0D5A22C8B17300F72849 /* Swift+log.swift in Sources */,
 				CE0F0CE522C8B17300F72849 /* UITableView+UIImage.swift in Sources */,
 				CE0F0D3322C8B17300F72849 /* runtime.swift in Sources */,
 				CE0F0D4B22C8B17300F72849 /* View+KeyboardInfo.swift in Sources */,
