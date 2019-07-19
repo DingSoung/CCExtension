@@ -5,25 +5,26 @@
 import Dispatch
 
 extension DispatchQueue {
-    private static var _onceTracker = [String]()
+    private static var onceTracker = [String]()
 
     /// excuse on current thread once
-    public class func once(token: String, block: () -> Void) {
+    public func once(token: String, block: () -> Void) {
         objc_sync_enter(self)
         defer { objc_sync_exit(self) }
-        if _onceTracker.contains(token) {
+        if DispatchQueue.onceTracker.contains(token) {
             return
         }
-        _onceTracker.append(token)
+        DispatchQueue.onceTracker.append(token)
         block()
     }
 }
 
 extension DispatchQueue {
     /// excuse on current thread once
-    public class func once(file: String = #file, function: String = #function, line: Int = #line, block: () -> Void) {
+    public func once(file: String = #file, function: String = #function, line: Int = #line, block: () -> Void) {
         let token = file + ":" + function + ":" + String(line)
         self.once(token: token, block: block)
     }
 }
+
 #endif
