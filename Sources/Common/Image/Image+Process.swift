@@ -4,16 +4,16 @@
 #if canImport(UIKit)
 import UIKit
 
-extension UIImage {
+extension Image {
     /// image to scale
-    public func imageWithScale(scale: CGFloat) -> UIImage {
+    public func image(scale: CGFloat) -> Image {
         guard let cgImage = cgImage else {
             return self
         }
         return UIImage(cgImage: cgImage, scale: scale, orientation: UIImage.Orientation.up)
     }
     /// scale with ratio
-    public func imageScaleToRatio(ratio: CGFloat) -> UIImage? {
+    public func image(ratio: CGFloat) -> Image? {
         UIGraphicsBeginImageContext(CGSize(width: size.width * ratio, height: size.height * ratio))
         draw(in: CGRect(origin: CGPoint(x: 0, y: 0),
                         size: CGSize(width: size.width * ratio,
@@ -23,7 +23,7 @@ extension UIImage {
         return scaledImage
     }
     /// sacale to size
-    public func imageScaleToSize(size: CGSize) -> UIImage? {
+    public func image(size: CGSize) -> Image? {
         UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
         draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         let image = UIGraphicsGetImageFromCurrentImageContext()
@@ -31,7 +31,7 @@ extension UIImage {
         return image
     }
     /// image with cornal radius
-    public func imageWithCornerRadius(radius: CGFloat) -> UIImage? {
+    public func image(radius: CGFloat) -> Image? {
         let rect = CGRect(origin: .zero, size: size)
         UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
         guard let context = UIGraphicsGetCurrentContext() else { return nil }
@@ -44,7 +44,7 @@ extension UIImage {
     }
     /// image with corner radius with half of min width or height
     public var roundImage: UIImage? {
-        return imageWithCornerRadius(radius: min(size.width, size.height) * 0.5)
+        return image(radius: min(size.width, size.height) * 0.5)
     }
 }
 #endif

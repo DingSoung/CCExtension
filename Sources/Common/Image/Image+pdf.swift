@@ -4,10 +4,10 @@
 #if canImport(UIKit)
 import UIKit
 
-extension UIImage {
-    private static var ramCache = NSCache<NSString, UIImage>()
+extension Image {
+    private static var ramCache = NSCache<NSString, Image>()
 
-    public class final func image(pdf: String, bundle: Bundle, page: Int, size: CGSize) -> UIImage? {
+    public class final func image(pdf: String, bundle: Bundle, page: Int, size: CGSize) -> Image? {
         guard size.width > 0 && size.height > 0 && page > 0 else { return nil }
         guard let filePath = bundle.path(forResource: pdf, ofType: "pdf") else { return nil }
         let name = cacheName(filePath: filePath, page: page, size: size)
@@ -39,7 +39,7 @@ extension UIImage {
     }
 
     /// render image
-    private final class func image(pdfPage: CGPDFPage, size: CGSize) -> UIImage? {
+    private final class func image(pdfPage: CGPDFPage, size: CGSize) -> Image? {
         let pageFrame = pdfPage.getBoxRect(CGPDFBox.cropBox)
         let screenScale = UIScreen.main.scale // pix per bitMap @2x or @3x
         guard let context = CGContext(data: nil,
@@ -62,7 +62,7 @@ extension UIImage {
         guard let imageRef = context.makeImage() else {
             return nil
         }
-        return UIImage(cgImage: imageRef, scale: screenScale, orientation: .up)
+        return Image(cgImage: imageRef, scale: screenScale, orientation: .up)
     }
 }
 

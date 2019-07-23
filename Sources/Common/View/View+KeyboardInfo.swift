@@ -5,11 +5,14 @@
 import UIKit
 
 extension View {
-    @objc public enum KeyboardAction: Int {
+    @objc
+    public enum KeyboardAction: Int {
         case hide = 0
         case show = 1
     }
-    @objc(UIViewKeyboardInfo) @objcMembers public final class KeyboardInfo: NSObject {
+
+    @objc(UIViewKeyboardInfo) @objcMembers
+    public final class KeyboardInfo: NSObject {
         public var frame: CGRect {
             return frameEnd
         }
@@ -28,9 +31,11 @@ extension View {
         fileprivate var weakArray = NSHashTable<AnyObject>(options: .weakMemory)
         // singleton
         public static let shared = KeyboardInfo()
+
         private override init() {
             super.init()
         }
+
         deinit {
             invalid()
         }
@@ -57,7 +62,8 @@ extension View.KeyboardInfo {
 
 extension View.KeyboardInfo {
     // MARK: - Notification
-    @objc private func updateKeyboardInfo(notification: Notification) {
+    @objc
+    private func updateKeyboardInfo(notification: Notification) {
         guard let frameBegin = notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? CGRect,
             let frameEnd = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect,
             let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval,
@@ -67,7 +73,7 @@ extension View.KeyboardInfo {
         self.frameEnd = frameEnd
         self.duration = duration
         self.curve = curve
-        weakArray.allObjects.forEach { (object) in
+        self.weakArray.allObjects.forEach { (object) in
             (object as? View)?.keyboardInfoDidUpdateCallBack?(self)
         }
     }
@@ -76,7 +82,8 @@ extension View.KeyboardInfo {
 extension View {
     private static var keyboardInfoDidUpdateCallBackKey: UInt8 = 0
     /// keyboard frame update callback
-    @objc public var keyboardInfoDidUpdateCallBack: ((KeyboardInfo) -> Swift.Void)? {
+    @objc
+    public var keyboardInfoDidUpdateCallBack: ((KeyboardInfo) -> Swift.Void)? {
         set {
             if newValue != nil {
                 KeyboardInfo.shared.weakArray.add(self)

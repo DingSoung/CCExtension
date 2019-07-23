@@ -18,6 +18,7 @@ extension View {
             }
         }, size: bounds.size, opaque: isOpaque)
     }
+
     public func image(scale: CGFloat) -> Image? {
         return Image.image(render: {
             if let contex = UIGraphicsGetCurrentContext() {
@@ -25,9 +26,11 @@ extension View {
             }
         }, size: bounds.size, opaque: isOpaque)
     }
+
     public var image: Image? {
         return image(scale: UIScreen.main.scale)
     }
+
     public var fastImage: Image? {
         var image: Image?
         UIGraphicsBeginImageContextWithOptions(bounds.size, isOpaque, UIScreen.main.scale)
