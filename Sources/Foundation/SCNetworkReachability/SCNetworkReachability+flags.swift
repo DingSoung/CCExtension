@@ -24,7 +24,6 @@ extension SCNetworkReachability {
         return flags.contains(.reachable) && !flags.contains(.connectionRequired)
     }
 
-    @objc
     public enum Status: Int {
         case notReachable = 0
         case reachableViaWiFi
