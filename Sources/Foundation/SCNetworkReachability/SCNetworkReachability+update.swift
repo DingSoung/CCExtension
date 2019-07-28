@@ -23,8 +23,9 @@ extension SCNetworkReachability {
 
     @discardableResult
     public func start() -> Bool {
+        let info = UnsafeMutableRawPointer(Unmanaged.passUnretained(self).toOpaque())
         var context = SCNetworkReachabilityContext(version: 0,
-                                                   info: UnsafeMutableRawPointer(Unmanaged.passUnretained(self).toOpaque()),
+                                                   info: info,
                                                    retain: nil,
                                                    release: nil,
                                                    copyDescription: nil)
@@ -32,7 +33,8 @@ extension SCNetworkReachability {
             guard let info = info else {
                 return
             }
-            let networkReachability = Unmanaged<SCNetworkReachability>.fromOpaque(info).takeUnretainedValue() as SCNetworkReachability
+            let networkReachability = Unmanaged<SCNetworkReachability>.fromOpaque(info).takeUnretainedValue()
+                as SCNetworkReachability
             let enumerator = networkReachability.blocks.objectEnumerator()
             while let object: AnyObject = enumerator?.nextObject() as AnyObject? {
                 let block = unsafeBitCast(object, to: UpdateBlock.self)
