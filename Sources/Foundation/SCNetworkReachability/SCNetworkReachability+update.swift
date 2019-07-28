@@ -3,6 +3,8 @@
 
 #if canImport(SystemConfiguration)
 import SystemConfiguration
+#if canImport(Foundation)
+import Foundation
 
 extension SCNetworkReachability {
     public typealias UpdateBlock = @convention(block) (SCNetworkReachability) -> Void
@@ -49,5 +51,5 @@ extension SCNetworkReachability {
         SCNetworkReachabilityUnscheduleFromRunLoop(self, CFRunLoopGetCurrent(), CFRunLoopMode.defaultMode.rawValue)
     }
 }
-
+#endif
 #endif
