@@ -22,7 +22,7 @@ extension SCNetworkReachability {
         var zeroAddress = sockaddr_in()
         zeroAddress.sin_len = UInt8(MemoryLayout<sockaddr_in>.size)
         zeroAddress.sin_family = sa_family_t(AF_INET)
-        return self.reachability(hostAddress: &zeroAddress)
+        return reachability(hostAddress: &zeroAddress)
     }
 }
 #endif

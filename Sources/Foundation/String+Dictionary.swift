@@ -7,7 +7,7 @@ import Foundation.NSJSONSerialization
 extension String {
     /// JSON String -> JSON Dictionary
     public var jsonDictionary: [String: Any]? {
-        guard let jsonData = self.data(using: .utf8, allowLossyConversion: false) else {
+        guard let jsonData = data(using: .utf8, allowLossyConversion: false) else {
             return nil
         }
         do {

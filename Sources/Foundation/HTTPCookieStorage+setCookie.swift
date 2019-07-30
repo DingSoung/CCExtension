@@ -22,7 +22,7 @@ extension HTTPCookieStorage {
             break
         }
         cookies.append(cookie)
-        self.setCookies(cookies, for: cookie.commentURL, mainDocumentURL: nil)
+        setCookies(cookies, for: cookie.commentURL, mainDocumentURL: nil)
     }
 }
 #endif

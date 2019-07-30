@@ -14,37 +14,37 @@ extension ApplicationMianDelegate: UIApplicationDelegate {
     open func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
-        return self.modules.allSatisfy {
+        return modules.allSatisfy {
             return $0.application?(application, didFinishLaunchingWithOptions: launchOptions) ?? true
         }
     }
 
     open func applicationWillResignActive(_ application: UIApplication) {
-        self.modules.forEach {
+        modules.forEach {
             $0.applicationWillResignActive?(application)
         }
     }
 
     open func applicationDidEnterBackground(_ application: UIApplication) {
-        self.modules.forEach {
+        modules.forEach {
             $0.applicationDidEnterBackground?(application)
         }
     }
 
     open func applicationWillEnterForeground(_ application: UIApplication) {
-        self.modules.forEach {
+        modules.forEach {
             $0.applicationWillEnterForeground?(application)
         }
     }
 
     open func applicationDidBecomeActive(_ application: UIApplication) {
-        self.modules.forEach {
+        modules.forEach {
             $0.applicationDidBecomeActive?(application)
         }
     }
 
     open func applicationWillTerminate(_ application: UIApplication) {
-        self.modules.forEach {
+        modules.forEach {
             $0.applicationWillTerminate?(application)
         }
     }

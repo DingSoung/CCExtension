@@ -12,8 +12,8 @@ extension Bundle {
     // bundle run time code en, zh_Hans ect, to update localization source without restart
     public var localizationCode: String? {
         set {
-            if let path = self.path(forResource: newValue, ofType: "lproj") {
-                if self.isMember(of: Bundle.self) {
+            if let path = path(forResource: newValue, ofType: "lproj") {
+                if isMember(of: Bundle.self) {
                     object_setClass(self, BundleEx.self)
                 }
                 let runTimeBundle = Bundle(path: path)
@@ -22,14 +22,14 @@ extension Bundle {
                                          runTimeBundle,
                                          objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             } else {
-                if self.isMember(of: BundleEx.self) {
+                if isMember(of: BundleEx.self) {
                     object_setClass(self, Bundle.self)
                 }
                 objc_removeAssociatedObjects(self)
             }
         }
         get {
-            return self.preferredLocalizations.first
+            return preferredLocalizations.first
         }
     }
     fileprivate var runTimeBundle: Bundle? {
@@ -39,7 +39,7 @@ extension Bundle {
 
 private class BundleEx: Bundle {
     fileprivate override func localizedString(forKey key: String, value: String?, table tableName: String?) -> String {
-        if let bundle = self.runTimeBundle {
+        if let bundle = runTimeBundle {
             return bundle.localizedString(forKey: key, value: value, table: tableName)
         } else {
             return super.localizedString(forKey: key, value: value, table: tableName)

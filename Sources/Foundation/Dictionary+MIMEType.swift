@@ -27,7 +27,7 @@ extension Dictionary where Key == String {
     public func formData(boundary: String, name: String, type: String, file: Data) -> Data {
         var data = Data()
         let prifix = "--" + boundary + "\r\n"
-        self.forEach({ (key, value) in
+       forEach({ (key, value) in
             if key == "file" || key == "size" { return }
             data.appendString(prifix)
             data.appendString("Content-Disposition: form-data; name=\"\(key)\"\r\n\r\n")
@@ -53,14 +53,14 @@ extension Data {
         guard let data = string.data(using: .utf8, allowLossyConversion: false) else {
             return
         }
-        self.append(data)
+       append(data)
     }
 }
 
 extension Dictionary where Key == String {
     /// -> json data string
     public var jsonString: String? {
-        guard let data = self.json else { return nil }
+        guard let data = json else { return nil }
         return String(data: data, encoding: .utf8)
     }
 }
@@ -78,11 +78,11 @@ extension String {
         allowedCharacterSet.remove(charactersIn: "\(generalDelimitersToEncode)\(subDelimitersToEncode)")
         var escaped = ""
         if #available(iOS 8.3, *) {
-            escaped = self.addingPercentEncoding(withAllowedCharacters: allowedCharacterSet) ?? self
+            escaped = addingPercentEncoding(withAllowedCharacters: allowedCharacterSet) ?? self
         } else {
             let batchSize = 50
-            var index = self.startIndex
-            while index != self.endIndex {
+            var index = startIndex
+            while index != endIndex {
                 let startIndex = index
                 let endIndex = self.index(index, offsetBy: batchSize, limitedBy: self.endIndex) ?? self.endIndex
                 let range = startIndex..<endIndex

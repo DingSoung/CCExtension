@@ -10,7 +10,7 @@ extension String {
         return String(data: data, encoding: .utf8)
     }
     public var base64Encode: String {
-        return Data(self.utf8).base64EncodedString()
+        return Data(utf8).base64EncodedString()
     }
 }
 #endif

@@ -6,15 +6,15 @@ import UIKit
 
 extension UIFont {
     public func with(_ traits: UIFontDescriptor.SymbolicTraits...) -> UIFont {
-        guard let descriptor = self.fontDescriptor.withSymbolicTraits(UIFontDescriptor.SymbolicTraits(traits)
-            .union(self.fontDescriptor.symbolicTraits)) else {
+        guard let descriptor = fontDescriptor.withSymbolicTraits(UIFontDescriptor.SymbolicTraits(traits)
+            .union(fontDescriptor.symbolicTraits)) else {
             return self
         }
         return UIFont(descriptor: descriptor, size: 0)
     }
 
     public func without(_ traits: UIFontDescriptor.SymbolicTraits...) -> UIFont {
-        guard let descriptor = self.fontDescriptor.withSymbolicTraits(self.fontDescriptor.symbolicTraits
+        guard let descriptor = fontDescriptor.withSymbolicTraits(fontDescriptor.symbolicTraits
             .subtracting(UIFontDescriptor.SymbolicTraits(traits))) else {
             return self
         }

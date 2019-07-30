@@ -165,7 +165,7 @@ extension Color {
 
     /// init color with hex like red, #ABCDEF
     public class func css(_ name: String) -> Color? {
-        if let hex = self.map[name.lowercased()] {
+        if let hex = map[name.lowercased()] {
             return Color(hex6: hex)
         } else {
             return Color.hex(name)

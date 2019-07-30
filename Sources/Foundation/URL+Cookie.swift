@@ -18,8 +18,8 @@ extension URL {
             .version: "0"
             //.comment
             ] as [HTTPCookiePropertyKey: Any]
-        if let host = self.host { properties[.domain] = host }
-        if let port = self.port { properties[.port] = port }
+        if let host = host { properties[.domain] = host }
+        if let port = port { properties[.port] = port }
         return properties
     }
     public func cookie(value: String, forName name: String) -> HTTPCookie? {

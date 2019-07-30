@@ -16,11 +16,11 @@ extension SCNetworkReachability {
 
     public func addObserve(uid: String, updateBlock: @escaping UpdateBlock) {
         let object = unsafeBitCast(updateBlock, to: AnyObject.self)
-        self.blocks.setObject(object, forKey: uid as NSString)
+        blocks.setObject(object, forKey: uid as NSString)
     }
 
     public func removeObserve(uid: String) {
-        self.blocks.removeObject(forKey: uid as NSString)
+        blocks.removeObject(forKey: uid as NSString)
     }
 
     @discardableResult

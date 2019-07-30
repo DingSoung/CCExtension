@@ -12,11 +12,11 @@ extension SCNetworkReachability {
     }
 
     public var connectionRequired: Bool {
-        return self.flags.contains(.connectionRequired)
+        return flags.contains(.connectionRequired)
     }
 
     public var reachable: Bool {
-        return self.flags.contains(.reachable)
+        return flags.contains(.reachable)
     }
 
     public var isOnline: Bool {

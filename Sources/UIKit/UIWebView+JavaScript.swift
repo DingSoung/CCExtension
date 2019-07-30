@@ -38,12 +38,12 @@ extension JSContext {
     /// register func: (Any) -> Void
     public func register(function: String, block: @escaping () -> Void) {
         let castedBlock: AnyObject = unsafeBitCast(block as @convention(block) () -> Void, to: AnyObject.self)
-        self.setObject(castedBlock, forKeyedSubscript: function as NSCopying & NSObjectProtocol)
+        setObject(castedBlock, forKeyedSubscript: function as NSCopying & NSObjectProtocol)
     }
 
     /// call js: (xx,...) -> value
     public func sync(function: String, parameter: [Any]) -> JSValue {
-        return self.objectForKeyedSubscript(function).call(withArguments: parameter)
+        return objectForKeyedSubscript(function).call(withArguments: parameter)
     }
 
     /// async call js: (xx,...) -> value

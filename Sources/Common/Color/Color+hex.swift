@@ -46,7 +46,7 @@ extension Color {
             alpha = 1
             red = colorComponent(hex: formatHex, start: 0, lenght: 1)
             green = colorComponent(hex: formatHex, start: 1, lenght: 1)
-            blue = self.colorComponent(hex: formatHex, start: 2, lenght: 1)
+            blue = colorComponent(hex: formatHex, start: 2, lenght: 1)
         case 4: //#ARGB
             alpha = colorComponent(hex: formatHex, start: 0, lenght: 1)
             red = colorComponent(hex: formatHex, start: 1, lenght: 1)

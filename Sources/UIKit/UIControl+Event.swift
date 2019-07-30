@@ -18,13 +18,13 @@ extension UIControl {
         get { return UIControl.association[self] }
     }
     @objc private func triggerActionHandler() {
-        self.action?()
+        action?()
     }
     public final func setEvent(event: Event, withAction action: (() -> Void)?) {
         self.action = action
-        self.removeTarget(self, action: #selector(triggerActionHandler), for: event)
+        removeTarget(self, action: #selector(triggerActionHandler), for: event)
         if action != nil {
-            self.addTarget(self, action: #selector(triggerActionHandler), for: event)
+            addTarget(self, action: #selector(triggerActionHandler), for: event)
         }
     }
 }

@@ -8,30 +8,30 @@ extension UITableView {
     public final var headerImage: UIImage? {
         let offset = contentOffset
         guard let rect = tableHeaderView?.frame else {return nil}
-        self.scrollRectToVisible(rect, animated: false)
+        scrollRectToVisible(rect, animated: false)
         let image = tableHeaderView?.image
-        self.setContentOffset(offset, animated: false)
+        setContentOffset(offset, animated: false)
         return image
     }
     public final func headerImage(forSection section: Int) -> UIImage? {
         let offset = contentOffset
         let rect = rectForHeader(inSection: section)
-        self.scrollRectToVisible(rect, animated: false)
+        scrollRectToVisible(rect, animated: false)
         let image = headerView(forSection: section)?.image
-        self .setContentOffset(offset, animated: false)
+        setContentOffset(offset, animated: false)
         return image
     }
     public final func imageForRow(at indexPath: IndexPath) -> UIImage? {
         let offset = contentOffset
-        self.scrollToRow(at: indexPath, at: UITableView.ScrollPosition.top, animated: false)
+        scrollToRow(at: indexPath, at: UITableView.ScrollPosition.top, animated: false)
         let image = cellForRow(at: indexPath)?.image(scale: UIScreen.main.scale)
-        self.setContentOffset(offset, animated: false)
+        setContentOffset(offset, animated: false)
         return image
     }
     public final func footerImage(forSection section: Int) -> UIImage? {
         let offset = contentOffset
         let rect = rectForFooter(inSection: section)
-        self.scrollRectToVisible(rect, animated: false)
+        scrollRectToVisible(rect, animated: false)
         let image = headerView(forSection: section)?.image
         setContentOffset(offset, animated: false)
         return image
@@ -54,7 +54,7 @@ extension UITableView {
         let offset = contentOffset
         if header == true {
             let rect = rectForHeader(inSection: section)
-            self.scrollRectToVisible(rect, animated: false)
+            scrollRectToVisible(rect, animated: false)
             if let view = headerView(forSection: section) {
                 scrollRectToVisible(view.frame, animated: false)
                 view.layer.render(in: context)

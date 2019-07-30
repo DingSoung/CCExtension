@@ -18,7 +18,7 @@ extension View {
         }
         public var duration: TimeInterval = 0
         public var option: View.AnimationOptions {
-            return View.AnimationOptions.init(rawValue: self.curve << 16)
+            return View.AnimationOptions.init(rawValue: curve << 16)
         }
         public var action: KeyboardAction {
             return frameEnd.maxY > UIScreen.main.bounds.maxY ? .hide : .show
@@ -73,7 +73,7 @@ extension View.KeyboardInfo {
         self.frameEnd = frameEnd
         self.duration = duration
         self.curve = curve
-        self.weakArray.allObjects.forEach { (object) in
+        weakArray.allObjects.forEach { (object) in
             (object as? View)?.keyboardInfoDidUpdateCallBack?(self)
         }
     }

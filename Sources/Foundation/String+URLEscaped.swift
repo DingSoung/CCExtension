@@ -6,7 +6,7 @@ import Foundation
 
 extension String {
     public var URLEscaped: String? {
-        return self.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+        return addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
     }
 }
 

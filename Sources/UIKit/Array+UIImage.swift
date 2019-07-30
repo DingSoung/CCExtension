@@ -12,7 +12,7 @@ extension Array where Element: UIImage {
             size.height += imgSize.height
             size.width = Swift.max(size.width, imgSize.width)
         }
-        size.height += CGFloat(Swift.max(0, self.count - 1)) * space
+        size.height += CGFloat(Swift.max(0, count - 1)) * space
         var image: UIImage?
         UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
         if let color = backgroundColor {
@@ -32,7 +32,7 @@ extension Array where Element: UIImage {
     }
 
     public var verticalImage: UIImage? {
-        return self.verticalImage(space: 0, backgroundColor: nil)
+        return verticalImage(space: 0, backgroundColor: nil)
     }
 }
 #endif
