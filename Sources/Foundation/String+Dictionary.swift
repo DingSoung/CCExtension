@@ -19,4 +19,30 @@ extension String {
         }
     }
 }
+
+extension String {
+    public var cssMap: [String: String]? {
+        let array = split(separator: ";")
+        guard !array.isEmpty else {
+            warning("css is empty: \(self)")
+            return nil
+        }
+        var map = [String: String]()
+        array.forEach {
+            let pair = $0.split(separator: ":")
+            guard pair.count == 2 else {
+                error("css pair is error: \($0)")
+                return
+            }
+            let key = pair[0].trimmingCharacters(in: .whitespacesAndNewlines)
+            guard map[key] == nil else {
+                error("duplicate css pair: \(pair)")
+                return
+            }
+            map[key] = pair[1].trimmingCharacters(in: .whitespacesAndNewlines)
+        }
+        return map.isEmpty ? nil : map
+    }
+}
+
 #endif
