@@ -11,7 +11,13 @@ extension SCNetworkReachability {
 
     private static let association = Association<NSMapTable<NSString, AnyObject>>()
     private var blocks: NSMapTable<NSString, AnyObject> {
-        return SCNetworkReachability.association[self] ?? NSMapTable(keyOptions: .weakMemory, valueOptions: .weakMemory)
+        if let blocks = SCNetworkReachability.association[self] {
+            return blocks
+        } else {
+            let blocks = NSMapTable<NSString, AnyObject>(keyOptions: .weakMemory, valueOptions: .weakMemory)
+            SCNetworkReachability.association[self] = blocks
+            return blocks
+        }
     }
 
     public func addObserve(uid: String, updateBlock: @escaping UpdateBlock) {

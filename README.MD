@@ -8,11 +8,11 @@
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-9EA59D.svg)](https://paypal.me/DingSongwen)
 
-# Beief
+# 简介
 
- A collection Extension for quick developing
+ 各种 Swift Extension  扩展合集
 
-# Install
+# 按照
 
 #### Swift Package Manager
 
@@ -20,7 +20,31 @@
 "https://github.com/DingSoung/Extension", master
 ```
 
-### # Module
+### # 模块
+
+## Chainable 链式调用
+
+```swift
+let attrbuteString = NSMutableAttributedString(string: "hello")
+    .foregroundColor(.red)
+    .underlineColor(.blue)
+    .underlineStyle(.single)
+
+let label = UILabel()
+    .backgroundColor(.white)
+    .textAlignment(.center)
+    .numberOfLines(2)
+    .lineBreakMode(.byTruncatingMiddle)
+    .attributedText(attrbuteString)
+```
+
+**欢迎补充**
+
+- [ ] UIView
+- [ ] UILabel
+- [ ] NSMutableAttributedString
+- [ ] NSMutableParagraph
+- [ ] CALayer
 
 ## Color hex and css 
 
@@ -77,15 +101,15 @@ let selector = selector(uid: view.hash.description, types: "v@:", classes: [UIVi
 button.addTarget(button, action: selector, for: .touchUpInside)
 ```
 
-add selector
+* add selector
 
-replace selector
+* replace selector
 
-exchange selector
+* exchange selector
 
-get all methods
+* get all methods
 
-check exists selector in class
+* check exists selector in class
 
 ## View 
 

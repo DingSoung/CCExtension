@@ -58,6 +58,9 @@
 		CE32EBE822DF5933004CCD62 /* UIControl+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32EBE722DF5933004CCD62 /* UIControl+Event.swift */; };
 		CE607EEE1F051DB0007E99DC /* Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = CE607EEC1F051DB0007E99DC /* Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE940DDC22DD933D00BC38B5 /* UIFont+SymbolicTraits.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE940DDB22DD933D00BC38B5 /* UIFont+SymbolicTraits.swift */; };
+		CEAC39192302E2F400B44F42 /* UILabel+chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC39112302E2F400B44F42 /* UILabel+chainable.swift */; };
+		CEAC39202302E2F400B44F42 /* UIView+chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC39182302E2F400B44F42 /* UIView+chainable.swift */; };
+		CEAC39242302EAA500B44F42 /* NSAttribute+chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC39222302EAA500B44F42 /* NSAttribute+chainable.swift */; };
 		CEBC590322ED45A700FA3182 /* SCNetworkReachability+new.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC590222ED45A700FA3182 /* SCNetworkReachability+new.swift */; };
 		CEBC590522ED46FC00FA3182 /* SCNetworkReachability+flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC590422ED46FC00FA3182 /* SCNetworkReachability+flags.swift */; };
 		CEBC590722ED4A2D00FA3182 /* SCNetworkReachability+update.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC590622ED4A2D00FA3182 /* SCNetworkReachability+update.swift */; };
@@ -122,6 +125,9 @@
 		CE607EEC1F051DB0007E99DC /* Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extension.h; sourceTree = "<group>"; };
 		CE607EED1F051DB0007E99DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE940DDB22DD933D00BC38B5 /* UIFont+SymbolicTraits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+SymbolicTraits.swift"; sourceTree = "<group>"; };
+		CEAC39112302E2F400B44F42 /* UILabel+chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+chainable.swift"; sourceTree = "<group>"; };
+		CEAC39182302E2F400B44F42 /* UIView+chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+chainable.swift"; sourceTree = "<group>"; };
+		CEAC39222302EAA500B44F42 /* NSAttribute+chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttribute+chainable.swift"; sourceTree = "<group>"; };
 		CEBC590222ED45A700FA3182 /* SCNetworkReachability+new.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNetworkReachability+new.swift"; sourceTree = "<group>"; };
 		CEBC590422ED46FC00FA3182 /* SCNetworkReachability+flags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNetworkReachability+flags.swift"; sourceTree = "<group>"; };
 		CEBC590622ED4A2D00FA3182 /* SCNetworkReachability+update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNetworkReachability+update.swift"; sourceTree = "<group>"; };
@@ -169,6 +175,7 @@
 		CE0F0C9722C8B17200F72849 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				CEAC39102302E2F400B44F42 /* chainable */,
 				CEFFCE5F22ED92290057FC28 /* ApplicationMainDelegate.swift */,
 				CE0F0C9F22C8B17200F72849 /* Array+UIImage.swift */,
 				CE0F0C9822C8B17200F72849 /* CGpoint+Float.swift */,
@@ -197,6 +204,7 @@
 		CE0F0CA722C8B17200F72849 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				CEAC39212302EAA500B44F42 /* chainable */,
 				CE0F0CB622C8B17200F72849 /* Array+cookieString.swift */,
 				CE0F0CB122C8B17200F72849 /* Array+JSON.swift */,
 				CE0F0CAC22C8B17200F72849 /* Bundle+Localization.swift */,
@@ -302,6 +310,23 @@
 				CE607EED1F051DB0007E99DC /* Info.plist */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		CEAC39102302E2F400B44F42 /* chainable */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC39112302E2F400B44F42 /* UILabel+chainable.swift */,
+				CEAC39182302E2F400B44F42 /* UIView+chainable.swift */,
+			);
+			path = chainable;
+			sourceTree = "<group>";
+		};
+		CEAC39212302EAA500B44F42 /* chainable */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC39222302EAA500B44F42 /* NSAttribute+chainable.swift */,
+			);
+			path = chainable;
 			sourceTree = "<group>";
 		};
 		CEBC590822ED7E7B00FA3182 /* SCNetworkReachability */ = {
@@ -441,6 +466,7 @@
 				CE0F0CE522C8B17300F72849 /* UITableView+UIImage.swift in Sources */,
 				CE0F0D3322C8B17300F72849 /* runtime.swift in Sources */,
 				CE0F0D4B22C8B17300F72849 /* View+KeyboardInfo.swift in Sources */,
+				CEAC39242302EAA500B44F42 /* NSAttribute+chainable.swift in Sources */,
 				CE0F0D2A22C8B17300F72849 /* Array+cookieString.swift in Sources */,
 				CE0F0CEB22C8B17300F72849 /* Array+UIImage.swift in Sources */,
 				CE0F0CD022C8B17300F72849 /* WKWebView+contentView.swift in Sources */,
@@ -453,6 +479,7 @@
 				CE32EBE822DF5933004CCD62 /* UIControl+Event.swift in Sources */,
 				CE0F0D3F22C8B17300F72849 /* Color+css.swift in Sources */,
 				CEFFCE6022ED92290057FC28 /* ApplicationMainDelegate.swift in Sources */,
+				CEAC39202302E2F400B44F42 /* UIView+chainable.swift in Sources */,
 				CE0F0CFA22C8B17300F72849 /* Image+Process.swift in Sources */,
 				CE0F0D0022C8B17300F72849 /* UserDefaults+Codable.swift in Sources */,
 				CE0F0D0F22C8B17300F72849 /* UserDefaults+subscript.swift in Sources */,
@@ -460,6 +487,7 @@
 				CE0F0D5722C8B17300F72849 /* String+regex.swift in Sources */,
 				CE0F0D0322C8B17300F72849 /* CFAbsoluteTime+init.swift in Sources */,
 				CECB854422CB2C4C004650B5 /* Int+String.swift in Sources */,
+				CEAC39192302E2F400B44F42 /* UILabel+chainable.swift in Sources */,
 				CE0F0D2122C8B17300F72849 /* Locale+Localization.swift in Sources */,
 				CE0F0D3C22C8B17300F72849 /* Color+rgba.swift in Sources */,
 				CE0F0CDF22C8B17300F72849 /* NSString+Size.swift in Sources */,

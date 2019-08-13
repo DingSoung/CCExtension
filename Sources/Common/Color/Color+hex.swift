@@ -13,13 +13,16 @@ import CoreGraphics
 extension Color {
     private static let association = Association<NSCache<NSString, Color>>()
     public class final var memoryCache: NSCache<NSString, Color> {
-        return Color.association[self] ?? {
+        if let cache = Color.association[self] {
+            return cache
+        } else {
             let cache = NSCache<NSString, Color>()
             cache.countLimit = 1024 // 1K
             cache.totalCostLimit = 0 // no limit
             cache.evictsObjectsWithDiscardedContent = true
+            Color.association[self] = cache
             return cache
-            }()
+        }
     }
 
     private class final func colorComponent(hex: String, start: Int, lenght: Int) -> CGFloat {
