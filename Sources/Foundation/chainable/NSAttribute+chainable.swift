@@ -9,8 +9,6 @@
 #if canImport(Foundation)
 import Foundation
 
-
-
 extension NSMutableAttributedString {
     private var range: NSRange {
         return NSRange(location: 0, length: length)

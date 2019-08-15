@@ -48,7 +48,7 @@
 		CE0F0D4222C8B17300F72849 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CC022C8B17200F72849 /* Color.swift */; };
 		CE0F0D4522C8B17300F72849 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CC222C8B17200F72849 /* Image.swift */; };
 		CE0F0D4822C8B17300F72849 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CC422C8B17200F72849 /* View.swift */; };
-		CE0F0D4B22C8B17300F72849 /* View+KeyboardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CC522C8B17200F72849 /* View+KeyboardInfo.swift */; };
+		CE0F0D4B22C8B17300F72849 /* UIResponder+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CC522C8B17200F72849 /* UIResponder+Keyboard.swift */; };
 		CE0F0D4E22C8B17300F72849 /* VIew+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CC622C8B17200F72849 /* VIew+UIImage.swift */; };
 		CE0F0D5122C8B17300F72849 /* Swift+closuer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CC822C8B17200F72849 /* Swift+closuer.swift */; };
 		CE0F0D5422C8B17300F72849 /* Swift+synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CC922C8B17200F72849 /* Swift+synchronized.swift */; };
@@ -113,7 +113,7 @@
 		CE0F0CC022C8B17200F72849 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		CE0F0CC222C8B17200F72849 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		CE0F0CC422C8B17200F72849 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		CE0F0CC522C8B17200F72849 /* View+KeyboardInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+KeyboardInfo.swift"; sourceTree = "<group>"; };
+		CE0F0CC522C8B17200F72849 /* UIResponder+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Keyboard.swift"; sourceTree = "<group>"; };
 		CE0F0CC622C8B17200F72849 /* VIew+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VIew+UIImage.swift"; sourceTree = "<group>"; };
 		CE0F0CC822C8B17200F72849 /* Swift+closuer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+closuer.swift"; sourceTree = "<group>"; };
 		CE0F0CC922C8B17200F72849 /* Swift+synchronized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+synchronized.swift"; sourceTree = "<group>"; };
@@ -175,6 +175,7 @@
 		CE0F0C9722C8B17200F72849 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				CE0F0CC522C8B17200F72849 /* UIResponder+Keyboard.swift */,
 				CEAC39102302E2F400B44F42 /* chainable */,
 				CEFFCE5F22ED92290057FC28 /* ApplicationMainDelegate.swift */,
 				CE0F0C9F22C8B17200F72849 /* Array+UIImage.swift */,
@@ -266,7 +267,6 @@
 			isa = PBXGroup;
 			children = (
 				CE0F0CC422C8B17200F72849 /* View.swift */,
-				CE0F0CC522C8B17200F72849 /* View+KeyboardInfo.swift */,
 				CE0F0CC622C8B17200F72849 /* VIew+UIImage.swift */,
 			);
 			path = View;
@@ -465,7 +465,7 @@
 				CE0F0D5A22C8B17300F72849 /* Swift+log.swift in Sources */,
 				CE0F0CE522C8B17300F72849 /* UITableView+UIImage.swift in Sources */,
 				CE0F0D3322C8B17300F72849 /* runtime.swift in Sources */,
-				CE0F0D4B22C8B17300F72849 /* View+KeyboardInfo.swift in Sources */,
+				CE0F0D4B22C8B17300F72849 /* UIResponder+Keyboard.swift in Sources */,
 				CEAC39242302EAA500B44F42 /* NSAttribute+chainable.swift in Sources */,
 				CE0F0D2A22C8B17300F72849 /* Array+cookieString.swift in Sources */,
 				CE0F0CEB22C8B17300F72849 /* Array+UIImage.swift in Sources */,
