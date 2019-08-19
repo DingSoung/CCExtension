@@ -6,8 +6,8 @@
 //  Copyright © 2019 DingSoung. All rights reserved.
 //
 
-#if canImport(Foundation)
-import Foundation
+#if canImport(UIKit)
+import UIKit
 
 extension NSMutableAttributedString {
     private var range: NSRange {
