@@ -12,15 +12,15 @@
 
  各种 Swift Extension  扩展合集
 
-# 按照
+# 安装
 
-#### Swift Package Manager
+* Swift Package Manager *
 
 ```swift
 "https://github.com/DingSoung/Extension", master
 ```
 
-### # 模块
+# 模块
 
 ## Chainable 链式调用
 
