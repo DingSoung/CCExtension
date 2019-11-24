@@ -1,15 +1,9 @@
 //  Created by Songwen on 2018/11/7.
 //  Copyright © 2018 DingSoung. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-#endif
+#if canImport(UIKit)
+import UIKit
 
-#if canImport(CoreGraphics)
-import CoreGraphics
-#endif
-
-#if !os(Linux)
 extension Color {
     private static let association = Association<NSCache<NSString, Color>>()
     public class final var memoryCache: NSCache<NSString, Color> {

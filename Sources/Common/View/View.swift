@@ -5,8 +5,3 @@
 import UIKit
 public typealias View = UIView
 #endif
-
-#if canImport(AppKit)
-import AppKit
-public typealias View = NSView
-#endif

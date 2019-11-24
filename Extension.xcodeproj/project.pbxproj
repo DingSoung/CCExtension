@@ -19,7 +19,6 @@
 		CE0F0CE822C8B17300F72849 /* NSAttributedString+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0C9E22C8B17200F72849 /* NSAttributedString+Content.swift */; };
 		CE0F0CEB22C8B17300F72849 /* Array+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0C9F22C8B17200F72849 /* Array+UIImage.swift */; };
 		CE0F0CEE22C8B17300F72849 /* UINavigationController+Autorotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CA022C8B17200F72849 /* UINavigationController+Autorotate.swift */; };
-		CE0F0CF122C8B17300F72849 /* UIWebView+JavaScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CA122C8B17200F72849 /* UIWebView+JavaScript.swift */; };
 		CE0F0CF422C8B17300F72849 /* Image+pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CA222C8B17200F72849 /* Image+pdf.swift */; };
 		CE0F0CF722C8B17300F72849 /* Image+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CA322C8B17200F72849 /* Image+CoreGraphics.swift */; };
 		CE0F0CFA22C8B17300F72849 /* Image+Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0CA422C8B17200F72849 /* Image+Process.swift */; };
@@ -84,7 +83,6 @@
 		CE0F0C9E22C8B17200F72849 /* NSAttributedString+Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Content.swift"; sourceTree = "<group>"; };
 		CE0F0C9F22C8B17200F72849 /* Array+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+UIImage.swift"; sourceTree = "<group>"; };
 		CE0F0CA022C8B17200F72849 /* UINavigationController+Autorotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Autorotate.swift"; sourceTree = "<group>"; };
-		CE0F0CA122C8B17200F72849 /* UIWebView+JavaScript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+JavaScript.swift"; sourceTree = "<group>"; };
 		CE0F0CA222C8B17200F72849 /* Image+pdf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+pdf.swift"; sourceTree = "<group>"; };
 		CE0F0CA322C8B17200F72849 /* Image+CoreGraphics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreGraphics.swift"; sourceTree = "<group>"; };
 		CE0F0CA422C8B17200F72849 /* Image+Process.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+Process.swift"; sourceTree = "<group>"; };
@@ -189,7 +187,6 @@
 				CE940DDB22DD933D00BC38B5 /* UIFont+SymbolicTraits.swift */,
 				CE0F0CA022C8B17200F72849 /* UINavigationController+Autorotate.swift */,
 				CE0F0C9D22C8B17200F72849 /* UITableView+UIImage.swift */,
-				CE0F0CA122C8B17200F72849 /* UIWebView+JavaScript.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -459,7 +456,6 @@
 				CE0F0D1E22C8B17300F72849 /* URL+Cookie.swift in Sources */,
 				CE0F0D4222C8B17300F72849 /* Color.swift in Sources */,
 				CE0F0D3922C8B17300F72849 /* Color+components.swift in Sources */,
-				CE0F0CF122C8B17300F72849 /* UIWebView+JavaScript.swift in Sources */,
 				CEBC590522ED46FC00FA3182 /* SCNetworkReachability+flags.swift in Sources */,
 				CE0F0D5D22C8B17300F72849 /* Swift+Association.swift in Sources */,
 				CE0F0D5A22C8B17300F72849 /* Swift+log.swift in Sources */,

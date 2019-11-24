@@ -2,15 +2,9 @@
 //  Copyright © 2019 DingSoung. All rights reserved.
 //
 
-#if canImport(Foundation)
-import Foundation
-#endif
+#if canImport(UIKit)
+import UIKit
 
-#if canImport(CoreGraphics)
-import CoreGraphics
-#endif
-
-#if !os(Linux)
 extension Color {
     private static let map: [String: UInt] = [
         "black": 0x000000,
@@ -172,4 +166,5 @@ extension Color {
         }
     }
 }
+
 #endif

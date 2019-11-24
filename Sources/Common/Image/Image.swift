@@ -8,11 +8,6 @@ import UIKit
 public typealias Image = UIImage
 #endif
 
-#if canImport(AppKit)
-import AppKit
-public typealias Image = NSImage
-#endif
-
 #if !os(watchOS)
 import CoreImage
 #endif

@@ -1,11 +1,9 @@
 //  Created by Songwen on 2018/11/7.
 //  Copyright © 2018 DingSoung. All rights reserved.
 
-#if canImport(CoreGraphics)
-import CoreGraphics
-#endif
+#if canImport(UIKit)
+import UIKit
 
-#if !os(Linux)
 extension Color {
     /// init color with RGBA Hex 0x00 ~ 0xFF
     public convenience init(red: UInt, green: UInt, blue: UInt, alpha: UInt) {

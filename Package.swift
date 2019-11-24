@@ -17,6 +17,6 @@ let package = Package(
         .target(name: "Extension", path: "Sources")
     ],
     swiftLanguageVersions: [
-        .version("5.0.0")
+        .version("5")
     ]
 )

@@ -5,8 +5,3 @@
 import UIKit
 public typealias Color = UIColor
 #endif
-
-#if canImport(AppKit)
-import AppKit
-public typealias Color = NSColor
-#endif

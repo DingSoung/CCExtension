@@ -1,11 +1,9 @@
 //  Created by Songwen on 2018/11/7.
 //  Copyright © 2018 DingSoung. All rights reserved.
 
-#if canImport(CoreGraphics)
-import CoreGraphics
-#endif
+#if canImport(UIKit)
+import UIKit
 
-#if !os(Linux)
 extension Color {
     public struct FloatPath {
         var red: CGFloat
