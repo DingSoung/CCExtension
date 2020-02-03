@@ -9,72 +9,69 @@
 #if canImport(UIKit)
 import UIKit
 
-extension NSMutableAttributedString {
-    private var range: NSRange {
-        return NSRange(location: 0, length: length)
-    }
+extension Dictionary where Key == NSAttributedString.Key, Value == Any {
     public func font(_ value: UIFont) -> Self {
-        addAttribute(.font, value: value, range: range); return self
+        var dic = self; dic[.font] = value; return dic
     }
     public func paragraphStyle(_ value: NSParagraphStyle) -> Self {
-        addAttribute(.paragraphStyle, value: value, range: range); return self
+        var dic = self; dic[.paragraphStyle] = value; return dic
     }
     public func foregroundColor(_ value: Color) -> Self {
-        addAttribute(.foregroundColor, value: value, range: range); return self
+        var dic = self; dic[.foregroundColor] = value; return dic
     }
     public func backgroundColor(_ value: Color) -> Self {
-        addAttribute(.backgroundColor, value: value, range: range); return self
+        var dic = self; dic[.backgroundColor] = value; return dic
     }
     public func ligature(_ value: Int) -> Self {
-        addAttribute(.ligature, value: value, range: range); return self
+        var dic = self; dic[.ligature] = value; return dic
     }
     public func kern(_ value: Float) -> Self {
-        addAttribute(.kern, value: value, range: range); return self
+        var dic = self; dic[.kern] = value; return dic
     }
     public func strikethroughStyle(_ value: NSUnderlineStyle) -> Self {
-        addAttribute(.strikethroughStyle, value: value.rawValue, range: range); return self
+        var dic = self; dic[.strikethroughStyle] = value; return dic
     }
     public func underlineStyle(_ value: NSUnderlineStyle) -> Self {
-        addAttribute(.underlineStyle, value: value.rawValue, range: range); return self
+        var dic = self; dic[.underlineStyle] = value; return dic
     }
     public func strokeColor(_ value: Color) -> Self {
-        addAttribute(.strokeColor, value: value, range: range); return self
+        var dic = self; dic[.strokeColor] = value; return dic
     }
     public func strokeWidth(_ value: CGFloat) -> Self {
-        addAttribute(.strokeWidth, value: value, range: range); return self
+        var dic = self; dic[.strokeWidth] = value; return dic
     }
     public func shadow(_ value: NSShadow) -> Self {
-        addAttribute(.shadow, value: value, range: range); return self
+        var dic = self; dic[.shadow] = value; return dic
     }
     public func textEffect(_ value: String) -> Self {
-        addAttribute(.textEffect, value: value, range: range); return self
+        var dic = self; dic[.textEffect] = value; return dic
     }
     public func attachment(_ value: NSTextAttachment) -> Self {
-        addAttribute(.attachment, value: value, range: range); return self
+        var dic = self; dic[.attachment] = value; return dic
     }
     public func link(_ value: URL) -> Self {
-        addAttribute(.link, value: value, range: range); return self
+        var dic = self; dic[.link] = value; return dic
     }
     public func baselineOffset(_ value: CGFloat) -> Self {
-        addAttribute(.baselineOffset, value: value, range: range); return self
+        var dic = self; dic[.baselineOffset] = value; return dic
     }
     public func underlineColor(_ value: Color) -> Self {
-        addAttribute(.underlineColor, value: value, range: range); return self
+        var dic = self; dic[.underlineColor] = value; return dic
     }
     public func strikethroughColor(_ value: Color) -> Self {
-        addAttribute(.strikethroughColor, value: value, range: range); return self
+        var dic = self; dic[.strikethroughColor] = value; return dic
     }
     public func obliqueness(_ value: CGFloat) -> Self {
-        addAttribute(.obliqueness, value: value, range: range); return self
+        var dic = self; dic[.obliqueness] = value; return dic
     }
     public func expansion(_ value: CGFloat) -> Self {
-        addAttribute(.expansion, value: value, range: range); return self
+        var dic = self; dic[.expansion] = value; return dic
     }
     public func writingDirection(_ value: [CGFloat]) -> Self {
-        addAttribute(.writingDirection, value: value, range: range); return self
+        var dic = self; dic[.writingDirection] = value; return dic
     }
     public func verticalGlyphForm(_ value: Int) -> Self {
-        addAttribute(.verticalGlyphForm, value: value, range: range); return self
+        var dic = self; dic[.verticalGlyphForm] = value; return dic
     }
 }
 #endif

@@ -40,8 +40,8 @@ let label = UILabel()
 
 **欢迎补充**
 
-- [ ] UIView
-- [ ] UILabel
+- [x ] UIView
+- [x ] UILabel
 - [ ] NSMutableAttributedString
 - [ ] NSMutableParagraph
 - [ ] CALayer
@@ -57,11 +57,13 @@ let hex2 = UIColor.red.hex8String
 
 let color1 = Color.css("lemonchiffon")
 
+let color2: Color = .lemonchiffon
+
 let color3 = Color.hex("#777777")
 
-let color3 = Color(hex8: 0xAABBCCDD)
+let color4 = Color(hex8: 0xAABBCCDD)
 
-let color4 = Color(red: 0, green: 127, blue: 255, alpha: 255)
+let color5 = Color(red: 0, green: 127, blue: 255, alpha: 255)
 ```
 
 ## Image
