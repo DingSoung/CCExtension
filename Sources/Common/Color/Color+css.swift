@@ -6,6 +6,156 @@
 import UIKit
 
 extension Color {
+    static var cssMap: [String: Color] = [
+        "black" : black,
+        "navy" : navy,
+        "darkblue" : darkblue,
+        "mediumblue" : mediumblue,
+        "blue" : blue,
+        "darkgreen" : darkgreen,
+        "green" : green,
+        "teal" : teal,
+        "darkcyan" : darkcyan,
+        "deepskyblue" : deepskyblue,
+        "darkturquoise" : darkturquoise,
+        "darkturquoise" : darkturquoise,
+        "lime" : lime,
+        "springgreen" : springgreen,
+        "aqua" : aqua,
+        "cyan" : cyan,
+        "midnightblue" : midnightblue,
+        "dodgerblue" : dodgerblue,
+        "lightseagreen" : lightseagreen,
+        "forestgreen" : forestgreen,
+        "seagreen" : seagreen,
+        "darkslategray" : darkslategray,
+        "darkslategrey" : darkslategrey,
+        "limegreen" : limegreen,
+        "mediumseagreen" : mediumseagreen,
+        "turquoise" : turquoise,
+        "royalblue" : royalblue,
+        "steelblue" : steelblue,
+        "darkslateblue" : darkslateblue,
+        "mediumturquoise" : mediumturquoise,
+        "indigo" : indigo,
+        "darkolivegreen" : darkolivegreen,
+        "cadetblue" : cadetblue,
+        "cornflowerblue" : cornflowerblue,
+        "rebeccapurple" : rebeccapurple,
+        "mediumaquamarine" : mediumaquamarine,
+        "dimgray" : dimgray,
+        "dimgrey" : dimgrey,
+        "slateblue" : slateblue,
+        "olivedrab" : olivedrab,
+        "slategray" : slategray,
+        "slategrey" : slategrey,
+        "lightslategray" : lightslategray,
+        "lightslategrey" : lightslategrey,
+        "mediumslateblue" : mediumslateblue,
+        "lawngreen" : lawngreen,
+        "chartreuse" : chartreuse,
+        "aquamarine" : aquamarine,
+        "maroon" : maroon,
+        "purple" : purple,
+        "olive" : olive,
+        "gray" : gray,
+        "grey" : grey,
+        "skyblue" : skyblue,
+        "lightskyblue" :lightskyblue,
+        "blueviolet" : blueviolet,
+        "darkred" : darkred,
+        "darkmagenta" : darkmagenta,
+        "saddlebrown" : saddlebrown,
+        "darkseagreen" : darkseagreen,
+        "lightgreen" : lightgreen,
+        "mediumpurple" : mediumpurple,
+        "darkviolet" : darkviolet,
+        "palegreen" : palegreen,
+        "darkorchid" : darkorchid,
+        "yellowgreen" : yellowgreen,
+        "sienna" : sienna,
+        "brown" : brown,
+        "darkgray" : darkgray,
+        "darkgrey" : darkgrey,
+        "lightblue" : lightblue,
+        "greenyellow" : greenyellow,
+        "paleturquoise" : paleturquoise,
+        "lightsteelblue" : lightsteelblue,
+        "powderblue" : powderblue,
+        "firebrick" : firebrick,
+        "darkgoldenrod" : darkgoldenrod,
+        "mediumorchid" : mediumorchid,
+        "rosybrown" : rosybrown,
+        "darkkhaki" : darkkhaki,
+        "silver" : silver,
+        "mediumvioletred" : mediumvioletred,
+        "indianred" : indianred,
+        "peru" : peru,
+        "chocolate" : chocolate,
+        "tan " : tan,
+        "lightgray" : lightgray,
+        "lightgrey" : lightgrey,
+        "thistle" : thistle,
+        "orchid" : orchid,
+        "goldenrod" : goldenrod,
+        "palevioletred" : palevioletred,
+        "crimson" : crimson,
+        "gainsboro" : gainsboro,
+        "plum" : plum,
+        "burlywood" : burlywood,
+        "lightcyan" : lightcyan,
+        "lavender" : lavender,
+        "darksalmon" : darksalmon,
+        "violet" : violet,
+        "palegoldenrod" : palegoldenrod,
+        "lightcoral" : lightcoral,
+        "khaki" : khaki,
+        "aliceblue" : aliceblue,
+        "honeydew" : honeydew,
+        "azure" : azure,
+        "sandybrown" : sandybrown,
+        "wheat" : wheat,
+        "beige" : beige,
+        "whitesmoke" : whitesmoke,
+        "mintcream" : mintcream,
+        "ghostwhite" : ghostwhite,
+        "salmon" : salmon,
+        "antiquewhite" : antiquewhite,
+        "linen" : linen,
+        "lightgoldenrodyellow" : lightgoldenrodyellow,
+        "oldlace" : oldlace,
+        "red " : red,
+        "fuchsia" : fuchsia,
+        "magenta" : magenta,
+        "deeppink" : deeppink,
+        "orangered" : orangered,
+        "tomato" : tomato,
+        "hotpink" : hotpink,
+        "coral" : coral,
+        "darkorange" : darkorange,
+        "lightsalmon" : lightsalmon,
+        "orange" : orange,
+        "lightpink" : lightpink,
+        "pink" : pink,
+        "gold" : gold,
+        "peachpuff" : peachpuff,
+        "navajowhite" : navajowhite,
+        "moccasin" : moccasin,
+        "bisque" : bisque,
+        "mistyrose" : mistyrose,
+        "blanchedalmond" : blanchedalmond,
+        "papayawhip" : papayawhip,
+        "lavenderblush" : lavenderblush,
+        "seashell" : seashell,
+        "cornsilk" : cornsilk,
+        "lemonchiffon" : lemonchiffon,
+        "floralwhite" : floralwhite,
+        "snow" : snow,
+        "yellow" : yellow,
+        "lightyellow" : lightyellow,
+        "ivory" : ivory,
+        "white" : white,
+    ]
     //@objc public static var black             = Color(hex6: 0x000000)
     @objc public static var navy              = Color(hex6: 0x000080)
     @objc public static var darkblue          = Color(hex6: 0x00008b)
@@ -74,7 +224,7 @@ extension Color {
     @objc public static var yellowgreen       = Color(hex6: 0x9acd32)
     @objc public static var sienna            = Color(hex6: 0xa0522d)
     //@objc public static var brown             = Color(hex6: 0xa52a2a)
-    //@objc public static var darkgray          = Color(hex6: 0xa9a9a9)
+    @objc public static var darkgray          = Color(hex6: 0xa9a9a9)
     @objc public static var darkgrey          = Color(hex6: 0xa9a9a9)
     @objc public static var lightblue         = Color(hex6: 0xadd8e6)
     @objc public static var greenyellow       = Color(hex6: 0xadff2f)
@@ -92,7 +242,7 @@ extension Color {
     @objc public static var peru              = Color(hex6: 0xcd853f)
     @objc public static var chocolate         = Color(hex6: 0xd2691e)
     @objc public static var tan               = Color(hex6: 0xd2b48c)
-    //@objc public static var lightgray         = Color(hex6: 0xd3d3d3)
+    @objc public static var lightgray         = Color(hex6: 0xd3d3d3)
     @objc public static var lightgrey         = Color(hex6: 0xd3d3d3)
     @objc public static var thistle           = Color(hex6: 0xd8bfd8)
     @objc public static var orchid            = Color(hex6: 0xda70d6)
@@ -154,14 +304,9 @@ extension Color {
     @objc public static var lightyellow       = Color(hex6: 0xffffe0)
     @objc public static var ivory             = Color(hex6: 0xfffff0)
     //@objc public static var white             = Color(hex6: 0xffffff)
-
-    /// init color with hex like red) #ABCDEF
+    /// init color with hex like red, #ABCDEF
     public class func css(_ name: String) -> Color? {
-        if let color = self.value(forKey: name) as? Color {
-            return color
-        } else {
-            return hex(name)
-        }
+        return self.cssMap[name] ?? Color.hex(name)
     }
 }
 
