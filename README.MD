@@ -20,6 +20,13 @@
 "https://github.com/DingSoung/Extension", master
 ```
 
+# 调试
+```
+swift package generate-xcodeproj
+```
+添加 Playground到工程
+
+
 # 模块
 
 ## Chainable 链式调用
