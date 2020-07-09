@@ -12,8 +12,8 @@ public func selector(uid: String, types: String, classes: [AnyClass], block: (()
     let castedBlock: AnyObject = unsafeBitCast(block as @convention(block) () -> Swift.Void, to: AnyObject.self)
     let imp = imp_implementationWithBlock(castedBlock)
     classes.forEach({ (cls) in
-        if class_addMethod(cls, aSelector, imp, UnsafeMutablePointer(mutating: types)) {
-        } else { class_replaceMethod(cls, aSelector, imp, UnsafeMutablePointer(mutating: types)) }
+        if class_addMethod(cls, aSelector, imp, UnsafePointer<Int8>(types)) {
+        } else { class_replaceMethod(cls, aSelector, imp, UnsafePointer<Int8>(types)) }
     })
     return aSelector
 }
