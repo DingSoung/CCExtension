@@ -6,8 +6,7 @@
 //  Copyright © 2019 DingSoung. All rights reserved.
 //
 
-#if canImport(UIKit)
-import UIKit
+#if canImport(QuartzCore)
 import QuartzCore
 import Foundation
 
@@ -84,7 +83,7 @@ extension CALayer {
         contentsCenter = value
         return self
     }
-    @available(iOS 10.0, *)
+    @available(iOS 10.0, macOS 10.12, *)
     open func contentsFormat(_ value: CALayerContentsFormat) -> Self {
         contentsFormat = value
         return self
@@ -129,12 +128,12 @@ extension CALayer {
         cornerRadius = value
         return self
     }
-    @available(iOS 11.0, *)
+    @available(iOS 11.0, macOS 10.13, *)
     open func maskedCorners(_ value: CACornerMask) -> Self {
         maskedCorners = value
         return self
     }
-    @available(iOS 13.0, *)
+    @available(iOS 13.0, macOS 10.15, *)
     open func cornerCurve(_ value: CALayerCornerCurve) -> Self {
         cornerCurve = value
         return self
