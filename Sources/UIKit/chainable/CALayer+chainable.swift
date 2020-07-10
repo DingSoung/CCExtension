@@ -6,7 +6,8 @@
 //  Copyright © 2019 DingSoung. All rights reserved.
 //
 
-#if canImport(QuartzCore)
+#if canImport(UIKit)
+import UIKit
 import QuartzCore
 import Foundation
 
