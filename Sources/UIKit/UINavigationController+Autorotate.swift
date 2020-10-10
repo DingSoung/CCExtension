@@ -1,7 +1,7 @@
 //  Created by Songwen Ding on 8/6/16.
 //  Copyright © 2016 DingSoung. All rights reserved.
 
-#if canImport(UIKit)
+#if canImport(UIKit) && os(iOS)
 import UIKit
 
 extension UINavigationController {

@@ -83,7 +83,7 @@ extension CALayer {
         contentsCenter = value
         return self
     }
-    @available(iOS 10.0, macOS 10.12, *)
+    @available(iOS 10.0, macOS 10.12, tvOS 10.0, *)
     open func contentsFormat(_ value: CALayerContentsFormat) -> Self {
         contentsFormat = value
         return self
@@ -128,12 +128,12 @@ extension CALayer {
         cornerRadius = value
         return self
     }
-    @available(iOS 11.0, macOS 10.13, *)
+    @available(iOS 11.0, macOS 10.13, tvOS 11.0, *)
     open func maskedCorners(_ value: CACornerMask) -> Self {
         maskedCorners = value
         return self
     }
-    @available(iOS 13.0, macOS 10.15, *)
+    @available(iOS 13.0, macOS 10.15, tvOS 13.0, *)
     open func cornerCurve(_ value: CALayerCornerCurve) -> Self {
         cornerCurve = value
         return self
