@@ -67,11 +67,4 @@ extension View {
         return self
     }
 }
-
-extension View {
-    open func subview(_ view: UIView) -> Self {
-        addSubview(view)
-        return self
-    }
-}
 #endif
