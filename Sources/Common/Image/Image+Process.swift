@@ -3,17 +3,16 @@
 
 #if canImport(UIKit)
 import UIKit
-
-extension Image {
+extension Img {
     /// image to scale
-    public func image(scale: CGFloat) -> Image {
+    public func image(scale: CGFloat) -> Img {
         guard let cgImage = cgImage else {
             return self
         }
         return UIImage(cgImage: cgImage, scale: scale, orientation: UIImage.Orientation.up)
     }
     /// scale with ratio
-    public func image(ratio: CGFloat) -> Image? {
+    public func image(ratio: CGFloat) -> Img? {
         UIGraphicsBeginImageContext(CGSize(width: size.width * ratio, height: size.height * ratio))
         draw(in: CGRect(origin: CGPoint(x: 0, y: 0),
                         size: CGSize(width: size.width * ratio,
@@ -23,7 +22,7 @@ extension Image {
         return scaledImage
     }
     /// sacale to size
-    public func image(size: CGSize) -> Image? {
+    public func image(size: CGSize) -> Img? {
         UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
         draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         let image = UIGraphicsGetImageFromCurrentImageContext()
@@ -31,7 +30,7 @@ extension Image {
         return image
     }
     /// image with cornal radius
-    public func image(radius: CGFloat) -> Image? {
+    public func image(radius: CGFloat) -> Img? {
         let rect = CGRect(origin: .zero, size: size)
         UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
         guard let context = UIGraphicsGetCurrentContext() else { return nil }

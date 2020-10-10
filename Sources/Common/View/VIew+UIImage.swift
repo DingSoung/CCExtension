@@ -3,10 +3,9 @@
 
 #if canImport(UIKit)
 import UIKit
-
 extension View {
     ///  capture image, Compatible, alpha
-    public func image(alpha: CGFloat, bounds: CGRect, scale: CGFloat) -> Image? {
+    public func image(alpha: CGFloat, bounds: CGRect, scale: CGFloat) -> Img? {
         return Image.image(render: {
             if let context = UIGraphicsGetCurrentContext() {
                 context.saveGState()
@@ -19,7 +18,7 @@ extension View {
         }, size: bounds.size, opaque: isOpaque)
     }
 
-    public func image(scale: CGFloat) -> Image? {
+    public func image(scale: CGFloat) -> Img? {
         return Image.image(render: {
             if let contex = UIGraphicsGetCurrentContext() {
                 layer.render(in: contex)
@@ -27,11 +26,11 @@ extension View {
         }, size: bounds.size, opaque: isOpaque)
     }
 
-    public var image: Image? {
+    public var image: Img? {
         return image(scale: UIScreen.main.scale)
     }
 
-    public var fastImage: Image? {
+    public var fastImage: Img? {
         var image: Image?
         UIGraphicsBeginImageContextWithOptions(bounds.size, isOpaque, UIScreen.main.scale)
         drawHierarchy(in: bounds, afterScreenUpdates: false)

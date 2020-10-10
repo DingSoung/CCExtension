@@ -3,11 +3,10 @@
 
 #if canImport(UIKit)
 import UIKit
-
-extension Image {
+extension Img {
     private static var ramCache = NSCache<NSString, Image>()
 
-    public class final func image(pdf: String, bundle: Bundle, page: Int, size: CGSize) -> Image? {
+    public class final func image(pdf: String, bundle: Bundle, page: Int, size: CGSize) -> Img? {
         guard size.width > 0 && size.height > 0 && page > 0 else { return nil }
         guard let filePath = bundle.path(forResource: pdf, ofType: "pdf") else { return nil }
         let name = cacheName(filePath: filePath, page: page, size: size)

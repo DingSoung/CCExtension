@@ -3,10 +3,9 @@
 
 #if canImport(UIKit)
 import UIKit
-
 extension Image {
     /// render image with Core Graphics or UIBezierPath code
-    public class func image(render:() -> Void, size: CGSize, opaque: Bool) -> Image? {
+    public class func image(render:() -> Void, size: CGSize, opaque: Bool) -> Img? {
         UIGraphicsBeginImageContextWithOptions(size, opaque, UIScreen.main.scale)
         render()
         let image = UIGraphicsGetImageFromCurrentImageContext()

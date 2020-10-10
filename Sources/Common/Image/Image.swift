@@ -5,7 +5,8 @@ import Foundation
 
 #if canImport(UIKit)
 import UIKit
-public typealias Image = UIImage
+public typealias Img = UIImage
+typealias Image = Img
 #endif
 
 #if !os(watchOS)
