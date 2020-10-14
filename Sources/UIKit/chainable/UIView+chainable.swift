@@ -10,7 +10,7 @@
 import UIKit
 
 extension View {
-    public func backgroundColor(_ value: Color) -> Self {
+    public func backgroundColor(_ value: Color?) -> Self {
         backgroundColor = value
         return self
     }
