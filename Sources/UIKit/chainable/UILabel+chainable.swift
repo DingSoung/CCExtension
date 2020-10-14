@@ -50,10 +50,6 @@ extension UILabel {
         isHighlighted = value
         return self
     }
-    public func isUserInteractionEnabled(_ value: Bool) -> Self {
-        isUserInteractionEnabled = value
-        return self
-    }
     public func isEnabled(_ value: Bool) -> Self {
         isEnabled = value
         return self

@@ -50,7 +50,7 @@ extension View {
         frame = value
         return self
     }
-    public func bounds(_ value: CGRect) -> Self {
+    @objc public func bounds(_ value: CGRect) -> Self {
         bounds = value
         return self
     }
@@ -62,8 +62,60 @@ extension View {
         transform = value
         return self
     }
+    @available(iOS 13.0, tvOS 13.0, *)
+    public func transform3D(_ value: CATransform3D) -> Self {
+        transform3D = value
+        return self
+    }
+    
     public func contentScaleFactor(_ value: CGFloat) -> Self {
         contentScaleFactor = value
+        return self
+    }
+
+    @available(iOS 8.0, *)
+    public func layoutMargins(_ value: UIEdgeInsets) -> Self {
+        layoutMargins = value
+        return self
+    }
+    
+    @available(iOS 11.0, tvOS 11.0, *)
+    public func directionalLayoutMargins(_ value: NSDirectionalEdgeInsets) -> Self {
+        directionalLayoutMargins = value
+        return self
+    }
+
+    @available(iOS 8.0, *)
+    public func preservesSuperviewLayoutMargins(_ value: Bool) -> Self {
+        preservesSuperviewLayoutMargins = value
+        return self
+    }
+
+    @available(iOS 11.0, tvOS 11.0, *)
+    public func insetsLayoutMarginsFromSafeArea(_ value: Bool) -> Self {
+        insetsLayoutMarginsFromSafeArea = value
+        return self
+    }
+    
+    @available(iOS 6.0, *)
+    public func translatesAutoresizingMaskIntoConstraints(_ value: Bool) -> Self {
+        translatesAutoresizingMaskIntoConstraints = value
+        return self
+    }
+    
+    public func isUserInteractionEnabled(_ value: Bool) -> Self {
+        isUserInteractionEnabled = value
+        return self
+    }
+    
+    public func tag(_ value: Int) -> Self {
+        tag = value
+        return self
+    }
+    
+    @available(iOS 9.0, *)
+    public func semanticContentAttribute(_ value: UISemanticContentAttribute) -> Self {
+        semanticContentAttribute = value
         return self
     }
 }
