@@ -10,10 +10,12 @@
 import UIKit
 
 extension NSMutableAttributedString {
-    @discardableResult
     private var range: NSRange {
         return NSRange(location: 0, length: length)
     }
+}
+
+extension NSMutableAttributedString {
     @discardableResult
     public func font(_ value: UIFont) -> Self {
         addAttribute(.font, value: value, range: range); return self
