@@ -10,7 +10,6 @@
 import UIKit
 
 extension NSMutableAttributedString {
-    @discardableResult
     private var range: NSRange {
         return NSRange(location: 0, length: length)
     }
