@@ -12,7 +12,7 @@ public func selector(uid: String, types: String, classes: [AnyClass], block: (()
     let castedBlock: AnyObject = unsafeBitCast(block as @convention(block) () -> Swift.Void, to: AnyObject.self)
     let imp = imp_implementationWithBlock(castedBlock)
     classes.forEach({ (cls) in
-        let ctypes = UnsafePointer<Int8>(types)
+        let ctypes = types.cString(using: .utf8)
         if class_addMethod(cls, aSelector, imp, ctypes) {
         } else { class_replaceMethod(cls, aSelector, imp, ctypes) }
     })
